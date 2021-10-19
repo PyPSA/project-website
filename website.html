@@ -11,6 +11,13 @@ a { text-decoration: none}
 .w3-quarter:hover {
   padding:-1px;border:1px solid #E0E0E0;
 }
+div.parent {
+	text-align: center;
+	}
+ul { 
+	display: inline-block; 
+	text-align: left; 
+	}
 </style>
 <body>
 
@@ -44,7 +51,7 @@ a { text-decoration: none}
   <div class="w3-row-padding w3-padding-16 w3-center" id="projects">
     <div class="w3-quarter">
       <a href="https://github.com/PyPSA/pypsa" target="_blank">
-        <img src="img/pypsa.png" alt="network" style="height:15em">
+        <img src="img/pypsa.png" alt="network" style="height:15em" >
         <h3>PyPSA</h3>
         <p>A python software toolbox for simulating and optimising modern power systems.</p>
         <p><a href="https://pypsa.readthedocs.io/en/latest/" target="_blank" style="color:#004D40"> Documentation <span>&#8594;</span></a> </p>
@@ -52,7 +59,7 @@ a { text-decoration: none}
     </div>
     <div class="w3-quarter">
       <a href="https://github.com/PyPSA/atlite" target="_blank">
-        <img src="img/atlite.png" alt="Weather map" style="height:15em">
+        <img src="img/atlite.png" alt="Weather map" style="height:15em" class="w3-image">
         <h3>Atlite</h3>
         <p>A Lightweight Python Package for Calculating Renewable Power Potentials and Time Series</p>
         <p>Source code </p>
@@ -61,7 +68,7 @@ a { text-decoration: none}
     </div>
     <div class="w3-quarter">
       <a href="https://github.com/PyPSA/pypsa-eur" target="_blank">
-        <img src="img/pypsa-eur.png" alt="European Transmission Network" style="height:15em">
+        <img src="img/pypsa-eur.png" alt="European Transmission Network" style="height:15em" class="w3-image">
         <h3>PyPSA-EUR</h3>
         <p>An open optimisation model of the European transmission system.</p>
         <p><a href="https://pypsa-eur.readthedocs.io/en/latest/" target="_blank" style="color:#004D40"> Documentation <span>&#8594;</span></a> </p>
@@ -69,7 +76,7 @@ a { text-decoration: none}
     </div>
     <div class="w3-quarter">
       <a href="https://github.com/PyPSA/pypsa-eur-sec" target="_blank">
-        <img src="img/pypsa-eur-sec.png" alt="Sector coupled model" style="height:15em">
+        <img src="img/pypsa-eur-sec.png" alt="Sector coupled model" style="height:15em" class="w3-image">
         <h3>PyPSA-EUR-sec</h3>
         <p>A sector-coupled open optimisation model of the European energy system.</p>
         <p><a href="https://pypsa-eur-sec.readthedocs.io/en/latest/" target="_blank" style="color:#004D40"> Documentation <span>&#8594;</span></a> </p>
@@ -80,7 +87,7 @@ a { text-decoration: none}
   <div class="w3-row-padding w3-padding-16 w3-center" id="projects">
     <div class="w3-quarter">
       <a href="https://github.com/pypsa/linopy" target="_blank">
-        <img src="img/linopy.png" alt="linpopy" style="height:15em">
+        <img src="img/linopy.png" alt="linpopy" style="height:15em" class="w3-image">
         <h3>Linopy</h3>
         <p>Linear optimization interface for N-D labeled variables.</p>
         <p><a href="https://linopy.readthedocs.io/en/latest/" target="_blank" style="color:#004D40"> Documentation <span>&#8594;</span></a> </p>
@@ -88,7 +95,7 @@ a { text-decoration: none}
     </div>
     <div class="w3-quarter">
       <a href="https://github.com/FRESNA/powerplantmatching" target="_blank">
-        <img src="img/powerplantmatching.png" alt="Sector coupled model" style="height:15em">
+        <img src="img/powerplantmatching.png" alt="Sector coupled model" style="height:15em" class="w3-image">
         <h3>Powerplantmatching</h3>
         <p>A toolset for cleaning, standardizing and combining multiple power plant databases.</p>
         <p><a href="https://powerplantmatching.readthedocs.io/en/latest/" target="_blank" style="color:#004D40"> Documentation <span>&#8594;</span></a> </p>
@@ -96,7 +103,7 @@ a { text-decoration: none}
     </div>
     <div class="w3-quarter">
       <a href="https://model.energy/" target="_blank">
-        <img src="img/model-energy.png" alt="Sector coupled model" style="height:15em">
+        <img src="img/model-energy.png" alt="Sector coupled model" style="height:15em" class="w3-image">
         <h3>Model Energy</h3>
         <p>An online toolkit for calculating renewable electricity supplies.</p>
       </a>
@@ -108,8 +115,8 @@ a { text-decoration: none}
 
   <!-- About Section -->
   <div class="w3-container w3-padding-32 w3-center">  
-    <h2>About</h2><br>
-    <img src="https://cdn.pixabay.com/photo/2016/01/19/17/15/windmills-1149604_960_720.jpg" alt="Renewables" style="width=100%">
+    <h3>About</h3><br>
+    <!-- <img src="https://cdn.pixabay.com/photo/2016/01/19/17/15/windmills-1149604_960_720.jpg" alt="Renewables" width=800 class="w3-image" style="display:block;margin:auto"> -->
     <div class="w3-padding-32">
       <p>
       The PyPSA project is maintained and developed by us, a group of researchers from different institutes and research fields. <br>
@@ -128,35 +135,181 @@ a { text-decoration: none}
     <p>
       Numerous research publications are build on the PyPSA environment. Here we highlight some of them. For an extended list, have a look at the updated <a href="https://scholar.google.de/scholar?hl=de&as_sdt=0%2C5&q=pypsa+%7C+atlite+%7C+powerplantmatching+&btnG=", target="_blank" style="color:#004D40">Google Scholar query</a>.
     </p>
-    <div class="csl-bib-body" style="line-height: 1.35; ">
-      <div class="csl-entry" style="clear: left; ">
-        <div class="csl-left-margin" style="float: left; padding-right: 0.5em;text-align: right; width: 1em;">[1]</div><div class="csl-right-inline" style="margin: 0 .4em 0 1.5em;">T. Brown, D. Schlachtberger, A. Kies, S. Schramm, and M. Greiner, “Synergies of sector coupling and transmission extension in a cost-optimised, highly renewable European energy system,” <i>arXiv:1801.05290 [physics]</i>, Jan. 2018, Accessed: May 30, 2018. [Online]. Available: <a href="http://arxiv.org/abs/1801.05290">http://arxiv.org/abs/1801.05290</a></div>
-      </div>
-      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Synergies%20of%20sector%20coupling%20and%20transmission%20extension%20in%20a%20cost-optimised%2C%20highly%20renewable%20European%20energy%20system&amp;rft.jtitle=arXiv%3A1801.05290%20%5Bphysics%5D&amp;rft.aufirst=T.&amp;rft.aulast=Brown&amp;rft.au=T.%20Brown&amp;rft.au=D.%20Schlachtberger&amp;rft.au=A.%20Kies&amp;rft.au=S.%20Schramm&amp;rft.au=M.%20Greiner&amp;rft.date=2018-01-16"></span>
-      <div class="csl-entry" style="clear: left; ">
-        <div class="csl-left-margin" style="float: left; padding-right: 0.5em;text-align: right; width: 1em;">[2]</div><div class="csl-right-inline" style="margin: 0 .4em 0 1.5em;">T. Brown, J. Hörsch, and D. Schlachtberger, “PyPSA: Python for Power System Analysis,” <i>Journal of Open Research Software</i>, vol. 6, p. 4, Jan. 2018, doi: <a href="https://doi.org/10.5334/jors.188">10.5334/jors.188</a>.</div>
-      </div>
-      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=info%3Adoi%2F10.5334%2Fjors.188&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=PyPSA%3A%20Python%20for%20Power%20System%20Analysis&amp;rft.jtitle=Journal%20of%20Open%20Research%20Software&amp;rft.volume=6&amp;rft.aufirst=Tom&amp;rft.aulast=Brown&amp;rft.au=Tom%20Brown&amp;rft.au=Jonas%20H%C3%B6rsch&amp;rft.au=David%20Schlachtberger&amp;rft.date=2018-01-16&amp;rft.pages=4&amp;rft.issn=2049-9647&amp;rft.language=en"></span>
-      <div class="csl-entry" style="clear: left; ">
-        <div class="csl-left-margin" style="float: left; padding-right: 0.5em;text-align: right; width: 1em;">[3]</div><div class="csl-right-inline" style="margin: 0 .4em 0 1.5em;">J. Hörsch, “PyPSA-Eur: An open optimization model of the european transmission system (dataset),” 2017, [Online]. Available: <a href="https://github.com/FRESNA/pypsa-eur">https://github.com/FRESNA/pypsa-eur</a></div>
-      </div>
-      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=PyPSA-Eur%3A%20An%20open%20optimization%20model%20of%20the%20european%20transmission%20system%20(dataset)&amp;rft.aufirst=Jonas&amp;rft.aulast=H%C3%B6rsch&amp;rft.au=Jonas%20H%C3%B6rsch&amp;rft.date=2017"></span>
-      <div class="csl-entry" style="clear: left; ">
-        <div class="csl-left-margin" style="float: left; padding-right: 0.5em;text-align: right; width: 1em;">[4]</div><div class="csl-right-inline" style="margin: 0 .4em 0 1.5em;">M. Victoria, K. Zhu, T. Brown, G. B. Andresen, and M. Greiner, “The role of photovoltaics in a sustainable European energy system under variable CO2 emissions targets, transmission capacities, and costs assumptions,” <i>Prog Photovolt Res Appl</i>, p. pip.3198, Nov. 2019, doi: <a href="https://doi.org/10.1002/pip.3198">10.1002/pip.3198</a>.</div>
-      </div>
-      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=info%3Adoi%2F10.1002%2Fpip.3198&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=The%20role%20of%20photovoltaics%20in%20a%20sustainable%20European%20energy%20system%20under%20variable%20CO2%20emissions%20targets%2C%20transmission%20capacities%2C%20and%20costs%20assumptions&amp;rft.jtitle=Progress%20in%20Photovoltaics%3A%20Research%20and%20Applications&amp;rft.stitle=Prog%20Photovolt%20Res%20Appl&amp;rft.aufirst=Marta&amp;rft.aulast=Victoria&amp;rft.au=Marta%20Victoria&amp;rft.au=Kun%20Zhu&amp;rft.au=Tom%20Brown&amp;rft.au=Gorm%20B.%20Andresen&amp;rft.au=Martin%20Greiner&amp;rft.date=2019-11-14&amp;rft.pages=pip.3198&amp;rft.issn=1062-7995%2C%201099-159X&amp;rft.language=en"></span>
+    <div class="parent">
+      <ul>
+        <li><a href="https://doi.org/10.5334/jors.188" target="_blank" style="color:#004D40">Tom Brown, Jonas Hörsch, and David Schlachtberger, ‘PyPSA: Python for Power System Analysis’, Journal of Open Research Software, 6 (2018), 4</a> </li>
+        <li><a href="" target="_blank" style="color:#004D40">Brown, T., D. Schlachtberger, A. Kies, S. Schramm, and M. Greiner, ‘Synergies of Sector Coupling and Transmission Reinforcement in a Cost-Optimised, Highly Renewable European Energy System’, Energy, 160 (2018), 720–39</a></li>
+        <li><a href="https://doi.org/10.1016/j.energy.2018.06.222" target="_blank" style="color:#004D40"></a> </li>
+        <li><a href="" target="_blank" style="color:#004D40"></a> </li>
+        <li><a href="" target="_blank" style="color:#004D40"></a> </li>
+      </ul>
     </div>
-  </div>
+  </div>  
+
+
 
   <hr id="people">
-  <!-- Related Research -->
-  <div class="w3-container w3-padding-32 w3-center">  
-    <h3>People</h3><br>
-    <div class="w3-padding-32">
-      <p>
-      List of contributors.
-    </p>
+  <div class="w3-container w3-padding-32 w3-center">      
+    <h3>People (alphabetical)</h3><br>
+
+    <!-- Tom Brown, Martha Frysztacki, Johannes Hammp, Jonas Hörsch, Fabian Hofmann, Fabian Neumann, Max Parsen, Lisa Zeyen,  -->
+    <div class="w3-half">
+
+
+      <!-- Tom Brown -->
+      <div class="w3-row-padding w3-padding-16 w3-center" id="people">
+        <div class="w3-half">
+          <img src="https://w7.pngwing.com/pngs/473/661/png-transparent-smiley-emoticon-computer-icons-avatar-smiley.png" alt="tombrown" width=80% style="border-radius:50%">
+        </div>
+        <div class="w3-half w3-center">
+          <p style="text-decoration:underline;">Tom Brown</p>
+          <p>Professor 
+          </p>
+          <p>
+            Technical University Berlin
+          <p>
+            <a href="mailto:t.brown@tu-berlin.de" style="color:#004D40">Contact</a>
+          </p>
+          </p>
+        </div>
+      </div>
+
+      <!-- Johannes Hammp -->
+        <div class="w3-row-padding w3-padding-16 w3-center" id="people">
+          <div class="w3-half">
+            <img src="https://w7.pngwing.com/pngs/473/661/png-transparent-smiley-emoticon-computer-icons-avatar-smiley.png" alt="johanneshampp" width=80% style="border-radius:50%">
+          </div>
+          <div class="w3-half w3-center">
+            <p style="text-decoration:underline;">Johannes Hampp</p>
+            <p>Phd Student 
+            </p>
+            <p>
+              University Gießen
+            <p>
+              <a href="mailto:johannes.hampp@zeu.uni-giessen.de" style="color:#004D40">Contact</a>
+            </p>
+            </p>
+          </div>
+      </div>
+
+      <!-- Fabian Hofmann -->
+      <div class="w3-row-padding w3-padding-16 w3-center" id="people">
+        <div class="w3-half">
+          <img src="people/fabianhofmann_cropped.jpg" alt="fabianhofmann" width=80% style="border-radius:50%">
+        </div>
+        <div class="w3-half w3-center">
+          <p style="text-decoration:underline;">Fabian Hofmann</p>
+          <p>Postdoctoral Researcher 
+          </p>
+          <p>
+            Frankfurt Institute for Advanced Studies 
+          <p>
+            <a href="mailto:hofmann@fias.uni-frankfurt.de" style="color:#004D40">Contact</a>
+          </p>
+          </p>
+        </div>
+      </div>
+
+      <!-- Martha Victoria -->
+      <div class="w3-row-padding w3-padding-16 w3-center" id="people">
+        <div class="w3-half">
+          <img src="https://w7.pngwing.com/pngs/473/661/png-transparent-smiley-emoticon-computer-icons-avatar-smiley.png" alt="marthavictoria" width=80% style="border-radius:50%">
+        </div>
+        <div class="w3-half w3-center">
+          <p style="text-decoration:underline;">Martha Victoria</p>
+          <p>Assistant Professor 
+          </p>
+          <p>
+            Aarhus University 
+          <p>
+            <a href="mailto:mvp@eng.au.dk" style="color:#004D40">Contact</a>
+          </p>
+          </p>
+        </div>
+      </div>
+
+
     </div>
+
+    <div class="w3-half">
+
+      <!-- martha Frizstacki -->
+      <div class="w3-row-padding w3-padding-16 w3-center" id="people">
+        <div class="w3-half">
+          <img src="https://w7.pngwing.com/pngs/473/661/png-transparent-smiley-emoticon-computer-icons-avatar-smiley.png" alt="marthafrizstacki" width=80% style="border-radius:50%">
+        </div>
+        <div class="w3-half w3-center">
+          <p style="text-decoration:underline;">Martha Frizstacki</p>
+          <p>Phd Stundent 
+          </p>
+          <p>
+            Karlsruhe Institute of Technology 
+          <p>
+            <a href="mailto:martha.frysztacki@kit.edu" style="color:#004D40">Contact</a>
+          </p>
+          </p>
+        </div>
+      </div>
+
+
+        <!-- Jonas Hoersch -->
+        <div class="w3-row-padding w3-padding-16 w3-center" id="people">
+          <div class="w3-half">
+            <img src="https://w7.pngwing.com/pngs/473/661/png-transparent-smiley-emoticon-computer-icons-avatar-smiley.png" alt="jonashoersch" width=80% style="border-radius:50%">
+          </div>
+          <div class="w3-half w3-center">
+            <p style="text-decoration:underline;">Jonas Hörsch</p>
+            <p> Postdoctoral Researcher
+            </p>
+            <p>
+              Climate Analytics
+            <p>
+              <a href="mailto:jonas.hoersch@posteo.de" style="color:#004D40">Contact</a>
+            </p>
+            </p>
+          </div>
+      </div>
+
+        <!-- Fabian Neumann -->
+        <div class="w3-row-padding w3-padding-16 w3-center" id="people">
+          <div class="w3-half">
+            <img src="https://w7.pngwing.com/pngs/473/661/png-transparent-smiley-emoticon-computer-icons-avatar-smiley.png" alt="fabianneumann" width=80% style="border-radius:50%">
+          </div>
+          <div class="w3-half w3-center">
+            <p style="text-decoration:underline;">Fabian Neumann</p>
+            <p> Postdoctoral Researcher 
+            </p>
+            <p>
+              Technical University Berlin
+            <p>
+              <a href="mailto:fneum@mail.tu-berlin.de" style="color:#004D40">Contact</a>
+            </p>
+            </p>
+          </div>
+      </div>
+
+        <!-- Lisa Zeyen -->
+        <div class="w3-row-padding w3-padding-16 w3-center" id="people">
+          <div class="w3-half">
+            <img src="https://w7.pngwing.com/pngs/473/661/png-transparent-smiley-emoticon-computer-icons-avatar-smiley.png" alt="lisazeyen" width=80% style="border-radius:50%">
+          </div>
+          <div class="w3-half w3-center">
+            <p style="text-decoration:underline;">Lisa Zeyen</p>
+            <p> Postdoctoral Researcher 
+            </p>
+            <p>
+              Technical University Berlin
+            <p>
+              <a href="mailto:fneum@mail.tu-berlin.de" style="color:#004D40">Contact</a>
+            </p>
+            </p>
+          </div>
+      </div>
+
+
+    </div>
+
+
   </div>
   <hr>
 
@@ -165,8 +318,8 @@ a { text-decoration: none}
   <!-- Footer -->
   <footer class="w3-row-padding w3-padding-32">
     <div class="w3-half">
-      <h3>PyPSA</h3>
-      <p>Website info</p>
+      <img src="logo/logo-h.png" alt="network" style="height:2em">
+      <p>Energy system modelling framework</p>
       <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
     </div>
   
