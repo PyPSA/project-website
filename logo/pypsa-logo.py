@@ -52,3 +52,11 @@ add_triangle(ax)
 plt.savefig(f'logo-only.pdf', bbox_inches='tight', transparent=True)
 plt.savefig(f'logo-only.png', bbox_inches='tight', transparent=True, dpi=100)
 plt.show()
+
+
+#%% trianlge only github
+fig,ax = plt.subplots(1,1, subplot_kw={"projection":ccrs.PlateCarree()}, figsize=(10,10))
+add_triangle(ax)
+
+plt.savefig(f'logo-only-GH.png', transparent=True, dpi=100)
+plt.show()
