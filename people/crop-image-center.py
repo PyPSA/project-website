@@ -23,6 +23,6 @@ def centercrop(path):
     return im.crop((left, top, right, bottom))
 
 
-for path in ['fabianhofmann.jpg']:
+for path in ['fabianhofmann.jpg', 'fabianneumann.jpg', 'tombrown.jpg']:
     name = path.split('.')[0]
     centercrop(path).save(name+'_cropped.jpg')
