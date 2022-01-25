@@ -1,370 +1,407 @@
 <!DOCTYPE html>
 <html>
-<title>PyPSA Website</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
-<style>
-body {font-size:120%}
-a { text-decoration: none}
-.w3-quarter:hover {
-  padding:-1px;border:1px solid #E0E0E0;
-}
-div.parent {
+  <title>PyPSA Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+  <style>
+	body {
+	font-size:130%;
+	background-color: #FAFAFA;
+	color: #6f6070;
+	font-family: sans-serif;
+	}
+	hr {
+	border-top: 1px solid black;
+	}
+	a {
+	text-decoration: none
+	}
+	.w3-quarter {
+	background-color: #FAFAFA;
+	border-radius: 10%;
+	margin: 1.5%;
+	width: 30.25%;
+	}
+	.w3-quarter:hover {
+	background-color: #F0F0F0
+	}
+	a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: #FAFAFA;
+	background-color:#D4D4D4;
+	}
+	div.parent {
 	text-align: center;
 	}
-ul { 
+	ul {
 	display: inline-block; 
 	text-align: left; 
 	}
-li{
-  margin: 10px 0;
-}
-</style>
-<body>
+	li{
+	margin: 10px 0;
+	}
+	.topnav {
+	background-color: #FAFAFA;
+	overflow: hidden;
+	height: 3em;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+	}
+	.topnav a {
+	float: left;
+	color: #6f6070;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 20px;
+	}
+	.topnav a:hover {
+	background-color: #FAFAFA;
+	color: #d9a717;
+	border-radius: 100%;
+	}
+	.button {
+	background-color: #FAFAFA;
+	color: #6f6070;
+	border: 0px solid #6f6070;
+	border-radius: 0%;
+	}
+	.button:hover {
+	background-color: #FAFAFA;
+	color: #d9a717;
+	}
+	<!-- TUB color: #D0312 -->
+  </style>
+  <body class="is-boxed has-animations">
+	<script>
+	  document.getElementById(header).src = 'gif.gif?time=' + Date.now();
+	</script>
 
-<!-- Sidebar (hidden by default) -->
-<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()"
-  class="w3-bar-item w3-button">Close Menu</a>
-  <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button">Projects</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
-  <a href="#research" onclick="w3_close()" class="w3-bar-item w3-button">Research</a>
-  <a href="#people" onclick="w3_close()" class="w3-bar-item w3-button">People</a>
-</nav>
+	 <div class="topnav" style="margin-right:5%">
+	   <a href="#home"> <div style="float:left; color:black; margin-right:.5em; margin-top:.05em; opacity:.5">☰</div>Home</a>
+	   <a> | </a>
+	   <a href="#projects"><div style="float:left; margin-top:-.2em; margin-right:.25em"><img src="icons/lightbulb.png" style="width:1.5em; opacity:.5"></div>Projects</a>
+	   <a> | </a>
+	   <a href="#about"><div style="float:left; margin-top:-.1em; margin-right:.4em"><img src="icons/info.png" style="width:1.25em; opacity:.5"></div>About</a>
+	   <a> | </a>
+	   <a href="#research"><img src="icons/research.png" style="width:1.5em; opacity:.5"> Research</a>
+	   <a> | </a>
+	   <a href="#people"><div style="float:left; margin-top:-.1em; margin-right:.4em"><img src="icons/group.png" style="width:1.5em; opacity:.5"></div>People</a>
+	   <div class="w3-right w3-padding" style="margin-right:1%; margin-top:-.2em"> <img src="logo/logo-h.png" onclick="this.src='img/gifs/logo-h-gif.gif'" id="header" alt="logo" style="height:2.5em"> </div>
+	 </div>
 
-<!-- Top menu -->
-<div class="w3-top">
-  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
-    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
-    <!-- <div class="w3-center w3-padding-16">PyPSA</div> -->
-    <div class="w3-center w3-padding-16"> <img src="logo/logo-h.png" alt="network" style="height:3em"> </div> 
-  </div>
-</div>
-  
+	 <!-- !PAGE CONTENT! -->
+	 <hr id="home"></hr>
+	 <div class="w3-main w3-content w3-padding w3-center w3-container" style="max-width:1200px; margin-top:10%;">
+	   <div style="float:left; margin-top:5%;" class="w3-animate-opacity">
+		 <img src="img/gifs/logo-only-gif.gif"  onclick="this.src='img/gifs/logo-only-gif.gif'" alt="logo" id="header" class="w3-image" style="height:17em;">
+	   </div>
+	   <div style="width:55%; float:left; margin:5%">
+	     <p align="left" class="w3-animate-left" style="font-size:175%"><b>Welcome to the PyPSA Community!</b></p>
+	     <p align="left" class="w3-animate-left" style="margin-bottom:20%">
+		   PyPSA stands for <b>Python for Power System Analysis</b>.
+		   The aim of this project is to provide an open-source python environment for state-of-the-art energy system modelling.
+		   Here you find links to projects and research related to the PyPSA environment. <br><br>
+		 </p>
+	   </div>
 
-</p>
-<!-- !PAGE CONTENT! -->
-<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
-  <p style="margin-bottom:3em;">
-  <p>Welcome to the <b>PyPSA</b> project! PyPSA stands for <b>Python for Power System Analysis</b>. The aim of this project is to provide an open-source python environment for state-of-the-art energy system modelling. Here you find links to projects and research related to the PyPSA environment. </p><br>
-  <hr>
-  <!-- First Project Grid-->
-  <div class="w3-row-padding w3-padding-16 w3-center" id="projects">
-    <div class="w3-quarter">
-      <a href="https://github.com/PyPSA/pypsa" target="_blank">
-        <img src="img/pypsa.png" alt="network" style="height:15em" class="w3-image">
-        <h3>PyPSA</h3>
-        <p>A python software toolbox for simulating and optimising modern power systems.</p>
-        <p><a href="https://pypsa.readthedocs.io/en/latest/" target="_blank" style="color:#004D40"> Documentation <span>&#8594;</span></a> </p>
-      </a>
-    </div>
-    <div class="w3-quarter">
-      <a href="https://github.com/PyPSA/atlite" target="_blank">
-        <img src="img/atlite.png" alt="Weather map" style="height:15em" class="w3-image">
-        <h3>Atlite</h3>
-        <p>A Lightweight Python Package for Calculating Renewable Power Potentials and Time Series</p>
-        <p>Source code </p>
-        <p><a href="https://atlite.readthedocs.io/en/latest/" target="_blank" style="color:#004D40"> Documentation <span>&#8594;</span></a> </p>
-      </a>
-    </div>
-    <div class="w3-quarter">
-      <a href="https://github.com/PyPSA/pypsa-eur" target="_blank">
-        <img src="img/pypsa-eur.png" alt="European Transmission Network" style="height:15em" class="w3-image">
-        <h3>PyPSA-Eur</h3>
-        <p>An open optimisation model of the European transmission system.</p>
-        <p><a href="https://pypsa-eur.readthedocs.io/en/latest/" target="_blank" style="color:#004D40"> Documentation <span>&#8594;</span></a> </p>
-      </a>
-    </div>
-    <div class="w3-quarter">
-      <a href="https://github.com/PyPSA/pypsa-eur-sec" target="_blank">
-        <img src="img/pypsa-eur-sec.png" alt="Sector coupled model" style="height:15em" class="w3-image">
-        <h3>PyPSA-Eur-Sec</h3>
-        <p>A sector-coupled open optimisation model of the European energy system.</p>
-        <p><a href="https://pypsa-eur-sec.readthedocs.io/en/latest/" target="_blank" style="color:#004D40"> Documentation <span>&#8594;</span></a> </p>
-      </a>
-    </div>
-  </div>
+	   <!-- Projects Section -->
+	   <div class="w3-container w3-row-padding w3-padding-16 w3-right" id="projects">
+		 <hr id="projects" style="margin-top:5%"></hr>
+		 <h2 class="w3-animate-opacity"><img src="icons/lightbulb.png" style="width:2em; margin-top:-.4em; margin-right:.25em; opacity:.5"><b>Projects</b></h2>
+		 <div class="w3-quarter w3-animate-left">
+		   <a href="https://github.com/PyPSA/pypsa" target="_blank">
+			 <!-- <img src="img/pypsa.png" alt="network" style="height:15em" class="w3-image"> -->
+			 <h3><b>PyPSA</b></h3>
+			 <img src="img/pypsa.png" onmouseover="this.src='img/gifs/pypsa.gif'" onmouseout="this.src='img/pypsa.png'" alt="network" style="height:15em" class="w3-image">
+			 <!-- <img src="img/pypsa.png" alt="network" style="height:15em" class="w3-image"> -->
+			 <p>A python software toolbox for simulating and optimising modern power systems.</p>
+			 <p><a href="https://pypsa.readthedocs.io/en/latest/" target="_blank" style="color:#004D40"> Documentation <span>&raquo;</span></a> </p>
+		   </a>
+		 </div>
+		 <div class="w3-quarter w3-animate-left" style="float:left;">
+		   <a href="https://github.com/PyPSA/atlite" target="_blank">
+			 <h3><b>Atlite</b></h3>
+			 <img src="img/atlite.png" onmouseover="this.src='img/gifs/atlitegif.gif'" onmouseout="this.src='img/atlite.png'" alt="network" style="height:15em" class="w3-image">
+			 <!-- <img src="img/atlite.png" alt="Weather map" style="height:15em" class="w3-image"> -->
+			 <p>A Lightweight Python Package for Calculating Renewable Power Potentials and Time Series</p>
+			 <p>Source code </p>
+			 <p><a href="https://atlite.readthedocs.io/en/latest/" target="_blank" style="color:#004D40"> Documentation <span>&raquo;</span></a> </p>
+		   </a>
+		 </div>
+		 <div class="w3-quarter w3-animate-left" style="float:left;">
+		   <a href="https://github.com/PyPSA/pypsa-eur" target="_blank">
+			 <h3><b>PyPSA-Eur</b></h3>
+			 <img src="img/pypsa-eur.png" onmouseover="this.src='img/gifs/pypsa-eur.gif'" onmouseout="this.src='img/pypsa-eur.png'" alt="European Transmission Network" style="height:15em" class="w3-image">
+			 <!-- <img src="img/pypsa-eur.png" alt="European Transmission Network" style="height:15em" class="w3-image"> -->
+			 <p>An open optimisation model of the European transmission system.</p>
+			 <p><a href="https://pypsa-eur.readthedocs.io/en/latest/" target="_blank" style="color:#004D40"> Documentation <span>&raquo;</span></a> </p>
+		   </a>
+		 </div>
+	   </div>
 
-  <div class="w3-row-padding w3-padding-16 w3-center" id="projects">
-    <div class="w3-quarter">
-      <a href="https://github.com/pypsa/linopy" target="_blank">
-        <img src="img/linopy.png" alt="linpopy" style="height:15em" class="w3-image">
-        <h3>Linopy</h3>
-        <p>Linear optimization interface for N-D labeled variables.</p>
-        <p><a href="https://linopy.readthedocs.io/en/latest/" target="_blank" style="color:#004D40"> Documentation <span>&#8594;</span></a> </p>
-      </a>
-    </div>
-    <div class="w3-quarter">
-      <a href="https://github.com/FRESNA/powerplantmatching" target="_blank">
-        <img src="img/powerplantmatching.png" alt="Sector coupled model" style="height:15em" class="w3-image">
-        <h3>Powerplantmatching</h3>
-        <p>A toolset for cleaning, standardizing and combining multiple power plant databases.</p>
-        <p><a href="https://powerplantmatching.readthedocs.io/en/latest/" target="_blank" style="color:#004D40"> Documentation <span>&#8594;</span></a> </p>
-      </a>
-    </div>
-    <div class="w3-quarter">
-      <a href="https://model.energy/" target="_blank">
-        <img src="img/model-energy.png" alt="Sector coupled model" style="height:15em" class="w3-image">
-        <h3>Model Energy</h3>
-        <p>An online toolkit for calculating renewable electricity supplies.</p>
-      </a>
-    </div>
-  </div>
-  
-  
-  <hr id="about">
+	   <div class="w3-row-padding w3-padding-16 w3-center" id="projects">
+		 <div class="w3-quarter w3-animate-left" style="float:left;">
+		   <a href="https://github.com/PyPSA/pypsa-eur-sec" target="_blank">
+			 <h3><b>PyPSA-Eur-Sec</b></h3>
+			 <img src="img/pypsa-eur-sec.png" alt="Sector coupled model" style="height:15em" class="w3-image">
+			 <p>A sector-coupled open optimisation model of the European energy system.</p>
+			 <p><a href="https://pypsa-eur-sec.readthedocs.io/en/latest/" target="_blank" style="color:#004D40"> Documentation <span>&raquo;</span></a> </p>
+		   </a>
+		 </div>
+		 <div class="w3-quarter w3-animate-left" style="float:left;">
+		   <a href="https://github.com/pypsa/linopy" target="_blank">
+			 <h3><b>Linopy</b></h3>
+			 <img src="img/linopy.png" onmouseover="this.src='img/gifs/linopy.gif'" onmouseout="this.src='img/linopy.png'" alt="linpopy" style="height:15em" class="w3-image">
+			 <!-- <img src="img/linopy.png" alt="linpopy" style="height:15em" class="w3-image"> -->
+			 <p>Linear optimization interface for N-D labeled variables.</p>
+			 <p><a href="https://linopy.readthedocs.io/en/latest/" target="_blank" style="color:#004D40"> Documentation <span>&raquo;</span></a> </p>
+		   </a>
+		 </div>
+		 <div class="w3-quarter w3-animate-left" style="float:left;">
+		   <a href="https://github.com/FRESNA/powerplantmatching" target="_blank">
+			 <h3><b>Powerplantmatching</b></h3>
+			 <img src="img/powerplantmatching.png" onmouseover="this.src='img/gifs/powerplantmatching.gif'" onmouseout="this.src='img/powerplantmatching.png'" alt="powerplantmatching" style="height:15em" class="w3-image">
+			 <!-- <img src="img/powerplantmatching.png" alt="powerplantmatching" style="height:15em" class="w3-image"> -->
+			 <p>A toolset for cleaning, standardizing and combining multiple power plant databases.</p>
+			 <p><a href="https://powerplantmatching.readthedocs.io/en/latest/" target="_blank" style="color:#004D40"> Documentation <span>&raquo;</span></a></p>
+		   </a>
+		 </div>
+	   </div>
 
-  <!-- About Section -->
-  <div class="w3-container w3-padding-32 w3-center">  
-    <h3>About</h3><br>
-    <!-- <img src="https://cdn.pixabay.com/photo/2016/01/19/17/15/windmills-1149604_960_720.jpg" alt="Renewables" width=800 class="w3-image" style="display:block;margin:auto"> -->
-    <div class="w3-padding-32">
-      <p>
-      The PyPSA project is maintained and developed by us, a group of researchers from different institutes and research fields. <br>
-      Our vision is to provide a free, user-friendly and performant model environment to support a smooth energy transition around the world. The packages enable to go all the way from calculating renewable energy potentials to creating complex electricity networks and cost-optimizing the pathway of a whole energy system. All packages are build in a modular sense so that they may be used independently from each other but interact easily.  
-    </p>
-    <p>
-      We are very happy about and constructive feedback and contributions to the <a href="https://github.com/PyPSA/" target="_blank" style="color:#004D40">Git-repositories</a>!  
-    </p>
-    </div>
-  </div>
-
-  <hr id="research">
-  <!-- Related Research -->
-  <div class="w3-container w3-padding-32 w3-center">  
-    <h3>Related Research</h3><br>
-    <p>
-      Numerous research publications are build on the PyPSA environment. Here we highlight some of them. For an extended list, have a look at the up-to-date <a href="https://scholar.google.de/scholar?hl=de&as_sdt=0%2C5&q=pypsa+%7C+atlite+%7C+powerplantmatching+&btnG=", target="_blank" style="color:#004D40">Google Scholar query</a>.
-    </p>
-    <div class="parent">
-      <ul>
-        <li><a href="http://arxiv.org/abs/2107.01092" target="_blank" style="color:#004D40">Hampp, Johannes, Michael Düren, and Tom Brown, ‘Import Options for Chemical Energy Carriers from Renewable Sources to Germany’, ArXiv:2107.01092 [Physics] (2021)</a> </li>
-
-        <li><a href="https://doi.org/10.21105/joss.03294" target="_blank" style="color:#004D40">Hofmann, Fabian, Johannes Hampp, Fabian Neumann, Tom Brown, and Jonas Hörsch, ‘Atlite: A Lightweight Python Package for Calculating Renewable Power Potentials and Time Series’, Journal of Open Source Software, 6.62 (2021), 3294</a> </li>
-        
-        <li><a href="https://doi.org/10.1016/j.apenergy.2021.116726" target="_blank" style="color:#004D40">Frysztacki, Martha Maria, Jonas Hörsch, Veit Hagenmeyer, and Tom Brown, ‘The Strong Effect of Network Resolution on Electricity System Models with High Shares of Wind and Solar’, Applied Energy, 291 (2021), 116726</a> </li>
-
-        <li><a href="https://doi.org/10.1016/j.epsr.2020.106690" target="_blank" style="color:#004D40">Neumann, Fabian, and Tom Brown, ‘The Near-Optimal Feasible Space of a Renewable Power System Model’, Electric Power Systems Research, 190 (2021), 106690</a> </li>
-        
-        <li><a href="https://doi.org/10.1038/s41467-020-20015-4" target="_blank" style="color:#004D40">Victoria, Marta, Kun Zhu, Tom Brown, Gorm B. Andresen, and Martin Greiner, ‘Early Decarbonisation of the European Energy System Pays Off’, Nature Communications, 11.1 (2020), 6223</a> </li>
-
-        <li><a href="https://doi.org/10.1016/j.esr.2018.11.004" target="_blank" style="color:#004D40">Gotzens, Fabian, Heidi Heinrichs, Jonas Hörsch, and Fabian Hofmann, ‘Performing Energy Modelling Exercises in a Transparent Way - The Issue of Data Quality in Power Plant Databases’, Energy Strategy Reviews, 23 (2019), 1–12</a> </li>
-        
-        <li><a href="" target="_blank" style="color:#004D40">Brown, T., D. Schlachtberger, A. Kies, S. Schramm, and M. Greiner, ‘Synergies of Sector Coupling and Transmission Reinforcement in a Cost-Optimised, Highly Renewable European Energy System’, Energy, 160 (2018), 720–39</a></li>
-        
-        <li><a href="https://doi.org/10.5334/jors.188" target="_blank" style="color:#004D40">Tom Brown, Jonas Hörsch, and David Schlachtberger, ‘PyPSA: Python for Power System Analysis’, Journal of Open Research Software, 6 (2018), 4</a> </li>
-
-        <li><a href="https://doi.org/10.1016/j.esr.2018.08.012" target="_blank" style="color:#004D40">Hörsch, Jonas, Fabian Hofmann, David Schlachtberger, and Tom Brown, ‘PyPSA-Eur: An Open Optimisation Model of the European Transmission System’, Energy Strategy Reviews, 22 (2018), 207–15</a> </li>
-
-        <!-- <li><a href="" target="_blank" style="color:#004D40"></a> </li> -->
-      </ul>
-    </div>
-  </div>  
-
-
-
-  <hr id="people">
-  <div class="w3-container w3-padding-32 w3-center">      
-    <h3>People (alphabetical)</h3><br>
-
-    <!-- Tom Brown, Martha Frysztacki, Johannes Hammp, Jonas Hörsch, Fabian Hofmann, Fabian Neumann, Max Parsen, Lisa Zeyen,  -->
-    <div class="w3-half">
+	   <div class="w3-row-padding w3-padding-16 w3-center" id="projects">
+		 <div class="w3-quarter w3-animate-left" style="float:left;">
+		   <a href="https://model.energy/" target="_blank">
+			 <h3><b>Model Energy</b></h3>
+			 <!-- <img src="img/model-energy.png" alt="modelenergy" style="height:15em" class="w3-image"> -->
+			 <img src="img/model-energy.png" onmouseover="this.src='img/gifs/model-energy.gif'" onmouseout="this.src='img/model-energy.png'" alt="modelenergy" style="height:15em" class="w3-image">
+			 <p>An online toolkit for calculating renewable electricity supplies.</p>
+		   </a>
+		 </div>
+	   </div>
 
 
-      <!-- Tom Brown -->
-      <div class="w3-row-padding w3-padding-16 w3-center" id="people">
-        <div class="w3-half">
-          <img src="people/tombrown_cropped.jpg" alt="tombrown" width=80% style="border-radius:50%">
-        </div>
-        <div class="w3-half w3-center">
-          <p style="text-decoration:underline;">Tom Brown</p>
-          <p>Professor 
-          </p>
-          <p>
-            Technical University Berlin
-          <p>
-            <a href="mailto:t.brown@tu-berlin.de" style="color:#004D40">Contact</a>
-          </p>
-          </p>
-        </div>
-      </div>
+	   <!-- About Section -->
+	   <div class="w3-container w3-padding-32 w3-center" id="about">
+		 <hr id="about" style="margin-top:4%"></hr>
+		 <h2 class="w3-animate-opacity"><img src="icons/info.png" style="width:1.5em; margin-top:-.1em; margin-right:.4em; opacity:.5"><b>About</b></h2>
+		 <!-- <img src="https://cdn.pixabay.com/photo/2016/01/19/17/15/windmills-1149604_960_720.jpg" alt="Renewables" width=800 class="w3-image" style="display:block;margin:auto"> -->
+		 <div class="w3-padding-32 w3-animate-left">
+		   <p align='justify'>
+			 The PyPSA project is maintained and developed by us, a group of researchers from different institutes and research fields. <br>
+			 Our vision is to provide a free, user-friendly and performant model environment to support a smooth energy transition around the world. The packages enable to go all the way from calculating renewable energy potentials to creating complex electricity networks and cost-optimizing the pathway of a whole energy system. All packages are build in a modular sense so that they may be used independently from each other but interact easily.
+		   </p>
+		   <p>
+			 We are very happy about and constructive feedback and contributions to the <a href="https://github.com/PyPSA/" target="_blank" style="color:#004D40">Git-repositories</a>!
+		   </p>
+		 </div>
+	   </div>
 
-      <!-- Johannes Hammp -->
-        <div class="w3-row-padding w3-padding-16 w3-center" id="people">
-          <div class="w3-half">
-            <img src="people/johanneshampp.jpg" alt="johanneshampp" width=80% style="border-radius:50%">
-          </div>
-          <div class="w3-half w3-center">
-            <p style="text-decoration:underline;">Johannes Hampp</p>
-            <p>Phd Student 
-            </p>
-            <p>
-              University Gießen
-            <p>
-              <a href="mailto:johannes.hampp@zeu.uni-giessen.de" style="color:#004D40">Contact</a>
-            </p>
-            </p>
-          </div>
-      </div>
-
-      <!-- Fabian Hofmann -->
-      <div class="w3-row-padding w3-padding-16 w3-center" id="people">
-        <div class="w3-half">
-          <img src="people/fabianhofmann_cropped.jpg" alt="fabianhofmann" width=80% style="border-radius:50%">
-        </div>
-        <div class="w3-half w3-center">
-          <p style="text-decoration:underline;">Fabian Hofmann</p>
-          <p>Postdoctoral Researcher 
-          </p>
-          <p>
-            Frankfurt Institute for Advanced Studies 
-          <p>
-            <a href="mailto:hofmann@fias.uni-frankfurt.de" style="color:#004D40">Contact</a>
-          </p>
-          </p>
-        </div>
-      </div>
-
-      <!-- Marta Victoria -->
-      <div class="w3-row-padding w3-padding-16 w3-center" id="people">
-        <div class="w3-half">
-          <img src="people/martavictoria_cropped.jpg" alt="martavictoria" width=80% style="border-radius:50%">
-        </div>
-        <div class="w3-half w3-center">
-          <p style="text-decoration:underline;">Marta Victoria</p>
-          <p>Assistant Professor 
-          </p>
-          <p>
-            Aarhus University 
-          <p>
-            <a href="mailto:mvp@eng.au.dk" style="color:#004D40">Contact</a>
-          </p>
-          </p>
-        </div>
-      </div>
-
-
-    </div>
-
-    <div class="w3-half">
-
-      <!-- martha Frizstacki -->
-      <div class="w3-row-padding w3-padding-16 w3-center" id="people">
-        <div class="w3-half">
-          <img src="https://w7.pngwing.com/pngs/473/661/png-transparent-smiley-emoticon-computer-icons-avatar-smiley.png" alt="marthafrizstacki" width=80% style="border-radius:50%">
-        </div>
-        <div class="w3-half w3-center">
-          <p style="text-decoration:underline;">Martha Frizstacki</p>
-          <p>Phd Student 
-          </p>
-          <p>
-            Karlsruhe Institute of Technology 
-          <p>
-            <a href="mailto:martha.frysztacki@kit.edu" style="color:#004D40">Contact</a>
-          </p>
-          </p>
-        </div>
-      </div>
-
-
-        <!-- Jonas Hoersch -->
-        <div class="w3-row-padding w3-padding-16 w3-center" id="people">
-          <div class="w3-half">
-            <img src="https://w7.pngwing.com/pngs/473/661/png-transparent-smiley-emoticon-computer-icons-avatar-smiley.png" alt="jonashoersch" width=80% style="border-radius:50%">
-          </div>
-          <div class="w3-half w3-center">
-            <p style="text-decoration:underline;">Jonas Hörsch</p>
-            <p> Postdoctoral Researcher
-            </p>
-            <p>
-              Climate Analytics
-            <p>
-              <a href="mailto:jonas.hoersch@posteo.de" style="color:#004D40">Contact</a>
-            </p>
-            </p>
-          </div>
-      </div>
-
-        <!-- Fabian Neumann -->
-        <div class="w3-row-padding w3-padding-16 w3-center" id="people">
-          <div class="w3-half">
-            <img src="people/fabianneumann_cropped.jpg" alt="fabianneumann" width=80% style="border-radius:50%">
-          </div>
-          <div class="w3-half w3-center">
-            <p style="text-decoration:underline;">Fabian Neumann</p>
-            <p> Postdoctoral Researcher 
-            </p>
-            <p>
-              Technical University Berlin
-            <p>
-              <a href="mailto:fneum@mail.tu-berlin.de" style="color:#004D40">Contact</a>
-            </p>
-            </p>
-          </div>
-      </div>
-
-        <!-- Lisa Zeyen -->
-        <div class="w3-row-padding w3-padding-16 w3-center" id="people">
-          <div class="w3-half">
-            <img src="people/lisazeyen.jpg" alt="lisazeyen" width=80% style="border-radius:50%">
-          </div>
-          <div class="w3-half w3-center">
-            <p style="text-decoration:underline;">Lisa Zeyen</p>
-            <p> Postdoctoral Researcher 
-            </p>
-            <p>
-              Technical University Berlin
-            <p>
-              <a href="mailto:fneum@mail.tu-berlin.de" style="color:#004D40">Contact</a>
-            </p>
-            </p>
-          </div>
-      </div>
-
-
-    </div>
-
-
-  </div>
-  <hr>
+	   <!-- Related Research -->
+	   <div class="w3-container w3-padding-32 w3-center" id="research">
+		 <hr id="research" style="margin-top:4%"></hr>
+		 <h2 class="w3-animate-opacity"><img src="icons/research.png" style="width:2em; opacity:.5"> <b>Related Research</b></h2><br>
+		 <p align="justify" class="w3-animate-left">
+		   Numerous research publications are build on the PyPSA environment. Here we highlight some of them. For an extended list, have a look at the up-to-date <a href="https://scholar.google.de/scholar?hl=de&as_sdt=0%2C5&q=pypsa+%7C+atlite+%7C+powerplantmatching+&btnG=", target="_blank" style="color:#004D40">Google Scholar query</a>.
+		 </p>
+		 <div class="parent w3-animate-left">
+		   <ul>
+			 <li><a href="http://arxiv.org/abs/2107.01092" target="_blank" style="color:#004D40">Hampp, Johannes, Michael Düren, and Tom Brown, ‘Import Options for Chemical Energy Carriers from Renewable Sources to Germany’, ArXiv:2107.01092 [Physics] (2021)</a> </li>
+			 <li><a href="https://doi.org/10.21105/joss.03294" target="_blank" style="color:#004D40">Hofmann, Fabian, Johannes Hampp, Fabian Neumann, Tom Brown, and Jonas Hörsch, ‘Atlite: A Lightweight Python Package for Calculating Renewable Power Potentials and Time Series’, Journal of Open Source Software, 6.62 (2021), 3294</a> </li>
+			 <li><a href="https://doi.org/10.1016/j.apenergy.2021.116726" target="_blank" style="color:#004D40">Frysztacki, Martha Maria, Jonas Hörsch, Veit Hagenmeyer, and Tom Brown, ‘The Strong Effect of Network Resolution on Electricity System Models with High Shares of Wind and Solar’, Applied Energy, 291 (2021), 116726</a> </li>
+			 <li><a href="https://doi.org/10.1016/j.epsr.2020.106690" target="_blank" style="color:#004D40">Neumann, Fabian, and Tom Brown, ‘The Near-Optimal Feasible Space of a Renewable Power System Model’, Electric Power Systems Research, 190 (2021), 106690</a> </li>
+			 <li><a href="https://doi.org/10.1038/s41467-020-20015-4" target="_blank" style="color:#004D40">Victoria, Marta, Kun Zhu, Tom Brown, Gorm B. Andresen, and Martin Greiner, ‘Early Decarbonisation of the European Energy System Pays Off’, Nature Communications, 11.1 (2020), 6223</a> </li>
+			 <li><a href="https://doi.org/10.1016/j.esr.2018.11.004" target="_blank" style="color:#004D40">Gotzens, Fabian, Heidi Heinrichs, Jonas Hörsch, and Fabian Hofmann, ‘Performing Energy Modelling Exercises in a Transparent Way - The Issue of Data Quality in Power Plant Databases’, Energy Strategy Reviews, 23 (2019), 1–12</a> </li>
+			 <li><a href="" target="_blank" style="color:#004D40">Brown, T., D. Schlachtberger, A. Kies, S. Schramm, and M. Greiner, ‘Synergies of Sector Coupling and Transmission Reinforcement in a Cost-Optimised, Highly Renewable European Energy System’, Energy, 160 (2018), 720–39</a></li>
+			 <li><a href="https://doi.org/10.5334/jors.188" target="_blank" style="color:#004D40">Tom Brown, Jonas Hörsch, and David Schlachtberger, ‘PyPSA: Python for Power System Analysis’, Journal of Open Research Software, 6 (2018), 4</a> </li>
+			 <li><a href="https://doi.org/10.1016/j.esr.2018.08.012" target="_blank" style="color:#004D40">Hörsch, Jonas, Fabian Hofmann, David Schlachtberger, and Tom Brown, ‘PyPSA-Eur: An Open Optimisation Model of the European Transmission System’, Energy Strategy Reviews, 22 (2018), 207–15</a> </li>
+			 <!-- <li><a href="" target="_blank" style="color:#004D40"></a> </li> -->
+		   </ul>
+		 </div>
+	   </div>
 
 
 
-  <!-- Footer -->
-  <footer class="w3-row-padding w3-padding-32">
-    <div class="w3-half">
-      <img src="logo/logo-h.png" alt="network" style="height:2em">
-      <p>Energy system modelling framework</p>
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-    </div>
-  
-    <div class="w3-half w3-serif">
-      <h3>TAGS</h3>
-      <p>
-        <span class="w3-tag w3-dark-grey w3-margin-bottom">Energy System Modelling</span> 
-        <span class="w3-tag w3-dark-grey w3-margin-bottom">Python</span> 
-        <span class="w3-tag w3-dark-grey w3-margin-bottom">Energy Transition</span>
-        <span class="w3-tag w3-dark-grey w3-margin-bottom">Power System Optimization</span> 
-        <span class="w3-tag w3-dark-grey w3-margin-bottom">Renewable Energy</span> 
-      </p>
-    </div>
-  </footer>
+	   <div class="w3-container w3-padding-32 w3-center" id="people">
+		 <hr id="people" style="margin-top:4%"></hr>
+		 <h2 class="w3-animate-opacity"><img src="icons/group.png" style="width:2em; margin-top:-.1em; margin-right:.4em; opacity:.5"><b>People (alphabetical)</b></h2><br>
+		 
+		 <!-- Tom Brown, Johannes Hammp, Fabian Hofmann, Jonas Hörsch, Martha Maria, Fabian Neumann, Marta Victoria, Lisa Zeyen,  -->
+		 <div class="w3-half">
+		   <!-- Tom Brown -->
+		   <div class="w3-row-padding w3-padding-16 w3-center" id="people">
+			 <div class="w3-half w3-animate-opacity">
+			   <img src="people/tombrown_cropped.jpg" alt="tombrown" width=80% style="border-radius:50%">
+			 </div>
+			 <div class="w3-half w3-center w3-animate-left">
+			   <p><b>Tom Brown</b>, Professor</p>
+			   <p>
+				 Technical University of Berlin<br>
+				 <a href="mailto:t.brown@tu-berlin.de"><img src="icons/email.png"; style="width:2em; opacity:.5"></a>
+			   </p>
+			 </div>
+		   </div>
 
-<!-- End page content -->
-</div>
+		   <!-- Johannes Hammp -->
+           <div class="w3-row-padding w3-padding-16 w3-center" id="people">
+			 <div class="w3-half w3-animate-opacity">
+               <img src="people/johanneshampp.jpg" alt="johanneshampp" width=80% style="border-radius:50%">
+			 </div>
+			 <div class="w3-half w3-center w3-animate-left">
+               <p><b>Johannes Hampp</b>, PhD Student</p>
+               <p>
+				 University of Gießen<br>
+				 <a href="mailto:johannes.hampp@zeu.uni-giessen.de"><img src="icons/email.png"; style="width:2em; opacity:.5"></a>
+			   </p>
+			 </div>
+		   </div>
 
-<script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-}
- 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-</script>
+		   <!-- Fabian Hofmann -->
+		   <div class="w3-row-padding w3-padding-16 w3-center" id="people">
+			 <div class="w3-half w3-animate-opacity">
+			   <img src="people/fabianhofmann_cropped.jpg" alt="fabianhofmann" width=80% style="border-radius:50%">
+			 </div>
+			 <div class="w3-half w3-center w3-animate-left">
+			   <p><b>Fabian Hofmann</b>, Postdoctoral Researcher</p>
+			   <p>
+				 Frankfurt Institute for Advanced Studies<br>
+				 <a href="mailto:hofmann@fias.uni-frankfurt.de"><img src="icons/email.png"; style="width:2em; opacity:.5"></a>
+			   </p>
+			 </div>
+		   </div>
 
-</body>
+		   <!-- Jonas Hoersch -->
+           <div class="w3-row-padding w3-padding-16 w3-center" id="people">
+			 <div class="w3-half w3-animate-opacity">
+               <img src="https://w7.pngwing.com/pngs/473/661/png-transparent-smiley-emoticon-computer-icons-avatar-smiley.png" alt="jonashoersch" width=80% style="border-radius:50%">
+			 </div>
+			 <div class="w3-half w3-center w3-animate-left">
+               <p><b>Jonas Hörsch</b>, Postdoctoral Researcher</p>
+               <p>
+				 Climate Analytics<br>
+				 <a href="mailto:jonas.hoersch@posteo.de"><img src="icons/email.png"; style="width:2em; opacity:.5"></a>
+			   </p>
+			 </div>
+		   </div>
+
+		 </div>
+		 <div class="w3-half">
+		   <!-- Martha Maria -->
+		   <div class="w3-row-padding w3-padding-16 w3-center" id="people">
+			 <div class="w3-half w3-animate-opacity">
+			   <img src="people/marthamaria_cropped.jpg" alt="marthamaria" width=80% style="border-radius:50%">
+			 </div>
+			 <div class="w3-half w3-center w3-animate-left">
+			   <p><b>Martha Maria</b>, PhD Student</p>
+			   <p>
+				 Karlsruhe Institute of Technology<br>
+				 <a href="mailto:martha.frysztacki@kit.edu"><img src="icons/email.png"; style="width:2em; opacity:.5"></a>
+			   </p>
+			 </div>
+		   </div>
+
+           <!-- Fabian Neumann -->
+           <div class="w3-row-padding w3-padding-16 w3-center" id="people">
+			 <div class="w3-half w3-animate-opacity">
+               <img src="people/fabianneumann_cropped.jpg" alt="fabianneumann" width=80% style="border-radius:50%">
+			 </div>
+			 <div class="w3-half w3-center w3-animate-left">
+               <p><b>Fabian Neumann</b>, Postdoctoral Researcher</p>
+               <p>
+				 Technical University of Berlin<br>
+				 <a href="mailto:fneum@mail.tu-berlin.de"><img src="icons/email.png"; style="width:2em; opacity:.5"></a>
+			   </p>
+			 </div>
+		   </div>
+
+		   <!-- Marta Victoria -->
+		   <div class="w3-row-padding w3-padding-16 w3-center" id="people">
+			 <div class="w3-half w3-animate-opacity">
+			   <img src="people/martavictoria_cropped.jpg" alt="martavictoria" width=80% style="border-radius:50%">
+			 </div>
+			 <div class="w3-half w3-center w3-animate-left">
+			   <p><b>Marta Victoria</b>, Assistant Professor</p>
+			   <p>
+				 Aarhus University <br>
+				 <a href="mailto:mvp@eng.au.dk"><img src="icons/email.png"; style="width:2em; opacity:.5"></a>
+			   </p>
+			 </div>
+		   </div>
+
+           <!-- Lisa Zeyen -->
+           <div class="w3-row-padding w3-padding-16 w3-center" id="people">
+			 <div class="w3-half w3-animate-opacity">
+               <img src="people/lisazeyen.jpg" alt="lisazeyen" width=80% style="border-radius:50%">
+			 </div>
+			 <div class="w3-half w3-center w3-animate-left">
+               <p><b>Lisa Zeyen</b>, PhD Student<p>
+               <p>
+				 Technical University of Berlin<br>
+				 <a href="mailto:e.zeyen@tu-berlin.de"><img src="icons/email.png"; style="width:2em; opacity:.5"></a>
+			   </p>
+			 </div>
+		   </div>
+		 </div>
+	   </div>
+
+
+	   <hr></hr>
+
+	   <h3><b>Questions, or looking for discussion?</b></h3>
+	   <p align="center">
+		 <button class="button">
+		   <a href="https://groups.google.com/g/pypsa">
+			 Join the PyPSA Mailing List
+			 <span>&raquo;</span>
+		   </a>
+		 </button>
+		 <button class="button">
+		   <a href="https://www.youtube.com/watch?v=ty47YU1_eeQ">
+			 Watch a PyPSA-Eur Tutorial
+			 <span>&raquo;</span>
+		   </a>
+		 </button>
+		 <button class="button">
+		   <a href="https://gitter.im/PyPSA/community">
+			 Join our Chat on Gitter
+			 <span>&raquo;</span>
+		   </a>
+		 </button>
+	   </p>
+
+	   <hr></hr>
+
+
+	   <!-- Footer -->
+	   <footer class="w3-row-padding w3-padding-32">
+		 <div class="w3-half">
+		   <img src="logo/logo-h.png" onclick="this.src='img/gifs/logo-h-gif.gif'" alt="network" style="height:2em">
+		   <p>Energy system modelling framework</p>
+		   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+		   <p>Icons from <a href="https://www.flaticon.com/de/" title="Flaticon">Flaticon</a></p>
+		 </div>
+
+		 <div class="w3-half w3-serif">
+		   <h3>TAGS</h3>
+		   <p>
+			 <span class="w3-tag w3-dark-grey w3-margin-bottom">Energy System Modelling</span>
+			 <span class="w3-tag w3-dark-grey w3-margin-bottom">Python</span>
+			 <span class="w3-tag w3-dark-grey w3-margin-bottom">Energy Transition</span>
+			 <span class="w3-tag w3-dark-grey w3-margin-bottom">Power System Optimization</span>
+			 <span class="w3-tag w3-dark-grey w3-margin-bottom">Renewable Energy</span>
+		   </p>
+		 </div>
+	   </footer>
+
+	   <!-- End page content -->
+	 </div>
+
+  </body>
 </html>
