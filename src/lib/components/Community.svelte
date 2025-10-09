@@ -26,9 +26,10 @@
     showFilters?: boolean;
     showPyPSALink?: boolean;
     colorfulImages?: boolean;
+    embedMode?: boolean;
   }
 
-  let { showDiscord = true, showHeader = true, showFilters = true, showPyPSALink = false, colorfulImages = false }: Props = $props();
+  let { showDiscord = true, showHeader = true, showFilters = true, showPyPSALink = false, colorfulImages = false, embedMode = false }: Props = $props();
 
   interface TeamProps {
     imageUrl: string;
@@ -64,24 +65,36 @@
 
   // Responsive contributors per page
   let windowWidth = typeof window !== 'undefined' ? window.innerWidth : 1024;
-  let contributorsPerPage = 32; // Default for desktop (8 columns × 4 rows)
+  let contributorsPerPage = embedMode ? 40 : 32; // Embed: 10 columns × 4 rows, Normal: 8 columns × 4 rows
 
   function updateContributorsPerPage() {
     if (typeof window === 'undefined') return;
     windowWidth = window.innerWidth;
 
-    if (windowWidth < 640) {
-      // Mobile (1 card): 4 columns × 3 rows
-      contributorsPerPage = 12;
-    } else if (windowWidth < 1024) {
-      // Tablet (2 cards): 6 columns × 4 rows
-      contributorsPerPage = 24;
-    } else if (windowWidth < 1280) {
-      // Small desktop (3 cards): 8 columns × 4 rows
-      contributorsPerPage = 32;
+    if (embedMode) {
+      // Embed mode: 10 columns × 4 rows
+      if (windowWidth < 640) {
+        contributorsPerPage = 20; // Mobile: 5 columns × 4 rows
+      } else if (windowWidth < 1024) {
+        contributorsPerPage = 32; // Tablet: 8 columns × 4 rows
+      } else {
+        contributorsPerPage = 40; // Desktop: 10 columns × 4 rows
+      }
     } else {
-      // Large desktop (3 cards): 8 columns × 4 rows
-      contributorsPerPage = 32;
+      // Normal mode
+      if (windowWidth < 640) {
+        // Mobile (1 card): 4 columns × 3 rows
+        contributorsPerPage = 12;
+      } else if (windowWidth < 1024) {
+        // Tablet (2 cards): 6 columns × 4 rows
+        contributorsPerPage = 24;
+      } else if (windowWidth < 1280) {
+        // Small desktop (3 cards): 8 columns × 4 rows
+        contributorsPerPage = 32;
+      } else {
+        // Large desktop (3 cards): 8 columns × 4 rows
+        contributorsPerPage = 32;
+      }
     }
   }
 
