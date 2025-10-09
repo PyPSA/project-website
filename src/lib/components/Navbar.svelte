@@ -37,10 +37,10 @@
     const sections = ["features", "frameworks", "implementations"];
     const scrollPosition = window.scrollY + 150; // Offset for navbar height
 
-    // Check if we're at or past the team/contributors section
-    const teamElement = document.getElementById("team");
-    if (teamElement && scrollPosition >= teamElement.offsetTop) {
-      activeSection = ""; // Clear active section when in team/contributors
+    // Check if we're at or past the contributors section
+    const contributorsElement = document.getElementById("contributors");
+    if (contributorsElement && scrollPosition >= contributorsElement.offsetTop) {
+      activeSection = ""; // Clear active section when in contributors
       return;
     }
 

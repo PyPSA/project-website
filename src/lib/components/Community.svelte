@@ -19,6 +19,17 @@
   import { contributorsData, dataTimestamp } from "$lib/data/contributors";
   import { browser } from '$app/environment';
 
+  // Props
+  interface Props {
+    showDiscord?: boolean;
+    showHeader?: boolean;
+    showFilters?: boolean;
+    showPyPSALink?: boolean;
+    colorfulImages?: boolean;
+  }
+
+  let { showDiscord = true, showHeader = true, showFilters = true, showPyPSALink = false, colorfulImages = false }: Props = $props();
+
   interface TeamProps {
     imageUrl: string;
     firstName: string;
@@ -174,15 +185,13 @@
     };
   });
 
-  $: totalPages = Math.ceil(teamList.length / contributorsPerPage);
-
-  let currentPage = 0;
+  let currentPage = $state(0);
   let isTransitioning = false;
 
   // Filter expansion state
-  let frameworkExpanded = false;
-  let modelsExpanded = false;
-  let selectedRepo = null; // null means "All Projects"
+  let frameworkExpanded = $state(false);
+  let modelsExpanded = $state(false);
+  let selectedRepo = $state(null); // null means "All Projects"
 
   // Repository mapping - maps display name to repo path in data
   const repoMap = {
@@ -224,7 +233,7 @@
   }
 
   // Filter and sort contributors based on selected repository
-  $: filteredList = selectedRepo
+  const filteredList = $derived(selectedRepo
     ? contributorsData
         .filter(c => {
           const repoPath = repoMap[selectedRepo];
@@ -253,14 +262,16 @@
           // Otherwise sort by contributions
           return b.totalContributions - a.totalContributions;
         })
-    : sortedByContributions;
+    : sortedByContributions);
 
-  $: teamList = filteredList;
+  const teamList = $derived(filteredList);
 
-  $: currentContributors = teamList.slice(
+  const totalPages = $derived(Math.ceil(teamList.length / contributorsPerPage));
+
+  const currentContributors = $derived(teamList.slice(
     currentPage * contributorsPerPage,
     (currentPage + 1) * contributorsPerPage
-  );
+  ));
 
   function nextPage() {
     if (isTransitioning) return;
@@ -289,8 +300,9 @@
 
 <!-- Contributors Section -->
 <Tooltip.Provider>
-<section id="team" class="container max-w-7xl mx-auto px-4 pt-16 pb-4 sm:pt-24 sm:pb-6 lg:pt-32 lg:pb-8" bind:this={sectionElement}>
+<section id="contributors" class="container max-w-7xl mx-auto px-4 pt-16 pb-4 sm:pt-24 sm:pb-6 lg:pt-32 lg:pb-8" bind:this={sectionElement}>
   <div class="text-center mb-12">
+    {#if showHeader}
     <h2 class="text-lg text-primary text-center mb-3 tracking-wider">Contributors</h2>
 
     <h2 class="text-3xl md:text-4xl text-center font-bold">
@@ -300,8 +312,10 @@
     <p class="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mt-2">
       The people who power PyPSA
     </p>
+    {/if}
 
     <!-- Filter selector -->
+    {#if showFilters}
     <div class="flex justify-center mt-6">
       <div class="flex items-center gap-2 px-2 py-1 flex-wrap">
         {#if !frameworkExpanded && !modelsExpanded}
@@ -429,6 +443,7 @@
         {/if}
       </div>
     </div>
+    {/if}
   </div>
 
   <div class="relative py-4" style="position: relative;">
@@ -450,7 +465,7 @@
                 <img
                   src={imageUrl}
                   alt={`${firstName} {lastName}`}
-                  class="w-full aspect-square object-cover saturate-0 transition-all duration-300 ease-in-out group-hover/hoverimg:saturate-100 group-hover/hoverimg:scale-110"
+                  class="w-full aspect-square object-cover {colorfulImages ? 'saturate-100' : 'saturate-0 group-hover/hoverimg:saturate-100'} transition-all duration-300 ease-in-out group-hover/hoverimg:scale-110"
                 />
               </div>
               <CardTitle class="px-3 py-2 text-sm flex items-center justify-between min-h-[3rem]">
@@ -628,10 +643,41 @@
         {/if}
       </p>
     </div>
+
+    <!-- PyPSA.org link for embed -->
+    {#if showPyPSALink}
+    <div class="text-center mt-6">
+      <Button
+        href="https://pypsa.org"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="bg-primary hover:bg-primary/90 text-primary-foreground"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="mr-2"
+        >
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+          <polyline points="15 3 21 3 21 9"></polyline>
+          <line x1="10" y1="14" x2="21" y2="3"></line>
+        </svg>
+        pypsa.org
+      </Button>
+    </div>
+    {/if}
   </div>
 </section>
 </Tooltip.Provider>
 
+{#if showDiscord}
 <!-- Discord Section -->
 <section id="community" class="container py-4 sm:py-6 lg:py-8">
     <div class="lg:w-[60%] mx-auto">
@@ -659,6 +705,7 @@
       </Card>
     </div>
 </section>
+{/if}
 
 <style>
   @keyframes staggerIn {

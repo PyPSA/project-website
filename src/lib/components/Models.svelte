@@ -30,7 +30,7 @@
           name: "PyPSA-Earth",
           description: "A flexible Python-based open optimisation model to study energy system futures around the world",
           image: `${base}/img/projects/pypsa-earth.png`,
-          githubUrl: "https://github.com/PyPSA/pypsa-earth",
+          githubUrl: "https://github.com/pypsa-meets-earth/pypsa-earth",
           docsUrl: "https://pypsa-earth.readthedocs.io/en/latest/",
           institutions: [{
             name: "PyPSA meets Earth",

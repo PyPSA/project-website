@@ -25,14 +25,19 @@
       value: "item-2",
     },
     {
+      question: "Where can I find learning materials?",
+      answer: `PyPSA offers comprehensive learning resources in the <a href="${DOCS_BASE_URL}" target="_blank" rel="noreferrer" class="hover:underline" style="color: #2993B5;">documentation</a> including tutorials and examples. You can also find a list of video lectures, workshops, and training materials for PyPSA and Energy Systems Modelling in general on the dedicated <a href="${DOCS_BASE_URL}/user-guide/resources" target="_blank" rel="noreferrer" class="hover:underline" style="color: #2993B5;">resources page</a>. Additionally, the YouTube channels of <a href="https://www.youtube.com/@pypsa-official" target="_blank" rel="noreferrer" class="hover:underline" style="color: #2993B5;">PyPSA</a> and <a href="https://www.youtube.com/@pypsameetsearth7475" target="_blank" rel="noreferrer" class="hover:underline" style="color: #2993B5;">PyPSA meets Earth</a> offer video tutorials and collect community videos in their playlist sections.`,
+      value: "item-3",
+    },
+    {
       question: "Do I need to buy a commercial solver?",
       answer: 'No, you can use open-source solvers such as <a href="https://highs.dev/" target="_blank" rel="noreferrer" class="hover:underline" style="color: #2993B5;">HiGHS</a>. But it helps for very large problems with high spatial and temporal resolution, cross-sectoral scope, and multiple investment periods. <a href="https://www.gurobi.com/solutions/gurobi-optimizer/" target="_blank" rel="noreferrer" class="hover:underline" style="color: #2993B5;">Gurobi</a> and <a href="https://www.ibm.com/products/ilog-cplex-optimization-studio/cplex-optimizer" target="_blank" rel="noreferrer" class="hover:underline" style="color: #2993B5;">CPLEX</a> are recommended for better performance or allow finding any solutions at all.',
-      value: "item-3",
+      value: "item-4",
     },
     {
       question: "Can I get support for using PyPSA?",
       answer: 'PyPSA has an active community of users and developers on Discord and elsewhere who can help you with questions and issues. Also, various consultancies offer paid support, such as <a href="https://www.openenergytransition.org" target="_blank" rel="noreferrer" class="hover:underline" style="color: #2993B5;">OET</a>, <a href="https://www.d-fine.com/en/" target="_blank" rel="noreferrer" class="hover:underline" style="color: #2993B5;">d-fine</a>, <a href="https://energynautics.com/en/" target="_blank" rel="noreferrer" class="hover:underline" style="color: #2993B5;">Energynautics</a>, and <a href="https://www.climact.com/" target="_blank" rel="noreferrer" class="hover:underline" style="color: #2993B5;">CLIMACT</a>.',
-      value: "item-4",
+      value: "item-5",
     },
   ];
 </script>
