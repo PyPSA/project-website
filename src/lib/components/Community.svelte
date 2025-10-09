@@ -101,7 +101,7 @@
   // Animation hint state
   let showCursorHint = false;
   let showTooltipHint = false;
-  let randomBadgeIndex = Math.floor(Math.random() * 32); // Random card from first 32
+  let randomBadgeIndex = Math.floor(Math.random() * (embedMode ? 40 : 32)); // Random card from first page
   let sectionElement: HTMLElement;
   let hasAnimated = false;
 
