@@ -69,7 +69,7 @@
   class="w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky z-40 rounded-2xl flex justify-between items-center p-2 glass-morphism"
 >
   <a href="/" class="font-bold text-lg flex items-center">
-    <img src="https://raw.githubusercontent.com/PyPSA/PyPSA/v1-docs/docs/assets/logo/logo.svg" alt="PyPSA Logo" class="w-9 h-9 mr-2" />
+    <img src="https://raw.githubusercontent.com/PyPSA/PyPSA/master/docs/assets/logo/logo.svg" alt="PyPSA Logo" class="w-9 h-9 mr-2" />
     PyPSA
   </a>
 
@@ -85,7 +85,7 @@
           <SheetHeader class="mb-4 ml-4">
             <SheetTitle class="flex items-center">
               <a href="/" class="flex items-center">
-                <img src="https://raw.githubusercontent.com/PyPSA/PyPSA/v1-docs/docs/assets/logo/logo.svg" alt="PyPSA Logo" class="size-9 mr-2" />
+                <img src="https://raw.githubusercontent.com/PyPSA/PyPSA/master/docs/assets/logo/logo.svg" alt="PyPSA Logo" class="size-9 mr-2" />
                 PyPSA
               </a>
             </SheetTitle>

@@ -9,7 +9,7 @@
       <!-- Logo and description -->
       <div class="flex flex-col items-center md:items-start">
         <a href="/" class="flex font-bold items-center mb-4">
-          <img src="https://raw.githubusercontent.com/PyPSA/PyPSA/v1-docs/docs/assets/logo/logo.svg" alt="PyPSA Logo" class="w-9 h-9 mr-2" />
+          <img src="https://raw.githubusercontent.com/PyPSA/PyPSA/master/docs/assets/logo/logo.svg" alt="PyPSA Logo" class="w-9 h-9 mr-2" />
           <h3 class="text-2xl">PyPSA</h3>
         </a>
         <p class="text-muted-foreground text-center md:text-left max-w-md">
