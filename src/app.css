@@ -76,3 +76,21 @@ html {
     @apply bg-background text-foreground;
   }
 }
+
+/* Protect our CSS variables from GuruBase widget overrides */
+.chat-widget {
+  --primary: #4f46e5 !important;
+}
+
+/* Ensure our root colors are preserved */
+:root,
+html,
+body {
+  --primary: 341 91% 43% !important;
+  --foreground: 0 0% 3.9% !important;
+  --primary-foreground: 0 0% 98% !important;
+}
+
+.dark {
+  --foreground: 0 0% 98% !important;
+}
