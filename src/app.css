@@ -82,15 +82,13 @@ html {
   --primary: #4f46e5 !important;
 }
 
-/* Ensure our root colors are preserved */
-:root,
-html,
-body {
+/* Ensure our root colors are preserved, but respect dark mode */
+:root {
   --primary: 341 91% 43% !important;
-  --foreground: 0 0% 3.9% !important;
   --primary-foreground: 0 0% 98% !important;
 }
 
-.dark {
-  --foreground: 0 0% 98% !important;
+/* Only override foreground for light mode */
+:root:not(.dark) {
+  --foreground: 0 0% 3.9% !important;
 }
