@@ -1,7 +1,7 @@
 <script lang="ts">
   import { Card, CardContent, CardHeader, CardTitle } from "$lib/components/ui/card";
   import { Button } from "$lib/components/ui/button";
-  import { BookOpen, ArrowRight, ArrowLeft } from "lucide-svelte";
+  import { BookOpen, ArrowRight, ArrowLeft, Globe, Github } from "lucide-svelte";
   import { base } from '$app/paths';
   import { onMount, onDestroy } from 'svelte';
   import { fly } from 'svelte/transition';
@@ -93,6 +93,20 @@
           name: "TU Berlin",
           logo: `${base}/img/institutions/tu-berlin.svg`,
           url: "https://www.tu.berlin/en/ensys"
+        }
+      ]
+    },
+    {
+      name: "Map Your Grid",
+      description: "Community-driven initiative mapping the world's electrical grids to accelerate the energy transition worldwide",
+      image: `${base}/img/projects/mapyourgrid.webp`,
+      githubUrl: "https://mapyourgrid.org/",
+      websiteUrl: "https://mapyourgrid.org/",
+      institutions: [
+        {
+          name: "OET",
+          logo: `${base}/img/institutions/oet.svg`,
+          url: "https://openenergytransition.org/"
         }
       ]
     }
@@ -264,21 +278,15 @@
     </h2>
 
     <h3 class="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-      PyPSA and its complementary tools for power system modeling
+      PyPSA and its complementary tools and initiatives
     </h3>
 
     <div class="relative py-8 overflow-x-hidden overflow-y-visible" bind:this={carouselElement}>
       <div class="carousel-container pt-4 pb-2" style="transform: translateX(-{carouselIndex * (100 / visibleCount)}%); transition: {isTransitioning ? 'transform 0.5s ease-in-out' : 'none'}">
         {#each [...projects, ...projects] as project, idx (project.name + '-' + idx)}
         <div class="carousel-item" style="width: {100 / visibleCount}%">
-        <a
-          href={project.githubUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="block h-full"
-        >
           <Card
-            class="h-full bg-muted/50 dark:bg-card border border-border/50 shadow-lg shadow-black/10 dark:shadow-white/10 hover:shadow-xl hover:shadow-black/20 dark:hover:shadow-white/20 transition-transform duration-300 hover:-translate-y-1 focus-visible:-translate-y-1 rounded-2xl relative overflow-hidden group cursor-pointer mx-3"
+            class="h-full bg-muted/50 dark:bg-card border border-border/50 shadow-lg shadow-black/10 dark:shadow-white/10 rounded-2xl relative overflow-hidden mx-3"
           >
           <CardHeader class="flex justify-center items-center pb-4">
               <div class="w-full h-48 mb-4 rounded-lg overflow-hidden flex items-center justify-center relative">
@@ -295,7 +303,7 @@
               <p class="text-sm leading-relaxed mb-6">{project.description}</p>
 
               {#if project.docsUrl}
-                <div class="flex justify-center mb-4">
+                <div class="flex justify-center gap-2 mb-4">
                   <Button
                     asChild
                     variant="outline"
@@ -308,10 +316,46 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       class="flex items-center gap-2 w-full h-full"
-                      on:click={(e) => e.stopPropagation()}
                     >
                       <BookOpen class="size-4" />
                       Docs
+                    </a>
+                  </Button>
+                  <Button
+                    asChild
+                    variant="outline"
+                    size="sm"
+                    class="flex items-center gap-2 accent-hover-only"
+                    style={accentStyle(project.name)}
+                  >
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="flex items-center gap-2 w-full h-full"
+                    >
+                      <Github class="size-4" />
+                      GitHub
+                    </a>
+                  </Button>
+                </div>
+              {:else if project.websiteUrl}
+                <div class="flex justify-center mb-4">
+                  <Button
+                    asChild
+                    variant="outline"
+                    size="sm"
+                    class="flex items-center gap-2 accent-hover-only"
+                    style={accentStyle(project.name)}
+                  >
+                    <a
+                      href={project.websiteUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="flex items-center gap-2 w-full h-full"
+                    >
+                      <Globe class="size-4" />
+                      Website
                     </a>
                   </Button>
                 </div>
@@ -349,7 +393,6 @@
             {/if}
           </CardContent>
         </Card>
-        </a>
         </div>
         {/each}
       </div>

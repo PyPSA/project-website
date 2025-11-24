@@ -1,7 +1,7 @@
 <script lang="ts">
   import { Card, CardContent, CardHeader, CardTitle } from "$lib/components/ui/card";
   import { Button } from "$lib/components/ui/button";
-  import { BookOpen, ArrowRight, ArrowLeft, Map } from "lucide-svelte";
+  import { BookOpen, ArrowRight, ArrowLeft, Map, Github } from "lucide-svelte";
   import { onMount, onDestroy } from "svelte";
   import { mode } from "mode-watcher";
   import { base } from '$app/paths';
@@ -262,14 +262,8 @@
       <div class="carousel-container pt-4 pb-2" style="transform: translateX(-{carouselIndex * (100 / visibleCount)}%); transition: {isTransitioning ? 'transform 0.5s ease-in-out' : 'none'}">
         {#each [...projects, ...projects] as project, idx (project.name + '-' + idx)}
         <div class="carousel-item" style="width: {100 / visibleCount}%">
-        <a
-          href={project.githubUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="block h-full"
-        >
           <Card
-            class="h-full bg-muted/50 dark:bg-card border border-border/50 shadow-lg shadow-black/10 dark:shadow-white/10 hover:shadow-xl hover:shadow-black/20 dark:hover:shadow-white/20 transition-transform duration-300 hover:-translate-y-1 focus-visible:-translate-y-1 rounded-2xl relative overflow-hidden group cursor-pointer mx-3"
+            class="h-full bg-muted/50 dark:bg-card border border-border/50 shadow-lg shadow-black/10 dark:shadow-white/10 rounded-2xl relative overflow-hidden mx-3"
           >
             {#if project.exploreUrl}
               <button
@@ -313,7 +307,7 @@
                 <p class="text-sm leading-relaxed mb-6">{project.description}</p>
 
                 {#if project.docsUrl}
-                  <div class="flex justify-center mb-4">
+                  <div class="flex justify-center gap-2 mb-4">
                     <Button
                       asChild
                       variant="outline"
@@ -326,10 +320,46 @@
                         target="_blank"
                         rel="noopener noreferrer"
                         class="flex items-center gap-2 w-full h-full"
-                        on:click={(e) => e.stopPropagation()}
                       >
                         <BookOpen class="size-4" />
                         Docs
+                      </a>
+                    </Button>
+                    <Button
+                      asChild
+                      variant="outline"
+                      size="sm"
+                      class="flex items-center gap-2 accent-hover-only"
+                      style={accentStyle(project.name)}
+                    >
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="flex items-center gap-2 w-full h-full"
+                      >
+                        <Github class="size-4" />
+                        GitHub
+                      </a>
+                    </Button>
+                  </div>
+                {:else}
+                  <div class="flex justify-center mb-4">
+                    <Button
+                      asChild
+                      variant="outline"
+                      size="sm"
+                      class="flex items-center gap-2 accent-hover-only"
+                      style={accentStyle(project.name)}
+                    >
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="flex items-center gap-2 w-full h-full"
+                      >
+                        <Github class="size-4" />
+                        GitHub
                       </a>
                     </Button>
                   </div>
@@ -367,7 +397,6 @@
                 {/if}
               </CardContent>
             </Card>
-          </a>
         </div>
         {/each}
       </div>
