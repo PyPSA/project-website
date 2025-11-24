@@ -66,6 +66,20 @@
       ]
     },
     {
+      name: "Map Your Grid",
+      description: "Community-driven initiative mapping the world's electrical grids to accelerate the energy transition worldwide",
+      image: `${base}/img/projects/mapyourgrid.webp`,
+      githubUrl: "https://mapyourgrid.org/",
+      websiteUrl: "https://mapyourgrid.org/",
+      institutions: [
+        {
+          name: "OET",
+          logo: `${base}/img/institutions/oet.svg`,
+          url: "https://openenergytransition.org/"
+        }
+      ]
+    },
+    {
       name: "Powerplantmatching",
       description: "A toolset for cleaning, standardizing and combining multiple power plant databases",
       image: `${base}/img/projects/powerplantmatching.png`,
@@ -93,20 +107,6 @@
           name: "TU Berlin",
           logo: `${base}/img/institutions/tu-berlin.svg`,
           url: "https://www.tu.berlin/en/ensys"
-        }
-      ]
-    },
-    {
-      name: "Map Your Grid",
-      description: "Community-driven initiative mapping the world's electrical grids to accelerate the energy transition worldwide",
-      image: `${base}/img/projects/mapyourgrid.webp`,
-      githubUrl: "https://mapyourgrid.org/",
-      websiteUrl: "https://mapyourgrid.org/",
-      institutions: [
-        {
-          name: "OET",
-          logo: `${base}/img/institutions/oet.svg`,
-          url: "https://openenergytransition.org/"
         }
       ]
     }
