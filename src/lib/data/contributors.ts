@@ -1,6 +1,6 @@
 // Auto-generated from contributors.csv
 // Do not edit manually - run scripts/generate_contributors.py to regenerate
-// Data retrieved at: 2025-11-24T09:37:32.752894
+// Data retrieved at: 2026-04-02T13:46:56.899807
 
 export const contributorsData = [
   {
@@ -14,47 +14,61 @@ export const contributorsData = [
         url: "https://github.com/fneum",
       },
     ],
-    totalContributions: 831,
-    totalMergedPrs: 588,
-    totalIssuesCreated: 243,
+    totalContributions: 1769,
+    totalMergedPrs: 628,
+    totalIssuesCreated: 254,
+    totalReviews: 887,
     topRepos: ["pypsa-eur", "PyPSA"],
     repoContributions: {
-      "PyPSA/PyPSA": 230,
-      "PyPSA/atlite": 40,
-      "PyPSA/linopy": 15,
-      "PyPSA/powerplantmatching": 25,
-      "PyPSA/project-website": 1,
-      "PyPSA/pypsa-ariadne": 7,
-      "PyPSA/pypsa-eur": 400,
+      "PyPSA/PyPSA": 530,
+      "PyPSA/atlite": 78,
+      "PyPSA/cookiecutter-project": 2,
+      "PyPSA/linopy": 19,
+      "PyPSA/powerplantmatching": 45,
+      "PyPSA/project-website": 4,
+      "PyPSA/pypsa-ariadne": 11,
+      "PyPSA/pypsa-eur": 876,
       "PyPSA/pypsa-eur-mga": 1,
-      "PyPSA/pypsa-eur-sec": 78,
+      "PyPSA/pypsa-eur-sec": 123,
       "PyPSA/pypsa-server": 2,
-      "PyPSA/technology-data": 31,
+      "PyPSA/technology-data": 77,
       "pypsa-meets-earth/pypsa-earth": 1,
     },
     repoPrs: {
-      "PyPSA/PyPSA": 161,
+      "PyPSA/PyPSA": 164,
       "PyPSA/atlite": 29,
       "PyPSA/linopy": 7,
-      "PyPSA/powerplantmatching": 15,
+      "PyPSA/powerplantmatching": 17,
       "PyPSA/pypsa-ariadne": 5,
-      "PyPSA/pypsa-eur": 269,
+      "PyPSA/pypsa-eur": 300,
       "PyPSA/pypsa-eur-mga": 1,
       "PyPSA/pypsa-eur-sec": 78,
       "PyPSA/pypsa-server": 1,
-      "PyPSA/technology-data": 22,
+      "PyPSA/technology-data": 26,
     },
     repoIssues: {
-      "PyPSA/PyPSA": 69,
-      "PyPSA/atlite": 11,
+      "PyPSA/PyPSA": 72,
+      "PyPSA/atlite": 12,
       "PyPSA/linopy": 8,
-      "PyPSA/powerplantmatching": 10,
+      "PyPSA/powerplantmatching": 11,
       "PyPSA/project-website": 1,
       "PyPSA/pypsa-ariadne": 2,
-      "PyPSA/pypsa-eur": 131,
+      "PyPSA/pypsa-eur": 137,
       "PyPSA/pypsa-server": 1,
       "PyPSA/technology-data": 9,
       "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoReviews: {
+      "PyPSA/PyPSA": 294,
+      "PyPSA/atlite": 37,
+      "PyPSA/cookiecutter-project": 2,
+      "PyPSA/linopy": 4,
+      "PyPSA/powerplantmatching": 17,
+      "PyPSA/project-website": 3,
+      "PyPSA/pypsa-ariadne": 4,
+      "PyPSA/pypsa-eur": 439,
+      "PyPSA/pypsa-eur-sec": 45,
+      "PyPSA/technology-data": 42,
     },
   },
   {
@@ -68,84 +82,56 @@ export const contributorsData = [
         url: "https://github.com/FabianHofmann",
       },
     ],
-    totalContributions: 633,
-    totalMergedPrs: 491,
-    totalIssuesCreated: 142,
+    totalContributions: 1149,
+    totalMergedPrs: 529,
+    totalIssuesCreated: 154,
+    totalReviews: 466,
     topRepos: ["PyPSA", "linopy", "pypsa-eur"],
     repoContributions: {
-      "PyPSA/PyPSA": 205,
-      "PyPSA/atlite": 87,
+      "PyPSA/PyPSA": 397,
+      "PyPSA/atlite": 143,
       "PyPSA/cookiecutter-project": 3,
-      "PyPSA/linopy": 171,
-      "PyPSA/powerplantmatching": 25,
-      "PyPSA/project-website": 2,
+      "PyPSA/linopy": 286,
+      "PyPSA/powerplantmatching": 53,
+      "PyPSA/project-website": 4,
       "PyPSA/pypsa-ariadne": 1,
-      "PyPSA/pypsa-eur": 127,
-      "PyPSA/pypsa-eur-sec": 8,
+      "PyPSA/pypsa-eur": 241,
+      "PyPSA/pypsa-eur-sec": 14,
       "PyPSA/pypsa-usa": 1,
-      "pypsa-meets-earth/pypsa-earth": 3,
+      "PyPSA/redirect-service": 1,
+      "pypsa-meets-earth/pypsa-earth": 5,
     },
     repoPrs: {
-      "PyPSA/PyPSA": 160,
-      "PyPSA/atlite": 64,
+      "PyPSA/PyPSA": 177,
+      "PyPSA/atlite": 68,
       "PyPSA/cookiecutter-project": 3,
-      "PyPSA/linopy": 150,
+      "PyPSA/linopy": 163,
       "PyPSA/powerplantmatching": 13,
       "PyPSA/pypsa-ariadne": 1,
-      "PyPSA/pypsa-eur": 91,
+      "PyPSA/pypsa-eur": 94,
       "PyPSA/pypsa-eur-sec": 8,
+      "PyPSA/redirect-service": 1,
       "pypsa-meets-earth/pypsa-earth": 1,
     },
     repoIssues: {
-      "PyPSA/PyPSA": 45,
-      "PyPSA/atlite": 23,
-      "PyPSA/linopy": 21,
+      "PyPSA/PyPSA": 52,
+      "PyPSA/atlite": 24,
+      "PyPSA/linopy": 25,
       "PyPSA/powerplantmatching": 12,
       "PyPSA/project-website": 2,
       "PyPSA/pypsa-eur": 36,
       "PyPSA/pypsa-usa": 1,
       "pypsa-meets-earth/pypsa-earth": 2,
     },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/67809479?v=4",
-    firstName: "Davide",
-    lastName: "Fioriti",
-    positions: ["Contributor"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/davide-f",
-      },
-    ],
-    totalContributions: 394,
-    totalMergedPrs: 176,
-    totalIssuesCreated: 218,
-    topRepos: ["pypsa-earth"],
-    repoContributions: {
-      "PyPSA/PyPSA": 5,
-      "PyPSA/atlite": 9,
-      "PyPSA/linopy": 1,
-      "PyPSA/powerplantmatching": 15,
-      "PyPSA/pypsa-eur": 8,
-      "pypsa-meets-earth/pypsa-earth": 314,
-      "pypsa-meets-earth/pypsa-earth-sec": 42,
-    },
-    repoPrs: {
-      "PyPSA/atlite": 2,
-      "PyPSA/powerplantmatching": 8,
-      "PyPSA/pypsa-eur": 5,
-      "pypsa-meets-earth/pypsa-earth": 143,
-      "pypsa-meets-earth/pypsa-earth-sec": 18,
-    },
-    repoIssues: {
-      "PyPSA/PyPSA": 5,
-      "PyPSA/atlite": 7,
-      "PyPSA/linopy": 1,
-      "PyPSA/powerplantmatching": 7,
-      "PyPSA/pypsa-eur": 3,
-      "pypsa-meets-earth/pypsa-earth": 171,
-      "pypsa-meets-earth/pypsa-earth-sec": 24,
+    repoReviews: {
+      "PyPSA/PyPSA": 168,
+      "PyPSA/atlite": 51,
+      "PyPSA/linopy": 98,
+      "PyPSA/powerplantmatching": 28,
+      "PyPSA/project-website": 2,
+      "PyPSA/pypsa-eur": 111,
+      "PyPSA/pypsa-eur-sec": 6,
+      "pypsa-meets-earth/pypsa-earth": 2,
     },
   },
   {
@@ -159,72 +145,113 @@ export const contributorsData = [
         url: "https://github.com/lkstrp",
       },
     ],
-    totalContributions: 385,
-    totalMergedPrs: 366,
-    totalIssuesCreated: 19,
-    topRepos: ["PyPSA"],
+    totalContributions: 874,
+    totalMergedPrs: 426,
+    totalIssuesCreated: 24,
+    totalReviews: 424,
+    topRepos: ["PyPSA", "pypsa-eur"],
     repoContributions: {
-      "PyPSA/PyPSA": 180,
-      "PyPSA/atlite": 24,
-      "PyPSA/linopy": 20,
-      "PyPSA/powerplantmatching": 23,
+      "PyPSA/PyPSA": 389,
+      "PyPSA/atlite": 51,
+      "PyPSA/linopy": 68,
+      "PyPSA/powerplantmatching": 59,
       "PyPSA/project-website": 3,
-      "PyPSA/pypsa-ariadne": 9,
-      "PyPSA/pypsa-de": 12,
-      "PyPSA/pypsa-eur": 74,
-      "PyPSA/pypsa-validator": 31,
-      "PyPSA/technology-data": 4,
+      "PyPSA/pypsa-app": 1,
+      "PyPSA/pypsa-ariadne": 15,
+      "PyPSA/pypsa-de": 19,
+      "PyPSA/pypsa-eur": 205,
+      "PyPSA/pypsa-validator": 33,
+      "PyPSA/redirect-service": 1,
+      "PyPSA/snakemake-storage-plugin-cached-http": 3,
+      "PyPSA/technology-data": 22,
       "pypsa-meets-earth/pypsa-earth": 5,
     },
     repoPrs: {
-      "PyPSA/PyPSA": 171,
+      "PyPSA/PyPSA": 201,
       "PyPSA/atlite": 22,
-      "PyPSA/linopy": 17,
-      "PyPSA/powerplantmatching": 22,
+      "PyPSA/linopy": 21,
+      "PyPSA/powerplantmatching": 24,
       "PyPSA/project-website": 3,
       "PyPSA/pypsa-ariadne": 9,
       "PyPSA/pypsa-de": 11,
-      "PyPSA/pypsa-eur": 73,
+      "PyPSA/pypsa-eur": 96,
       "PyPSA/pypsa-validator": 30,
+      "PyPSA/snakemake-storage-plugin-cached-http": 1,
       "PyPSA/technology-data": 4,
       "pypsa-meets-earth/pypsa-earth": 4,
     },
     repoIssues: {
-      "PyPSA/PyPSA": 9,
+      "PyPSA/PyPSA": 13,
       "PyPSA/atlite": 2,
-      "PyPSA/linopy": 3,
+      "PyPSA/linopy": 4,
       "PyPSA/powerplantmatching": 1,
       "PyPSA/pypsa-de": 1,
       "PyPSA/pypsa-eur": 1,
       "PyPSA/pypsa-validator": 1,
       "pypsa-meets-earth/pypsa-earth": 1,
     },
+    repoReviews: {
+      "PyPSA/PyPSA": 175,
+      "PyPSA/atlite": 27,
+      "PyPSA/linopy": 43,
+      "PyPSA/powerplantmatching": 34,
+      "PyPSA/pypsa-app": 1,
+      "PyPSA/pypsa-ariadne": 6,
+      "PyPSA/pypsa-de": 7,
+      "PyPSA/pypsa-eur": 108,
+      "PyPSA/pypsa-validator": 2,
+      "PyPSA/redirect-service": 1,
+      "PyPSA/snakemake-storage-plugin-cached-http": 2,
+      "PyPSA/technology-data": 18,
+    },
   },
   {
-    imageUrl: "https://avatars.githubusercontent.com/u/67297083?v=4",
-    firstName: "Trevor",
-    lastName: "Barnes",
+    imageUrl: "https://avatars.githubusercontent.com/u/67809479?v=4",
+    firstName: "Davide",
+    lastName: "Fioriti",
     positions: ["Contributor"],
     socialNetworks: [
       {
         name: "GitHub",
-        url: "https://github.com/trevorb1",
+        url: "https://github.com/davide-f",
       },
     ],
-    totalContributions: 344,
-    totalMergedPrs: 135,
-    totalIssuesCreated: 209,
-    topRepos: ["pypsa-usa"],
+    totalContributions: 709,
+    totalMergedPrs: 192,
+    totalIssuesCreated: 227,
+    totalReviews: 290,
+    topRepos: ["pypsa-earth"],
     repoContributions: {
-      "PyPSA/PyPSA": 1,
-      "PyPSA/pypsa-usa": 343,
+      "PyPSA/PyPSA": 12,
+      "PyPSA/atlite": 10,
+      "PyPSA/linopy": 2,
+      "PyPSA/powerplantmatching": 16,
+      "PyPSA/pypsa-eur": 9,
+      "pypsa-meets-earth/pypsa-earth": 602,
+      "pypsa-meets-earth/pypsa-earth-sec": 58,
     },
     repoPrs: {
-      "PyPSA/pypsa-usa": 135,
+      "PyPSA/atlite": 2,
+      "PyPSA/linopy": 1,
+      "PyPSA/powerplantmatching": 9,
+      "PyPSA/pypsa-eur": 5,
+      "pypsa-meets-earth/pypsa-earth": 157,
+      "pypsa-meets-earth/pypsa-earth-sec": 18,
     },
     repoIssues: {
-      "PyPSA/PyPSA": 1,
-      "PyPSA/pypsa-usa": 208,
+      "PyPSA/PyPSA": 6,
+      "PyPSA/atlite": 8,
+      "PyPSA/linopy": 1,
+      "PyPSA/powerplantmatching": 7,
+      "PyPSA/pypsa-eur": 3,
+      "pypsa-meets-earth/pypsa-earth": 180,
+      "pypsa-meets-earth/pypsa-earth-sec": 22,
+    },
+    repoReviews: {
+      "PyPSA/PyPSA": 6,
+      "PyPSA/pypsa-eur": 1,
+      "pypsa-meets-earth/pypsa-earth": 265,
+      "pypsa-meets-earth/pypsa-earth-sec": 18,
     },
   },
   {
@@ -238,25 +265,27 @@ export const contributorsData = [
         url: "https://github.com/pz-max",
       },
     ],
-    totalContributions: 306,
-    totalMergedPrs: 134,
-    totalIssuesCreated: 172,
+    totalContributions: 396,
+    totalMergedPrs: 136,
+    totalIssuesCreated: 174,
+    totalReviews: 86,
     topRepos: ["pypsa-earth"],
     repoContributions: {
-      "PyPSA/PyPSA": 22,
+      "PyPSA/PyPSA": 28,
       "PyPSA/atlite": 7,
-      "PyPSA/linopy": 1,
-      "PyPSA/powerplantmatching": 8,
+      "PyPSA/linopy": 2,
+      "PyPSA/powerplantmatching": 9,
       "PyPSA/project-website": 6,
-      "PyPSA/pypsa-eur": 23,
+      "PyPSA/pypsa-app": 1,
+      "PyPSA/pypsa-eur": 25,
       "PyPSA/pypsa-server": 5,
       "PyPSA/technology-data": 3,
       "PyPSA/whobs-server": 1,
-      "pypsa-meets-earth/pypsa-earth": 229,
-      "pypsa-meets-earth/pypsa-earth-sec": 1,
+      "pypsa-meets-earth/pypsa-earth": 307,
+      "pypsa-meets-earth/pypsa-earth-sec": 2,
     },
     repoPrs: {
-      "PyPSA/PyPSA": 13,
+      "PyPSA/PyPSA": 15,
       "PyPSA/atlite": 4,
       "PyPSA/powerplantmatching": 3,
       "PyPSA/project-website": 6,
@@ -265,14 +294,152 @@ export const contributorsData = [
       "pypsa-meets-earth/pypsa-earth": 93,
     },
     repoIssues: {
-      "PyPSA/PyPSA": 9,
+      "PyPSA/PyPSA": 10,
       "PyPSA/atlite": 3,
       "PyPSA/linopy": 1,
       "PyPSA/powerplantmatching": 5,
+      "PyPSA/pypsa-app": 1,
       "PyPSA/pypsa-eur": 11,
       "PyPSA/pypsa-server": 5,
       "PyPSA/whobs-server": 1,
       "pypsa-meets-earth/pypsa-earth": 136,
+      "pypsa-meets-earth/pypsa-earth-sec": 1,
+    },
+    repoReviews: {
+      "PyPSA/PyPSA": 3,
+      "PyPSA/linopy": 1,
+      "PyPSA/powerplantmatching": 1,
+      "PyPSA/pypsa-eur": 2,
+      "pypsa-meets-earth/pypsa-earth": 78,
+      "pypsa-meets-earth/pypsa-earth-sec": 1,
+    },
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/67297083?v=4",
+    firstName: "Trevor",
+    lastName: "Barnes",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/trevorb1",
+      },
+    ],
+    totalContributions: 363,
+    totalMergedPrs: 139,
+    totalIssuesCreated: 210,
+    totalReviews: 14,
+    topRepos: ["pypsa-usa"],
+    repoContributions: {
+      "PyPSA/PyPSA": 2,
+      "PyPSA/pypsa-usa": 361,
+    },
+    repoPrs: {
+      "PyPSA/pypsa-usa": 139,
+    },
+    repoIssues: {
+      "PyPSA/PyPSA": 2,
+      "PyPSA/pypsa-usa": 208,
+    },
+    repoReviews: {
+      "PyPSA/pypsa-usa": 14,
+    },
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/42553970?v=4",
+    firstName: "Johannes",
+    lastName: "HAMPP",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/euronion",
+      },
+    ],
+    totalContributions: 335,
+    totalMergedPrs: 127,
+    totalIssuesCreated: 115,
+    totalReviews: 93,
+    topRepos: ["atlite", "pypsa-eur"],
+    repoContributions: {
+      "PyPSA/PyPSA": 41,
+      "PyPSA/atlite": 116,
+      "PyPSA/linopy": 1,
+      "PyPSA/methanol-uldes": 1,
+      "PyPSA/powerplantmatching": 14,
+      "PyPSA/pypsa-eur": 91,
+      "PyPSA/pypsa-eur-sec": 6,
+      "PyPSA/technology-data": 55,
+      "pypsa-meets-earth/pypsa-earth": 10,
+    },
+    repoPrs: {
+      "PyPSA/PyPSA": 9,
+      "PyPSA/atlite": 46,
+      "PyPSA/methanol-uldes": 1,
+      "PyPSA/powerplantmatching": 9,
+      "PyPSA/pypsa-eur": 37,
+      "PyPSA/pypsa-eur-sec": 4,
+      "PyPSA/technology-data": 18,
+      "pypsa-meets-earth/pypsa-earth": 3,
+    },
+    repoIssues: {
+      "PyPSA/PyPSA": 21,
+      "PyPSA/atlite": 35,
+      "PyPSA/linopy": 1,
+      "PyPSA/powerplantmatching": 4,
+      "PyPSA/pypsa-eur": 33,
+      "PyPSA/technology-data": 15,
+      "pypsa-meets-earth/pypsa-earth": 6,
+    },
+    repoReviews: {
+      "PyPSA/PyPSA": 11,
+      "PyPSA/atlite": 35,
+      "PyPSA/powerplantmatching": 1,
+      "PyPSA/pypsa-eur": 21,
+      "PyPSA/pypsa-eur-sec": 2,
+      "PyPSA/technology-data": 22,
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/30229437?v=4",
+    firstName: "Ekaterina",
+    lastName: "",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/ekatef",
+      },
+    ],
+    totalContributions: 291,
+    totalMergedPrs: 92,
+    totalIssuesCreated: 80,
+    totalReviews: 119,
+    topRepos: ["pypsa-earth"],
+    repoContributions: {
+      "PyPSA/PyPSA": 6,
+      "PyPSA/atlite": 2,
+      "PyPSA/powerplantmatching": 1,
+      "PyPSA/pypsa-eur": 3,
+      "pypsa-meets-earth/pypsa-earth": 278,
+      "pypsa-meets-earth/pypsa-earth-sec": 1,
+    },
+    repoPrs: {
+      "PyPSA/PyPSA": 3,
+      "PyPSA/atlite": 1,
+      "PyPSA/pypsa-eur": 3,
+      "pypsa-meets-earth/pypsa-earth": 85,
+    },
+    repoIssues: {
+      "PyPSA/PyPSA": 2,
+      "PyPSA/atlite": 1,
+      "PyPSA/powerplantmatching": 1,
+      "pypsa-meets-earth/pypsa-earth": 76,
+    },
+    repoReviews: {
+      "PyPSA/PyPSA": 1,
+      "pypsa-meets-earth/pypsa-earth": 117,
       "pypsa-meets-earth/pypsa-earth-sec": 1,
     },
   },
@@ -287,66 +454,24 @@ export const contributorsData = [
         url: "https://github.com/ktehranchi",
       },
     ],
-    totalContributions: 243,
-    totalMergedPrs: 127,
+    totalContributions: 275,
+    totalMergedPrs: 130,
     totalIssuesCreated: 116,
+    totalReviews: 29,
     topRepos: ["pypsa-usa"],
     repoContributions: {
       "PyPSA/PyPSA": 2,
-      "PyPSA/pypsa-usa": 241,
+      "PyPSA/pypsa-usa": 273,
     },
     repoPrs: {
-      "PyPSA/pypsa-usa": 127,
+      "PyPSA/pypsa-usa": 130,
     },
     repoIssues: {
       "PyPSA/PyPSA": 2,
       "PyPSA/pypsa-usa": 114,
     },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/42553970?v=4",
-    firstName: "Johannes",
-    lastName: "HAMPP",
-    positions: ["Contributor"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/euronion",
-      },
-    ],
-    totalContributions: 212,
-    totalMergedPrs: 121,
-    totalIssuesCreated: 91,
-    topRepos: ["atlite", "pypsa-eur"],
-    repoContributions: {
-      "PyPSA/PyPSA": 15,
-      "PyPSA/atlite": 80,
-      "PyPSA/linopy": 1,
-      "PyPSA/methanol-uldes": 1,
-      "PyPSA/powerplantmatching": 13,
-      "PyPSA/pypsa-eur": 56,
-      "PyPSA/pypsa-eur-sec": 4,
-      "PyPSA/technology-data": 33,
-      "pypsa-meets-earth/pypsa-earth": 9,
-    },
-    repoPrs: {
-      "PyPSA/PyPSA": 9,
-      "PyPSA/atlite": 46,
-      "PyPSA/methanol-uldes": 1,
-      "PyPSA/powerplantmatching": 9,
-      "PyPSA/pypsa-eur": 31,
-      "PyPSA/pypsa-eur-sec": 4,
-      "PyPSA/technology-data": 18,
-      "pypsa-meets-earth/pypsa-earth": 3,
-    },
-    repoIssues: {
-      "PyPSA/PyPSA": 6,
-      "PyPSA/atlite": 34,
-      "PyPSA/linopy": 1,
-      "PyPSA/powerplantmatching": 4,
-      "PyPSA/pypsa-eur": 25,
-      "PyPSA/technology-data": 15,
-      "pypsa-meets-earth/pypsa-earth": 6,
+    repoReviews: {
+      "PyPSA/pypsa-usa": 29,
     },
   },
   {
@@ -360,66 +485,223 @@ export const contributorsData = [
         url: "https://github.com/lindnemi",
       },
     ],
-    totalContributions: 194,
-    totalMergedPrs: 118,
-    totalIssuesCreated: 76,
+    totalContributions: 266,
+    totalMergedPrs: 133,
+    totalIssuesCreated: 80,
+    totalReviews: 53,
     topRepos: ["pypsa-ariadne", "pypsa-eur", "pypsa-de"],
     repoContributions: {
-      "PyPSA/PyPSA": 2,
+      "PyPSA/PyPSA": 5,
       "PyPSA/linopy": 1,
       "PyPSA/powerplantmatching": 1,
-      "PyPSA/pypsa-ariadne": 102,
-      "PyPSA/pypsa-de": 42,
-      "PyPSA/pypsa-eur": 44,
+      "PyPSA/pypsa-ariadne": 131,
+      "PyPSA/pypsa-de": 54,
+      "PyPSA/pypsa-eur": 72,
       "PyPSA/technology-data": 2,
     },
     repoPrs: {
-      "PyPSA/PyPSA": 1,
+      "PyPSA/PyPSA": 2,
       "PyPSA/linopy": 1,
       "PyPSA/pypsa-ariadne": 65,
-      "PyPSA/pypsa-de": 23,
-      "PyPSA/pypsa-eur": 28,
+      "PyPSA/pypsa-de": 32,
+      "PyPSA/pypsa-eur": 33,
     },
     repoIssues: {
-      "PyPSA/PyPSA": 1,
+      "PyPSA/PyPSA": 2,
       "PyPSA/powerplantmatching": 1,
       "PyPSA/pypsa-ariadne": 37,
       "PyPSA/pypsa-de": 19,
-      "PyPSA/pypsa-eur": 16,
+      "PyPSA/pypsa-eur": 19,
       "PyPSA/technology-data": 2,
+    },
+    repoReviews: {
+      "PyPSA/PyPSA": 1,
+      "PyPSA/pypsa-ariadne": 29,
+      "PyPSA/pypsa-de": 3,
+      "PyPSA/pypsa-eur": 20,
     },
   },
   {
-    imageUrl: "https://avatars.githubusercontent.com/u/30229437?v=4",
-    firstName: "Ekaterina",
+    imageUrl: "https://avatars.githubusercontent.com/u/35347358?v=4",
+    firstName: "lisazeyen",
     lastName: "",
     positions: ["Contributor"],
     socialNetworks: [
       {
         name: "GitHub",
-        url: "https://github.com/ekatef",
+        url: "https://github.com/lisazeyen",
       },
     ],
-    totalContributions: 150,
-    totalMergedPrs: 83,
-    totalIssuesCreated: 67,
-    topRepos: ["pypsa-earth"],
+    totalContributions: 212,
+    totalMergedPrs: 90,
+    totalIssuesCreated: 51,
+    totalReviews: 71,
+    topRepos: ["pypsa-eur", "technology-data", "PyPSA"],
     repoContributions: {
-      "PyPSA/PyPSA": 5,
-      "PyPSA/atlite": 2,
-      "PyPSA/pypsa-eur": 3,
-      "pypsa-meets-earth/pypsa-earth": 140,
+      "PyPSA/PyPSA": 43,
+      "PyPSA/atlite": 1,
+      "PyPSA/powerplantmatching": 3,
+      "PyPSA/pypsa-ariadne": 1,
+      "PyPSA/pypsa-eur": 80,
+      "PyPSA/pypsa-eur-sec": 38,
+      "PyPSA/technology-data": 46,
     },
     repoPrs: {
-      "PyPSA/PyPSA": 3,
-      "PyPSA/atlite": 1,
-      "PyPSA/pypsa-eur": 3,
-      "pypsa-meets-earth/pypsa-earth": 76,
+      "PyPSA/PyPSA": 17,
+      "PyPSA/pypsa-eur": 30,
+      "PyPSA/pypsa-eur-sec": 27,
+      "PyPSA/technology-data": 16,
     },
     repoIssues: {
-      "PyPSA/PyPSA": 2,
+      "PyPSA/PyPSA": 14,
       "PyPSA/atlite": 1,
-      "pypsa-meets-earth/pypsa-earth": 64,
+      "PyPSA/powerplantmatching": 2,
+      "PyPSA/pypsa-eur": 16,
+      "PyPSA/technology-data": 18,
+    },
+    repoReviews: {
+      "PyPSA/PyPSA": 12,
+      "PyPSA/powerplantmatching": 1,
+      "PyPSA/pypsa-ariadne": 1,
+      "PyPSA/pypsa-eur": 34,
+      "PyPSA/pypsa-eur-sec": 11,
+      "PyPSA/technology-data": 12,
+    },
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/89515385?v=4",
+    firstName: "Leon",
+    lastName: "Schumm",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/energyLS",
+      },
+    ],
+    totalContributions: 196,
+    totalMergedPrs: 55,
+    totalIssuesCreated: 58,
+    totalReviews: 83,
+    topRepos: ["pypsa-earth-sec"],
+    repoContributions: {
+      "PyPSA/PyPSA": 5,
+      "PyPSA/atlite": 1,
+      "PyPSA/cookiecutter-project": 1,
+      "PyPSA/efuels-server": 1,
+      "PyPSA/powerplantmatching": 1,
+      "PyPSA/pypsa-eur": 2,
+      "PyPSA/pypsa-eur-sec": 1,
+      "pypsa-meets-earth/pypsa-earth": 30,
+      "pypsa-meets-earth/pypsa-earth-sec": 154,
+    },
+    repoPrs: {
+      "PyPSA/PyPSA": 5,
+      "PyPSA/atlite": 1,
+      "PyPSA/cookiecutter-project": 1,
+      "PyPSA/powerplantmatching": 1,
+      "PyPSA/pypsa-eur": 1,
+      "pypsa-meets-earth/pypsa-earth": 7,
+      "pypsa-meets-earth/pypsa-earth-sec": 39,
+    },
+    repoIssues: {
+      "PyPSA/efuels-server": 1,
+      "PyPSA/pypsa-eur": 1,
+      "pypsa-meets-earth/pypsa-earth": 18,
+      "pypsa-meets-earth/pypsa-earth-sec": 38,
+    },
+    repoReviews: {
+      "PyPSA/pypsa-eur-sec": 1,
+      "pypsa-meets-earth/pypsa-earth": 5,
+      "pypsa-meets-earth/pypsa-earth-sec": 77,
+    },
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/2552981?v=4",
+    firstName: "Jonas",
+    lastName: "H\u00f6rsch",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/coroa",
+      },
+    ],
+    totalContributions: 193,
+    totalMergedPrs: 66,
+    totalIssuesCreated: 54,
+    totalReviews: 73,
+    topRepos: ["pypsa-eur", "PyPSA"],
+    repoContributions: {
+      "PyPSA/EnergyModels.jl": 20,
+      "PyPSA/PyPSA": 50,
+      "PyPSA/atlite": 34,
+      "PyPSA/linopy": 17,
+      "PyPSA/powerplantmatching": 3,
+      "PyPSA/pypsa-eur": 59,
+      "PyPSA/pypsa-eur-sec": 1,
+      "PyPSA/snakemake-storage-plugin-cached-http": 9,
+    },
+    repoPrs: {
+      "PyPSA/EnergyModels.jl": 1,
+      "PyPSA/PyPSA": 20,
+      "PyPSA/atlite": 15,
+      "PyPSA/linopy": 10,
+      "PyPSA/powerplantmatching": 1,
+      "PyPSA/pypsa-eur": 13,
+      "PyPSA/snakemake-storage-plugin-cached-http": 6,
+    },
+    repoIssues: {
+      "PyPSA/EnergyModels.jl": 19,
+      "PyPSA/PyPSA": 8,
+      "PyPSA/atlite": 7,
+      "PyPSA/linopy": 2,
+      "PyPSA/powerplantmatching": 2,
+      "PyPSA/pypsa-eur": 14,
+      "PyPSA/snakemake-storage-plugin-cached-http": 2,
+    },
+    repoReviews: {
+      "PyPSA/PyPSA": 22,
+      "PyPSA/atlite": 12,
+      "PyPSA/linopy": 5,
+      "PyPSA/pypsa-eur": 32,
+      "PyPSA/pypsa-eur-sec": 1,
+      "PyPSA/snakemake-storage-plugin-cached-http": 1,
+    },
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/87850910?v=4",
+    firstName: "Hazem",
+    lastName: "",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/hazemakhalek",
+      },
+    ],
+    totalContributions: 168,
+    totalMergedPrs: 57,
+    totalIssuesCreated: 56,
+    totalReviews: 55,
+    topRepos: ["pypsa-earth-sec"],
+    repoContributions: {
+      "PyPSA/PyPSA": 3,
+      "pypsa-meets-earth/pypsa-earth": 26,
+      "pypsa-meets-earth/pypsa-earth-sec": 139,
+    },
+    repoPrs: {
+      "pypsa-meets-earth/pypsa-earth": 7,
+      "pypsa-meets-earth/pypsa-earth-sec": 50,
+    },
+    repoIssues: {
+      "PyPSA/PyPSA": 3,
+      "pypsa-meets-earth/pypsa-earth": 18,
+      "pypsa-meets-earth/pypsa-earth-sec": 35,
+    },
+    repoReviews: {
+      "pypsa-meets-earth/pypsa-earth": 1,
+      "pypsa-meets-earth/pypsa-earth-sec": 54,
     },
   },
   {
@@ -433,18 +715,19 @@ export const contributorsData = [
         url: "https://github.com/nworbmot",
       },
     ],
-    totalContributions: 146,
+    totalContributions: 157,
     totalMergedPrs: 28,
     totalIssuesCreated: 118,
+    totalReviews: 11,
     topRepos: ["pypsa-eur"],
     repoContributions: {
-      "PyPSA/PyPSA": 24,
-      "PyPSA/atlite": 4,
+      "PyPSA/PyPSA": 28,
+      "PyPSA/atlite": 5,
       "PyPSA/efuels-server": 5,
       "PyPSA/nowcast": 9,
-      "PyPSA/pypsa-ariadne": 8,
-      "PyPSA/pypsa-eur": 74,
-      "PyPSA/pypsa-eur-sec": 5,
+      "PyPSA/pypsa-ariadne": 10,
+      "PyPSA/pypsa-eur": 75,
+      "PyPSA/pypsa-eur-sec": 8,
       "PyPSA/technology-data": 7,
       "PyPSA/whobs-server": 10,
     },
@@ -466,42 +749,12 @@ export const contributorsData = [
       "PyPSA/technology-data": 4,
       "PyPSA/whobs-server": 10,
     },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/35347358?v=4",
-    firstName: "lisazeyen",
-    lastName: "",
-    positions: ["Contributor"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/lisazeyen",
-      },
-    ],
-    totalContributions: 141,
-    totalMergedPrs: 90,
-    totalIssuesCreated: 51,
-    topRepos: ["pypsa-eur", "technology-data", "PyPSA"],
-    repoContributions: {
-      "PyPSA/PyPSA": 31,
+    repoReviews: {
+      "PyPSA/PyPSA": 4,
       "PyPSA/atlite": 1,
-      "PyPSA/powerplantmatching": 2,
-      "PyPSA/pypsa-eur": 46,
-      "PyPSA/pypsa-eur-sec": 27,
-      "PyPSA/technology-data": 34,
-    },
-    repoPrs: {
-      "PyPSA/PyPSA": 17,
-      "PyPSA/pypsa-eur": 30,
-      "PyPSA/pypsa-eur-sec": 27,
-      "PyPSA/technology-data": 16,
-    },
-    repoIssues: {
-      "PyPSA/PyPSA": 14,
-      "PyPSA/atlite": 1,
-      "PyPSA/powerplantmatching": 2,
-      "PyPSA/pypsa-eur": 16,
-      "PyPSA/technology-data": 18,
+      "PyPSA/pypsa-ariadne": 2,
+      "PyPSA/pypsa-eur": 1,
+      "PyPSA/pypsa-eur-sec": 3,
     },
   },
   {
@@ -515,138 +768,213 @@ export const contributorsData = [
         url: "https://github.com/toniseibold",
       },
     ],
-    totalContributions: 118,
-    totalMergedPrs: 83,
+    totalContributions: 150,
+    totalMergedPrs: 88,
     totalIssuesCreated: 35,
+    totalReviews: 27,
     topRepos: ["pypsa-ariadne", "pypsa-eur"],
     repoContributions: {
       "PyPSA/PyPSA": 2,
-      "PyPSA/pypsa-ariadne": 73,
-      "PyPSA/pypsa-de": 11,
-      "PyPSA/pypsa-eur": 30,
-      "PyPSA/technology-data": 2,
+      "PyPSA/pypsa-ariadne": 88,
+      "PyPSA/pypsa-de": 20,
+      "PyPSA/pypsa-eur": 34,
+      "PyPSA/technology-data": 6,
     },
     repoPrs: {
       "PyPSA/PyPSA": 2,
       "PyPSA/pypsa-ariadne": 50,
       "PyPSA/pypsa-de": 6,
-      "PyPSA/pypsa-eur": 23,
-      "PyPSA/technology-data": 2,
+      "PyPSA/pypsa-eur": 25,
+      "PyPSA/technology-data": 5,
     },
     repoIssues: {
       "PyPSA/pypsa-ariadne": 23,
       "PyPSA/pypsa-de": 5,
       "PyPSA/pypsa-eur": 7,
     },
+    repoReviews: {
+      "PyPSA/pypsa-ariadne": 15,
+      "PyPSA/pypsa-de": 9,
+      "PyPSA/pypsa-eur": 2,
+      "PyPSA/technology-data": 1,
+    },
   },
   {
-    imageUrl: "https://avatars.githubusercontent.com/u/87850910?v=4",
-    firstName: "Hazem",
+    imageUrl: "https://avatars.githubusercontent.com/u/53824825?v=4",
+    firstName: "Martha",
+    lastName: "Frysztacki",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/martacki",
+      },
+    ],
+    totalContributions: 106,
+    totalMergedPrs: 62,
+    totalIssuesCreated: 13,
+    totalReviews: 31,
+    topRepos: ["pypsa-eur"],
+    repoContributions: {
+      "PyPSA/PyPSA": 19,
+      "PyPSA/atlite": 1,
+      "PyPSA/powerplantmatching": 3,
+      "PyPSA/project-website": 3,
+      "PyPSA/pypsa-eur": 70,
+      "PyPSA/pypsa-eur-sec": 1,
+      "PyPSA/pypsa-usa": 2,
+      "pypsa-meets-earth/pypsa-earth": 7,
+    },
+    repoPrs: {
+      "PyPSA/PyPSA": 13,
+      "PyPSA/atlite": 1,
+      "PyPSA/powerplantmatching": 3,
+      "PyPSA/project-website": 3,
+      "PyPSA/pypsa-eur": 36,
+      "PyPSA/pypsa-eur-sec": 1,
+      "PyPSA/pypsa-usa": 1,
+      "pypsa-meets-earth/pypsa-earth": 4,
+    },
+    repoIssues: {
+      "PyPSA/PyPSA": 2,
+      "PyPSA/pypsa-eur": 8,
+      "PyPSA/pypsa-usa": 1,
+      "pypsa-meets-earth/pypsa-earth": 2,
+    },
+    repoReviews: {
+      "PyPSA/PyPSA": 4,
+      "PyPSA/pypsa-eur": 26,
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/95913147?v=4",
+    firstName: "Philipp",
+    lastName: "Glaum",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/p-glaum",
+      },
+    ],
+    totalContributions: 104,
+    totalMergedPrs: 67,
+    totalIssuesCreated: 16,
+    totalReviews: 21,
+    topRepos: ["pypsa-eur", "PyPSA"],
+    repoContributions: {
+      "PyPSA/PyPSA": 39,
+      "PyPSA/atlite": 2,
+      "PyPSA/linopy": 3,
+      "PyPSA/project-website": 1,
+      "PyPSA/pypsa-ariadne": 1,
+      "PyPSA/pypsa-eur": 51,
+      "PyPSA/technology-data": 7,
+    },
+    repoPrs: {
+      "PyPSA/PyPSA": 25,
+      "PyPSA/atlite": 2,
+      "PyPSA/project-website": 1,
+      "PyPSA/pypsa-ariadne": 1,
+      "PyPSA/pypsa-eur": 34,
+      "PyPSA/technology-data": 4,
+    },
+    repoIssues: {
+      "PyPSA/PyPSA": 4,
+      "PyPSA/linopy": 3,
+      "PyPSA/pypsa-eur": 7,
+      "PyPSA/technology-data": 2,
+    },
+    repoReviews: {
+      "PyPSA/PyPSA": 10,
+      "PyPSA/pypsa-eur": 10,
+      "PyPSA/technology-data": 1,
+    },
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/124347782?v=4",
+    firstName: "cpschau",
     lastName: "",
     positions: ["Contributor"],
     socialNetworks: [
       {
         name: "GitHub",
-        url: "https://github.com/hazemakhalek",
-      },
-    ],
-    totalContributions: 111,
-    totalMergedPrs: 57,
-    totalIssuesCreated: 54,
-    topRepos: ["pypsa-earth-sec", "pypsa-earth"],
-    repoContributions: {
-      "PyPSA/PyPSA": 1,
-      "pypsa-meets-earth/pypsa-earth": 24,
-      "pypsa-meets-earth/pypsa-earth-sec": 86,
-    },
-    repoPrs: {
-      "pypsa-meets-earth/pypsa-earth": 7,
-      "pypsa-meets-earth/pypsa-earth-sec": 50,
-    },
-    repoIssues: {
-      "PyPSA/PyPSA": 1,
-      "pypsa-meets-earth/pypsa-earth": 17,
-      "pypsa-meets-earth/pypsa-earth-sec": 36,
-    },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/89515385?v=4",
-    firstName: "Leon",
-    lastName: "Schumm",
-    positions: ["Contributor"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/energyLS",
-      },
-    ],
-    totalContributions: 110,
-    totalMergedPrs: 54,
-    totalIssuesCreated: 56,
-    topRepos: ["pypsa-earth-sec", "pypsa-earth"],
-    repoContributions: {
-      "PyPSA/PyPSA": 4,
-      "PyPSA/atlite": 1,
-      "PyPSA/cookiecutter-project": 1,
-      "PyPSA/efuels-server": 1,
-      "PyPSA/powerplantmatching": 1,
-      "PyPSA/pypsa-eur": 2,
-      "pypsa-meets-earth/pypsa-earth": 22,
-      "pypsa-meets-earth/pypsa-earth-sec": 78,
-    },
-    repoPrs: {
-      "PyPSA/PyPSA": 4,
-      "PyPSA/atlite": 1,
-      "PyPSA/cookiecutter-project": 1,
-      "PyPSA/powerplantmatching": 1,
-      "PyPSA/pypsa-eur": 1,
-      "pypsa-meets-earth/pypsa-earth": 7,
-      "pypsa-meets-earth/pypsa-earth-sec": 39,
-    },
-    repoIssues: {
-      "PyPSA/efuels-server": 1,
-      "PyPSA/pypsa-eur": 1,
-      "pypsa-meets-earth/pypsa-earth": 15,
-      "pypsa-meets-earth/pypsa-earth-sec": 39,
-    },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/2552981?v=4",
-    firstName: "Jonas",
-    lastName: "H\u00f6rsch",
-    positions: ["Contributor"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/coroa",
+        url: "https://github.com/cpschau",
       },
     ],
     totalContributions: 99,
-    totalMergedPrs: 50,
-    totalIssuesCreated: 49,
-    topRepos: ["PyPSA", "atlite", "pypsa-eur"],
+    totalMergedPrs: 49,
+    totalIssuesCreated: 15,
+    totalReviews: 35,
+    topRepos: ["pypsa-eur", "pypsa-earth-sec"],
     repoContributions: {
-      "PyPSA/EnergyModels.jl": 20,
-      "PyPSA/PyPSA": 24,
-      "PyPSA/atlite": 22,
-      "PyPSA/linopy": 10,
-      "PyPSA/powerplantmatching": 1,
-      "PyPSA/pypsa-eur": 22,
+      "PyPSA/PyPSA": 5,
+      "PyPSA/pypsa-ariadne": 3,
+      "PyPSA/pypsa-de": 13,
+      "PyPSA/pypsa-eur": 43,
+      "PyPSA/technology-data": 9,
+      "pypsa-meets-earth/pypsa-earth": 6,
+      "pypsa-meets-earth/pypsa-earth-sec": 20,
     },
     repoPrs: {
-      "PyPSA/EnergyModels.jl": 1,
-      "PyPSA/PyPSA": 17,
-      "PyPSA/atlite": 15,
-      "PyPSA/linopy": 8,
-      "PyPSA/pypsa-eur": 9,
+      "PyPSA/PyPSA": 2,
+      "PyPSA/pypsa-ariadne": 2,
+      "PyPSA/pypsa-de": 4,
+      "PyPSA/pypsa-eur": 20,
+      "PyPSA/technology-data": 4,
+      "pypsa-meets-earth/pypsa-earth": 4,
+      "pypsa-meets-earth/pypsa-earth-sec": 13,
     },
     repoIssues: {
-      "PyPSA/EnergyModels.jl": 19,
-      "PyPSA/PyPSA": 7,
-      "PyPSA/atlite": 7,
-      "PyPSA/linopy": 2,
-      "PyPSA/powerplantmatching": 1,
-      "PyPSA/pypsa-eur": 13,
+      "PyPSA/PyPSA": 2,
+      "PyPSA/pypsa-ariadne": 1,
+      "PyPSA/pypsa-de": 6,
+      "PyPSA/pypsa-eur": 4,
+      "pypsa-meets-earth/pypsa-earth": 2,
+    },
+    repoReviews: {
+      "PyPSA/PyPSA": 1,
+      "PyPSA/pypsa-de": 3,
+      "PyPSA/pypsa-eur": 19,
+      "PyPSA/technology-data": 5,
+      "pypsa-meets-earth/pypsa-earth-sec": 7,
+    },
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/113768325?v=4",
+    firstName: "Yerbol",
+    lastName: "Akhmetov",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/yerbol-akhmetov",
+      },
+    ],
+    totalContributions: 89,
+    totalMergedPrs: 59,
+    totalIssuesCreated: 16,
+    totalReviews: 14,
+    topRepos: ["pypsa-earth"],
+    repoContributions: {
+      "PyPSA/PyPSA": 2,
+      "PyPSA/pypsa-eur": 15,
+      "PyPSA/technology-data": 1,
+      "pypsa-meets-earth/pypsa-earth": 71,
+    },
+    repoPrs: {
+      "PyPSA/PyPSA": 2,
+      "PyPSA/pypsa-eur": 14,
+      "pypsa-meets-earth/pypsa-earth": 43,
+    },
+    repoIssues: {
+      "PyPSA/pypsa-eur": 1,
+      "pypsa-meets-earth/pypsa-earth": 15,
+    },
+    repoReviews: {
+      "PyPSA/technology-data": 1,
+      "pypsa-meets-earth/pypsa-earth": 13,
     },
   },
   {
@@ -663,6 +991,7 @@ export const contributorsData = [
     totalContributions: 88,
     totalMergedPrs: 59,
     totalIssuesCreated: 29,
+    totalReviews: 0,
     topRepos: ["pypsa-eur", "PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 18,
@@ -689,191 +1018,7 @@ export const contributorsData = [
       "PyPSA/technology-data": 1,
       "pypsa-meets-earth/pypsa-earth": 4,
     },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/95913147?v=4",
-    firstName: "Philipp",
-    lastName: "Glaum",
-    positions: ["Contributor"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/p-glaum",
-      },
-    ],
-    totalContributions: 82,
-    totalMergedPrs: 66,
-    totalIssuesCreated: 16,
-    topRepos: ["pypsa-eur", "PyPSA"],
-    repoContributions: {
-      "PyPSA/PyPSA": 29,
-      "PyPSA/atlite": 2,
-      "PyPSA/linopy": 3,
-      "PyPSA/project-website": 1,
-      "PyPSA/pypsa-ariadne": 1,
-      "PyPSA/pypsa-eur": 40,
-      "PyPSA/technology-data": 6,
-    },
-    repoPrs: {
-      "PyPSA/PyPSA": 25,
-      "PyPSA/atlite": 2,
-      "PyPSA/project-website": 1,
-      "PyPSA/pypsa-ariadne": 1,
-      "PyPSA/pypsa-eur": 33,
-      "PyPSA/technology-data": 4,
-    },
-    repoIssues: {
-      "PyPSA/PyPSA": 4,
-      "PyPSA/linopy": 3,
-      "PyPSA/pypsa-eur": 7,
-      "PyPSA/technology-data": 2,
-    },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/53824825?v=4",
-    firstName: "Martha",
-    lastName: "Frysztacki",
-    positions: ["Contributor"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/martacki",
-      },
-    ],
-    totalContributions: 73,
-    totalMergedPrs: 61,
-    totalIssuesCreated: 12,
-    topRepos: ["pypsa-eur", "PyPSA"],
-    repoContributions: {
-      "PyPSA/PyPSA": 15,
-      "PyPSA/atlite": 1,
-      "PyPSA/powerplantmatching": 3,
-      "PyPSA/project-website": 3,
-      "PyPSA/pypsa-eur": 42,
-      "PyPSA/pypsa-eur-sec": 1,
-      "PyPSA/pypsa-usa": 2,
-      "pypsa-meets-earth/pypsa-earth": 6,
-    },
-    repoPrs: {
-      "PyPSA/PyPSA": 13,
-      "PyPSA/atlite": 1,
-      "PyPSA/powerplantmatching": 3,
-      "PyPSA/project-website": 3,
-      "PyPSA/pypsa-eur": 35,
-      "PyPSA/pypsa-eur-sec": 1,
-      "PyPSA/pypsa-usa": 1,
-      "pypsa-meets-earth/pypsa-earth": 4,
-    },
-    repoIssues: {
-      "PyPSA/PyPSA": 2,
-      "PyPSA/pypsa-eur": 7,
-      "PyPSA/pypsa-usa": 1,
-      "pypsa-meets-earth/pypsa-earth": 2,
-    },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/113768325?v=4",
-    firstName: "Yerbol",
-    lastName: "Akhmetov",
-    positions: ["Contributor"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/yerbol-akhmetov",
-      },
-    ],
-    totalContributions: 69,
-    totalMergedPrs: 53,
-    totalIssuesCreated: 16,
-    topRepos: ["pypsa-earth", "pypsa-eur"],
-    repoContributions: {
-      "PyPSA/PyPSA": 1,
-      "PyPSA/pypsa-eur": 15,
-      "pypsa-meets-earth/pypsa-earth": 53,
-    },
-    repoPrs: {
-      "PyPSA/PyPSA": 1,
-      "PyPSA/pypsa-eur": 14,
-      "pypsa-meets-earth/pypsa-earth": 38,
-    },
-    repoIssues: {
-      "PyPSA/pypsa-eur": 1,
-      "pypsa-meets-earth/pypsa-earth": 15,
-    },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/30044662?v=4",
-    firstName: "Julian",
-    lastName: "Geis",
-    positions: ["Contributor"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/JulianGeis",
-      },
-    ],
-    totalContributions: 64,
-    totalMergedPrs: 48,
-    totalIssuesCreated: 16,
-    topRepos: ["pypsa-ariadne"],
-    repoContributions: {
-      "PyPSA/PyPSA": 2,
-      "PyPSA/pypsa-ariadne": 48,
-      "PyPSA/pypsa-de": 6,
-      "PyPSA/pypsa-eur": 8,
-    },
-    repoPrs: {
-      "PyPSA/PyPSA": 2,
-      "PyPSA/pypsa-ariadne": 40,
-      "PyPSA/pypsa-eur": 6,
-    },
-    repoIssues: {
-      "PyPSA/pypsa-ariadne": 8,
-      "PyPSA/pypsa-de": 6,
-      "PyPSA/pypsa-eur": 2,
-    },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/124347782?v=4",
-    firstName: "cpschau",
-    lastName: "",
-    positions: ["Contributor"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/cpschau",
-      },
-    ],
-    totalContributions: 63,
-    totalMergedPrs: 49,
-    totalIssuesCreated: 14,
-    topRepos: ["pypsa-eur", "pypsa-earth-sec"],
-    repoContributions: {
-      "PyPSA/PyPSA": 3,
-      "PyPSA/pypsa-ariadne": 3,
-      "PyPSA/pypsa-de": 10,
-      "PyPSA/pypsa-eur": 24,
-      "PyPSA/technology-data": 4,
-      "pypsa-meets-earth/pypsa-earth": 5,
-      "pypsa-meets-earth/pypsa-earth-sec": 14,
-    },
-    repoPrs: {
-      "PyPSA/PyPSA": 2,
-      "PyPSA/pypsa-ariadne": 2,
-      "PyPSA/pypsa-de": 4,
-      "PyPSA/pypsa-eur": 20,
-      "PyPSA/technology-data": 4,
-      "pypsa-meets-earth/pypsa-earth": 4,
-      "pypsa-meets-earth/pypsa-earth-sec": 13,
-    },
-    repoIssues: {
-      "PyPSA/PyPSA": 1,
-      "PyPSA/pypsa-ariadne": 1,
-      "PyPSA/pypsa-de": 6,
-      "PyPSA/pypsa-eur": 4,
-      "pypsa-meets-earth/pypsa-earth": 1,
-      "pypsa-meets-earth/pypsa-earth-sec": 1,
-    },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/48842684?v=4",
@@ -886,51 +1031,27 @@ export const contributorsData = [
         url: "https://github.com/GbotemiB",
       },
     ],
-    totalContributions: 59,
-    totalMergedPrs: 29,
-    totalIssuesCreated: 30,
+    totalContributions: 85,
+    totalMergedPrs: 33,
+    totalIssuesCreated: 34,
+    totalReviews: 18,
     topRepos: ["pypsa-earth"],
     repoContributions: {
       "PyPSA/project-website": 1,
-      "pypsa-meets-earth/pypsa-earth": 52,
+      "pypsa-meets-earth/pypsa-earth": 78,
       "pypsa-meets-earth/pypsa-earth-sec": 6,
     },
     repoPrs: {
       "PyPSA/project-website": 1,
-      "pypsa-meets-earth/pypsa-earth": 23,
+      "pypsa-meets-earth/pypsa-earth": 27,
       "pypsa-meets-earth/pypsa-earth-sec": 5,
     },
     repoIssues: {
-      "pypsa-meets-earth/pypsa-earth": 29,
+      "pypsa-meets-earth/pypsa-earth": 33,
       "pypsa-meets-earth/pypsa-earth-sec": 1,
     },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/132910766?v=4",
-    firstName: "Anton",
-    lastName: "Achhammer",
-    positions: ["Contributor"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/doneachh",
-      },
-    ],
-    totalContributions: 58,
-    totalMergedPrs: 23,
-    totalIssuesCreated: 35,
-    topRepos: ["pypsa-earth-sec", "pypsa-earth"],
-    repoContributions: {
+    repoReviews: {
       "pypsa-meets-earth/pypsa-earth": 18,
-      "pypsa-meets-earth/pypsa-earth-sec": 40,
-    },
-    repoPrs: {
-      "pypsa-meets-earth/pypsa-earth": 8,
-      "pypsa-meets-earth/pypsa-earth-sec": 15,
-    },
-    repoIssues: {
-      "pypsa-meets-earth/pypsa-earth": 10,
-      "pypsa-meets-earth/pypsa-earth-sec": 25,
     },
   },
   {
@@ -944,40 +1065,45 @@ export const contributorsData = [
         url: "https://github.com/Irieo",
       },
     ],
-    totalContributions: 57,
-    totalMergedPrs: 37,
-    totalIssuesCreated: 20,
+    totalContributions: 80,
+    totalMergedPrs: 46,
+    totalIssuesCreated: 21,
+    totalReviews: 13,
     topRepos: ["PyPSA", "247-cfe"],
     repoContributions: {
       "PyPSA/247-cfe": 20,
-      "PyPSA/PyPSA": 21,
+      "PyPSA/PyPSA": 43,
       "PyPSA/atlite": 2,
       "PyPSA/linopy": 5,
       "PyPSA/powerplantmatching": 1,
-      "PyPSA/pypsa-eur": 6,
+      "PyPSA/pypsa-eur": 7,
       "PyPSA/pypsa-eur-sec": 2,
     },
     repoPrs: {
       "PyPSA/247-cfe": 12,
-      "PyPSA/PyPSA": 16,
+      "PyPSA/PyPSA": 24,
       "PyPSA/atlite": 1,
       "PyPSA/linopy": 3,
       "PyPSA/powerplantmatching": 1,
-      "PyPSA/pypsa-eur": 2,
+      "PyPSA/pypsa-eur": 3,
       "PyPSA/pypsa-eur-sec": 2,
     },
     repoIssues: {
       "PyPSA/247-cfe": 8,
-      "PyPSA/PyPSA": 5,
+      "PyPSA/PyPSA": 7,
       "PyPSA/atlite": 1,
       "PyPSA/linopy": 2,
-      "PyPSA/pypsa-eur": 4,
+      "PyPSA/pypsa-eur": 3,
+    },
+    repoReviews: {
+      "PyPSA/PyPSA": 12,
+      "PyPSA/pypsa-eur": 1,
     },
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/36541459?v=4",
     firstName: "Bobby",
-    lastName: "Xiong",
+    lastName: "",
     positions: ["Contributor"],
     socialNetworks: [
       {
@@ -985,25 +1111,216 @@ export const contributorsData = [
         url: "https://github.com/bobbyxng",
       },
     ],
-    totalContributions: 52,
-    totalMergedPrs: 40,
-    totalIssuesCreated: 12,
-    topRepos: ["pypsa-eur", "PyPSA"],
+    totalContributions: 77,
+    totalMergedPrs: 54,
+    totalIssuesCreated: 13,
+    totalReviews: 10,
+    topRepos: ["pypsa-eur"],
     repoContributions: {
-      "PyPSA/PyPSA": 11,
+      "PyPSA/PyPSA": 14,
+      "PyPSA/linopy": 1,
       "PyPSA/pypsa-de": 1,
-      "PyPSA/pypsa-eur": 37,
+      "PyPSA/pypsa-eur": 57,
+      "PyPSA/technology-data": 1,
       "pypsa-meets-earth/pypsa-earth": 3,
     },
     repoPrs: {
       "PyPSA/PyPSA": 9,
+      "PyPSA/linopy": 1,
       "PyPSA/pypsa-de": 1,
-      "PyPSA/pypsa-eur": 30,
+      "PyPSA/pypsa-eur": 43,
+    },
+    repoIssues: {
+      "PyPSA/PyPSA": 3,
+      "PyPSA/pypsa-eur": 7,
+      "pypsa-meets-earth/pypsa-earth": 3,
+    },
+    repoReviews: {
+      "PyPSA/PyPSA": 2,
+      "PyPSA/pypsa-eur": 7,
+      "PyPSA/technology-data": 1,
+    },
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/30044662?v=4",
+    firstName: "Julian",
+    lastName: "Geis",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/JulianGeis",
+      },
+    ],
+    totalContributions: 70,
+    totalMergedPrs: 49,
+    totalIssuesCreated: 16,
+    totalReviews: 5,
+    topRepos: ["pypsa-ariadne"],
+    repoContributions: {
+      "PyPSA/PyPSA": 2,
+      "PyPSA/pypsa-ariadne": 51,
+      "PyPSA/pypsa-de": 8,
+      "PyPSA/pypsa-eur": 9,
+    },
+    repoPrs: {
+      "PyPSA/PyPSA": 2,
+      "PyPSA/pypsa-ariadne": 40,
+      "PyPSA/pypsa-de": 1,
+      "PyPSA/pypsa-eur": 6,
+    },
+    repoIssues: {
+      "PyPSA/pypsa-ariadne": 8,
+      "PyPSA/pypsa-de": 6,
+      "PyPSA/pypsa-eur": 2,
+    },
+    repoReviews: {
+      "PyPSA/pypsa-ariadne": 3,
+      "PyPSA/pypsa-de": 1,
+      "PyPSA/pypsa-eur": 1,
+    },
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/132910766?v=4",
+    firstName: "Anton",
+    lastName: "Achhammer",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/doneachh",
+      },
+    ],
+    totalContributions: 66,
+    totalMergedPrs: 27,
+    totalIssuesCreated: 36,
+    totalReviews: 3,
+    topRepos: ["pypsa-earth-sec", "pypsa-earth"],
+    repoContributions: {
+      "pypsa-meets-earth/pypsa-earth": 25,
+      "pypsa-meets-earth/pypsa-earth-sec": 41,
+    },
+    repoPrs: {
+      "pypsa-meets-earth/pypsa-earth": 12,
+      "pypsa-meets-earth/pypsa-earth-sec": 15,
+    },
+    repoIssues: {
+      "pypsa-meets-earth/pypsa-earth": 11,
+      "pypsa-meets-earth/pypsa-earth-sec": 25,
+    },
+    repoReviews: {
+      "pypsa-meets-earth/pypsa-earth": 2,
+      "pypsa-meets-earth/pypsa-earth-sec": 1,
+    },
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/in/946600?v=4",
+    firstName: "copilot-pull-request-reviewer",
+    lastName: "",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/copilot-pull-request-reviewer",
+      },
+    ],
+    totalContributions: 64,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 0,
+    totalReviews: 64,
+    topRepos: ["pypsa-eur", "PyPSA"],
+    repoContributions: {
+      "PyPSA/PyPSA": 13,
+      "PyPSA/atlite": 1,
+      "PyPSA/powerplantmatching": 2,
+      "PyPSA/pypsa-de": 4,
+      "PyPSA/pypsa-eur": 33,
+      "PyPSA/pypsa-usa": 4,
+      "PyPSA/technology-data": 3,
+      "pypsa-meets-earth/pypsa-earth": 4,
+    },
+    repoPrs: {},
+    repoIssues: {},
+    repoReviews: {
+      "PyPSA/PyPSA": 13,
+      "PyPSA/atlite": 1,
+      "PyPSA/powerplantmatching": 2,
+      "PyPSA/pypsa-de": 4,
+      "PyPSA/pypsa-eur": 33,
+      "PyPSA/pypsa-usa": 4,
+      "PyPSA/technology-data": 3,
+      "pypsa-meets-earth/pypsa-earth": 4,
+    },
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/60692940?v=4",
+    firstName: "Amos",
+    lastName: "Schledorn",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/amos-schledorn",
+      },
+    ],
+    totalContributions: 56,
+    totalMergedPrs: 29,
+    totalIssuesCreated: 9,
+    totalReviews: 18,
+    topRepos: ["pypsa-eur"],
+    repoContributions: {
+      "PyPSA/pypsa-ariadne": 1,
+      "PyPSA/pypsa-de": 2,
+      "PyPSA/pypsa-eur": 44,
+      "PyPSA/technology-data": 9,
+    },
+    repoPrs: {
+      "PyPSA/pypsa-de": 1,
+      "PyPSA/pypsa-eur": 22,
+      "PyPSA/technology-data": 6,
+    },
+    repoIssues: {
+      "PyPSA/pypsa-eur": 8,
+      "PyPSA/technology-data": 1,
+    },
+    repoReviews: {
+      "PyPSA/pypsa-ariadne": 1,
+      "PyPSA/pypsa-de": 1,
+      "PyPSA/pypsa-eur": 14,
+      "PyPSA/technology-data": 2,
+    },
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/22521851?v=4",
+    firstName: "Thomas",
+    lastName: "Gilon",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/tgilon",
+      },
+    ],
+    totalContributions: 47,
+    totalMergedPrs: 37,
+    totalIssuesCreated: 6,
+    totalReviews: 4,
+    topRepos: ["pypsa-eur"],
+    repoContributions: {
+      "PyPSA/PyPSA": 2,
+      "PyPSA/pypsa-eur": 40,
+      "PyPSA/technology-data": 5,
+    },
+    repoPrs: {
+      "PyPSA/pypsa-eur": 32,
+      "PyPSA/technology-data": 5,
     },
     repoIssues: {
       "PyPSA/PyPSA": 2,
-      "PyPSA/pypsa-eur": 7,
-      "pypsa-meets-earth/pypsa-earth": 3,
+      "PyPSA/pypsa-eur": 4,
+    },
+    repoReviews: {
+      "PyPSA/pypsa-eur": 4,
     },
   },
   {
@@ -1017,16 +1334,17 @@ export const contributorsData = [
         url: "https://github.com/martavp",
       },
     ],
-    totalContributions: 40,
+    totalContributions: 46,
     totalMergedPrs: 20,
     totalIssuesCreated: 20,
-    topRepos: ["pypsa-eur", "pypsa-eur-sec"],
+    totalReviews: 6,
+    topRepos: ["pypsa-eur", "pypsa-eur-sec", "technology-data"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
-      "PyPSA/atlite": 3,
-      "PyPSA/pypsa-eur": 16,
-      "PyPSA/pypsa-eur-sec": 13,
-      "PyPSA/technology-data": 7,
+      "PyPSA/atlite": 4,
+      "PyPSA/pypsa-eur": 17,
+      "PyPSA/pypsa-eur-sec": 14,
+      "PyPSA/technology-data": 10,
     },
     repoPrs: {
       "PyPSA/atlite": 2,
@@ -1039,6 +1357,233 @@ export const contributorsData = [
       "PyPSA/atlite": 1,
       "PyPSA/pypsa-eur": 15,
       "PyPSA/technology-data": 3,
+    },
+    repoReviews: {
+      "PyPSA/atlite": 1,
+      "PyPSA/pypsa-eur": 1,
+      "PyPSA/pypsa-eur-sec": 1,
+      "PyPSA/technology-data": 3,
+    },
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/117816358?v=4",
+    firstName: "Felix",
+    lastName: "",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/FBumann",
+      },
+    ],
+    totalContributions: 46,
+    totalMergedPrs: 29,
+    totalIssuesCreated: 14,
+    totalReviews: 3,
+    topRepos: ["linopy"],
+    repoContributions: {
+      "PyPSA/linopy": 46,
+    },
+    repoPrs: {
+      "PyPSA/linopy": 29,
+    },
+    repoIssues: {
+      "PyPSA/linopy": 14,
+    },
+    repoReviews: {
+      "PyPSA/linopy": 3,
+    },
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/114650479?v=4",
+    firstName: "Virio",
+    lastName: "Andreyana",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/virio-andreyana",
+      },
+    ],
+    totalContributions: 42,
+    totalMergedPrs: 34,
+    totalIssuesCreated: 5,
+    totalReviews: 3,
+    topRepos: ["pypsa-earth", "pypsa-eur"],
+    repoContributions: {
+      "PyPSA/pypsa-eur": 9,
+      "PyPSA/pypsa-eur-sec": 3,
+      "pypsa-meets-earth/pypsa-earth": 30,
+    },
+    repoPrs: {
+      "PyPSA/pypsa-eur": 8,
+      "PyPSA/pypsa-eur-sec": 3,
+      "pypsa-meets-earth/pypsa-earth": 23,
+    },
+    repoIssues: {
+      "pypsa-meets-earth/pypsa-earth": 5,
+    },
+    repoReviews: {
+      "PyPSA/pypsa-eur": 1,
+      "pypsa-meets-earth/pypsa-earth": 2,
+    },
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/175011591?v=4",
+    firstName: "Daniele",
+    lastName: "Lerede",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/danielelerede-oet",
+      },
+    ],
+    totalContributions: 40,
+    totalMergedPrs: 26,
+    totalIssuesCreated: 13,
+    totalReviews: 1,
+    topRepos: ["pypsa-earth", "technology-data"],
+    repoContributions: {
+      "PyPSA/linopy": 1,
+      "PyPSA/pypsa-eur": 3,
+      "PyPSA/technology-data": 13,
+      "pypsa-meets-earth/pypsa-earth": 23,
+    },
+    repoPrs: {
+      "PyPSA/linopy": 1,
+      "PyPSA/pypsa-eur": 2,
+      "PyPSA/technology-data": 11,
+      "pypsa-meets-earth/pypsa-earth": 12,
+    },
+    repoIssues: {
+      "PyPSA/pypsa-eur": 1,
+      "PyPSA/technology-data": 1,
+      "pypsa-meets-earth/pypsa-earth": 11,
+    },
+    repoReviews: {
+      "PyPSA/technology-data": 1,
+    },
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/17178478?v=4",
+    firstName: "Bryn",
+    lastName: "Pickering",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/brynpickering",
+      },
+    ],
+    totalContributions: 39,
+    totalMergedPrs: 13,
+    totalIssuesCreated: 16,
+    totalReviews: 10,
+    topRepos: ["pypsa-eur", "PyPSA"],
+    repoContributions: {
+      "PyPSA/PyPSA": 10,
+      "PyPSA/atlite": 5,
+      "PyPSA/linopy": 4,
+      "PyPSA/powerplantmatching": 2,
+      "PyPSA/pypsa-eur": 18,
+    },
+    repoPrs: {
+      "PyPSA/PyPSA": 2,
+      "PyPSA/atlite": 1,
+      "PyPSA/pypsa-eur": 10,
+    },
+    repoIssues: {
+      "PyPSA/PyPSA": 5,
+      "PyPSA/atlite": 1,
+      "PyPSA/linopy": 2,
+      "PyPSA/powerplantmatching": 1,
+      "PyPSA/pypsa-eur": 7,
+    },
+    repoReviews: {
+      "PyPSA/PyPSA": 3,
+      "PyPSA/atlite": 3,
+      "PyPSA/linopy": 2,
+      "PyPSA/powerplantmatching": 1,
+      "PyPSA/pypsa-eur": 1,
+    },
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/167071962?v=4",
+    firstName: "Fabrizio",
+    lastName: "Finozzi",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/finozzifa",
+      },
+    ],
+    totalContributions: 38,
+    totalMergedPrs: 30,
+    totalIssuesCreated: 6,
+    totalReviews: 2,
+    topRepos: ["technology-data", "pypsa-earth"],
+    repoContributions: {
+      "PyPSA/atlite": 1,
+      "PyPSA/linopy": 4,
+      "PyPSA/pypsa-eur": 4,
+      "PyPSA/pypsa-usa": 1,
+      "PyPSA/technology-data": 13,
+      "pypsa-meets-earth/pypsa-earth": 10,
+      "pypsa-meets-earth/pypsa-earth-sec": 5,
+    },
+    repoPrs: {
+      "PyPSA/atlite": 1,
+      "PyPSA/linopy": 2,
+      "PyPSA/pypsa-eur": 4,
+      "PyPSA/technology-data": 12,
+      "pypsa-meets-earth/pypsa-earth": 9,
+      "pypsa-meets-earth/pypsa-earth-sec": 2,
+    },
+    repoIssues: {
+      "PyPSA/linopy": 1,
+      "PyPSA/pypsa-usa": 1,
+      "PyPSA/technology-data": 1,
+      "pypsa-meets-earth/pypsa-earth": 1,
+      "pypsa-meets-earth/pypsa-earth-sec": 2,
+    },
+    repoReviews: {
+      "PyPSA/linopy": 1,
+      "pypsa-meets-earth/pypsa-earth-sec": 1,
+    },
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/75539255?v=4",
+    firstName: "Eddy",
+    lastName: "Jalbout",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/Eddy-JV",
+      },
+    ],
+    totalContributions: 38,
+    totalMergedPrs: 27,
+    totalIssuesCreated: 3,
+    totalReviews: 8,
+    topRepos: ["pypsa-earth-sec", "pypsa-earth"],
+    repoContributions: {
+      "pypsa-meets-earth/pypsa-earth": 9,
+      "pypsa-meets-earth/pypsa-earth-sec": 29,
+    },
+    repoPrs: {
+      "pypsa-meets-earth/pypsa-earth": 4,
+      "pypsa-meets-earth/pypsa-earth-sec": 23,
+    },
+    repoIssues: {
+      "pypsa-meets-earth/pypsa-earth": 2,
+      "pypsa-meets-earth/pypsa-earth-sec": 1,
+    },
+    repoReviews: {
+      "pypsa-meets-earth/pypsa-earth": 3,
+      "pypsa-meets-earth/pypsa-earth-sec": 5,
     },
   },
   {
@@ -1055,6 +1600,7 @@ export const contributorsData = [
     totalContributions: 36,
     totalMergedPrs: 2,
     totalIssuesCreated: 34,
+    totalReviews: 0,
     topRepos: ["pypsa-eur", "PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 12,
@@ -1072,157 +1618,7 @@ export const contributorsData = [
       "PyPSA/pypsa-eur": 18,
       "PyPSA/technology-data": 3,
     },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/60692940?v=4",
-    firstName: "Amos",
-    lastName: "Schledorn",
-    positions: ["Contributor"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/amos-schledorn",
-      },
-    ],
-    totalContributions: 36,
-    totalMergedPrs: 27,
-    totalIssuesCreated: 9,
-    topRepos: ["pypsa-eur"],
-    repoContributions: {
-      "PyPSA/pypsa-eur": 29,
-      "PyPSA/technology-data": 7,
-    },
-    repoPrs: {
-      "PyPSA/pypsa-eur": 21,
-      "PyPSA/technology-data": 6,
-    },
-    repoIssues: {
-      "PyPSA/pypsa-eur": 8,
-      "PyPSA/technology-data": 1,
-    },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/167071962?v=4",
-    firstName: "Fabrizio",
-    lastName: "Finozzi",
-    positions: ["Contributor"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/finozzifa",
-      },
-    ],
-    totalContributions: 33,
-    totalMergedPrs: 28,
-    totalIssuesCreated: 5,
-    topRepos: ["technology-data", "pypsa-earth"],
-    repoContributions: {
-      "PyPSA/atlite": 1,
-      "PyPSA/pypsa-eur": 4,
-      "PyPSA/pypsa-usa": 1,
-      "PyPSA/technology-data": 13,
-      "pypsa-meets-earth/pypsa-earth": 9,
-      "pypsa-meets-earth/pypsa-earth-sec": 5,
-    },
-    repoPrs: {
-      "PyPSA/atlite": 1,
-      "PyPSA/pypsa-eur": 4,
-      "PyPSA/technology-data": 12,
-      "pypsa-meets-earth/pypsa-earth": 9,
-      "pypsa-meets-earth/pypsa-earth-sec": 2,
-    },
-    repoIssues: {
-      "PyPSA/pypsa-usa": 1,
-      "PyPSA/technology-data": 1,
-      "pypsa-meets-earth/pypsa-earth-sec": 3,
-    },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/175011591?v=4",
-    firstName: "Daniele",
-    lastName: "Lerede",
-    positions: ["Contributor"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/danielelerede-oet",
-      },
-    ],
-    totalContributions: 33,
-    totalMergedPrs: 22,
-    totalIssuesCreated: 11,
-    topRepos: ["pypsa-earth", "technology-data"],
-    repoContributions: {
-      "PyPSA/pypsa-eur": 1,
-      "PyPSA/technology-data": 12,
-      "pypsa-meets-earth/pypsa-earth": 20,
-    },
-    repoPrs: {
-      "PyPSA/technology-data": 11,
-      "pypsa-meets-earth/pypsa-earth": 11,
-    },
-    repoIssues: {
-      "PyPSA/pypsa-eur": 1,
-      "PyPSA/technology-data": 1,
-      "pypsa-meets-earth/pypsa-earth": 9,
-    },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/22521851?v=4",
-    firstName: "Thomas",
-    lastName: "Gilon",
-    positions: ["Contributor"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/tgilon",
-      },
-    ],
-    totalContributions: 31,
-    totalMergedPrs: 28,
-    totalIssuesCreated: 3,
-    topRepos: ["pypsa-eur"],
-    repoContributions: {
-      "PyPSA/PyPSA": 1,
-      "PyPSA/pypsa-eur": 25,
-      "PyPSA/technology-data": 5,
-    },
-    repoPrs: {
-      "PyPSA/pypsa-eur": 23,
-      "PyPSA/technology-data": 5,
-    },
-    repoIssues: {
-      "PyPSA/PyPSA": 1,
-      "PyPSA/pypsa-eur": 2,
-    },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/75539255?v=4",
-    firstName: "Eddy",
-    lastName: "Jalbout",
-    positions: ["Contributor"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/Eddy-JV",
-      },
-    ],
-    totalContributions: 30,
-    totalMergedPrs: 27,
-    totalIssuesCreated: 3,
-    topRepos: ["pypsa-earth-sec"],
-    repoContributions: {
-      "pypsa-meets-earth/pypsa-earth": 5,
-      "pypsa-meets-earth/pypsa-earth-sec": 25,
-    },
-    repoPrs: {
-      "pypsa-meets-earth/pypsa-earth": 4,
-      "pypsa-meets-earth/pypsa-earth-sec": 23,
-    },
-    repoIssues: {
-      "pypsa-meets-earth/pypsa-earth": 1,
-      "pypsa-meets-earth/pypsa-earth-sec": 2,
-    },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/152230633?v=4",
@@ -1235,23 +1631,94 @@ export const contributorsData = [
         url: "https://github.com/Eric-Nitschke",
       },
     ],
-    totalContributions: 27,
-    totalMergedPrs: 12,
-    totalIssuesCreated: 15,
+    totalContributions: 31,
+    totalMergedPrs: 13,
+    totalIssuesCreated: 18,
+    totalReviews: 0,
     topRepos: ["pypsa-earth", "pypsa-eur"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
-      "PyPSA/pypsa-eur": 7,
+      "PyPSA/pypsa-eur": 11,
       "pypsa-meets-earth/pypsa-earth": 19,
     },
     repoPrs: {
       "PyPSA/PyPSA": 1,
-      "PyPSA/pypsa-eur": 3,
+      "PyPSA/pypsa-eur": 4,
       "pypsa-meets-earth/pypsa-earth": 8,
     },
     repoIssues: {
-      "PyPSA/pypsa-eur": 4,
+      "PyPSA/pypsa-eur": 7,
       "pypsa-meets-earth/pypsa-earth": 11,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/117752024?v=4",
+    firstName: "Daniel",
+    lastName: "R\u00fcdt",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/daniel-rdt",
+      },
+    ],
+    totalContributions: 29,
+    totalMergedPrs: 20,
+    totalIssuesCreated: 7,
+    totalReviews: 2,
+    topRepos: ["pypsa-eur"],
+    repoContributions: {
+      "PyPSA/linopy": 2,
+      "PyPSA/powerplantmatching": 2,
+      "PyPSA/pypsa-eur": 24,
+      "PyPSA/snakemake-storage-plugin-cached-http": 1,
+    },
+    repoPrs: {
+      "PyPSA/linopy": 2,
+      "PyPSA/powerplantmatching": 2,
+      "PyPSA/pypsa-eur": 16,
+    },
+    repoIssues: {
+      "PyPSA/pypsa-eur": 7,
+    },
+    repoReviews: {
+      "PyPSA/pypsa-eur": 1,
+      "PyPSA/snakemake-storage-plugin-cached-http": 1,
+    },
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/1872480?v=4",
+    firstName: "Markus",
+    lastName: "Groissb\u00f6ck",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/gincrement",
+      },
+    ],
+    totalContributions: 27,
+    totalMergedPrs: 18,
+    totalIssuesCreated: 8,
+    totalReviews: 1,
+    topRepos: ["PyPSA"],
+    repoContributions: {
+      "PyPSA/PyPSA": 23,
+      "PyPSA/powerplantmatching": 1,
+      "PyPSA/pypsa-eur": 3,
+    },
+    repoPrs: {
+      "PyPSA/PyPSA": 16,
+      "PyPSA/powerplantmatching": 1,
+      "PyPSA/pypsa-eur": 1,
+    },
+    repoIssues: {
+      "PyPSA/PyPSA": 6,
+      "PyPSA/pypsa-eur": 2,
+    },
+    repoReviews: {
+      "PyPSA/PyPSA": 1,
     },
   },
   {
@@ -1268,6 +1735,7 @@ export const contributorsData = [
     totalContributions: 27,
     totalMergedPrs: 15,
     totalIssuesCreated: 12,
+    totalReviews: 0,
     topRepos: ["pypsa-earth", "powerplantmatching"],
     repoContributions: {
       "PyPSA/powerplantmatching": 6,
@@ -1284,6 +1752,7 @@ export const contributorsData = [
       "PyPSA/pypsa-eur": 1,
       "pypsa-meets-earth/pypsa-earth": 9,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/8858849?v=4",
@@ -1299,6 +1768,7 @@ export const contributorsData = [
     totalContributions: 26,
     totalMergedPrs: 9,
     totalIssuesCreated: 17,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 26,
@@ -1309,64 +1779,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 17,
     },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/114650479?v=4",
-    firstName: "Virio",
-    lastName: "Andreyana",
-    positions: ["Contributor"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/virio-andreyana",
-      },
-    ],
-    totalContributions: 25,
-    totalMergedPrs: 23,
-    totalIssuesCreated: 2,
-    topRepos: ["pypsa-earth", "pypsa-eur"],
-    repoContributions: {
-      "PyPSA/pypsa-eur": 7,
-      "PyPSA/pypsa-eur-sec": 3,
-      "pypsa-meets-earth/pypsa-earth": 15,
-    },
-    repoPrs: {
-      "PyPSA/pypsa-eur": 7,
-      "PyPSA/pypsa-eur-sec": 3,
-      "pypsa-meets-earth/pypsa-earth": 13,
-    },
-    repoIssues: {
-      "pypsa-meets-earth/pypsa-earth": 2,
-    },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/117752024?v=4",
-    firstName: "Daniel",
-    lastName: "R\u00fcdt",
-    positions: ["Contributor"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/daniel-rdt",
-      },
-    ],
-    totalContributions: 23,
-    totalMergedPrs: 16,
-    totalIssuesCreated: 7,
-    topRepos: ["pypsa-eur"],
-    repoContributions: {
-      "PyPSA/linopy": 2,
-      "PyPSA/powerplantmatching": 2,
-      "PyPSA/pypsa-eur": 19,
-    },
-    repoPrs: {
-      "PyPSA/linopy": 2,
-      "PyPSA/powerplantmatching": 2,
-      "PyPSA/pypsa-eur": 12,
-    },
-    repoIssues: {
-      "PyPSA/pypsa-eur": 7,
-    },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/58934815?v=4",
@@ -1382,6 +1795,7 @@ export const contributorsData = [
     totalContributions: 22,
     totalMergedPrs: 3,
     totalIssuesCreated: 19,
+    totalReviews: 0,
     topRepos: ["PyPSA", "linopy"],
     repoContributions: {
       "PyPSA/PyPSA": 16,
@@ -1395,6 +1809,7 @@ export const contributorsData = [
       "PyPSA/PyPSA": 15,
       "PyPSA/linopy": 4,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/139848565?v=4",
@@ -1410,6 +1825,7 @@ export const contributorsData = [
     totalContributions: 21,
     totalMergedPrs: 20,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/linopy": 1,
@@ -1421,6 +1837,73 @@ export const contributorsData = [
     },
     repoIssues: {
       "PyPSA/pypsa-eur": 1,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/87762996?v=4",
+    firstName: "PeterKlein11",
+    lastName: "",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/PeterKlein11",
+      },
+    ],
+    totalContributions: 20,
+    totalMergedPrs: 6,
+    totalIssuesCreated: 14,
+    totalReviews: 0,
+    topRepos: ["PyPSA", "linopy"],
+    repoContributions: {
+      "PyPSA/PyPSA": 14,
+      "PyPSA/atlite": 1,
+      "PyPSA/linopy": 4,
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoPrs: {
+      "PyPSA/PyPSA": 4,
+      "PyPSA/linopy": 2,
+    },
+    repoIssues: {
+      "PyPSA/PyPSA": 10,
+      "PyPSA/atlite": 1,
+      "PyPSA/linopy": 2,
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/17104565?v=4",
+    firstName: "Robbie",
+    lastName: "",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/RobbieKiwi",
+      },
+    ],
+    totalContributions: 20,
+    totalMergedPrs: 12,
+    totalIssuesCreated: 6,
+    totalReviews: 2,
+    topRepos: ["linopy"],
+    repoContributions: {
+      "PyPSA/PyPSA": 3,
+      "PyPSA/linopy": 17,
+    },
+    repoPrs: {
+      "PyPSA/PyPSA": 2,
+      "PyPSA/linopy": 10,
+    },
+    repoIssues: {
+      "PyPSA/PyPSA": 1,
+      "PyPSA/linopy": 5,
+    },
+    repoReviews: {
+      "PyPSA/linopy": 2,
     },
   },
   {
@@ -1437,6 +1920,7 @@ export const contributorsData = [
     totalContributions: 20,
     totalMergedPrs: 18,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["linopy", "PyPSA", "powerplantmatching"],
     repoContributions: {
       "PyPSA/PyPSA": 7,
@@ -1454,6 +1938,7 @@ export const contributorsData = [
       "PyPSA/linopy": 1,
       "PyPSA/powerplantmatching": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/187458065?v=4",
@@ -1466,13 +1951,14 @@ export const contributorsData = [
         url: "https://github.com/WeiAi-Energy",
       },
     ],
-    totalContributions: 19,
+    totalContributions: 20,
     totalMergedPrs: 6,
     totalIssuesCreated: 13,
+    totalReviews: 1,
     topRepos: ["pypsa-usa"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
-      "PyPSA/pypsa-usa": 18,
+      "PyPSA/pypsa-usa": 19,
     },
     repoPrs: {
       "PyPSA/pypsa-usa": 6,
@@ -1481,38 +1967,49 @@ export const contributorsData = [
       "PyPSA/PyPSA": 1,
       "PyPSA/pypsa-usa": 12,
     },
+    repoReviews: {
+      "PyPSA/pypsa-usa": 1,
+    },
   },
   {
-    imageUrl: "https://avatars.githubusercontent.com/u/87762996?v=4",
-    firstName: "PeterKlein11",
-    lastName: "",
+    imageUrl: "https://avatars.githubusercontent.com/u/18009395?v=4",
+    firstName: "Mayk",
+    lastName: "Thewessen",
     positions: ["Contributor"],
     socialNetworks: [
       {
         name: "GitHub",
-        url: "https://github.com/PeterKlein11",
+        url: "https://github.com/MaykThewessen",
       },
     ],
-    totalContributions: 18,
-    totalMergedPrs: 6,
-    totalIssuesCreated: 12,
-    topRepos: ["PyPSA", "linopy"],
+    totalContributions: 19,
+    totalMergedPrs: 2,
+    totalIssuesCreated: 17,
+    totalReviews: 0,
+    topRepos: ["PyPSA"],
     repoContributions: {
-      "PyPSA/PyPSA": 12,
-      "PyPSA/atlite": 1,
-      "PyPSA/linopy": 4,
-      "pypsa-meets-earth/pypsa-earth": 1,
+      "PyPSA/247-cfe": 1,
+      "PyPSA/PyPSA": 7,
+      "PyPSA/atlite": 3,
+      "PyPSA/linopy": 2,
+      "PyPSA/powerplantmatching": 3,
+      "PyPSA/pypsa-app": 1,
+      "PyPSA/pypsa-eur": 2,
     },
     repoPrs: {
-      "PyPSA/PyPSA": 4,
-      "PyPSA/linopy": 2,
+      "PyPSA/atlite": 1,
+      "PyPSA/linopy": 1,
     },
     repoIssues: {
-      "PyPSA/PyPSA": 8,
-      "PyPSA/atlite": 1,
-      "PyPSA/linopy": 2,
-      "pypsa-meets-earth/pypsa-earth": 1,
+      "PyPSA/247-cfe": 1,
+      "PyPSA/PyPSA": 7,
+      "PyPSA/atlite": 2,
+      "PyPSA/linopy": 1,
+      "PyPSA/powerplantmatching": 3,
+      "PyPSA/pypsa-app": 1,
+      "PyPSA/pypsa-eur": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/5986600?v=4",
@@ -1528,6 +2025,7 @@ export const contributorsData = [
     totalContributions: 18,
     totalMergedPrs: 2,
     totalIssuesCreated: 16,
+    totalReviews: 0,
     topRepos: ["PyPSA", "linopy"],
     repoContributions: {
       "PyPSA/PSA.jl": 1,
@@ -1542,6 +2040,7 @@ export const contributorsData = [
       "PyPSA/PyPSA": 8,
       "PyPSA/linopy": 7,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/50738187?v=4",
@@ -1554,24 +2053,251 @@ export const contributorsData = [
         url: "https://github.com/millingermarkus",
       },
     ],
-    totalContributions: 17,
-    totalMergedPrs: 14,
+    totalContributions: 18,
+    totalMergedPrs: 15,
     totalIssuesCreated: 3,
+    totalReviews: 0,
     topRepos: ["pypsa-eur", "technology-data"],
     repoContributions: {
       "PyPSA/pypsa-eur": 8,
       "PyPSA/pypsa-eur-sec": 2,
-      "PyPSA/technology-data": 7,
+      "PyPSA/technology-data": 8,
     },
     repoPrs: {
       "PyPSA/pypsa-eur": 6,
       "PyPSA/pypsa-eur-sec": 2,
-      "PyPSA/technology-data": 6,
+      "PyPSA/technology-data": 7,
     },
     repoIssues: {
       "PyPSA/pypsa-eur": 2,
       "PyPSA/technology-data": 1,
     },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/25026204?v=4",
+    firstName: "Florian",
+    lastName: "Maurer",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/maurerle",
+      },
+    ],
+    totalContributions: 17,
+    totalMergedPrs: 9,
+    totalIssuesCreated: 4,
+    totalReviews: 4,
+    topRepos: ["linopy", "PyPSA", "atlite"],
+    repoContributions: {
+      "PyPSA/PyPSA": 4,
+      "PyPSA/atlite": 4,
+      "PyPSA/linopy": 7,
+      "PyPSA/powerplantmatching": 2,
+    },
+    repoPrs: {
+      "PyPSA/PyPSA": 2,
+      "PyPSA/atlite": 3,
+      "PyPSA/linopy": 3,
+      "PyPSA/powerplantmatching": 1,
+    },
+    repoIssues: {
+      "PyPSA/PyPSA": 2,
+      "PyPSA/atlite": 1,
+      "PyPSA/linopy": 1,
+    },
+    repoReviews: {
+      "PyPSA/linopy": 3,
+      "PyPSA/powerplantmatching": 1,
+    },
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/10712637?v=4",
+    firstName: "Siddharth",
+    lastName: "Krishna",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/siddharth-krishna",
+      },
+    ],
+    totalContributions: 17,
+    totalMergedPrs: 10,
+    totalIssuesCreated: 2,
+    totalReviews: 5,
+    topRepos: ["linopy"],
+    repoContributions: {
+      "PyPSA/PyPSA": 1,
+      "PyPSA/linopy": 15,
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoPrs: {
+      "PyPSA/PyPSA": 1,
+      "PyPSA/linopy": 8,
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoIssues: {
+      "PyPSA/linopy": 2,
+    },
+    repoReviews: {
+      "PyPSA/linopy": 5,
+    },
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/52451628?v=4",
+    firstName: "jonathan-peel",
+    lastName: "",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/jonathan-peel",
+      },
+    ],
+    totalContributions: 17,
+    totalMergedPrs: 9,
+    totalIssuesCreated: 8,
+    totalReviews: 0,
+    topRepos: ["pypsa-eur"],
+    repoContributions: {
+      "PyPSA/pypsa-eur": 17,
+    },
+    repoPrs: {
+      "PyPSA/pypsa-eur": 9,
+    },
+    repoIssues: {
+      "PyPSA/pypsa-eur": 8,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/3727919?v=4",
+    firstName: "Will",
+    lastName: "Usher",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/willu47",
+      },
+    ],
+    totalContributions: 17,
+    totalMergedPrs: 4,
+    totalIssuesCreated: 13,
+    totalReviews: 0,
+    topRepos: ["pypsa-earth", "linopy"],
+    repoContributions: {
+      "PyPSA/linopy": 6,
+      "PyPSA/pypsa-eur": 2,
+      "PyPSA/snakemake-logger-plugin-pypsa": 2,
+      "pypsa-meets-earth/pypsa-earth": 7,
+    },
+    repoPrs: {
+      "PyPSA/pypsa-eur": 1,
+      "pypsa-meets-earth/pypsa-earth": 3,
+    },
+    repoIssues: {
+      "PyPSA/linopy": 6,
+      "PyPSA/pypsa-eur": 1,
+      "PyPSA/snakemake-logger-plugin-pypsa": 2,
+      "pypsa-meets-earth/pypsa-earth": 4,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/144129436?v=4",
+    firstName: "TomKae00",
+    lastName: "",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/TomKae00",
+      },
+    ],
+    totalContributions: 17,
+    totalMergedPrs: 11,
+    totalIssuesCreated: 2,
+    totalReviews: 4,
+    topRepos: ["pypsa-eur", "technology-data"],
+    repoContributions: {
+      "PyPSA/pypsa-eur": 9,
+      "PyPSA/technology-data": 8,
+    },
+    repoPrs: {
+      "PyPSA/pypsa-eur": 6,
+      "PyPSA/technology-data": 5,
+    },
+    repoIssues: {
+      "PyPSA/pypsa-eur": 1,
+      "PyPSA/technology-data": 1,
+    },
+    repoReviews: {
+      "PyPSA/pypsa-eur": 2,
+      "PyPSA/technology-data": 2,
+    },
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/9919?v=4",
+    firstName: "github-code-quality",
+    lastName: "",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/github-code-quality",
+      },
+    ],
+    totalContributions: 15,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 0,
+    totalReviews: 15,
+    topRepos: ["pypsa-eur", "PyPSA"],
+    repoContributions: {
+      "PyPSA/PyPSA": 4,
+      "PyPSA/pypsa-eur": 11,
+    },
+    repoPrs: {},
+    repoIssues: {},
+    repoReviews: {
+      "PyPSA/PyPSA": 4,
+      "PyPSA/pypsa-eur": 11,
+    },
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/163411786?v=4",
+    firstName: "Philip",
+    lastName: "Worschischek",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/pworschischek-aggmag",
+      },
+    ],
+    totalContributions: 15,
+    totalMergedPrs: 5,
+    totalIssuesCreated: 10,
+    totalReviews: 0,
+    topRepos: ["pypsa-eur", "pypsa-de"],
+    repoContributions: {
+      "PyPSA/pypsa-app": 2,
+      "PyPSA/pypsa-de": 5,
+      "PyPSA/pypsa-eur": 8,
+    },
+    repoPrs: {
+      "PyPSA/pypsa-app": 1,
+      "PyPSA/pypsa-de": 1,
+      "PyPSA/pypsa-eur": 3,
+    },
+    repoIssues: {
+      "PyPSA/pypsa-app": 1,
+      "PyPSA/pypsa-de": 4,
+      "PyPSA/pypsa-eur": 5,
+    },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/50404069?v=4",
@@ -1587,6 +2313,7 @@ export const contributorsData = [
     totalContributions: 14,
     totalMergedPrs: 3,
     totalIssuesCreated: 11,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/powerplantmatching": 2,
@@ -1601,88 +2328,7 @@ export const contributorsData = [
       "PyPSA/pypsa-eur": 7,
       "PyPSA/whobs-server": 2,
     },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/117816358?v=4",
-    firstName: "FBumann",
-    lastName: "",
-    positions: ["Contributor"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/FBumann",
-      },
-    ],
-    totalContributions: 14,
-    totalMergedPrs: 3,
-    totalIssuesCreated: 11,
-    topRepos: ["linopy"],
-    repoContributions: {
-      "PyPSA/linopy": 14,
-    },
-    repoPrs: {
-      "PyPSA/linopy": 3,
-    },
-    repoIssues: {
-      "PyPSA/linopy": 11,
-    },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/144129436?v=4",
-    firstName: "TomKae00",
-    lastName: "",
-    positions: ["Contributor"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/TomKae00",
-      },
-    ],
-    totalContributions: 13,
-    totalMergedPrs: 11,
-    totalIssuesCreated: 2,
-    topRepos: ["pypsa-eur", "technology-data"],
-    repoContributions: {
-      "PyPSA/pypsa-eur": 7,
-      "PyPSA/technology-data": 6,
-    },
-    repoPrs: {
-      "PyPSA/pypsa-eur": 6,
-      "PyPSA/technology-data": 5,
-    },
-    repoIssues: {
-      "PyPSA/pypsa-eur": 1,
-      "PyPSA/technology-data": 1,
-    },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/10712637?v=4",
-    firstName: "Siddharth",
-    lastName: "Krishna",
-    positions: ["Contributor"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/siddharth-krishna",
-      },
-    ],
-    totalContributions: 12,
-    totalMergedPrs: 10,
-    totalIssuesCreated: 2,
-    topRepos: ["linopy"],
-    repoContributions: {
-      "PyPSA/PyPSA": 1,
-      "PyPSA/linopy": 10,
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
-    repoPrs: {
-      "PyPSA/PyPSA": 1,
-      "PyPSA/linopy": 8,
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
-    repoIssues: {
-      "PyPSA/linopy": 2,
-    },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/47030274?v=4",
@@ -1695,15 +2341,16 @@ export const contributorsData = [
         url: "https://github.com/ljansen-iee",
       },
     ],
-    totalContributions: 11,
+    totalContributions: 13,
     totalMergedPrs: 7,
     totalIssuesCreated: 4,
+    totalReviews: 2,
     topRepos: ["pypsa-earth"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
       "PyPSA/pypsa-eur": 2,
       "PyPSA/technology-data": 1,
-      "pypsa-meets-earth/pypsa-earth": 7,
+      "pypsa-meets-earth/pypsa-earth": 9,
     },
     repoPrs: {
       "PyPSA/PyPSA": 1,
@@ -1714,6 +2361,108 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 1,
       "pypsa-meets-earth/pypsa-earth": 3,
+    },
+    repoReviews: {
+      "pypsa-meets-earth/pypsa-earth": 2,
+    },
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/72193617?v=4",
+    firstName: "Ivan",
+    lastName: "Ruiz Manuel",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/irm-codebase",
+      },
+    ],
+    totalContributions: 12,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 12,
+    totalReviews: 0,
+    topRepos: ["powerplantmatching", "atlite"],
+    repoContributions: {
+      "PyPSA/atlite": 4,
+      "PyPSA/powerplantmatching": 6,
+      "PyPSA/pypsa-eur": 1,
+      "PyPSA/technology-data": 1,
+    },
+    repoPrs: {},
+    repoIssues: {
+      "PyPSA/atlite": 4,
+      "PyPSA/powerplantmatching": 6,
+      "PyPSA/pypsa-eur": 1,
+      "PyPSA/technology-data": 1,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/55196140?v=4",
+    firstName: "Lukas",
+    lastName: "Franken",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/LukasFrankenQ",
+      },
+    ],
+    totalContributions: 11,
+    totalMergedPrs: 10,
+    totalIssuesCreated: 0,
+    totalReviews: 1,
+    topRepos: ["pypsa-eur", "technology-data"],
+    repoContributions: {
+      "PyPSA/PyPSA": 2,
+      "PyPSA/atlite": 2,
+      "PyPSA/powerplantmatching": 1,
+      "PyPSA/pypsa-eur": 3,
+      "PyPSA/technology-data": 3,
+    },
+    repoPrs: {
+      "PyPSA/PyPSA": 2,
+      "PyPSA/atlite": 1,
+      "PyPSA/powerplantmatching": 1,
+      "PyPSA/pypsa-eur": 3,
+      "PyPSA/technology-data": 3,
+    },
+    repoIssues: {},
+    repoReviews: {
+      "PyPSA/atlite": 1,
+    },
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/56110893?v=4",
+    firstName: "ollie-bell",
+    lastName: "",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/ollie-bell",
+      },
+    ],
+    totalContributions: 11,
+    totalMergedPrs: 7,
+    totalIssuesCreated: 3,
+    totalReviews: 1,
+    topRepos: ["PyPSA", "linopy"],
+    repoContributions: {
+      "PyPSA/PyPSA": 6,
+      "PyPSA/linopy": 4,
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoPrs: {
+      "PyPSA/PyPSA": 3,
+      "PyPSA/linopy": 3,
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoIssues: {
+      "PyPSA/PyPSA": 3,
+    },
+    repoReviews: {
+      "PyPSA/linopy": 1,
     },
   },
   {
@@ -1730,6 +2479,7 @@ export const contributorsData = [
     totalContributions: 11,
     totalMergedPrs: 6,
     totalIssuesCreated: 5,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 11,
@@ -1740,62 +2490,70 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/linopy": 5,
     },
+    repoReviews: {},
   },
   {
-    imageUrl: "https://avatars.githubusercontent.com/u/56110893?v=4",
-    firstName: "ollie-bell",
+    imageUrl: "https://avatars.githubusercontent.com/u/35535471?v=4",
+    firstName: "cc",
     lastName: "",
     positions: ["Contributor"],
     socialNetworks: [
       {
         name: "GitHub",
-        url: "https://github.com/ollie-bell",
+        url: "https://github.com/casinocullen",
+      },
+    ],
+    totalContributions: 11,
+    totalMergedPrs: 1,
+    totalIssuesCreated: 9,
+    totalReviews: 1,
+    topRepos: ["pypsa-usa"],
+    repoContributions: {
+      "PyPSA/pypsa-usa": 11,
+    },
+    repoPrs: {
+      "PyPSA/pypsa-usa": 1,
+    },
+    repoIssues: {
+      "PyPSA/pypsa-usa": 9,
+    },
+    repoReviews: {
+      "PyPSA/pypsa-usa": 1,
+    },
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/691772?v=4",
+    firstName: "lumbric",
+    lastName: "",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/lumbric",
       },
     ],
     totalContributions: 10,
     totalMergedPrs: 7,
-    totalIssuesCreated: 3,
-    topRepos: ["PyPSA", "linopy"],
+    totalIssuesCreated: 2,
+    totalReviews: 1,
+    topRepos: ["linopy", "PyPSA", "pypsa-eur"],
     repoContributions: {
-      "PyPSA/PyPSA": 6,
-      "PyPSA/linopy": 3,
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
-    repoPrs: {
-      "PyPSA/PyPSA": 3,
-      "PyPSA/linopy": 3,
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
-    repoIssues: {
-      "PyPSA/PyPSA": 3,
-    },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/17104565?v=4",
-    firstName: "Robbie",
-    lastName: "",
-    positions: ["Contributor"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/RobbieKiwi",
-      },
-    ],
-    totalContributions: 10,
-    totalMergedPrs: 6,
-    totalIssuesCreated: 4,
-    topRepos: ["linopy", "PyPSA"],
-    repoContributions: {
-      "PyPSA/PyPSA": 3,
-      "PyPSA/linopy": 7,
+      "PyPSA/PyPSA": 2,
+      "PyPSA/atlite": 1,
+      "PyPSA/linopy": 5,
+      "PyPSA/pypsa-eur": 2,
     },
     repoPrs: {
       "PyPSA/PyPSA": 2,
-      "PyPSA/linopy": 4,
+      "PyPSA/atlite": 1,
+      "PyPSA/linopy": 2,
+      "PyPSA/pypsa-eur": 2,
     },
     repoIssues: {
-      "PyPSA/PyPSA": 1,
-      "PyPSA/linopy": 3,
+      "PyPSA/linopy": 2,
+    },
+    repoReviews: {
+      "PyPSA/linopy": 1,
     },
   },
   {
@@ -1812,6 +2570,7 @@ export const contributorsData = [
     totalContributions: 10,
     totalMergedPrs: 3,
     totalIssuesCreated: 7,
+    totalReviews: 0,
     topRepos: ["PyPSA", "linopy"],
     repoContributions: {
       "PyPSA/PyPSA": 6,
@@ -1825,6 +2584,7 @@ export const contributorsData = [
       "PyPSA/PyPSA": 5,
       "PyPSA/linopy": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/6360066?v=4",
@@ -1840,6 +2600,7 @@ export const contributorsData = [
     totalContributions: 10,
     totalMergedPrs: 0,
     totalIssuesCreated: 10,
+    totalReviews: 0,
     topRepos: ["PyPSA", "pypsa-eur"],
     repoContributions: {
       "PyPSA/PyPSA": 5,
@@ -1854,59 +2615,7 @@ export const contributorsData = [
       "PyPSA/pypsa-eur": 3,
       "pypsa-meets-earth/pypsa-earth": 1,
     },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/72193617?v=4",
-    firstName: "Ivan",
-    lastName: "Ruiz Manuel",
-    positions: ["Collaborator"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/irm-codebase",
-      },
-    ],
-    totalContributions: 10,
-    totalMergedPrs: 0,
-    totalIssuesCreated: 10,
-    topRepos: ["powerplantmatching", "atlite"],
-    repoContributions: {
-      "PyPSA/atlite": 4,
-      "PyPSA/powerplantmatching": 6,
-    },
-    repoPrs: {},
-    repoIssues: {
-      "PyPSA/atlite": 4,
-      "PyPSA/powerplantmatching": 6,
-    },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/163411786?v=4",
-    firstName: "Philip",
-    lastName: "Worschischek",
-    positions: ["Contributor"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/pworschischek-aggmag",
-      },
-    ],
-    totalContributions: 10,
-    totalMergedPrs: 4,
-    totalIssuesCreated: 6,
-    topRepos: ["pypsa-eur", "pypsa-de"],
-    repoContributions: {
-      "PyPSA/pypsa-de": 3,
-      "PyPSA/pypsa-eur": 7,
-    },
-    repoPrs: {
-      "PyPSA/pypsa-de": 1,
-      "PyPSA/pypsa-eur": 3,
-    },
-    repoIssues: {
-      "PyPSA/pypsa-de": 2,
-      "PyPSA/pypsa-eur": 4,
-    },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/91368938?v=4",
@@ -1922,6 +2631,7 @@ export const contributorsData = [
     totalContributions: 10,
     totalMergedPrs: 3,
     totalIssuesCreated: 7,
+    totalReviews: 0,
     topRepos: ["pypsa-earth", "pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 4,
@@ -1935,61 +2645,33 @@ export const contributorsData = [
       "PyPSA/pypsa-eur": 3,
       "pypsa-meets-earth/pypsa-earth": 4,
     },
+    repoReviews: {},
   },
   {
-    imageUrl: "https://avatars.githubusercontent.com/u/35535471?v=4",
-    firstName: "cc",
-    lastName: "",
-    positions: ["Contributor"],
+    imageUrl: "https://avatars.githubusercontent.com/u/45293386?v=4",
+    firstName: "Matin",
+    lastName: "Mahmood",
+    positions: ["Collaborator"],
     socialNetworks: [
       {
         name: "GitHub",
-        url: "https://github.com/casinocullen",
+        url: "https://github.com/mnm-matin",
       },
     ],
     totalContributions: 10,
-    totalMergedPrs: 1,
+    totalMergedPrs: 0,
     totalIssuesCreated: 9,
-    topRepos: ["pypsa-usa"],
+    totalReviews: 1,
+    topRepos: ["pypsa-earth"],
     repoContributions: {
-      "PyPSA/pypsa-usa": 10,
+      "pypsa-meets-earth/pypsa-earth": 10,
     },
-    repoPrs: {
-      "PyPSA/pypsa-usa": 1,
-    },
+    repoPrs: {},
     repoIssues: {
-      "PyPSA/pypsa-usa": 9,
+      "pypsa-meets-earth/pypsa-earth": 9,
     },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/691772?v=4",
-    firstName: "lumbric",
-    lastName: "",
-    positions: ["Contributor"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/lumbric",
-      },
-    ],
-    totalContributions: 9,
-    totalMergedPrs: 7,
-    totalIssuesCreated: 2,
-    topRepos: ["linopy", "PyPSA", "pypsa-eur"],
-    repoContributions: {
-      "PyPSA/PyPSA": 2,
-      "PyPSA/atlite": 1,
-      "PyPSA/linopy": 4,
-      "PyPSA/pypsa-eur": 2,
-    },
-    repoPrs: {
-      "PyPSA/PyPSA": 2,
-      "PyPSA/atlite": 1,
-      "PyPSA/linopy": 2,
-      "PyPSA/pypsa-eur": 2,
-    },
-    repoIssues: {
-      "PyPSA/linopy": 2,
+    repoReviews: {
+      "pypsa-meets-earth/pypsa-earth": 1,
     },
   },
   {
@@ -2006,6 +2688,7 @@ export const contributorsData = [
     totalContributions: 9,
     totalMergedPrs: 6,
     totalIssuesCreated: 3,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 7,
@@ -2020,6 +2703,36 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 3,
     },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/46536480?v=4",
+    firstName: "BuiMCanmet",
+    lastName: "",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/BuiMCanmet",
+      },
+    ],
+    totalContributions: 9,
+    totalMergedPrs: 1,
+    totalIssuesCreated: 8,
+    totalReviews: 0,
+    topRepos: ["PyPSA", "linopy"],
+    repoContributions: {
+      "PyPSA/PyPSA": 6,
+      "PyPSA/linopy": 3,
+    },
+    repoPrs: {
+      "PyPSA/linopy": 1,
+    },
+    repoIssues: {
+      "PyPSA/PyPSA": 6,
+      "PyPSA/linopy": 2,
+    },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/59877932?v=4",
@@ -2035,6 +2748,7 @@ export const contributorsData = [
     totalContributions: 9,
     totalMergedPrs: 4,
     totalIssuesCreated: 5,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -2047,114 +2761,122 @@ export const contributorsData = [
       "PyPSA/PyPSA": 1,
       "PyPSA/linopy": 4,
     },
+    repoReviews: {},
   },
   {
-    imageUrl: "https://avatars.githubusercontent.com/u/52451628?v=4",
-    firstName: "jonathan-peel",
-    lastName: "",
+    imageUrl: "https://avatars.githubusercontent.com/u/83344529?v=4",
+    firstName: "Cristobal",
+    lastName: "Gallego-Castillo",
     positions: ["Contributor"],
     socialNetworks: [
       {
         name: "GitHub",
-        url: "https://github.com/jonathan-peel",
+        url: "https://github.com/cristobal-GC",
       },
     ],
     totalContributions: 9,
-    totalMergedPrs: 4,
-    totalIssuesCreated: 5,
+    totalMergedPrs: 3,
+    totalIssuesCreated: 6,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 9,
     },
     repoPrs: {
-      "PyPSA/pypsa-eur": 4,
+      "PyPSA/pypsa-eur": 3,
     },
     repoIssues: {
-      "PyPSA/pypsa-eur": 5,
+      "PyPSA/pypsa-eur": 6,
     },
+    repoReviews: {},
   },
   {
-    imageUrl: "https://avatars.githubusercontent.com/u/45293386?v=4",
-    firstName: "Matin",
-    lastName: "Mahmood",
-    positions: ["Collaborator"],
+    imageUrl: "https://avatars.githubusercontent.com/u/715773?v=4",
+    firstName: "Zlatan",
+    lastName: "Kadragi\u0107",
+    positions: ["Contributor"],
     socialNetworks: [
       {
         name: "GitHub",
-        url: "https://github.com/mnm-matin",
+        url: "https://github.com/aurelije",
       },
     ],
     totalContributions: 9,
-    totalMergedPrs: 0,
-    totalIssuesCreated: 9,
-    topRepos: ["pypsa-earth"],
+    totalMergedPrs: 2,
+    totalIssuesCreated: 6,
+    totalReviews: 1,
+    topRepos: ["linopy"],
     repoContributions: {
-      "pypsa-meets-earth/pypsa-earth": 9,
+      "PyPSA/linopy": 9,
     },
-    repoPrs: {},
+    repoPrs: {
+      "PyPSA/linopy": 2,
+    },
     repoIssues: {
-      "pypsa-meets-earth/pypsa-earth": 9,
+      "PyPSA/linopy": 6,
+    },
+    repoReviews: {
+      "PyPSA/linopy": 1,
     },
   },
   {
-    imageUrl: "https://avatars.githubusercontent.com/u/55196140?v=4",
-    firstName: "Lukas",
-    lastName: "Franken",
+    imageUrl: "https://avatars.githubusercontent.com/u/185556300?v=4",
+    firstName: "Asia",
+    lastName: "Zhang",
     positions: ["Contributor"],
     socialNetworks: [
       {
         name: "GitHub",
-        url: "https://github.com/LukasFrankenQ",
+        url: "https://github.com/asiazzzhang",
+      },
+    ],
+    totalContributions: 9,
+    totalMergedPrs: 6,
+    totalIssuesCreated: 1,
+    totalReviews: 2,
+    topRepos: ["pypsa-usa"],
+    repoContributions: {
+      "PyPSA/pypsa-usa": 9,
+    },
+    repoPrs: {
+      "PyPSA/pypsa-usa": 6,
+    },
+    repoIssues: {
+      "PyPSA/pypsa-usa": 1,
+    },
+    repoReviews: {
+      "PyPSA/pypsa-usa": 2,
+    },
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/156903227?v=4",
+    firstName: "Sermisha",
+    lastName: "",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/SermishaNarayana",
       },
     ],
     totalContributions: 8,
-    totalMergedPrs: 8,
+    totalMergedPrs: 6,
     totalIssuesCreated: 0,
-    topRepos: ["technology-data", "pypsa-eur"],
+    totalReviews: 2,
+    topRepos: ["pypsa-eur", "pypsa-earth"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
-      "PyPSA/atlite": 1,
-      "PyPSA/powerplantmatching": 1,
-      "PyPSA/pypsa-eur": 2,
-      "PyPSA/technology-data": 3,
+      "PyPSA/pypsa-eur": 4,
+      "pypsa-meets-earth/pypsa-earth": 3,
     },
     repoPrs: {
       "PyPSA/PyPSA": 1,
-      "PyPSA/atlite": 1,
-      "PyPSA/powerplantmatching": 1,
       "PyPSA/pypsa-eur": 2,
-      "PyPSA/technology-data": 3,
+      "pypsa-meets-earth/pypsa-earth": 3,
     },
     repoIssues: {},
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/25026204?v=4",
-    firstName: "Florian",
-    lastName: "Maurer",
-    positions: ["Contributor"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/maurerle",
-      },
-    ],
-    totalContributions: 8,
-    totalMergedPrs: 5,
-    totalIssuesCreated: 3,
-    topRepos: ["linopy", "PyPSA"],
-    repoContributions: {
-      "PyPSA/PyPSA": 3,
-      "PyPSA/linopy": 4,
-      "PyPSA/powerplantmatching": 1,
-    },
-    repoPrs: {
-      "PyPSA/PyPSA": 1,
-      "PyPSA/linopy": 3,
-      "PyPSA/powerplantmatching": 1,
-    },
-    repoIssues: {
-      "PyPSA/PyPSA": 2,
-      "PyPSA/linopy": 1,
+    repoReviews: {
+      "PyPSA/pypsa-eur": 2,
     },
   },
   {
@@ -2171,6 +2893,7 @@ export const contributorsData = [
     totalContributions: 8,
     totalMergedPrs: 4,
     totalIssuesCreated: 4,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 8,
@@ -2181,31 +2904,38 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 4,
     },
+    repoReviews: {},
   },
   {
-    imageUrl: "https://avatars.githubusercontent.com/u/83344529?v=4",
-    firstName: "Cristobal",
-    lastName: "Gallego-Castillo",
+    imageUrl: "https://avatars.githubusercontent.com/u/38278087?v=4",
+    firstName: "thomgeo",
+    lastName: "",
     positions: ["Contributor"],
     socialNetworks: [
       {
         name: "GitHub",
-        url: "https://github.com/cristobal-GC",
+        url: "https://github.com/thomgeo",
       },
     ],
     totalContributions: 8,
-    totalMergedPrs: 2,
-    totalIssuesCreated: 6,
-    topRepos: ["pypsa-eur"],
+    totalMergedPrs: 1,
+    totalIssuesCreated: 7,
+    totalReviews: 0,
+    topRepos: ["linopy", "pypsa-eur"],
     repoContributions: {
-      "PyPSA/pypsa-eur": 8,
+      "PyPSA/PyPSA": 1,
+      "PyPSA/linopy": 4,
+      "PyPSA/pypsa-eur": 3,
     },
     repoPrs: {
-      "PyPSA/pypsa-eur": 2,
+      "PyPSA/pypsa-eur": 1,
     },
     repoIssues: {
-      "PyPSA/pypsa-eur": 6,
+      "PyPSA/PyPSA": 1,
+      "PyPSA/linopy": 4,
+      "PyPSA/pypsa-eur": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/9534382?v=4",
@@ -2221,6 +2951,7 @@ export const contributorsData = [
     totalContributions: 8,
     totalMergedPrs: 2,
     totalIssuesCreated: 6,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 8,
@@ -2231,95 +2962,36 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/linopy": 6,
     },
+    repoReviews: {},
   },
   {
-    imageUrl: "https://avatars.githubusercontent.com/u/715773?v=4",
-    firstName: "Zlatan",
-    lastName: "Kadragi\u0107",
+    imageUrl: "https://avatars.githubusercontent.com/u/134321?v=4",
+    firstName: "Mat\u011bj",
+    lastName: "",
     positions: ["Contributor"],
     socialNetworks: [
       {
         name: "GitHub",
-        url: "https://github.com/aurelije",
-      },
-    ],
-    totalContributions: 8,
-    totalMergedPrs: 2,
-    totalIssuesCreated: 6,
-    topRepos: ["linopy"],
-    repoContributions: {
-      "PyPSA/linopy": 8,
-    },
-    repoPrs: {
-      "PyPSA/linopy": 2,
-    },
-    repoIssues: {
-      "PyPSA/linopy": 6,
-    },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/17178478?v=4",
-    firstName: "Bryn",
-    lastName: "Pickering",
-    positions: ["Contributor"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/brynpickering",
-      },
-    ],
-    totalContributions: 7,
-    totalMergedPrs: 3,
-    totalIssuesCreated: 4,
-    topRepos: ["atlite", "pypsa-eur"],
-    repoContributions: {
-      "PyPSA/PyPSA": 1,
-      "PyPSA/atlite": 2,
-      "PyPSA/linopy": 1,
-      "PyPSA/powerplantmatching": 1,
-      "PyPSA/pypsa-eur": 2,
-    },
-    repoPrs: {
-      "PyPSA/PyPSA": 1,
-      "PyPSA/atlite": 1,
-      "PyPSA/pypsa-eur": 1,
-    },
-    repoIssues: {
-      "PyPSA/atlite": 1,
-      "PyPSA/linopy": 1,
-      "PyPSA/powerplantmatching": 1,
-      "PyPSA/pypsa-eur": 1,
-    },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/1872480?v=4",
-    firstName: "Markus",
-    lastName: "Groissb\u00f6ck",
-    positions: ["Contributor"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/gincrement",
+        url: "https://github.com/mgrabovsky",
       },
     ],
     totalContributions: 7,
     totalMergedPrs: 5,
     totalIssuesCreated: 2,
-    topRepos: ["PyPSA", "pypsa-eur"],
+    totalReviews: 0,
+    topRepos: ["PyPSA"],
     repoContributions: {
-      "PyPSA/PyPSA": 4,
-      "PyPSA/powerplantmatching": 1,
-      "PyPSA/pypsa-eur": 2,
+      "PyPSA/PyPSA": 6,
+      "PyPSA/atlite": 1,
     },
     repoPrs: {
-      "PyPSA/PyPSA": 3,
-      "PyPSA/powerplantmatching": 1,
-      "PyPSA/pypsa-eur": 1,
+      "PyPSA/PyPSA": 5,
     },
     repoIssues: {
       "PyPSA/PyPSA": 1,
-      "PyPSA/pypsa-eur": 1,
+      "PyPSA/atlite": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/16715246?v=4",
@@ -2335,6 +3007,7 @@ export const contributorsData = [
     totalContributions: 7,
     totalMergedPrs: 4,
     totalIssuesCreated: 3,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 7,
@@ -2345,6 +3018,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 3,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/5868911?v=4",
@@ -2360,6 +3034,7 @@ export const contributorsData = [
     totalContributions: 7,
     totalMergedPrs: 7,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["pypsa-eur-sec"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -2372,6 +3047,7 @@ export const contributorsData = [
       "PyPSA/pypsa-eur-sec": 5,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/69363603?v=4",
@@ -2387,6 +3063,7 @@ export const contributorsData = [
     totalContributions: 7,
     totalMergedPrs: 4,
     totalIssuesCreated: 3,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -2405,32 +3082,37 @@ export const contributorsData = [
       "PyPSA/pypsa-eur": 1,
       "PyPSA/technology-data": 1,
     },
+    repoReviews: {},
   },
   {
-    imageUrl: "https://avatars.githubusercontent.com/u/46536480?v=4",
-    firstName: "BuiMCanmet",
+    imageUrl: "https://avatars.githubusercontent.com/u/144602424?v=4",
+    firstName: "JuliaSvn",
     lastName: "",
     positions: ["Contributor"],
     socialNetworks: [
       {
         name: "GitHub",
-        url: "https://github.com/BuiMCanmet",
+        url: "https://github.com/JuliaSvn",
       },
     ],
     totalContributions: 7,
-    totalMergedPrs: 1,
-    totalIssuesCreated: 6,
-    topRepos: ["PyPSA", "linopy"],
+    totalMergedPrs: 5,
+    totalIssuesCreated: 1,
+    totalReviews: 1,
+    topRepos: ["pypsa-eur"],
     repoContributions: {
-      "PyPSA/PyPSA": 4,
-      "PyPSA/linopy": 3,
+      "PyPSA/atlite": 1,
+      "PyPSA/pypsa-eur": 6,
     },
     repoPrs: {
-      "PyPSA/linopy": 1,
+      "PyPSA/atlite": 1,
+      "PyPSA/pypsa-eur": 4,
     },
     repoIssues: {
-      "PyPSA/PyPSA": 4,
-      "PyPSA/linopy": 2,
+      "PyPSA/pypsa-eur": 1,
+    },
+    repoReviews: {
+      "PyPSA/pypsa-eur": 1,
     },
   },
   {
@@ -2447,6 +3129,7 @@ export const contributorsData = [
     totalContributions: 7,
     totalMergedPrs: 4,
     totalIssuesCreated: 3,
+    totalReviews: 0,
     topRepos: ["pypsa-eur", "atlite"],
     repoContributions: {
       "PyPSA/atlite": 3,
@@ -2460,31 +3143,61 @@ export const contributorsData = [
       "PyPSA/atlite": 1,
       "PyPSA/pypsa-eur": 2,
     },
+    repoReviews: {},
   },
   {
-    imageUrl: "https://avatars.githubusercontent.com/u/3727919?v=4",
-    firstName: "Will",
-    lastName: "Usher",
+    imageUrl: "https://avatars.githubusercontent.com/u/3644658?v=4",
+    firstName: "Guilherme",
+    lastName: "(Gui) Larangeira",
     positions: ["Collaborator"],
     socialNetworks: [
       {
         name: "GitHub",
-        url: "https://github.com/willu47",
+        url: "https://github.com/glarange",
       },
     ],
     totalContributions: 7,
     totalMergedPrs: 0,
     totalIssuesCreated: 7,
-    topRepos: ["linopy"],
+    totalReviews: 0,
+    topRepos: ["pypsa-usa"],
     repoContributions: {
-      "PyPSA/linopy": 6,
-      "PyPSA/pypsa-eur": 1,
+      "PyPSA/pypsa-usa": 6,
+      "pypsa-meets-earth/pypsa-earth": 1,
     },
     repoPrs: {},
     repoIssues: {
-      "PyPSA/linopy": 6,
-      "PyPSA/pypsa-eur": 1,
+      "PyPSA/pypsa-usa": 6,
+      "pypsa-meets-earth/pypsa-earth": 1,
     },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/103258059?v=4",
+    firstName: "Carlos",
+    lastName: "Fernandez",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/carlosfv92",
+      },
+    ],
+    totalContributions: 7,
+    totalMergedPrs: 3,
+    totalIssuesCreated: 4,
+    totalReviews: 0,
+    topRepos: ["pypsa-earth"],
+    repoContributions: {
+      "pypsa-meets-earth/pypsa-earth": 7,
+    },
+    repoPrs: {
+      "pypsa-meets-earth/pypsa-earth": 3,
+    },
+    repoIssues: {
+      "pypsa-meets-earth/pypsa-earth": 4,
+    },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/97453975?v=4",
@@ -2500,6 +3213,7 @@ export const contributorsData = [
     totalContributions: 6,
     totalMergedPrs: 6,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -2512,6 +3226,7 @@ export const contributorsData = [
       "PyPSA/pypsa-eur": 4,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/54557089?v=4",
@@ -2527,6 +3242,7 @@ export const contributorsData = [
     totalContributions: 6,
     totalMergedPrs: 3,
     totalIssuesCreated: 3,
+    totalReviews: 0,
     topRepos: ["powerplantmatching", "pypsa-eur"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -2541,6 +3257,40 @@ export const contributorsData = [
       "PyPSA/powerplantmatching": 1,
       "PyPSA/pypsa-eur": 2,
     },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/102019906?v=4",
+    firstName: "Parisa",
+    lastName: "Rahdan",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/Parisra",
+      },
+    ],
+    totalContributions: 6,
+    totalMergedPrs: 3,
+    totalIssuesCreated: 3,
+    totalReviews: 0,
+    topRepos: ["pypsa-eur"],
+    repoContributions: {
+      "PyPSA/PyPSA": 1,
+      "PyPSA/atlite": 1,
+      "PyPSA/powerplantmatching": 1,
+      "PyPSA/pypsa-eur": 3,
+    },
+    repoPrs: {
+      "PyPSA/atlite": 1,
+      "PyPSA/pypsa-eur": 2,
+    },
+    repoIssues: {
+      "PyPSA/PyPSA": 1,
+      "PyPSA/powerplantmatching": 1,
+      "PyPSA/pypsa-eur": 1,
+    },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/50365319?v=4",
@@ -2556,6 +3306,7 @@ export const contributorsData = [
     totalContributions: 6,
     totalMergedPrs: 1,
     totalIssuesCreated: 5,
+    totalReviews: 0,
     topRepos: ["pypsa-usa"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -2570,32 +3321,68 @@ export const contributorsData = [
       "PyPSA/atlite": 1,
       "PyPSA/pypsa-usa": 3,
     },
+    repoReviews: {},
   },
   {
-    imageUrl: "https://avatars.githubusercontent.com/u/144602424?v=4",
-    firstName: "JuliaSvn",
-    lastName: "",
+    imageUrl: "https://avatars.githubusercontent.com/u/19032635?v=4",
+    firstName: "Carlos",
+    lastName: "Gaete",
     positions: ["Contributor"],
     socialNetworks: [
       {
         name: "GitHub",
-        url: "https://github.com/JuliaSvn",
+        url: "https://github.com/cdgaete",
       },
     ],
     totalContributions: 6,
-    totalMergedPrs: 5,
-    totalIssuesCreated: 1,
-    topRepos: ["pypsa-eur"],
+    totalMergedPrs: 3,
+    totalIssuesCreated: 3,
+    totalReviews: 0,
+    topRepos: ["powerplantmatching"],
     repoContributions: {
-      "PyPSA/atlite": 1,
-      "PyPSA/pypsa-eur": 5,
+      "PyPSA/powerplantmatching": 5,
+      "pypsa-meets-earth/pypsa-earth": 1,
     },
     repoPrs: {
-      "PyPSA/atlite": 1,
-      "PyPSA/pypsa-eur": 4,
+      "PyPSA/powerplantmatching": 2,
+      "pypsa-meets-earth/pypsa-earth": 1,
     },
     repoIssues: {
-      "PyPSA/pypsa-eur": 1,
+      "PyPSA/powerplantmatching": 3,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/49280197?v=4",
+    firstName: "Jonas",
+    lastName: "Meier",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/jome1",
+      },
+    ],
+    totalContributions: 6,
+    totalMergedPrs: 1,
+    totalIssuesCreated: 4,
+    totalReviews: 1,
+    topRepos: ["pypsa-earth"],
+    repoContributions: {
+      "PyPSA/atlite": 1,
+      "PyPSA/linopy": 1,
+      "pypsa-meets-earth/pypsa-earth": 4,
+    },
+    repoPrs: {
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoIssues: {
+      "PyPSA/atlite": 1,
+      "PyPSA/linopy": 1,
+      "pypsa-meets-earth/pypsa-earth": 2,
+    },
+    repoReviews: {
+      "pypsa-meets-earth/pypsa-earth": 1,
     },
   },
   {
@@ -2612,6 +3399,7 @@ export const contributorsData = [
     totalContributions: 6,
     totalMergedPrs: 4,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 6,
@@ -2622,33 +3410,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 2,
     },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/38278087?v=4",
-    firstName: "thomgeo",
-    lastName: "",
-    positions: ["Contributor"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/thomgeo",
-      },
-    ],
-    totalContributions: 6,
-    totalMergedPrs: 1,
-    totalIssuesCreated: 5,
-    topRepos: ["linopy", "pypsa-eur"],
-    repoContributions: {
-      "PyPSA/linopy": 3,
-      "PyPSA/pypsa-eur": 3,
-    },
-    repoPrs: {
-      "PyPSA/pypsa-eur": 1,
-    },
-    repoIssues: {
-      "PyPSA/linopy": 3,
-      "PyPSA/pypsa-eur": 2,
-    },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/98093490?v=4",
@@ -2664,6 +3426,7 @@ export const contributorsData = [
     totalContributions: 6,
     totalMergedPrs: 0,
     totalIssuesCreated: 6,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 6,
@@ -2672,58 +3435,34 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 6,
     },
+    repoReviews: {},
   },
   {
-    imageUrl: "https://avatars.githubusercontent.com/u/103258059?v=4",
-    firstName: "Carlos",
-    lastName: "Fernandez",
-    positions: ["Contributor"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/carlosfv92",
-      },
-    ],
-    totalContributions: 6,
-    totalMergedPrs: 2,
-    totalIssuesCreated: 4,
-    topRepos: ["pypsa-earth"],
-    repoContributions: {
-      "pypsa-meets-earth/pypsa-earth": 6,
-    },
-    repoPrs: {
-      "pypsa-meets-earth/pypsa-earth": 2,
-    },
-    repoIssues: {
-      "pypsa-meets-earth/pypsa-earth": 4,
-    },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/156903227?v=4",
-    firstName: "Sermisha",
+    imageUrl: "https://avatars.githubusercontent.com/u/62134151?v=4",
+    firstName: "Emre_Yorat",
     lastName: "",
     positions: ["Contributor"],
     socialNetworks: [
       {
         name: "GitHub",
-        url: "https://github.com/SermishaNarayana",
+        url: "https://github.com/Emre-Yorat89",
       },
     ],
-    totalContributions: 5,
-    totalMergedPrs: 5,
-    totalIssuesCreated: 0,
-    topRepos: ["pypsa-eur", "pypsa-earth", "PyPSA"],
+    totalContributions: 6,
+    totalMergedPrs: 3,
+    totalIssuesCreated: 3,
+    totalReviews: 0,
+    topRepos: ["pypsa-earth"],
     repoContributions: {
-      "PyPSA/PyPSA": 1,
-      "PyPSA/pypsa-eur": 2,
-      "pypsa-meets-earth/pypsa-earth": 2,
+      "pypsa-meets-earth/pypsa-earth": 6,
     },
     repoPrs: {
-      "PyPSA/PyPSA": 1,
-      "PyPSA/pypsa-eur": 2,
-      "pypsa-meets-earth/pypsa-earth": 2,
+      "pypsa-meets-earth/pypsa-earth": 3,
     },
-    repoIssues: {},
+    repoIssues: {
+      "pypsa-meets-earth/pypsa-earth": 3,
+    },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/13170610?v=4",
@@ -2739,6 +3478,7 @@ export const contributorsData = [
     totalContributions: 5,
     totalMergedPrs: 1,
     totalIssuesCreated: 4,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 5,
@@ -2749,6 +3489,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 4,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/83589894?v=4",
@@ -2764,6 +3505,7 @@ export const contributorsData = [
     totalContributions: 5,
     totalMergedPrs: 1,
     totalIssuesCreated: 4,
+    totalReviews: 0,
     topRepos: ["PyPSA", "atlite"],
     repoContributions: {
       "PyPSA/PyPSA": 3,
@@ -2776,6 +3518,7 @@ export const contributorsData = [
       "PyPSA/PyPSA": 2,
       "PyPSA/atlite": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/22964326?v=4",
@@ -2791,6 +3534,7 @@ export const contributorsData = [
     totalContributions: 5,
     totalMergedPrs: 1,
     totalIssuesCreated: 4,
+    totalReviews: 0,
     topRepos: ["PyPSA", "pypsa-eur"],
     repoContributions: {
       "PyPSA/PyPSA": 3,
@@ -2803,6 +3547,7 @@ export const contributorsData = [
       "PyPSA/PyPSA": 2,
       "PyPSA/pypsa-eur": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/19156761?v=4",
@@ -2818,6 +3563,7 @@ export const contributorsData = [
     totalContributions: 5,
     totalMergedPrs: 3,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["atlite", "PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -2830,6 +3576,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/atlite": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/110224208?v=4",
@@ -2845,6 +3592,7 @@ export const contributorsData = [
     totalContributions: 5,
     totalMergedPrs: 0,
     totalIssuesCreated: 5,
+    totalReviews: 0,
     topRepos: ["pypsa-eur", "PyPSA", "powerplantmatching"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -2857,6 +3605,7 @@ export const contributorsData = [
       "PyPSA/powerplantmatching": 1,
       "PyPSA/pypsa-eur": 3,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/16224592?v=4",
@@ -2872,6 +3621,7 @@ export const contributorsData = [
     totalContributions: 5,
     totalMergedPrs: 0,
     totalIssuesCreated: 5,
+    totalReviews: 0,
     topRepos: ["PyPSA", "pypsa-eur", "linopy"],
     repoContributions: {
       "PyPSA/PyPSA": 2,
@@ -2884,6 +3634,7 @@ export const contributorsData = [
       "PyPSA/linopy": 1,
       "PyPSA/pypsa-eur": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/95235501?v=4",
@@ -2899,6 +3650,7 @@ export const contributorsData = [
     totalContributions: 5,
     totalMergedPrs: 3,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["powerplantmatching"],
     repoContributions: {
       "PyPSA/powerplantmatching": 5,
@@ -2909,33 +3661,34 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/powerplantmatching": 2,
     },
+    repoReviews: {},
   },
   {
-    imageUrl: "https://avatars.githubusercontent.com/u/19032635?v=4",
-    firstName: "Carlos",
-    lastName: "Gaete",
+    imageUrl: "https://avatars.githubusercontent.com/u/4083648?v=4",
+    firstName: "Thomas",
+    lastName: "Ginster",
     positions: ["Contributor"],
     socialNetworks: [
       {
         name: "GitHub",
-        url: "https://github.com/cdgaete",
+        url: "https://github.com/thogin",
       },
     ],
     totalContributions: 5,
-    totalMergedPrs: 2,
-    totalIssuesCreated: 3,
-    topRepos: ["powerplantmatching", "pypsa-earth"],
+    totalMergedPrs: 4,
+    totalIssuesCreated: 1,
+    totalReviews: 0,
+    topRepos: ["pypsa-eur"],
     repoContributions: {
-      "PyPSA/powerplantmatching": 4,
-      "pypsa-meets-earth/pypsa-earth": 1,
+      "PyPSA/pypsa-eur": 5,
     },
     repoPrs: {
-      "PyPSA/powerplantmatching": 1,
-      "pypsa-meets-earth/pypsa-earth": 1,
+      "PyPSA/pypsa-eur": 4,
     },
     repoIssues: {
-      "PyPSA/powerplantmatching": 3,
+      "PyPSA/pypsa-eur": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/104382956?v=4",
@@ -2951,6 +3704,7 @@ export const contributorsData = [
     totalContributions: 5,
     totalMergedPrs: 5,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["pypsa-eur", "pypsa-earth", "linopy"],
     repoContributions: {
       "PyPSA/linopy": 1,
@@ -2963,6 +3717,7 @@ export const contributorsData = [
       "pypsa-meets-earth/pypsa-earth": 2,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/123566795?v=4",
@@ -2978,6 +3733,7 @@ export const contributorsData = [
     totalContributions: 5,
     totalMergedPrs: 2,
     totalIssuesCreated: 3,
+    totalReviews: 0,
     topRepos: ["pypsa-usa", "pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -2990,6 +3746,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-usa": 3,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/2787226?v=4",
@@ -3005,6 +3762,7 @@ export const contributorsData = [
     totalContributions: 5,
     totalMergedPrs: 1,
     totalIssuesCreated: 4,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 5,
@@ -3015,6 +3773,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/linopy": 4,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/533641?v=4",
@@ -3030,6 +3789,7 @@ export const contributorsData = [
     totalContributions: 5,
     totalMergedPrs: 0,
     totalIssuesCreated: 5,
+    totalReviews: 0,
     topRepos: ["pypsa-usa"],
     repoContributions: {
       "PyPSA/pypsa-usa": 5,
@@ -3038,31 +3798,34 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-usa": 5,
     },
+    repoReviews: {},
   },
   {
-    imageUrl: "https://avatars.githubusercontent.com/u/62134151?v=4",
-    firstName: "Emre_Yorat",
-    lastName: "",
+    imageUrl: "https://avatars.githubusercontent.com/u/6413976?v=4",
+    firstName: "Tobias",
+    lastName: "Augspurger",
     positions: ["Contributor"],
     socialNetworks: [
       {
         name: "GitHub",
-        url: "https://github.com/Emre-Yorat89",
+        url: "https://github.com/Ly0n",
       },
     ],
     totalContributions: 5,
-    totalMergedPrs: 3,
-    totalIssuesCreated: 2,
+    totalMergedPrs: 1,
+    totalIssuesCreated: 4,
+    totalReviews: 0,
     topRepos: ["pypsa-earth"],
     repoContributions: {
       "pypsa-meets-earth/pypsa-earth": 5,
     },
     repoPrs: {
-      "pypsa-meets-earth/pypsa-earth": 3,
+      "pypsa-meets-earth/pypsa-earth": 1,
     },
     repoIssues: {
-      "pypsa-meets-earth/pypsa-earth": 2,
+      "pypsa-meets-earth/pypsa-earth": 4,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/99269783?v=4",
@@ -3078,6 +3841,7 @@ export const contributorsData = [
     totalContributions: 5,
     totalMergedPrs: 4,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-earth-sec"],
     repoContributions: {
       "pypsa-meets-earth/pypsa-earth-sec": 5,
@@ -3088,33 +3852,62 @@ export const contributorsData = [
     repoIssues: {
       "pypsa-meets-earth/pypsa-earth-sec": 1,
     },
+    repoReviews: {},
   },
   {
-    imageUrl: "https://avatars.githubusercontent.com/u/134321?v=4",
-    firstName: "Mat\u011bj",
-    lastName: "",
+    imageUrl: "https://avatars.githubusercontent.com/u/63586524?v=4",
+    firstName: "Aleks",
+    lastName: "Grochowicz",
     positions: ["Contributor"],
     socialNetworks: [
       {
         name: "GitHub",
-        url: "https://github.com/mgrabovsky",
+        url: "https://github.com/aleks-g",
       },
     ],
     totalContributions: 4,
     totalMergedPrs: 2,
     totalIssuesCreated: 2,
-    topRepos: ["PyPSA", "atlite"],
+    totalReviews: 0,
+    topRepos: ["PyPSA", "pypsa-eur"],
     repoContributions: {
-      "PyPSA/PyPSA": 3,
-      "PyPSA/atlite": 1,
+      "PyPSA/PyPSA": 2,
+      "PyPSA/pypsa-eur": 2,
     },
     repoPrs: {
-      "PyPSA/PyPSA": 2,
+      "PyPSA/PyPSA": 1,
+      "PyPSA/pypsa-eur": 1,
     },
     repoIssues: {
       "PyPSA/PyPSA": 1,
-      "PyPSA/atlite": 1,
+      "PyPSA/pypsa-eur": 1,
     },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/49111055?v=4",
+    firstName: "flxlchr",
+    lastName: "",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/flxlchr",
+      },
+    ],
+    totalContributions: 4,
+    totalMergedPrs: 4,
+    totalIssuesCreated: 0,
+    totalReviews: 0,
+    topRepos: ["PyPSA"],
+    repoContributions: {
+      "PyPSA/PyPSA": 4,
+    },
+    repoPrs: {
+      "PyPSA/PyPSA": 4,
+    },
+    repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/13498192?v=4",
@@ -3130,6 +3923,7 @@ export const contributorsData = [
     totalContributions: 4,
     totalMergedPrs: 2,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["PyPSA", "linopy"],
     repoContributions: {
       "PyPSA/PyPSA": 2,
@@ -3143,6 +3937,7 @@ export const contributorsData = [
       "PyPSA/PyPSA": 1,
       "PyPSA/linopy": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/38501948?v=4",
@@ -3158,6 +3953,7 @@ export const contributorsData = [
     totalContributions: 4,
     totalMergedPrs: 3,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA", "atlite"],
     repoContributions: {
       "PyPSA/PyPSA": 2,
@@ -3170,6 +3966,34 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/atlite": 1,
     },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/137448976?v=4",
+    firstName: "Enrico",
+    lastName: "Giglio",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/enricogiglio",
+      },
+    ],
+    totalContributions: 4,
+    totalMergedPrs: 3,
+    totalIssuesCreated: 1,
+    totalReviews: 0,
+    topRepos: ["PyPSA"],
+    repoContributions: {
+      "PyPSA/PyPSA": 4,
+    },
+    repoPrs: {
+      "PyPSA/PyPSA": 3,
+    },
+    repoIssues: {
+      "PyPSA/PyPSA": 1,
+    },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/4327840?v=4",
@@ -3185,6 +4009,7 @@ export const contributorsData = [
     totalContributions: 4,
     totalMergedPrs: 4,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 4,
@@ -3193,6 +4018,7 @@ export const contributorsData = [
       "PyPSA/PyPSA": 4,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/43530784?v=4",
@@ -3208,6 +4034,7 @@ export const contributorsData = [
     totalContributions: 4,
     totalMergedPrs: 4,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["pypsa-eur-sec", "PyPSA", "pypsa-eur"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -3220,6 +4047,7 @@ export const contributorsData = [
       "PyPSA/pypsa-eur-sec": 2,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/40397544?v=4",
@@ -3235,6 +4063,7 @@ export const contributorsData = [
     totalContributions: 4,
     totalMergedPrs: 4,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["pypsa-eur", "PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -3245,6 +4074,7 @@ export const contributorsData = [
       "PyPSA/pypsa-eur": 3,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/42064980?v=4",
@@ -3260,6 +4090,7 @@ export const contributorsData = [
     totalContributions: 4,
     totalMergedPrs: 2,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["PyPSA", "powerplantmatching"],
     repoContributions: {
       "PyPSA/PyPSA": 3,
@@ -3272,6 +4103,7 @@ export const contributorsData = [
       "PyPSA/PyPSA": 1,
       "PyPSA/powerplantmatching": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/156424082?v=4",
@@ -3287,6 +4119,7 @@ export const contributorsData = [
     totalContributions: 4,
     totalMergedPrs: 1,
     totalIssuesCreated: 3,
+    totalReviews: 0,
     topRepos: ["PyPSA", "pypsa-eur", "pypsa-earth"],
     repoContributions: {
       "PyPSA/PyPSA": 2,
@@ -3300,6 +4133,7 @@ export const contributorsData = [
       "PyPSA/PyPSA": 2,
       "PyPSA/pypsa-eur": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/42128017?v=4",
@@ -3315,6 +4149,7 @@ export const contributorsData = [
     totalContributions: 4,
     totalMergedPrs: 0,
     totalIssuesCreated: 4,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 4,
@@ -3323,6 +4158,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 4,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/145573860?v=4",
@@ -3338,6 +4174,7 @@ export const contributorsData = [
     totalContributions: 4,
     totalMergedPrs: 0,
     totalIssuesCreated: 4,
+    totalReviews: 0,
     topRepos: ["pypsa-eur", "PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -3348,6 +4185,7 @@ export const contributorsData = [
       "PyPSA/PyPSA": 1,
       "PyPSA/pypsa-eur": 3,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/6868237?v=4",
@@ -3363,6 +4201,7 @@ export const contributorsData = [
     totalContributions: 4,
     totalMergedPrs: 0,
     totalIssuesCreated: 4,
+    totalReviews: 0,
     topRepos: ["PyPSA", "linopy"],
     repoContributions: {
       "PyPSA/PyPSA": 2,
@@ -3372,6 +4211,39 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 2,
       "PyPSA/linopy": 2,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/122939887?v=4",
+    firstName: "Jess",
+    lastName: "",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/jessLryan",
+      },
+    ],
+    totalContributions: 4,
+    totalMergedPrs: 2,
+    totalIssuesCreated: 1,
+    totalReviews: 1,
+    topRepos: ["PyPSA", "pypsa-eur", "pypsa-earth"],
+    repoContributions: {
+      "PyPSA/PyPSA": 2,
+      "PyPSA/pypsa-eur": 1,
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoPrs: {
+      "PyPSA/pypsa-eur": 1,
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoIssues: {
+      "PyPSA/PyPSA": 1,
+    },
+    repoReviews: {
+      "PyPSA/PyPSA": 1,
     },
   },
   {
@@ -3388,6 +4260,7 @@ export const contributorsData = [
     totalContributions: 4,
     totalMergedPrs: 0,
     totalIssuesCreated: 4,
+    totalReviews: 0,
     topRepos: ["powerplantmatching", "PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -3398,6 +4271,7 @@ export const contributorsData = [
       "PyPSA/PyPSA": 1,
       "PyPSA/powerplantmatching": 3,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/55534006?v=4",
@@ -3413,6 +4287,7 @@ export const contributorsData = [
     totalContributions: 4,
     totalMergedPrs: 1,
     totalIssuesCreated: 3,
+    totalReviews: 0,
     topRepos: ["powerplantmatching"],
     repoContributions: {
       "PyPSA/powerplantmatching": 4,
@@ -3423,33 +4298,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/powerplantmatching": 3,
     },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/102019906?v=4",
-    firstName: "Parisa",
-    lastName: "Rahdan",
-    positions: ["Contributor"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/Parisra",
-      },
-    ],
-    totalContributions: 4,
-    totalMergedPrs: 2,
-    totalIssuesCreated: 2,
-    topRepos: ["pypsa-eur", "powerplantmatching"],
-    repoContributions: {
-      "PyPSA/powerplantmatching": 1,
-      "PyPSA/pypsa-eur": 3,
-    },
-    repoPrs: {
-      "PyPSA/pypsa-eur": 2,
-    },
-    repoIssues: {
-      "PyPSA/powerplantmatching": 1,
-      "PyPSA/pypsa-eur": 1,
-    },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/26626463?v=4",
@@ -3465,6 +4314,7 @@ export const contributorsData = [
     totalContributions: 4,
     totalMergedPrs: 0,
     totalIssuesCreated: 4,
+    totalReviews: 0,
     topRepos: ["powerplantmatching"],
     repoContributions: {
       "PyPSA/powerplantmatching": 4,
@@ -3473,6 +4323,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/powerplantmatching": 4,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/78690362?v=4",
@@ -3488,6 +4339,7 @@ export const contributorsData = [
     totalContributions: 4,
     totalMergedPrs: 3,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-eur", "atlite"],
     repoContributions: {
       "PyPSA/atlite": 1,
@@ -3500,33 +4352,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 1,
     },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/49280197?v=4",
-    firstName: "Jonas",
-    lastName: "Meier",
-    positions: ["Contributor"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/jome1",
-      },
-    ],
-    totalContributions: 4,
-    totalMergedPrs: 1,
-    totalIssuesCreated: 3,
-    topRepos: ["pypsa-earth", "atlite"],
-    repoContributions: {
-      "PyPSA/atlite": 1,
-      "pypsa-meets-earth/pypsa-earth": 3,
-    },
-    repoPrs: {
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
-    repoIssues: {
-      "PyPSA/atlite": 1,
-      "pypsa-meets-earth/pypsa-earth": 2,
-    },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/11367988?v=4",
@@ -3542,6 +4368,7 @@ export const contributorsData = [
     totalContributions: 4,
     totalMergedPrs: 0,
     totalIssuesCreated: 4,
+    totalReviews: 0,
     topRepos: ["pypsa-eur", "atlite"],
     repoContributions: {
       "PyPSA/atlite": 1,
@@ -3552,6 +4379,7 @@ export const contributorsData = [
       "PyPSA/atlite": 1,
       "PyPSA/pypsa-eur": 3,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/57452607?v=4",
@@ -3567,6 +4395,7 @@ export const contributorsData = [
     totalContributions: 4,
     totalMergedPrs: 0,
     totalIssuesCreated: 4,
+    totalReviews: 0,
     topRepos: ["atlite"],
     repoContributions: {
       "PyPSA/atlite": 4,
@@ -3575,6 +4404,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/atlite": 4,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/173035617?v=4",
@@ -3590,6 +4420,7 @@ export const contributorsData = [
     totalContributions: 4,
     totalMergedPrs: 4,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["linopy", "pypsa-eur"],
     repoContributions: {
       "PyPSA/linopy": 3,
@@ -3600,6 +4431,7 @@ export const contributorsData = [
       "PyPSA/pypsa-eur": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/93080426?v=4",
@@ -3615,6 +4447,7 @@ export const contributorsData = [
     totalContributions: 4,
     totalMergedPrs: 1,
     totalIssuesCreated: 3,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 4,
@@ -3625,6 +4458,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 3,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/199089757?v=4",
@@ -3640,6 +4474,7 @@ export const contributorsData = [
     totalContributions: 4,
     totalMergedPrs: 4,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 4,
@@ -3648,6 +4483,7 @@ export const contributorsData = [
       "PyPSA/pypsa-eur": 4,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/97829088?v=4",
@@ -3663,6 +4499,7 @@ export const contributorsData = [
     totalContributions: 4,
     totalMergedPrs: 1,
     totalIssuesCreated: 3,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 4,
@@ -3673,6 +4510,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 3,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/133563090?v=4",
@@ -3688,6 +4526,7 @@ export const contributorsData = [
     totalContributions: 4,
     totalMergedPrs: 2,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["pypsa-de", "pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-de": 2,
@@ -3701,6 +4540,7 @@ export const contributorsData = [
       "PyPSA/pypsa-de": 1,
       "PyPSA/pypsa-eur": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/47757762?v=4",
@@ -3716,6 +4556,7 @@ export const contributorsData = [
     totalContributions: 4,
     totalMergedPrs: 0,
     totalIssuesCreated: 4,
+    totalReviews: 0,
     topRepos: ["pypsa-eur", "pypsa-earth"],
     repoContributions: {
       "PyPSA/pypsa-eur": 2,
@@ -3726,6 +4567,7 @@ export const contributorsData = [
       "PyPSA/pypsa-eur": 2,
       "pypsa-meets-earth/pypsa-earth": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/6529271?v=4",
@@ -3741,6 +4583,7 @@ export const contributorsData = [
     totalContributions: 4,
     totalMergedPrs: 4,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["whobs-server"],
     repoContributions: {
       "PyPSA/whobs-server": 4,
@@ -3749,6 +4592,34 @@ export const contributorsData = [
       "PyPSA/whobs-server": 4,
     },
     repoIssues: {},
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/140972560?v=4",
+    firstName: "Filip",
+    lastName: "Van den Borre",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/fvdborre",
+      },
+    ],
+    totalContributions: 4,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 3,
+    totalReviews: 1,
+    topRepos: ["technology-data"],
+    repoContributions: {
+      "PyPSA/technology-data": 4,
+    },
+    repoPrs: {},
+    repoIssues: {
+      "PyPSA/technology-data": 3,
+    },
+    repoReviews: {
+      "PyPSA/technology-data": 1,
+    },
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/77121786?v=4",
@@ -3764,6 +4635,7 @@ export const contributorsData = [
     totalContributions: 4,
     totalMergedPrs: 2,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 4,
@@ -3774,6 +4646,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/linopy": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/107082409?v=4",
@@ -3789,6 +4662,7 @@ export const contributorsData = [
     totalContributions: 4,
     totalMergedPrs: 2,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 4,
@@ -3799,6 +4673,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/linopy": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/169417769?v=4",
@@ -3814,6 +4689,7 @@ export const contributorsData = [
     totalContributions: 4,
     totalMergedPrs: 0,
     totalIssuesCreated: 4,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 4,
@@ -3822,30 +4698,33 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/linopy": 4,
     },
+    repoReviews: {},
   },
   {
-    imageUrl: "https://avatars.githubusercontent.com/u/185556300?v=4",
-    firstName: "Asia",
-    lastName: "Zhang",
+    imageUrl: "https://avatars.githubusercontent.com/u/16053458?v=4",
+    firstName: "Henry",
+    lastName: "Daniels-Koch",
     positions: ["Contributor"],
     socialNetworks: [
       {
         name: "GitHub",
-        url: "https://github.com/asiazzzhang",
+        url: "https://github.com/hdanielskoch",
       },
     ],
     totalContributions: 4,
-    totalMergedPrs: 3,
-    totalIssuesCreated: 1,
+    totalMergedPrs: 2,
+    totalIssuesCreated: 0,
+    totalReviews: 2,
     topRepos: ["pypsa-usa"],
     repoContributions: {
       "PyPSA/pypsa-usa": 4,
     },
     repoPrs: {
-      "PyPSA/pypsa-usa": 3,
+      "PyPSA/pypsa-usa": 2,
     },
-    repoIssues: {
-      "PyPSA/pypsa-usa": 1,
+    repoIssues: {},
+    repoReviews: {
+      "PyPSA/pypsa-usa": 2,
     },
   },
   {
@@ -3862,6 +4741,7 @@ export const contributorsData = [
     totalContributions: 4,
     totalMergedPrs: 1,
     totalIssuesCreated: 3,
+    totalReviews: 0,
     topRepos: ["pypsa-usa"],
     repoContributions: {
       "PyPSA/pypsa-usa": 4,
@@ -3872,6 +4752,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-usa": 3,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/119073758?v=4",
@@ -3887,6 +4768,7 @@ export const contributorsData = [
     totalContributions: 4,
     totalMergedPrs: 1,
     totalIssuesCreated: 3,
+    totalReviews: 0,
     topRepos: ["pypsa-usa"],
     repoContributions: {
       "PyPSA/pypsa-usa": 4,
@@ -3897,6 +4779,32 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-usa": 3,
     },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/26096675?v=4",
+    firstName: "Femke",
+    lastName: "Nijsse",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/Femkemilene",
+      },
+    ],
+    totalContributions: 4,
+    totalMergedPrs: 4,
+    totalIssuesCreated: 0,
+    totalReviews: 0,
+    topRepos: ["pypsa-earth"],
+    repoContributions: {
+      "pypsa-meets-earth/pypsa-earth": 4,
+    },
+    repoPrs: {
+      "pypsa-meets-earth/pypsa-earth": 4,
+    },
+    repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/78568233?v=4",
@@ -3912,6 +4820,7 @@ export const contributorsData = [
     totalContributions: 4,
     totalMergedPrs: 4,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["pypsa-earth"],
     repoContributions: {
       "pypsa-meets-earth/pypsa-earth": 4,
@@ -3920,6 +4829,36 @@ export const contributorsData = [
       "pypsa-meets-earth/pypsa-earth": 4,
     },
     repoIssues: {},
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/77328471?v=4",
+    firstName: "Lukas",
+    lastName: "Schirren",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/lukasschirren",
+      },
+    ],
+    totalContributions: 3,
+    totalMergedPrs: 2,
+    totalIssuesCreated: 1,
+    totalReviews: 0,
+    topRepos: ["PyPSA", "atlite"],
+    repoContributions: {
+      "PyPSA/PyPSA": 2,
+      "PyPSA/atlite": 1,
+    },
+    repoPrs: {
+      "PyPSA/PyPSA": 1,
+      "PyPSA/atlite": 1,
+    },
+    repoIssues: {
+      "PyPSA/PyPSA": 1,
+    },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/101526486?v=4",
@@ -3935,6 +4874,7 @@ export const contributorsData = [
     totalContributions: 3,
     totalMergedPrs: 1,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 3,
@@ -3945,30 +4885,91 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 2,
     },
+    repoReviews: {},
   },
   {
-    imageUrl: "https://avatars.githubusercontent.com/u/137448976?v=4",
-    firstName: "Enrico",
-    lastName: "Giglio",
+    imageUrl: "https://avatars.githubusercontent.com/u/26695097?v=4",
+    firstName: "Marlon",
+    lastName: "Fleck",
     positions: ["Contributor"],
     socialNetworks: [
       {
         name: "GitHub",
-        url: "https://github.com/enricogiglio",
+        url: "https://github.com/SpamAndEgg",
       },
     ],
     totalContributions: 3,
-    totalMergedPrs: 2,
-    totalIssuesCreated: 1,
+    totalMergedPrs: 1,
+    totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 3,
     },
     repoPrs: {
+      "PyPSA/PyPSA": 1,
+    },
+    repoIssues: {
       "PyPSA/PyPSA": 2,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/155193503?v=4",
+    firstName: "Alex-Neve",
+    lastName: "",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/Alex-Neve",
+      },
+    ],
+    totalContributions: 3,
+    totalMergedPrs: 1,
+    totalIssuesCreated: 1,
+    totalReviews: 1,
+    topRepos: ["PyPSA"],
+    repoContributions: {
+      "PyPSA/PyPSA": 3,
+    },
+    repoPrs: {
+      "PyPSA/PyPSA": 1,
     },
     repoIssues: {
       "PyPSA/PyPSA": 1,
+    },
+    repoReviews: {
+      "PyPSA/PyPSA": 1,
+    },
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/93286254?v=4",
+    firstName: "Akshat",
+    lastName: "Mittal",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/drifter089",
+      },
+    ],
+    totalContributions: 3,
+    totalMergedPrs: 2,
+    totalIssuesCreated: 0,
+    totalReviews: 1,
+    topRepos: ["pypsa-earth", "PyPSA"],
+    repoContributions: {
+      "PyPSA/PyPSA": 1,
+      "pypsa-meets-earth/pypsa-earth": 2,
+    },
+    repoPrs: {
+      "PyPSA/PyPSA": 1,
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoIssues: {},
+    repoReviews: {
+      "pypsa-meets-earth/pypsa-earth": 1,
     },
   },
   {
@@ -3985,6 +4986,7 @@ export const contributorsData = [
     totalContributions: 3,
     totalMergedPrs: 1,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["PyPSA", "efuels-server", "linopy"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -3998,6 +5000,7 @@ export const contributorsData = [
       "PyPSA/efuels-server": 1,
       "PyPSA/linopy": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/20423810?v=4",
@@ -4013,6 +5016,7 @@ export const contributorsData = [
     totalContributions: 3,
     totalMergedPrs: 2,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 3,
@@ -4023,6 +5027,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/3951483?v=4",
@@ -4038,6 +5043,7 @@ export const contributorsData = [
     totalContributions: 3,
     totalMergedPrs: 1,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 3,
@@ -4048,6 +5054,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/8311342?v=4",
@@ -4063,6 +5070,7 @@ export const contributorsData = [
     totalContributions: 3,
     totalMergedPrs: 1,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 3,
@@ -4073,33 +5081,35 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 2,
     },
+    repoReviews: {},
   },
   {
-    imageUrl: "https://avatars.githubusercontent.com/u/63586524?v=4",
-    firstName: "Aleks",
-    lastName: "Grochowicz",
+    imageUrl: "https://avatars.githubusercontent.com/u/805313?v=4",
+    firstName: "Tobie",
+    lastName: "",
     positions: ["Contributor"],
     socialNetworks: [
       {
         name: "GitHub",
-        url: "https://github.com/aleks-g",
+        url: "https://github.com/Tooblippe",
       },
     ],
     totalContributions: 3,
-    totalMergedPrs: 1,
-    totalIssuesCreated: 2,
-    topRepos: ["pypsa-eur", "PyPSA"],
+    totalMergedPrs: 2,
+    totalIssuesCreated: 1,
+    totalReviews: 0,
+    topRepos: ["pypsa-earth", "PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
-      "PyPSA/pypsa-eur": 2,
+      "pypsa-meets-earth/pypsa-earth": 2,
     },
     repoPrs: {
-      "PyPSA/pypsa-eur": 1,
+      "pypsa-meets-earth/pypsa-earth": 2,
     },
     repoIssues: {
       "PyPSA/PyPSA": 1,
-      "PyPSA/pypsa-eur": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/143103444?v=4",
@@ -4115,6 +5125,7 @@ export const contributorsData = [
     totalContributions: 3,
     totalMergedPrs: 0,
     totalIssuesCreated: 3,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 3,
@@ -4123,6 +5134,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 3,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/71127464?v=4",
@@ -4138,6 +5150,7 @@ export const contributorsData = [
     totalContributions: 3,
     totalMergedPrs: 0,
     totalIssuesCreated: 3,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 3,
@@ -4146,32 +5159,32 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 3,
     },
+    repoReviews: {},
   },
   {
-    imageUrl: "https://avatars.githubusercontent.com/u/122939887?v=4",
-    firstName: "Jess",
-    lastName: "",
-    positions: ["Contributor"],
+    imageUrl: "https://avatars.githubusercontent.com/u/18753899?v=4",
+    firstName: "Sebastian",
+    lastName: "Kiefer",
+    positions: ["Collaborator"],
     socialNetworks: [
       {
         name: "GitHub",
-        url: "https://github.com/jessLryan",
+        url: "https://github.com/neunzehnachtneun",
       },
     ],
     totalContributions: 3,
-    totalMergedPrs: 2,
-    totalIssuesCreated: 1,
-    topRepos: ["PyPSA", "pypsa-eur", "pypsa-earth"],
+    totalMergedPrs: 0,
+    totalIssuesCreated: 2,
+    totalReviews: 1,
+    topRepos: ["PyPSA"],
     repoContributions: {
-      "PyPSA/PyPSA": 1,
-      "PyPSA/pypsa-eur": 1,
-      "pypsa-meets-earth/pypsa-earth": 1,
+      "PyPSA/PyPSA": 3,
     },
-    repoPrs: {
-      "PyPSA/pypsa-eur": 1,
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
+    repoPrs: {},
     repoIssues: {
+      "PyPSA/PyPSA": 2,
+    },
+    repoReviews: {
       "PyPSA/PyPSA": 1,
     },
   },
@@ -4189,6 +5202,7 @@ export const contributorsData = [
     totalContributions: 3,
     totalMergedPrs: 0,
     totalIssuesCreated: 3,
+    totalReviews: 0,
     topRepos: ["PyPSA", "nomopyomo"],
     repoContributions: {
       "PyPSA/PyPSA": 2,
@@ -4199,6 +5213,7 @@ export const contributorsData = [
       "PyPSA/PyPSA": 2,
       "PyPSA/nomopyomo": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/48441162?v=4",
@@ -4214,6 +5229,7 @@ export const contributorsData = [
     totalContributions: 3,
     totalMergedPrs: 0,
     totalIssuesCreated: 3,
+    totalReviews: 0,
     topRepos: ["PyPSA", "nomopyomo"],
     repoContributions: {
       "PyPSA/PyPSA": 2,
@@ -4224,6 +5240,7 @@ export const contributorsData = [
       "PyPSA/PyPSA": 2,
       "PyPSA/nomopyomo": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/52325843?v=4",
@@ -4239,6 +5256,7 @@ export const contributorsData = [
     totalContributions: 3,
     totalMergedPrs: 0,
     totalIssuesCreated: 3,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 3,
@@ -4247,6 +5265,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 3,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/56074888?v=4",
@@ -4262,6 +5281,7 @@ export const contributorsData = [
     totalContributions: 3,
     totalMergedPrs: 1,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["powerplantmatching"],
     repoContributions: {
       "PyPSA/powerplantmatching": 3,
@@ -4272,6 +5292,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/powerplantmatching": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/24390473?v=4",
@@ -4287,6 +5308,7 @@ export const contributorsData = [
     totalContributions: 3,
     totalMergedPrs: 3,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["powerplantmatching"],
     repoContributions: {
       "PyPSA/powerplantmatching": 3,
@@ -4295,6 +5317,7 @@ export const contributorsData = [
       "PyPSA/powerplantmatching": 3,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/211842118?v=4",
@@ -4310,6 +5333,7 @@ export const contributorsData = [
     totalContributions: 3,
     totalMergedPrs: 0,
     totalIssuesCreated: 3,
+    totalReviews: 0,
     topRepos: ["pypsa-eur", "powerplantmatching"],
     repoContributions: {
       "PyPSA/powerplantmatching": 1,
@@ -4320,6 +5344,7 @@ export const contributorsData = [
       "PyPSA/powerplantmatching": 1,
       "PyPSA/pypsa-eur": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/37304682?v=4",
@@ -4335,6 +5360,7 @@ export const contributorsData = [
     totalContributions: 3,
     totalMergedPrs: 0,
     totalIssuesCreated: 3,
+    totalReviews: 0,
     topRepos: ["powerplantmatching"],
     repoContributions: {
       "PyPSA/powerplantmatching": 3,
@@ -4343,6 +5369,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/powerplantmatching": 3,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/28385573?v=4",
@@ -4358,6 +5385,7 @@ export const contributorsData = [
     totalContributions: 3,
     totalMergedPrs: 0,
     totalIssuesCreated: 3,
+    totalReviews: 0,
     topRepos: ["pypsa-eur", "powerplantmatching"],
     repoContributions: {
       "PyPSA/powerplantmatching": 1,
@@ -4368,6 +5396,7 @@ export const contributorsData = [
       "PyPSA/powerplantmatching": 1,
       "PyPSA/pypsa-eur": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/66074166?v=4",
@@ -4383,6 +5412,7 @@ export const contributorsData = [
     totalContributions: 3,
     totalMergedPrs: 1,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["atlite", "pypsa-earth"],
     repoContributions: {
       "PyPSA/atlite": 2,
@@ -4395,6 +5425,7 @@ export const contributorsData = [
       "PyPSA/atlite": 1,
       "pypsa-meets-earth/pypsa-earth": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/77660814?v=4",
@@ -4410,6 +5441,7 @@ export const contributorsData = [
     totalContributions: 3,
     totalMergedPrs: 2,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["atlite"],
     repoContributions: {
       "PyPSA/atlite": 3,
@@ -4420,6 +5452,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/atlite": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/3947069?v=4",
@@ -4435,6 +5468,7 @@ export const contributorsData = [
     totalContributions: 3,
     totalMergedPrs: 0,
     totalIssuesCreated: 3,
+    totalReviews: 0,
     topRepos: ["atlite"],
     repoContributions: {
       "PyPSA/atlite": 3,
@@ -4443,31 +5477,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/atlite": 3,
     },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/4083648?v=4",
-    firstName: "Thomas",
-    lastName: "Ginster",
-    positions: ["Contributor"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/thogin",
-      },
-    ],
-    totalContributions: 3,
-    totalMergedPrs: 2,
-    totalIssuesCreated: 1,
-    topRepos: ["pypsa-eur"],
-    repoContributions: {
-      "PyPSA/pypsa-eur": 3,
-    },
-    repoPrs: {
-      "PyPSA/pypsa-eur": 2,
-    },
-    repoIssues: {
-      "PyPSA/pypsa-eur": 1,
-    },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/8888574?v=4",
@@ -4483,6 +5493,7 @@ export const contributorsData = [
     totalContributions: 3,
     totalMergedPrs: 0,
     totalIssuesCreated: 3,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 3,
@@ -4491,6 +5502,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 3,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/99412005?v=4",
@@ -4506,6 +5518,7 @@ export const contributorsData = [
     totalContributions: 3,
     totalMergedPrs: 2,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["technology-data"],
     repoContributions: {
       "PyPSA/technology-data": 3,
@@ -4516,29 +5529,32 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/technology-data": 1,
     },
+    repoReviews: {},
   },
   {
-    imageUrl: "https://avatars.githubusercontent.com/u/140972560?v=4",
-    firstName: "Filip",
-    lastName: "Van den Borre",
-    positions: ["Collaborator"],
+    imageUrl: "https://avatars.githubusercontent.com/u/1422686?v=4",
+    firstName: "qheuristics",
+    lastName: "",
+    positions: ["Contributor"],
     socialNetworks: [
       {
         name: "GitHub",
-        url: "https://github.com/fvdborre",
+        url: "https://github.com/qheuristics",
       },
     ],
     totalContributions: 3,
-    totalMergedPrs: 0,
-    totalIssuesCreated: 3,
-    topRepos: ["technology-data"],
+    totalMergedPrs: 3,
+    totalIssuesCreated: 0,
+    totalReviews: 0,
+    topRepos: ["linopy"],
     repoContributions: {
-      "PyPSA/technology-data": 3,
+      "PyPSA/linopy": 3,
     },
-    repoPrs: {},
-    repoIssues: {
-      "PyPSA/technology-data": 3,
+    repoPrs: {
+      "PyPSA/linopy": 3,
     },
+    repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/190494787?v=4",
@@ -4554,6 +5570,7 @@ export const contributorsData = [
     totalContributions: 3,
     totalMergedPrs: 2,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 3,
@@ -4564,6 +5581,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/linopy": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/8177701?v=4",
@@ -4579,6 +5597,7 @@ export const contributorsData = [
     totalContributions: 3,
     totalMergedPrs: 3,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 3,
@@ -4587,6 +5606,7 @@ export const contributorsData = [
       "PyPSA/linopy": 3,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/15084984?v=4",
@@ -4602,6 +5622,7 @@ export const contributorsData = [
     totalContributions: 3,
     totalMergedPrs: 1,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 3,
@@ -4612,6 +5633,32 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/linopy": 2,
     },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/6496424?v=4",
+    firstName: "Liam",
+    lastName: "Kilroy",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/Mailisyorlik",
+      },
+    ],
+    totalContributions: 3,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 3,
+    totalReviews: 0,
+    topRepos: ["pypsa-usa"],
+    repoContributions: {
+      "PyPSA/pypsa-usa": 3,
+    },
+    repoPrs: {},
+    repoIssues: {
+      "PyPSA/pypsa-usa": 3,
+    },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/25186877?v=4",
@@ -4627,6 +5674,7 @@ export const contributorsData = [
     totalContributions: 3,
     totalMergedPrs: 0,
     totalIssuesCreated: 3,
+    totalReviews: 0,
     topRepos: ["pypsa-usa"],
     repoContributions: {
       "PyPSA/pypsa-usa": 3,
@@ -4635,6 +5683,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-usa": 3,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/51810088?v=4",
@@ -4650,6 +5699,7 @@ export const contributorsData = [
     totalContributions: 3,
     totalMergedPrs: 1,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["pypsa-earth"],
     repoContributions: {
       "pypsa-meets-earth/pypsa-earth": 3,
@@ -4660,6 +5710,7 @@ export const contributorsData = [
     repoIssues: {
       "pypsa-meets-earth/pypsa-earth": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/127969728?v=4",
@@ -4675,6 +5726,7 @@ export const contributorsData = [
     totalContributions: 3,
     totalMergedPrs: 2,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-earth"],
     repoContributions: {
       "pypsa-meets-earth/pypsa-earth": 3,
@@ -4685,6 +5737,7 @@ export const contributorsData = [
     repoIssues: {
       "pypsa-meets-earth/pypsa-earth": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/113139589?v=4",
@@ -4700,6 +5753,7 @@ export const contributorsData = [
     totalContributions: 3,
     totalMergedPrs: 3,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["pypsa-earth"],
     repoContributions: {
       "pypsa-meets-earth/pypsa-earth": 3,
@@ -4708,6 +5762,7 @@ export const contributorsData = [
       "pypsa-meets-earth/pypsa-earth": 3,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/101210563?v=4",
@@ -4723,6 +5778,7 @@ export const contributorsData = [
     totalContributions: 3,
     totalMergedPrs: 3,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["pypsa-earth"],
     repoContributions: {
       "pypsa-meets-earth/pypsa-earth": 3,
@@ -4731,6 +5787,7 @@ export const contributorsData = [
       "pypsa-meets-earth/pypsa-earth": 3,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/93644024?v=4",
@@ -4746,6 +5803,7 @@ export const contributorsData = [
     totalContributions: 3,
     totalMergedPrs: 1,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["pypsa-earth"],
     repoContributions: {
       "pypsa-meets-earth/pypsa-earth": 3,
@@ -4756,6 +5814,7 @@ export const contributorsData = [
     repoIssues: {
       "pypsa-meets-earth/pypsa-earth": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/91368941?v=4",
@@ -4771,6 +5830,7 @@ export const contributorsData = [
     totalContributions: 3,
     totalMergedPrs: 0,
     totalIssuesCreated: 3,
+    totalReviews: 0,
     topRepos: ["pypsa-earth"],
     repoContributions: {
       "pypsa-meets-earth/pypsa-earth": 3,
@@ -4779,6 +5839,59 @@ export const contributorsData = [
     repoIssues: {
       "pypsa-meets-earth/pypsa-earth": 3,
     },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/39037966?v=4",
+    firstName: "Keegan",
+    lastName: "Green",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/keeganmjgreen",
+      },
+    ],
+    totalContributions: 2,
+    totalMergedPrs: 2,
+    totalIssuesCreated: 0,
+    totalReviews: 0,
+    topRepos: ["PyPSA"],
+    repoContributions: {
+      "PyPSA/PyPSA": 2,
+    },
+    repoPrs: {
+      "PyPSA/PyPSA": 2,
+    },
+    repoIssues: {},
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/83787088?v=4",
+    firstName: "Saeed",
+    lastName: "Sayadi",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/sasa821",
+      },
+    ],
+    totalContributions: 2,
+    totalMergedPrs: 1,
+    totalIssuesCreated: 1,
+    totalReviews: 0,
+    topRepos: ["PyPSA"],
+    repoContributions: {
+      "PyPSA/PyPSA": 2,
+    },
+    repoPrs: {
+      "PyPSA/PyPSA": 1,
+    },
+    repoIssues: {
+      "PyPSA/PyPSA": 1,
+    },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/39184289?v=4",
@@ -4794,6 +5907,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 1,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA", "pypsa-eur"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -4805,81 +5919,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 1,
     },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/26695097?v=4",
-    firstName: "Marlon",
-    lastName: "Fleck",
-    positions: ["Contributor"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/SpamAndEgg",
-      },
-    ],
-    totalContributions: 2,
-    totalMergedPrs: 1,
-    totalIssuesCreated: 1,
-    topRepos: ["PyPSA"],
-    repoContributions: {
-      "PyPSA/PyPSA": 2,
-    },
-    repoPrs: {
-      "PyPSA/PyPSA": 1,
-    },
-    repoIssues: {
-      "PyPSA/PyPSA": 1,
-    },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/155193503?v=4",
-    firstName: "Alex-Neve",
-    lastName: "",
-    positions: ["Contributor"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/Alex-Neve",
-      },
-    ],
-    totalContributions: 2,
-    totalMergedPrs: 1,
-    totalIssuesCreated: 1,
-    topRepos: ["PyPSA"],
-    repoContributions: {
-      "PyPSA/PyPSA": 2,
-    },
-    repoPrs: {
-      "PyPSA/PyPSA": 1,
-    },
-    repoIssues: {
-      "PyPSA/PyPSA": 1,
-    },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/93286254?v=4",
-    firstName: "Akshat",
-    lastName: "Mittal",
-    positions: ["Contributor"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/drifter089",
-      },
-    ],
-    totalContributions: 2,
-    totalMergedPrs: 2,
-    totalIssuesCreated: 0,
-    topRepos: ["PyPSA", "pypsa-earth"],
-    repoContributions: {
-      "PyPSA/PyPSA": 1,
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
-    repoPrs: {
-      "PyPSA/PyPSA": 1,
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
-    repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/39566844?v=4",
@@ -4895,6 +5935,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 1,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA", "pypsa-eur"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -4906,6 +5947,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/8702579?v=4",
@@ -4921,6 +5963,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 1,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 2,
@@ -4931,6 +5974,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/64157629?v=4",
@@ -4946,6 +5990,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 2,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 2,
@@ -4954,6 +5999,7 @@ export const contributorsData = [
       "PyPSA/PyPSA": 2,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/89200680?v=4",
@@ -4969,6 +6015,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 1,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 2,
@@ -4979,6 +6026,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/74403518?v=4",
@@ -4994,6 +6042,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 1,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 2,
@@ -5004,6 +6053,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/15090271?v=4",
@@ -5019,6 +6069,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 2,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 2,
@@ -5027,32 +6078,57 @@ export const contributorsData = [
       "PyPSA/PyPSA": 2,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
-    imageUrl: "https://avatars.githubusercontent.com/u/77328471?v=4",
-    firstName: "Lukas",
-    lastName: "Schirren",
-    positions: ["Contributor"],
+    imageUrl: "https://avatars.githubusercontent.com/u/34166094?v=4",
+    firstName: "Aisling",
+    lastName: "Pigott",
+    positions: ["Collaborator"],
     socialNetworks: [
       {
         name: "GitHub",
-        url: "https://github.com/lukasschirren",
+        url: "https://github.com/apigott",
       },
     ],
     totalContributions: 2,
-    totalMergedPrs: 1,
-    totalIssuesCreated: 1,
-    topRepos: ["PyPSA", "atlite"],
+    totalMergedPrs: 0,
+    totalIssuesCreated: 2,
+    totalReviews: 0,
+    topRepos: ["PyPSA"],
     repoContributions: {
-      "PyPSA/PyPSA": 1,
-      "PyPSA/atlite": 1,
+      "PyPSA/PyPSA": 2,
     },
-    repoPrs: {
-      "PyPSA/atlite": 1,
-    },
+    repoPrs: {},
     repoIssues: {
-      "PyPSA/PyPSA": 1,
+      "PyPSA/PyPSA": 2,
     },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/24872299?v=4",
+    firstName: "steffenkaminski",
+    lastName: "",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/steffenkaminski",
+      },
+    ],
+    totalContributions: 2,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 2,
+    totalReviews: 0,
+    topRepos: ["PyPSA"],
+    repoContributions: {
+      "PyPSA/PyPSA": 2,
+    },
+    repoPrs: {},
+    repoIssues: {
+      "PyPSA/PyPSA": 2,
+    },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/125222110?v=4",
@@ -5068,6 +6144,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 2,
@@ -5076,6 +6153,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/36014921?v=4",
@@ -5091,6 +6169,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 2,
@@ -5099,6 +6178,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/183473530?v=4",
@@ -5114,6 +6194,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 2,
@@ -5122,6 +6203,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/151150615?v=4",
@@ -5137,6 +6219,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 2,
@@ -5145,6 +6228,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/45032111?v=4",
@@ -5160,6 +6244,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["PyPSA", "linopy"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -5170,6 +6255,7 @@ export const contributorsData = [
       "PyPSA/PyPSA": 1,
       "PyPSA/linopy": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/115179076?v=4",
@@ -5185,6 +6271,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 2,
@@ -5193,6 +6280,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/128095291?v=4",
@@ -5208,6 +6296,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 2,
@@ -5216,6 +6305,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/15251685?v=4",
@@ -5231,6 +6321,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["PyPSA", "atlite"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -5241,6 +6332,7 @@ export const contributorsData = [
       "PyPSA/PyPSA": 1,
       "PyPSA/atlite": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/105169705?v=4",
@@ -5256,6 +6348,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 2,
@@ -5264,6 +6357,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/122617946?v=4",
@@ -5279,6 +6373,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["PyPSA", "linopy"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -5289,6 +6384,7 @@ export const contributorsData = [
       "PyPSA/PyPSA": 1,
       "PyPSA/linopy": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/52164915?v=4",
@@ -5304,6 +6400,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 2,
@@ -5312,6 +6409,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/61853401?v=4",
@@ -5327,6 +6425,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["PyPSA", "linopy"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -5337,6 +6436,7 @@ export const contributorsData = [
       "PyPSA/PyPSA": 1,
       "PyPSA/linopy": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/46815982?v=4",
@@ -5352,6 +6452,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 2,
@@ -5360,6 +6461,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/9819174?v=4",
@@ -5375,6 +6477,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["PyPSA", "powerplantmatching"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -5385,6 +6488,7 @@ export const contributorsData = [
       "PyPSA/PyPSA": 1,
       "PyPSA/powerplantmatching": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/7400038?v=4",
@@ -5400,6 +6504,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["PSA.jl", "PyPSA"],
     repoContributions: {
       "PyPSA/PSA.jl": 1,
@@ -5410,6 +6515,7 @@ export const contributorsData = [
       "PyPSA/PSA.jl": 1,
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/38261014?v=4",
@@ -5425,6 +6531,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["EnergyModels.jl", "PyPSA"],
     repoContributions: {
       "PyPSA/EnergyModels.jl": 1,
@@ -5435,29 +6542,7 @@ export const contributorsData = [
       "PyPSA/EnergyModels.jl": 1,
       "PyPSA/PyPSA": 1,
     },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/18753899?v=4",
-    firstName: "Sebastian",
-    lastName: "Kiefer",
-    positions: ["Collaborator"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/neunzehnachtneun",
-      },
-    ],
-    totalContributions: 2,
-    totalMergedPrs: 0,
-    totalIssuesCreated: 2,
-    topRepos: ["PyPSA"],
-    repoContributions: {
-      "PyPSA/PyPSA": 2,
-    },
-    repoPrs: {},
-    repoIssues: {
-      "PyPSA/PyPSA": 2,
-    },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/23236474?v=4",
@@ -5473,6 +6558,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 2,
@@ -5481,6 +6567,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/60601616?v=4",
@@ -5496,6 +6583,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 2,
@@ -5504,6 +6592,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/11030452?v=4",
@@ -5519,6 +6608,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 2,
@@ -5527,6 +6617,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/116029928?v=4",
@@ -5542,6 +6633,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 2,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["powerplantmatching"],
     repoContributions: {
       "PyPSA/powerplantmatching": 2,
@@ -5550,6 +6642,7 @@ export const contributorsData = [
       "PyPSA/powerplantmatching": 2,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/148469885?v=4",
@@ -5565,6 +6658,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["powerplantmatching", "pypsa-eur"],
     repoContributions: {
       "PyPSA/powerplantmatching": 1,
@@ -5575,6 +6669,7 @@ export const contributorsData = [
       "PyPSA/powerplantmatching": 1,
       "PyPSA/pypsa-eur": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/26878123?v=4",
@@ -5590,6 +6685,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["powerplantmatching"],
     repoContributions: {
       "PyPSA/powerplantmatching": 2,
@@ -5598,6 +6694,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/powerplantmatching": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/26432077?v=4",
@@ -5613,6 +6710,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["powerplantmatching"],
     repoContributions: {
       "PyPSA/powerplantmatching": 2,
@@ -5621,6 +6719,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/powerplantmatching": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/38728513?v=4",
@@ -5636,6 +6735,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["powerplantmatching"],
     repoContributions: {
       "PyPSA/powerplantmatching": 2,
@@ -5644,6 +6744,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/powerplantmatching": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/53457033?v=4",
@@ -5659,6 +6760,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 2,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["atlite"],
     repoContributions: {
       "PyPSA/atlite": 2,
@@ -5667,6 +6769,7 @@ export const contributorsData = [
       "PyPSA/atlite": 2,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/25181032?v=4",
@@ -5682,6 +6785,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 1,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["atlite"],
     repoContributions: {
       "PyPSA/atlite": 2,
@@ -5692,6 +6796,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/atlite": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/26761912?v=4",
@@ -5707,6 +6812,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 1,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["atlite"],
     repoContributions: {
       "PyPSA/atlite": 2,
@@ -5716,6 +6822,35 @@ export const contributorsData = [
     },
     repoIssues: {
       "PyPSA/atlite": 1,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/50218270?v=4",
+    firstName: "Enrico",
+    lastName: "Antonini",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/eantonini",
+      },
+    ],
+    totalContributions: 2,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 1,
+    totalReviews: 1,
+    topRepos: ["atlite", "pypsa-eur"],
+    repoContributions: {
+      "PyPSA/atlite": 1,
+      "PyPSA/pypsa-eur": 1,
+    },
+    repoPrs: {},
+    repoIssues: {
+      "PyPSA/atlite": 1,
+    },
+    repoReviews: {
+      "PyPSA/pypsa-eur": 1,
     },
   },
   {
@@ -5732,6 +6867,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["atlite"],
     repoContributions: {
       "PyPSA/atlite": 2,
@@ -5740,6 +6876,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/atlite": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/49922428?v=4",
@@ -5755,6 +6892,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["atlite"],
     repoContributions: {
       "PyPSA/atlite": 2,
@@ -5763,6 +6901,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/atlite": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/11051242?v=4",
@@ -5778,6 +6917,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["atlite", "pypsa-eur"],
     repoContributions: {
       "PyPSA/atlite": 1,
@@ -5788,6 +6928,61 @@ export const contributorsData = [
       "PyPSA/atlite": 1,
       "PyPSA/pypsa-eur": 1,
     },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/178378340?v=4",
+    firstName: "Bruno",
+    lastName: "Vieira",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/brunoficoxpress",
+      },
+    ],
+    totalContributions: 2,
+    totalMergedPrs: 2,
+    totalIssuesCreated: 0,
+    totalReviews: 0,
+    topRepos: ["linopy", "pypsa-eur"],
+    repoContributions: {
+      "PyPSA/linopy": 1,
+      "PyPSA/pypsa-eur": 1,
+    },
+    repoPrs: {
+      "PyPSA/linopy": 1,
+      "PyPSA/pypsa-eur": 1,
+    },
+    repoIssues: {},
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/69161060?v=4",
+    firstName: "Luis",
+    lastName: "Prieto",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/lprieto1409",
+      },
+    ],
+    totalContributions: 2,
+    totalMergedPrs: 1,
+    totalIssuesCreated: 1,
+    totalReviews: 0,
+    topRepos: ["pypsa-eur"],
+    repoContributions: {
+      "PyPSA/pypsa-eur": 2,
+    },
+    repoPrs: {
+      "PyPSA/pypsa-eur": 1,
+    },
+    repoIssues: {
+      "PyPSA/pypsa-eur": 1,
+    },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/50955527?v=4",
@@ -5803,6 +6998,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 1,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 2,
@@ -5813,6 +7009,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/108464786?v=4",
@@ -5828,6 +7025,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 2,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 2,
@@ -5836,6 +7034,57 @@ export const contributorsData = [
       "PyPSA/pypsa-eur": 2,
     },
     repoIssues: {},
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/93273882?v=4",
+    firstName: "Marco",
+    lastName: "Anarmo",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/MarcoAnarmo",
+      },
+    ],
+    totalContributions: 2,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 2,
+    totalReviews: 0,
+    topRepos: ["pypsa-eur"],
+    repoContributions: {
+      "PyPSA/pypsa-eur": 2,
+    },
+    repoPrs: {},
+    repoIssues: {
+      "PyPSA/pypsa-eur": 2,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/83996468?v=4",
+    firstName: "Sebastian",
+    lastName: "Gajardo",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/SebastianGajardo98",
+      },
+    ],
+    totalContributions: 2,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 2,
+    totalReviews: 0,
+    topRepos: ["pypsa-eur"],
+    repoContributions: {
+      "PyPSA/pypsa-eur": 2,
+    },
+    repoPrs: {},
+    repoIssues: {
+      "PyPSA/pypsa-eur": 2,
+    },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/185223175?v=4",
@@ -5851,6 +7100,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["pypsa-eur", "pypsa-earth-sec"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -5861,6 +7111,7 @@ export const contributorsData = [
       "PyPSA/pypsa-eur": 1,
       "pypsa-meets-earth/pypsa-earth-sec": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/15910173?v=4",
@@ -5876,6 +7127,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 2,
@@ -5884,6 +7136,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/48321904?v=4",
@@ -5899,6 +7152,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 2,
@@ -5907,6 +7161,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/149393613?v=4",
@@ -5922,6 +7177,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 2,
@@ -5930,6 +7186,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/166618201?v=4",
@@ -5945,6 +7202,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 2,
@@ -5953,6 +7211,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/75697946?v=4",
@@ -5968,6 +7227,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 2,
@@ -5976,6 +7236,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/147865703?v=4",
@@ -5991,6 +7252,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 2,
@@ -5999,6 +7261,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/28530122?v=4",
@@ -6014,6 +7277,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 2,
@@ -6022,6 +7286,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/52075557?v=4",
@@ -6037,6 +7302,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 2,
@@ -6045,6 +7311,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/37842692?v=4",
@@ -6060,6 +7327,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 1,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-eur", "pypsa-eur-sec"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -6071,6 +7339,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/79583494?v=4",
@@ -6086,6 +7355,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 2,
@@ -6093,6 +7363,59 @@ export const contributorsData = [
     repoPrs: {},
     repoIssues: {
       "PyPSA/pypsa-eur": 2,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/in/57789?v=4",
+    firstName: "github-advanced-security",
+    lastName: "",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/github-advanced-security",
+      },
+    ],
+    totalContributions: 2,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 0,
+    totalReviews: 2,
+    topRepos: ["pypsa-eur"],
+    repoContributions: {
+      "PyPSA/pypsa-eur": 2,
+    },
+    repoPrs: {},
+    repoIssues: {},
+    repoReviews: {
+      "PyPSA/pypsa-eur": 2,
+    },
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/120375246?v=4",
+    firstName: "s8au",
+    lastName: "",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/s8au",
+      },
+    ],
+    totalContributions: 2,
+    totalMergedPrs: 1,
+    totalIssuesCreated: 0,
+    totalReviews: 1,
+    topRepos: ["technology-data"],
+    repoContributions: {
+      "PyPSA/technology-data": 2,
+    },
+    repoPrs: {
+      "PyPSA/technology-data": 1,
+    },
+    repoIssues: {},
+    repoReviews: {
+      "PyPSA/technology-data": 1,
     },
   },
   {
@@ -6109,6 +7432,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["technology-data", "pypsa-earth"],
     repoContributions: {
       "PyPSA/technology-data": 1,
@@ -6119,6 +7443,34 @@ export const contributorsData = [
       "PyPSA/technology-data": 1,
       "pypsa-meets-earth/pypsa-earth": 1,
     },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/68053396?v=4",
+    firstName: "Moritz",
+    lastName: "Schreiber",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/mosc9575",
+      },
+    ],
+    totalContributions: 2,
+    totalMergedPrs: 1,
+    totalIssuesCreated: 1,
+    totalReviews: 0,
+    topRepos: ["linopy"],
+    repoContributions: {
+      "PyPSA/linopy": 2,
+    },
+    repoPrs: {
+      "PyPSA/linopy": 1,
+    },
+    repoIssues: {
+      "PyPSA/linopy": 1,
+    },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/25949239?v=4",
@@ -6134,6 +7486,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 1,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 2,
@@ -6144,29 +7497,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/linopy": 1,
     },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/1422686?v=4",
-    firstName: "qheuristics",
-    lastName: "",
-    positions: ["Contributor"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/qheuristics",
-      },
-    ],
-    totalContributions: 2,
-    totalMergedPrs: 2,
-    totalIssuesCreated: 0,
-    topRepos: ["linopy"],
-    repoContributions: {
-      "PyPSA/linopy": 2,
-    },
-    repoPrs: {
-      "PyPSA/linopy": 2,
-    },
-    repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/5641194?v=4",
@@ -6182,6 +7513,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 1,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 2,
@@ -6192,11 +7524,12 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/linopy": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/13053829?v=4",
     firstName: "Martin",
-    lastName: "",
+    lastName: "Staadecker",
     positions: ["Contributor"],
     socialNetworks: [
       {
@@ -6207,6 +7540,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 1,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 2,
@@ -6217,6 +7551,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/linopy": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/35284098?v=4",
@@ -6232,6 +7567,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 1,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 2,
@@ -6242,6 +7578,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/linopy": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/83776373?v=4",
@@ -6257,6 +7594,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 1,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 2,
@@ -6267,6 +7605,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/linopy": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/15312314?v=4",
@@ -6282,6 +7621,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 1,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 2,
@@ -6290,6 +7630,34 @@ export const contributorsData = [
       "PyPSA/linopy": 1,
     },
     repoIssues: {
+      "PyPSA/linopy": 1,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/32493460?v=4",
+    firstName: "Luciana",
+    lastName: "Marques",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/luciana-marques",
+      },
+    ],
+    totalContributions: 2,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 1,
+    totalReviews: 1,
+    topRepos: ["linopy"],
+    repoContributions: {
+      "PyPSA/linopy": 2,
+    },
+    repoPrs: {},
+    repoIssues: {
+      "PyPSA/linopy": 1,
+    },
+    repoReviews: {
       "PyPSA/linopy": 1,
     },
   },
@@ -6307,6 +7675,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 2,
@@ -6315,6 +7684,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/linopy": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/4168448?v=4",
@@ -6330,6 +7700,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 2,
@@ -6338,6 +7709,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/linopy": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/109941474?v=4",
@@ -6353,6 +7725,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 2,
@@ -6361,6 +7734,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/linopy": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/29934785?v=4",
@@ -6376,6 +7750,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 2,
@@ -6384,6 +7759,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/linopy": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/738733?v=4",
@@ -6399,6 +7775,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 2,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["pypsa-usa"],
     repoContributions: {
       "PyPSA/pypsa-usa": 2,
@@ -6407,29 +7784,7 @@ export const contributorsData = [
       "PyPSA/pypsa-usa": 2,
     },
     repoIssues: {},
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/6496424?v=4",
-    firstName: "Liam",
-    lastName: "Kilroy",
-    positions: ["Collaborator"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/Mailisyorlik",
-      },
-    ],
-    totalContributions: 2,
-    totalMergedPrs: 0,
-    totalIssuesCreated: 2,
-    topRepos: ["pypsa-usa"],
-    repoContributions: {
-      "PyPSA/pypsa-usa": 2,
-    },
-    repoPrs: {},
-    repoIssues: {
-      "PyPSA/pypsa-usa": 2,
-    },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/186893057?v=4",
@@ -6445,6 +7800,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["pypsa-usa"],
     repoContributions: {
       "PyPSA/pypsa-usa": 2,
@@ -6453,6 +7809,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-usa": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/181565571?v=4",
@@ -6468,6 +7825,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 2,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["pypsa-de"],
     repoContributions: {
       "PyPSA/pypsa-de": 2,
@@ -6476,6 +7834,7 @@ export const contributorsData = [
       "PyPSA/pypsa-de": 2,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/141716265?v=4",
@@ -6491,6 +7850,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["pypsa-de"],
     repoContributions: {
       "PyPSA/pypsa-de": 2,
@@ -6499,31 +7859,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-de": 2,
     },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/6413976?v=4",
-    firstName: "Tobias",
-    lastName: "Augspurger",
-    positions: ["Contributor"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/Ly0n",
-      },
-    ],
-    totalContributions: 2,
-    totalMergedPrs: 1,
-    totalIssuesCreated: 1,
-    topRepos: ["pypsa-earth"],
-    repoContributions: {
-      "pypsa-meets-earth/pypsa-earth": 2,
-    },
-    repoPrs: {
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
-    repoIssues: {
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/144870279?v=4",
@@ -6539,6 +7875,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 1,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-earth"],
     repoContributions: {
       "pypsa-meets-earth/pypsa-earth": 2,
@@ -6549,6 +7886,7 @@ export const contributorsData = [
     repoIssues: {
       "pypsa-meets-earth/pypsa-earth": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/30065966?v=4",
@@ -6564,6 +7902,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 1,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-earth"],
     repoContributions: {
       "pypsa-meets-earth/pypsa-earth": 2,
@@ -6574,6 +7913,7 @@ export const contributorsData = [
     repoIssues: {
       "pypsa-meets-earth/pypsa-earth": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/131155817?v=4",
@@ -6589,6 +7929,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 2,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["pypsa-earth"],
     repoContributions: {
       "pypsa-meets-earth/pypsa-earth": 2,
@@ -6597,6 +7938,7 @@ export const contributorsData = [
       "pypsa-meets-earth/pypsa-earth": 2,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/68430210?v=4",
@@ -6612,6 +7954,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 1,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-earth"],
     repoContributions: {
       "pypsa-meets-earth/pypsa-earth": 2,
@@ -6622,6 +7965,7 @@ export const contributorsData = [
     repoIssues: {
       "pypsa-meets-earth/pypsa-earth": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/99509555?v=4",
@@ -6637,6 +7981,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 1,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-earth"],
     repoContributions: {
       "pypsa-meets-earth/pypsa-earth": 2,
@@ -6647,29 +7992,7 @@ export const contributorsData = [
     repoIssues: {
       "pypsa-meets-earth/pypsa-earth": 1,
     },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/805313?v=4",
-    firstName: "Tobie",
-    lastName: "",
-    positions: ["Contributor"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/Tooblippe",
-      },
-    ],
-    totalContributions: 2,
-    totalMergedPrs: 2,
-    totalIssuesCreated: 0,
-    topRepos: ["pypsa-earth"],
-    repoContributions: {
-      "pypsa-meets-earth/pypsa-earth": 2,
-    },
-    repoPrs: {
-      "pypsa-meets-earth/pypsa-earth": 2,
-    },
-    repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/141351480?v=4",
@@ -6685,6 +8008,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["pypsa-earth"],
     repoContributions: {
       "pypsa-meets-earth/pypsa-earth": 2,
@@ -6693,6 +8017,7 @@ export const contributorsData = [
     repoIssues: {
       "pypsa-meets-earth/pypsa-earth": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/157796004?v=4",
@@ -6708,6 +8033,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 0,
     totalIssuesCreated: 2,
+    totalReviews: 0,
     topRepos: ["pypsa-earth"],
     repoContributions: {
       "pypsa-meets-earth/pypsa-earth": 2,
@@ -6716,6 +8042,7 @@ export const contributorsData = [
     repoIssues: {
       "pypsa-meets-earth/pypsa-earth": 2,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/120284682?v=4",
@@ -6731,6 +8058,7 @@ export const contributorsData = [
     totalContributions: 2,
     totalMergedPrs: 2,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["pypsa-earth-sec"],
     repoContributions: {
       "pypsa-meets-earth/pypsa-earth-sec": 2,
@@ -6739,6 +8067,57 @@ export const contributorsData = [
       "pypsa-meets-earth/pypsa-earth-sec": 2,
     },
     repoIssues: {},
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/6877802?v=4",
+    firstName: "Chris",
+    lastName: "Elion",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/chriselion",
+      },
+    ],
+    totalContributions: 1,
+    totalMergedPrs: 1,
+    totalIssuesCreated: 0,
+    totalReviews: 0,
+    topRepos: ["PyPSA"],
+    repoContributions: {
+      "PyPSA/PyPSA": 1,
+    },
+    repoPrs: {
+      "PyPSA/PyPSA": 1,
+    },
+    repoIssues: {},
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/170180604?v=4",
+    firstName: "SanghyunPLANiT",
+    lastName: "",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/SanghyunPLANiT",
+      },
+    ],
+    totalContributions: 1,
+    totalMergedPrs: 1,
+    totalIssuesCreated: 0,
+    totalReviews: 0,
+    topRepos: ["PyPSA"],
+    repoContributions: {
+      "PyPSA/PyPSA": 1,
+    },
+    repoPrs: {
+      "PyPSA/PyPSA": 1,
+    },
+    repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/25542515?v=4",
@@ -6754,6 +8133,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -6762,6 +8142,7 @@ export const contributorsData = [
       "PyPSA/PyPSA": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/73983677?v=4",
@@ -6777,6 +8158,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -6785,6 +8167,7 @@ export const contributorsData = [
       "PyPSA/PyPSA": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/202624139?v=4",
@@ -6800,6 +8183,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -6808,6 +8192,7 @@ export const contributorsData = [
       "PyPSA/PyPSA": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/72353423?v=4",
@@ -6823,6 +8208,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -6831,6 +8217,7 @@ export const contributorsData = [
       "PyPSA/PyPSA": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/52690645?v=4",
@@ -6846,6 +8233,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -6854,6 +8242,7 @@ export const contributorsData = [
       "PyPSA/PyPSA": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/61974423?v=4",
@@ -6869,6 +8258,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -6877,6 +8267,7 @@ export const contributorsData = [
       "PyPSA/PyPSA": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/10501166?v=4",
@@ -6892,6 +8283,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -6900,6 +8292,7 @@ export const contributorsData = [
       "PyPSA/PyPSA": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/26970569?v=4",
@@ -6915,6 +8308,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -6923,6 +8317,7 @@ export const contributorsData = [
       "PyPSA/PyPSA": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/8833517?v=4",
@@ -6938,6 +8333,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -6946,6 +8342,7 @@ export const contributorsData = [
       "PyPSA/PyPSA": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/12755256?v=4",
@@ -6961,6 +8358,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -6969,6 +8367,7 @@ export const contributorsData = [
       "PyPSA/PyPSA": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/4838517?v=4",
@@ -6984,6 +8383,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -6992,6 +8392,7 @@ export const contributorsData = [
       "PyPSA/PyPSA": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/105642385?v=4",
@@ -7007,6 +8408,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7015,6 +8417,7 @@ export const contributorsData = [
       "PyPSA/PyPSA": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/96542097?v=4",
@@ -7030,6 +8433,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7038,6 +8442,7 @@ export const contributorsData = [
       "PyPSA/PyPSA": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/73915007?v=4",
@@ -7053,6 +8458,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7061,6 +8467,7 @@ export const contributorsData = [
       "PyPSA/PyPSA": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/25521583?v=4",
@@ -7076,6 +8483,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7084,6 +8492,7 @@ export const contributorsData = [
       "PyPSA/PyPSA": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/15649856?v=4",
@@ -7099,6 +8508,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7107,6 +8517,7 @@ export const contributorsData = [
       "PyPSA/PyPSA": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/290690?v=4",
@@ -7122,6 +8533,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7130,6 +8542,7 @@ export const contributorsData = [
       "PyPSA/PyPSA": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/42845999?v=4",
@@ -7145,6 +8558,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7153,6 +8567,7 @@ export const contributorsData = [
       "PyPSA/PyPSA": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/61152978?v=4",
@@ -7168,6 +8583,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7176,6 +8592,7 @@ export const contributorsData = [
       "PyPSA/PyPSA": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/18475208?v=4",
@@ -7191,6 +8608,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7199,6 +8617,7 @@ export const contributorsData = [
       "PyPSA/PyPSA": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/6933510?v=4",
@@ -7214,6 +8633,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7222,6 +8642,182 @@ export const contributorsData = [
       "PyPSA/PyPSA": 1,
     },
     repoIssues: {},
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/96429687?v=4",
+    firstName: "kennethfungch",
+    lastName: "",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/kennethfungch",
+      },
+    ],
+    totalContributions: 1,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 1,
+    totalReviews: 0,
+    topRepos: ["PyPSA"],
+    repoContributions: {
+      "PyPSA/PyPSA": 1,
+    },
+    repoPrs: {},
+    repoIssues: {
+      "PyPSA/PyPSA": 1,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/9169332?v=4",
+    firstName: "Sergio",
+    lastName: "Fern\u00e1ndez",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/GeiserX",
+      },
+    ],
+    totalContributions: 1,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 1,
+    totalReviews: 0,
+    topRepos: ["PyPSA"],
+    repoContributions: {
+      "PyPSA/PyPSA": 1,
+    },
+    repoPrs: {},
+    repoIssues: {
+      "PyPSA/PyPSA": 1,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/265096394?v=4",
+    firstName: "Keegan",
+    lastName: "Green",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/keegan-at-terawatt",
+      },
+    ],
+    totalContributions: 1,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 1,
+    totalReviews: 0,
+    topRepos: ["PyPSA"],
+    repoContributions: {
+      "PyPSA/PyPSA": 1,
+    },
+    repoPrs: {},
+    repoIssues: {
+      "PyPSA/PyPSA": 1,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/155527339?v=4",
+    firstName: "gugrimm",
+    lastName: "",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/gugrimm",
+      },
+    ],
+    totalContributions: 1,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 1,
+    totalReviews: 0,
+    topRepos: ["PyPSA"],
+    repoContributions: {
+      "PyPSA/PyPSA": 1,
+    },
+    repoPrs: {},
+    repoIssues: {
+      "PyPSA/PyPSA": 1,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/17765294?v=4",
+    firstName: "Mirko",
+    lastName: "Todorovski",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/todorovski-m",
+      },
+    ],
+    totalContributions: 1,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 1,
+    totalReviews: 0,
+    topRepos: ["PyPSA"],
+    repoContributions: {
+      "PyPSA/PyPSA": 1,
+    },
+    repoPrs: {},
+    repoIssues: {
+      "PyPSA/PyPSA": 1,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/21221731?v=4",
+    firstName: "Eladio",
+    lastName: "Jim\u00e9nez Espadafor Sard\u00f3n",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/EladioJES",
+      },
+    ],
+    totalContributions: 1,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 1,
+    totalReviews: 0,
+    topRepos: ["PyPSA"],
+    repoContributions: {
+      "PyPSA/PyPSA": 1,
+    },
+    repoPrs: {},
+    repoIssues: {
+      "PyPSA/PyPSA": 1,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/208024271?v=4",
+    firstName: "Sebastian",
+    lastName: "Walde",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/woody6703",
+      },
+    ],
+    totalContributions: 1,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 1,
+    totalReviews: 0,
+    topRepos: ["PyPSA"],
+    repoContributions: {
+      "PyPSA/PyPSA": 1,
+    },
+    repoPrs: {},
+    repoIssues: {
+      "PyPSA/PyPSA": 1,
+    },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/20167230?v=4",
@@ -7237,6 +8833,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7245,6 +8842,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/15694221?v=4",
@@ -7260,6 +8858,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7268,6 +8867,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/185091785?v=4",
@@ -7283,6 +8883,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7291,6 +8892,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/159531731?v=4",
@@ -7306,6 +8908,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7314,6 +8917,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/26208482?v=4",
@@ -7329,6 +8933,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7337,6 +8942,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/138099811?v=4",
@@ -7352,6 +8958,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7360,6 +8967,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/198494057?v=4",
@@ -7375,6 +8983,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7383,6 +8992,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/190061459?v=4",
@@ -7398,6 +9008,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7406,6 +9017,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/16289567?v=4",
@@ -7421,6 +9033,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7429,6 +9042,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/175008926?v=4",
@@ -7444,6 +9058,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7452,6 +9067,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/43857128?v=4",
@@ -7467,6 +9083,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7475,6 +9092,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/176298055?v=4",
@@ -7490,6 +9108,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7498,6 +9117,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/126935643?v=4",
@@ -7513,6 +9133,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7521,6 +9142,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/17592431?v=4",
@@ -7536,6 +9158,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7544,6 +9167,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/51630653?v=4",
@@ -7559,6 +9183,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7567,6 +9192,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/16593532?v=4",
@@ -7582,6 +9208,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7590,6 +9217,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/89637692?v=4",
@@ -7605,6 +9233,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7613,6 +9242,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/26714648?v=4",
@@ -7628,6 +9258,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7636,6 +9267,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/113874556?v=4",
@@ -7651,6 +9283,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7659,6 +9292,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/31576325?v=4",
@@ -7674,6 +9308,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7682,6 +9317,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/56074305?v=4",
@@ -7697,6 +9333,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7705,6 +9342,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/64608160?v=4",
@@ -7720,6 +9358,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7728,6 +9367,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/71267701?v=4",
@@ -7743,6 +9383,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7751,6 +9392,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/148319478?v=4",
@@ -7766,6 +9408,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7774,11 +9417,12 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/38322141?v=4",
-    firstName: "barazesh",
-    lastName: "",
+    firstName: "Mohammadreza",
+    lastName: "Barazesh",
     positions: ["Collaborator"],
     socialNetworks: [
       {
@@ -7789,6 +9433,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7797,6 +9442,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/93681718?v=4",
@@ -7812,6 +9458,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7820,6 +9467,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/111879816?v=4",
@@ -7835,6 +9483,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7843,6 +9492,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/1295242?v=4",
@@ -7858,6 +9508,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7866,6 +9517,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/45949268?v=4",
@@ -7881,6 +9533,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7889,6 +9542,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/5455928?v=4",
@@ -7904,6 +9558,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7912,6 +9567,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/6470530?v=4",
@@ -7927,6 +9583,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7935,6 +9592,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/28272146?v=4",
@@ -7950,6 +9608,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7958,6 +9617,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/61942664?v=4",
@@ -7967,12 +9627,13 @@ export const contributorsData = [
     socialNetworks: [
       {
         name: "GitHub",
-        url: "https://github.com/shanks847",
+        url: "https://github.com/sramharack",
       },
     ],
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -7981,6 +9642,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/130584027?v=4",
@@ -7996,6 +9658,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8004,6 +9667,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/76988293?v=4",
@@ -8019,6 +9683,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8027,6 +9692,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/72910899?v=4",
@@ -8042,6 +9708,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8050,6 +9717,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/100200588?v=4",
@@ -8065,6 +9733,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8073,6 +9742,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/34916389?v=4",
@@ -8088,6 +9758,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8096,6 +9767,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/110841103?v=4",
@@ -8111,6 +9783,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8119,6 +9792,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/91749746?v=4",
@@ -8134,6 +9808,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8142,6 +9817,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/49470755?v=4",
@@ -8157,6 +9833,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8165,6 +9842,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/63491961?v=4",
@@ -8180,6 +9858,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8188,6 +9867,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/7348392?v=4",
@@ -8203,6 +9883,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8211,6 +9892,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/52998230?v=4",
@@ -8226,6 +9908,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8234,6 +9917,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/62600091?v=4",
@@ -8249,6 +9933,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8257,6 +9942,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/69579908?v=4",
@@ -8272,6 +9958,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8280,6 +9967,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/5145583?v=4",
@@ -8295,6 +9983,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8303,6 +9992,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/28104765?v=4",
@@ -8318,6 +10008,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8326,6 +10017,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/36486449?v=4",
@@ -8341,6 +10033,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8349,6 +10042,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/10604676?v=4",
@@ -8364,6 +10058,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8372,6 +10067,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/65412133?v=4",
@@ -8387,6 +10083,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8395,6 +10092,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/55055801?v=4",
@@ -8410,6 +10108,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8418,6 +10117,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/16634824?v=4",
@@ -8433,6 +10133,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8441,6 +10142,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/12675339?v=4",
@@ -8456,6 +10158,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8464,6 +10167,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/54428471?v=4",
@@ -8479,6 +10183,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8487,6 +10192,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/74368608?v=4",
@@ -8502,6 +10208,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8510,6 +10217,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/18634989?v=4",
@@ -8525,6 +10233,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8533,6 +10242,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/26042796?v=4",
@@ -8548,6 +10258,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8556,6 +10267,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/53299456?v=4",
@@ -8571,6 +10283,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8579,6 +10292,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/48348781?v=4",
@@ -8594,6 +10308,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8602,6 +10317,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/58269890?v=4",
@@ -8617,6 +10333,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8625,6 +10342,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/29261956?v=4",
@@ -8640,6 +10358,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8648,6 +10367,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/55274734?v=4",
@@ -8663,6 +10383,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8671,6 +10392,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/56353102?v=4",
@@ -8686,6 +10408,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8694,6 +10417,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/20196262?v=4",
@@ -8709,6 +10433,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8717,6 +10442,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/53174881?v=4",
@@ -8732,6 +10458,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8740,6 +10467,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/14026688?v=4",
@@ -8755,6 +10483,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8763,6 +10492,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/49096424?v=4",
@@ -8778,6 +10508,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8786,6 +10517,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/48745557?v=4",
@@ -8801,6 +10533,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8809,6 +10542,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/19593269?v=4",
@@ -8824,6 +10558,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8832,6 +10567,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/48881908?v=4",
@@ -8847,6 +10583,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8855,6 +10592,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/42176718?v=4",
@@ -8870,6 +10608,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8878,6 +10617,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/47325682?v=4",
@@ -8893,6 +10633,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8901,6 +10642,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/44442409?v=4",
@@ -8916,6 +10658,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8924,6 +10667,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/26480292?v=4",
@@ -8939,6 +10683,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8947,6 +10692,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/38019094?v=4",
@@ -8962,6 +10708,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8970,6 +10717,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/1297074?v=4",
@@ -8985,6 +10733,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -8993,6 +10742,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/964241?v=4",
@@ -9008,6 +10758,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -9016,6 +10767,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/11908736?v=4",
@@ -9031,6 +10783,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -9039,6 +10792,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/10137?v=4",
@@ -9054,6 +10808,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -9062,6 +10817,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/2385394?v=4",
@@ -9077,6 +10833,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -9085,6 +10842,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/7952255?v=4",
@@ -9100,6 +10858,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -9108,6 +10867,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/20186954?v=4",
@@ -9123,6 +10883,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
@@ -9131,6 +10892,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/4821787?v=4",
@@ -9146,12 +10908,40 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA"],
     repoContributions: {
       "PyPSA/PyPSA": 1,
     },
     repoPrs: {},
     repoIssues: {
+      "PyPSA/PyPSA": 1,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl:
+      "https://avatars.githubusercontent.com/u/11915163?u=c8a5eef208a10957515ffe171d1daf6e1465971c&v=4",
+    firstName: "Philipp",
+    lastName: "Danner",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/dannerph",
+      },
+    ],
+    totalContributions: 1,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 0,
+    totalReviews: 1,
+    topRepos: ["PyPSA"],
+    repoContributions: {
+      "PyPSA/PyPSA": 1,
+    },
+    repoPrs: {},
+    repoIssues: {},
+    repoReviews: {
       "PyPSA/PyPSA": 1,
     },
   },
@@ -9169,6 +10959,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["powerplantmatching"],
     repoContributions: {
       "PyPSA/powerplantmatching": 1,
@@ -9177,6 +10968,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/powerplantmatching": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/12428267?v=4",
@@ -9192,6 +10984,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["powerplantmatching"],
     repoContributions: {
       "PyPSA/powerplantmatching": 1,
@@ -9200,11 +10993,12 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/powerplantmatching": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/31652181?v=4",
-    firstName: "leostimpfle",
-    lastName: "",
+    firstName: "Leonard",
+    lastName: "Stimpfle",
     positions: ["Collaborator"],
     socialNetworks: [
       {
@@ -9215,6 +11009,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["powerplantmatching"],
     repoContributions: {
       "PyPSA/powerplantmatching": 1,
@@ -9223,6 +11018,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/powerplantmatching": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/120471470?v=4",
@@ -9238,6 +11034,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["powerplantmatching"],
     repoContributions: {
       "PyPSA/powerplantmatching": 1,
@@ -9246,6 +11043,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/powerplantmatching": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/62157917?v=4",
@@ -9261,6 +11059,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["powerplantmatching"],
     repoContributions: {
       "PyPSA/powerplantmatching": 1,
@@ -9269,6 +11068,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/powerplantmatching": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/60709695?v=4",
@@ -9284,6 +11084,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["powerplantmatching"],
     repoContributions: {
       "PyPSA/powerplantmatching": 1,
@@ -9292,6 +11093,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/powerplantmatching": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/56759395?v=4",
@@ -9307,6 +11109,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["powerplantmatching"],
     repoContributions: {
       "PyPSA/powerplantmatching": 1,
@@ -9315,6 +11118,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/powerplantmatching": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/134274456?v=4",
@@ -9330,6 +11134,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["powerplantmatching"],
     repoContributions: {
       "PyPSA/powerplantmatching": 1,
@@ -9338,6 +11143,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/powerplantmatching": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/2762769?v=4",
@@ -9353,6 +11159,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["powerplantmatching"],
     repoContributions: {
       "PyPSA/powerplantmatching": 1,
@@ -9361,6 +11168,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/powerplantmatching": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/104208125?v=4",
@@ -9376,6 +11184,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["powerplantmatching"],
     repoContributions: {
       "PyPSA/powerplantmatching": 1,
@@ -9384,6 +11193,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/powerplantmatching": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/61199367?v=4",
@@ -9399,6 +11209,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["powerplantmatching"],
     repoContributions: {
       "PyPSA/powerplantmatching": 1,
@@ -9407,6 +11218,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/powerplantmatching": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/18594682?v=4",
@@ -9422,6 +11234,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["powerplantmatching"],
     repoContributions: {
       "PyPSA/powerplantmatching": 1,
@@ -9430,6 +11243,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/powerplantmatching": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/84523181?v=4",
@@ -9445,6 +11259,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["powerplantmatching"],
     repoContributions: {
       "PyPSA/powerplantmatching": 1,
@@ -9453,6 +11268,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/powerplantmatching": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/6696142?v=4",
@@ -9468,6 +11284,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["powerplantmatching"],
     repoContributions: {
       "PyPSA/powerplantmatching": 1,
@@ -9476,6 +11293,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/powerplantmatching": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/7427820?v=4",
@@ -9491,6 +11309,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["powerplantmatching"],
     repoContributions: {
       "PyPSA/powerplantmatching": 1,
@@ -9499,6 +11318,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/powerplantmatching": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/15211936?v=4",
@@ -9514,6 +11334,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["powerplantmatching"],
     repoContributions: {
       "PyPSA/powerplantmatching": 1,
@@ -9522,6 +11343,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/powerplantmatching": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/31848626?v=4",
@@ -9537,6 +11359,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["powerplantmatching"],
     repoContributions: {
       "PyPSA/powerplantmatching": 1,
@@ -9545,6 +11368,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/powerplantmatching": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/47382186?v=4",
@@ -9560,6 +11384,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["atlite"],
     repoContributions: {
       "PyPSA/atlite": 1,
@@ -9568,6 +11393,7 @@ export const contributorsData = [
       "PyPSA/atlite": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/94380837?v=4",
@@ -9583,6 +11409,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["atlite"],
     repoContributions: {
       "PyPSA/atlite": 1,
@@ -9591,6 +11418,7 @@ export const contributorsData = [
       "PyPSA/atlite": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/62567779?v=4",
@@ -9606,6 +11434,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["atlite"],
     repoContributions: {
       "PyPSA/atlite": 1,
@@ -9614,6 +11443,7 @@ export const contributorsData = [
       "PyPSA/atlite": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/72196131?v=4",
@@ -9629,6 +11459,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["atlite"],
     repoContributions: {
       "PyPSA/atlite": 1,
@@ -9637,21 +11468,23 @@ export const contributorsData = [
       "PyPSA/atlite": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
-    imageUrl: "https://avatars.githubusercontent.com/u/50218270?v=4",
-    firstName: "Enrico",
-    lastName: "Antonini",
+    imageUrl: "https://avatars.githubusercontent.com/u/124280422?v=4",
+    firstName: "mrmorawski",
+    lastName: "",
     positions: ["Collaborator"],
     socialNetworks: [
       {
         name: "GitHub",
-        url: "https://github.com/eantonini",
+        url: "https://github.com/mrmorawski",
       },
     ],
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["atlite"],
     repoContributions: {
       "PyPSA/atlite": 1,
@@ -9660,6 +11493,32 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/atlite": 1,
     },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/10756975?v=4",
+    firstName: "andreltr",
+    lastName: "",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/andreltr",
+      },
+    ],
+    totalContributions: 1,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 1,
+    totalReviews: 0,
+    topRepos: ["atlite"],
+    repoContributions: {
+      "PyPSA/atlite": 1,
+    },
+    repoPrs: {},
+    repoIssues: {
+      "PyPSA/atlite": 1,
+    },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/46640073?v=4",
@@ -9675,6 +11534,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["atlite"],
     repoContributions: {
       "PyPSA/atlite": 1,
@@ -9683,6 +11543,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/atlite": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/7856227?v=4",
@@ -9698,6 +11559,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["atlite"],
     repoContributions: {
       "PyPSA/atlite": 1,
@@ -9706,6 +11568,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/atlite": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/56873429?v=4",
@@ -9721,6 +11584,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["atlite"],
     repoContributions: {
       "PyPSA/atlite": 1,
@@ -9729,6 +11593,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/atlite": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/131437210?v=4",
@@ -9744,6 +11609,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["atlite"],
     repoContributions: {
       "PyPSA/atlite": 1,
@@ -9752,6 +11618,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/atlite": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/159181367?v=4",
@@ -9767,6 +11634,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["atlite"],
     repoContributions: {
       "PyPSA/atlite": 1,
@@ -9775,6 +11643,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/atlite": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/40352101?v=4",
@@ -9790,6 +11659,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["atlite"],
     repoContributions: {
       "PyPSA/atlite": 1,
@@ -9798,6 +11668,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/atlite": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/34231946?v=4",
@@ -9813,6 +11684,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["atlite"],
     repoContributions: {
       "PyPSA/atlite": 1,
@@ -9821,6 +11693,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/atlite": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/56155626?v=4",
@@ -9836,6 +11709,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["atlite"],
     repoContributions: {
       "PyPSA/atlite": 1,
@@ -9844,6 +11718,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/atlite": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/162301605?v=4",
@@ -9859,6 +11734,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["atlite"],
     repoContributions: {
       "PyPSA/atlite": 1,
@@ -9867,6 +11743,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/atlite": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/32926951?v=4",
@@ -9882,6 +11759,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["atlite"],
     repoContributions: {
       "PyPSA/atlite": 1,
@@ -9890,6 +11768,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/atlite": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/112961236?v=4",
@@ -9905,6 +11784,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["atlite"],
     repoContributions: {
       "PyPSA/atlite": 1,
@@ -9913,6 +11793,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/atlite": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/31779131?v=4",
@@ -9928,6 +11809,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["atlite"],
     repoContributions: {
       "PyPSA/atlite": 1,
@@ -9936,6 +11818,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/atlite": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/103017573?v=4",
@@ -9951,6 +11834,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["atlite"],
     repoContributions: {
       "PyPSA/atlite": 1,
@@ -9959,6 +11843,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/atlite": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/74104509?v=4",
@@ -9974,6 +11859,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["atlite"],
     repoContributions: {
       "PyPSA/atlite": 1,
@@ -9982,6 +11868,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/atlite": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/74044309?v=4",
@@ -9997,6 +11884,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["atlite"],
     repoContributions: {
       "PyPSA/atlite": 1,
@@ -10005,6 +11893,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/atlite": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/23660500?v=4",
@@ -10020,6 +11909,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["atlite"],
     repoContributions: {
       "PyPSA/atlite": 1,
@@ -10028,6 +11918,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/atlite": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/3090386?v=4",
@@ -10043,6 +11934,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["atlite"],
     repoContributions: {
       "PyPSA/atlite": 1,
@@ -10051,6 +11943,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/atlite": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/45873962?v=4",
@@ -10066,6 +11959,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["atlite"],
     repoContributions: {
       "PyPSA/atlite": 1,
@@ -10074,6 +11968,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/atlite": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/32479938?v=4",
@@ -10089,6 +11984,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-za"],
     repoContributions: {
       "PyPSA/pypsa-za": 1,
@@ -10097,6 +11993,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-za": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/33745978?v=4",
@@ -10112,6 +12009,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-za"],
     repoContributions: {
       "PyPSA/pypsa-za": 1,
@@ -10120,6 +12018,32 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-za": 1,
     },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/77354448?v=4",
+    firstName: "Jack",
+    lastName: "Gregory",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/jack-gregory",
+      },
+    ],
+    totalContributions: 1,
+    totalMergedPrs: 1,
+    totalIssuesCreated: 0,
+    totalReviews: 0,
+    topRepos: ["pypsa-eur"],
+    repoContributions: {
+      "PyPSA/pypsa-eur": 1,
+    },
+    repoPrs: {
+      "PyPSA/pypsa-eur": 1,
+    },
+    repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/104848250?v=4",
@@ -10135,6 +12059,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -10143,6 +12068,7 @@ export const contributorsData = [
       "PyPSA/pypsa-eur": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/127748593?v=4",
@@ -10158,6 +12084,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -10166,6 +12093,7 @@ export const contributorsData = [
       "PyPSA/pypsa-eur": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/48220549?v=4",
@@ -10181,6 +12109,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -10189,6 +12118,7 @@ export const contributorsData = [
       "PyPSA/pypsa-eur": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/4675109?v=4",
@@ -10204,6 +12134,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -10212,6 +12143,7 @@ export const contributorsData = [
       "PyPSA/pypsa-eur": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/54096244?v=4",
@@ -10227,6 +12159,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -10235,6 +12168,7 @@ export const contributorsData = [
       "PyPSA/pypsa-eur": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/28093?v=4",
@@ -10250,6 +12184,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -10258,6 +12193,7 @@ export const contributorsData = [
       "PyPSA/pypsa-eur": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/59763365?v=4",
@@ -10273,6 +12209,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -10281,6 +12218,7 @@ export const contributorsData = [
       "PyPSA/pypsa-eur": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/94053589?v=4",
@@ -10296,6 +12234,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -10304,6 +12243,7 @@ export const contributorsData = [
       "PyPSA/pypsa-eur": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/68848357?v=4",
@@ -10319,6 +12259,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -10327,6 +12268,107 @@ export const contributorsData = [
       "PyPSA/pypsa-eur": 1,
     },
     repoIssues: {},
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/37214111?v=4",
+    firstName: "Albert",
+    lastName: "R. H.",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/ZilentKnight",
+      },
+    ],
+    totalContributions: 1,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 1,
+    totalReviews: 0,
+    topRepos: ["pypsa-eur"],
+    repoContributions: {
+      "PyPSA/pypsa-eur": 1,
+    },
+    repoPrs: {},
+    repoIssues: {
+      "PyPSA/pypsa-eur": 1,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/180965940?v=4",
+    firstName: "jonasandresn",
+    lastName: "",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/jonasandresn",
+      },
+    ],
+    totalContributions: 1,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 1,
+    totalReviews: 0,
+    topRepos: ["pypsa-eur"],
+    repoContributions: {
+      "PyPSA/pypsa-eur": 1,
+    },
+    repoPrs: {},
+    repoIssues: {
+      "PyPSA/pypsa-eur": 1,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/259400995?v=4",
+    firstName: "gcost909",
+    lastName: "",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/gcost909",
+      },
+    ],
+    totalContributions: 1,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 1,
+    totalReviews: 0,
+    topRepos: ["pypsa-eur"],
+    repoContributions: {
+      "PyPSA/pypsa-eur": 1,
+    },
+    repoPrs: {},
+    repoIssues: {
+      "PyPSA/pypsa-eur": 1,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/8046032?v=4",
+    firstName: "vuillaume",
+    lastName: "",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/vuillaume",
+      },
+    ],
+    totalContributions: 1,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 1,
+    totalReviews: 0,
+    topRepos: ["pypsa-eur"],
+    repoContributions: {
+      "PyPSA/pypsa-eur": 1,
+    },
+    repoPrs: {},
+    repoIssues: {
+      "PyPSA/pypsa-eur": 1,
+    },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/159797186?v=4",
@@ -10342,6 +12384,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -10350,6 +12393,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/166008215?v=4",
@@ -10365,6 +12409,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -10373,6 +12418,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/42800762?v=4",
@@ -10388,6 +12434,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -10396,6 +12443,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/220022758?v=4",
@@ -10411,6 +12459,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -10419,6 +12468,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/204343611?v=4",
@@ -10434,6 +12484,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -10442,6 +12493,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/186589634?v=4",
@@ -10457,6 +12509,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -10465,6 +12518,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/22937542?v=4",
@@ -10480,6 +12534,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -10488,6 +12543,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/197241276?v=4",
@@ -10503,6 +12559,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -10511,6 +12568,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/192105139?v=4",
@@ -10526,6 +12584,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -10534,6 +12593,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/148066384?v=4",
@@ -10549,6 +12609,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -10557,6 +12618,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/105793505?v=4",
@@ -10572,6 +12634,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -10580,6 +12643,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/142297800?v=4",
@@ -10595,6 +12659,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -10603,6 +12668,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/68376809?v=4",
@@ -10618,6 +12684,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -10626,6 +12693,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/40904107?v=4",
@@ -10641,6 +12709,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -10649,6 +12718,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/7213136?v=4",
@@ -10664,6 +12734,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -10672,6 +12743,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/614883?v=4",
@@ -10687,6 +12759,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -10695,6 +12768,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/15138006?v=4",
@@ -10710,6 +12784,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -10718,6 +12793,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/20844878?v=4",
@@ -10733,6 +12809,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -10741,6 +12818,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/3717222?v=4",
@@ -10756,6 +12834,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -10764,6 +12843,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/58039026?v=4",
@@ -10779,6 +12859,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -10787,6 +12868,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/85354200?v=4",
@@ -10802,6 +12884,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -10810,6 +12893,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/21000377?v=4",
@@ -10825,6 +12909,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -10833,6 +12918,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/51154434?v=4",
@@ -10848,6 +12934,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -10856,6 +12943,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/442687?v=4",
@@ -10871,6 +12959,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -10879,6 +12968,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/104545?v=4",
@@ -10894,6 +12984,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -10902,6 +12993,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/56553461?v=4",
@@ -10917,6 +13009,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -10925,6 +13018,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/59571173?v=4",
@@ -10940,6 +13034,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -10948,6 +13043,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/49031971?v=4",
@@ -10963,6 +13059,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -10971,6 +13068,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/8170857?v=4",
@@ -10986,6 +13084,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-eur"],
     repoContributions: {
       "PyPSA/pypsa-eur": 1,
@@ -10994,6 +13093,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/44880979?v=4",
@@ -11009,6 +13109,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["PyPSA-animation"],
     repoContributions: {
       "PyPSA/PyPSA-animation": 1,
@@ -11017,6 +13118,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/PyPSA-animation": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/5078297?v=4",
@@ -11032,6 +13134,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["whobs-server"],
     repoContributions: {
       "PyPSA/whobs-server": 1,
@@ -11040,6 +13143,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/whobs-server": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/446021?v=4",
@@ -11055,6 +13159,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["whobs-server"],
     repoContributions: {
       "PyPSA/whobs-server": 1,
@@ -11063,6 +13168,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/whobs-server": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/70432354?v=4",
@@ -11078,6 +13184,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["whobs-server"],
     repoContributions: {
       "PyPSA/whobs-server": 1,
@@ -11086,6 +13193,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/whobs-server": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/5607267?v=4",
@@ -11101,6 +13209,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["whobs-server"],
     repoContributions: {
       "PyPSA/whobs-server": 1,
@@ -11109,6 +13218,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/whobs-server": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/51401127?v=4",
@@ -11124,6 +13234,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["pypsa-eur-sec"],
     repoContributions: {
       "PyPSA/pypsa-eur-sec": 1,
@@ -11132,6 +13243,7 @@ export const contributorsData = [
       "PyPSA/pypsa-eur-sec": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/50016763?v=4",
@@ -11147,6 +13259,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-eur-sec"],
     repoContributions: {
       "PyPSA/pypsa-eur-sec": 1,
@@ -11155,29 +13268,32 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-eur-sec": 1,
     },
+    repoReviews: {},
   },
   {
-    imageUrl: "https://avatars.githubusercontent.com/u/120375246?v=4",
-    firstName: "s8au",
-    lastName: "",
-    positions: ["Contributor"],
+    imageUrl: "https://avatars.githubusercontent.com/u/9094301?v=4",
+    firstName: "Philipp",
+    lastName: "Verpoort",
+    positions: ["Collaborator"],
     socialNetworks: [
       {
         name: "GitHub",
-        url: "https://github.com/s8au",
+        url: "https://github.com/PhilippVerpoort",
       },
     ],
     totalContributions: 1,
-    totalMergedPrs: 1,
-    totalIssuesCreated: 0,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["technology-data"],
     repoContributions: {
       "PyPSA/technology-data": 1,
     },
-    repoPrs: {
+    repoPrs: {},
+    repoIssues: {
       "PyPSA/technology-data": 1,
     },
-    repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/118898749?v=4",
@@ -11193,6 +13309,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["technology-data"],
     repoContributions: {
       "PyPSA/technology-data": 1,
@@ -11201,6 +13318,57 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/technology-data": 1,
     },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/2291947?v=4",
+    firstName: "Michael",
+    lastName: "Coughlin",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/mcoughlin",
+      },
+    ],
+    totalContributions: 1,
+    totalMergedPrs: 1,
+    totalIssuesCreated: 0,
+    totalReviews: 0,
+    topRepos: ["linopy"],
+    repoContributions: {
+      "PyPSA/linopy": 1,
+    },
+    repoPrs: {
+      "PyPSA/linopy": 1,
+    },
+    repoIssues: {},
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/89249742?v=4",
+    firstName: "Max",
+    lastName: "Langtry",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/mal84emma",
+      },
+    ],
+    totalContributions: 1,
+    totalMergedPrs: 1,
+    totalIssuesCreated: 0,
+    totalReviews: 0,
+    topRepos: ["linopy"],
+    repoContributions: {
+      "PyPSA/linopy": 1,
+    },
+    repoPrs: {
+      "PyPSA/linopy": 1,
+    },
+    repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/84775131?v=4",
@@ -11216,6 +13384,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 1,
@@ -11224,6 +13393,7 @@ export const contributorsData = [
       "PyPSA/linopy": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/25002255?v=4",
@@ -11239,6 +13409,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 1,
@@ -11247,6 +13418,7 @@ export const contributorsData = [
       "PyPSA/linopy": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/2665840?v=4",
@@ -11262,6 +13434,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 1,
@@ -11270,6 +13443,7 @@ export const contributorsData = [
       "PyPSA/linopy": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/13642556?v=4",
@@ -11285,6 +13459,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 1,
@@ -11293,6 +13468,57 @@ export const contributorsData = [
       "PyPSA/linopy": 1,
     },
     repoIssues: {},
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/22636003?v=4",
+    firstName: "Julian",
+    lastName: "Hall",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/jajhall",
+      },
+    ],
+    totalContributions: 1,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 1,
+    totalReviews: 0,
+    topRepos: ["linopy"],
+    repoContributions: {
+      "PyPSA/linopy": 1,
+    },
+    repoPrs: {},
+    repoIssues: {
+      "PyPSA/linopy": 1,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/84014028?v=4",
+    firstName: "hugoalgarvio",
+    lastName: "",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/hugoalgarvio",
+      },
+    ],
+    totalContributions: 1,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 1,
+    totalReviews: 0,
+    topRepos: ["linopy"],
+    repoContributions: {
+      "PyPSA/linopy": 1,
+    },
+    repoPrs: {},
+    repoIssues: {
+      "PyPSA/linopy": 1,
+    },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/48824614?v=4",
@@ -11308,6 +13534,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 1,
@@ -11316,6 +13543,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/linopy": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/16039158?v=4",
@@ -11331,6 +13559,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 1,
@@ -11339,6 +13568,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/linopy": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/33812038?v=4",
@@ -11354,6 +13584,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 1,
@@ -11362,6 +13593,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/linopy": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/97548957?v=4",
@@ -11377,6 +13609,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 1,
@@ -11385,6 +13618,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/linopy": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/202087779?v=4",
@@ -11400,6 +13634,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 1,
@@ -11408,6 +13643,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/linopy": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/40472544?v=4",
@@ -11423,6 +13659,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 1,
@@ -11431,6 +13668,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/linopy": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/38564291?v=4",
@@ -11446,6 +13684,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 1,
@@ -11454,6 +13693,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/linopy": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/25910245?v=4",
@@ -11469,6 +13709,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 1,
@@ -11477,6 +13718,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/linopy": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/20041609?v=4",
@@ -11492,6 +13734,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 1,
@@ -11500,6 +13743,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/linopy": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/56519955?v=4",
@@ -11515,6 +13759,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 1,
@@ -11523,6 +13768,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/linopy": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/114246360?v=4",
@@ -11538,6 +13784,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 1,
@@ -11546,6 +13793,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/linopy": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/67884844?v=4",
@@ -11561,6 +13809,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 1,
@@ -11569,6 +13818,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/linopy": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/184628375?v=4",
@@ -11584,6 +13834,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 1,
@@ -11592,6 +13843,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/linopy": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/135148693?v=4",
@@ -11607,6 +13859,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 1,
@@ -11615,6 +13868,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/linopy": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/3355737?v=4",
@@ -11630,6 +13884,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 1,
@@ -11638,6 +13893,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/linopy": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/62885463?v=4",
@@ -11653,6 +13909,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 1,
@@ -11661,6 +13918,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/linopy": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/22874837?v=4",
@@ -11676,6 +13934,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 1,
@@ -11684,6 +13943,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/linopy": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/113615772?v=4",
@@ -11699,6 +13959,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 1,
@@ -11707,6 +13968,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/linopy": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/45995710?v=4",
@@ -11722,6 +13984,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 1,
@@ -11730,6 +13993,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/linopy": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/78242995?v=4",
@@ -11745,6 +14009,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 1,
@@ -11753,6 +14018,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/linopy": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/18433446?v=4",
@@ -11768,6 +14034,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["linopy"],
     repoContributions: {
       "PyPSA/linopy": 1,
@@ -11776,6 +14043,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/linopy": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/173537499?v=4",
@@ -11791,6 +14059,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-server"],
     repoContributions: {
       "PyPSA/pypsa-server": 1,
@@ -11799,29 +14068,32 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-server": 1,
     },
+    repoReviews: {},
   },
   {
-    imageUrl: "https://avatars.githubusercontent.com/u/18009395?v=4",
-    firstName: "Mayk",
-    lastName: "Thewessen",
+    imageUrl: "https://avatars.githubusercontent.com/u/38682913?v=4",
+    firstName: "Javad",
+    lastName: "Bayazi",
     positions: ["Collaborator"],
     socialNetworks: [
       {
         name: "GitHub",
-        url: "https://github.com/MaykThewessen",
+        url: "https://github.com/javadbayazi",
       },
     ],
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
-    topRepos: ["247-cfe"],
+    totalReviews: 0,
+    topRepos: ["pypsa-usa"],
     repoContributions: {
-      "PyPSA/247-cfe": 1,
+      "PyPSA/pypsa-usa": 1,
     },
     repoPrs: {},
     repoIssues: {
-      "PyPSA/247-cfe": 1,
+      "PyPSA/pypsa-usa": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/103613503?v=4",
@@ -11837,6 +14109,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-usa"],
     repoContributions: {
       "PyPSA/pypsa-usa": 1,
@@ -11845,6 +14118,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-usa": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/49227756?v=4",
@@ -11860,6 +14134,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-usa"],
     repoContributions: {
       "PyPSA/pypsa-usa": 1,
@@ -11868,6 +14143,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-usa": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/183286511?v=4",
@@ -11883,6 +14159,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-usa"],
     repoContributions: {
       "PyPSA/pypsa-usa": 1,
@@ -11891,6 +14168,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-usa": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/111525228?v=4",
@@ -11906,6 +14184,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-usa"],
     repoContributions: {
       "PyPSA/pypsa-usa": 1,
@@ -11914,6 +14193,7 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-usa": 1,
     },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/8309180?v=4",
@@ -11929,6 +14209,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-ariadne"],
     repoContributions: {
       "PyPSA/pypsa-ariadne": 1,
@@ -11937,6 +14218,32 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-ariadne": 1,
     },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/151784799?v=4",
+    firstName: "BlurakLP",
+    lastName: "",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/BlurakLP",
+      },
+    ],
+    totalContributions: 1,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 1,
+    totalReviews: 0,
+    topRepos: ["pypsa-de"],
+    repoContributions: {
+      "PyPSA/pypsa-de": 1,
+    },
+    repoPrs: {},
+    repoIssues: {
+      "PyPSA/pypsa-de": 1,
+    },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/81740567?v=4",
@@ -11952,6 +14259,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
+    totalReviews: 0,
     topRepos: ["pypsa-de"],
     repoContributions: {
       "PyPSA/pypsa-de": 1,
@@ -11960,6 +14268,57 @@ export const contributorsData = [
     repoIssues: {
       "PyPSA/pypsa-de": 1,
     },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/157734880?v=4",
+    firstName: "Jan",
+    lastName: "Tautorus",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/JanTautorus",
+      },
+    ],
+    totalContributions: 1,
+    totalMergedPrs: 1,
+    totalIssuesCreated: 0,
+    totalReviews: 0,
+    topRepos: ["pypsa-earth"],
+    repoContributions: {
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoPrs: {
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoIssues: {},
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/228767710?v=4",
+    firstName: "saikumarvasa100-hash",
+    lastName: "",
+    positions: ["Contributor"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/saikumarvasa100-hash",
+      },
+    ],
+    totalContributions: 1,
+    totalMergedPrs: 1,
+    totalIssuesCreated: 0,
+    totalReviews: 0,
+    topRepos: ["pypsa-earth"],
+    repoContributions: {
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoPrs: {
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/5690599?v=4",
@@ -11975,6 +14334,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["pypsa-earth"],
     repoContributions: {
       "pypsa-meets-earth/pypsa-earth": 1,
@@ -11983,6 +14343,7 @@ export const contributorsData = [
       "pypsa-meets-earth/pypsa-earth": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/109945762?v=4",
@@ -11998,6 +14359,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["pypsa-earth"],
     repoContributions: {
       "pypsa-meets-earth/pypsa-earth": 1,
@@ -12006,6 +14368,7 @@ export const contributorsData = [
       "pypsa-meets-earth/pypsa-earth": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/188459113?v=4",
@@ -12021,6 +14384,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["pypsa-earth"],
     repoContributions: {
       "pypsa-meets-earth/pypsa-earth": 1,
@@ -12029,6 +14393,7 @@ export const contributorsData = [
       "pypsa-meets-earth/pypsa-earth": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/160237120?v=4",
@@ -12044,6 +14409,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["pypsa-earth"],
     repoContributions: {
       "pypsa-meets-earth/pypsa-earth": 1,
@@ -12052,6 +14418,7 @@ export const contributorsData = [
       "pypsa-meets-earth/pypsa-earth": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/123154558?v=4",
@@ -12067,6 +14434,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["pypsa-earth"],
     repoContributions: {
       "pypsa-meets-earth/pypsa-earth": 1,
@@ -12075,6 +14443,7 @@ export const contributorsData = [
       "pypsa-meets-earth/pypsa-earth": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/177637669?v=4",
@@ -12090,6 +14459,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["pypsa-earth"],
     repoContributions: {
       "pypsa-meets-earth/pypsa-earth": 1,
@@ -12098,6 +14468,7 @@ export const contributorsData = [
       "pypsa-meets-earth/pypsa-earth": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/19359510?v=4",
@@ -12113,6 +14484,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["pypsa-earth"],
     repoContributions: {
       "pypsa-meets-earth/pypsa-earth": 1,
@@ -12121,6 +14493,7 @@ export const contributorsData = [
       "pypsa-meets-earth/pypsa-earth": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/25573938?v=4",
@@ -12136,6 +14509,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["pypsa-earth"],
     repoContributions: {
       "pypsa-meets-earth/pypsa-earth": 1,
@@ -12144,6 +14518,7 @@ export const contributorsData = [
       "pypsa-meets-earth/pypsa-earth": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/38562595?v=4",
@@ -12159,6 +14534,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["pypsa-earth"],
     repoContributions: {
       "pypsa-meets-earth/pypsa-earth": 1,
@@ -12167,6 +14543,7 @@ export const contributorsData = [
       "pypsa-meets-earth/pypsa-earth": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/126512394?v=4",
@@ -12182,6 +14559,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["pypsa-earth"],
     repoContributions: {
       "pypsa-meets-earth/pypsa-earth": 1,
@@ -12190,6 +14568,7 @@ export const contributorsData = [
       "pypsa-meets-earth/pypsa-earth": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/4547840?v=4",
@@ -12205,6 +14584,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["pypsa-earth"],
     repoContributions: {
       "pypsa-meets-earth/pypsa-earth": 1,
@@ -12213,6 +14593,7 @@ export const contributorsData = [
       "pypsa-meets-earth/pypsa-earth": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/87770004?v=4",
@@ -12228,6 +14609,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["pypsa-earth"],
     repoContributions: {
       "pypsa-meets-earth/pypsa-earth": 1,
@@ -12236,6 +14618,7 @@ export const contributorsData = [
       "pypsa-meets-earth/pypsa-earth": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/11340470?v=4",
@@ -12251,6 +14634,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["pypsa-earth"],
     repoContributions: {
       "pypsa-meets-earth/pypsa-earth": 1,
@@ -12259,6 +14643,7 @@ export const contributorsData = [
       "pypsa-meets-earth/pypsa-earth": 1,
     },
     repoIssues: {},
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/27745389?v=4",
@@ -12274,6 +14659,7 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 1,
     totalIssuesCreated: 0,
+    totalReviews: 0,
     topRepos: ["pypsa-earth"],
     repoContributions: {
       "pypsa-meets-earth/pypsa-earth": 1,
@@ -12282,351 +14668,7 @@ export const contributorsData = [
       "pypsa-meets-earth/pypsa-earth": 1,
     },
     repoIssues: {},
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/111055103?v=4",
-    firstName: "Caterina",
-    lastName: "Car\u00e0",
-    positions: ["Collaborator"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/CaterinaCara",
-      },
-    ],
-    totalContributions: 1,
-    totalMergedPrs: 0,
-    totalIssuesCreated: 1,
-    topRepos: ["pypsa-earth"],
-    repoContributions: {
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
-    repoPrs: {},
-    repoIssues: {
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/214392984?v=4",
-    firstName: "Gre-Dog",
-    lastName: "",
-    positions: ["Collaborator"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/Gre-Dog",
-      },
-    ],
-    totalContributions: 1,
-    totalMergedPrs: 0,
-    totalIssuesCreated: 1,
-    topRepos: ["pypsa-earth"],
-    repoContributions: {
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
-    repoPrs: {},
-    repoIssues: {
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/187018943?v=4",
-    firstName: "Friederike22",
-    lastName: "",
-    positions: ["Collaborator"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/Friederike22",
-      },
-    ],
-    totalContributions: 1,
-    totalMergedPrs: 0,
-    totalIssuesCreated: 1,
-    topRepos: ["pypsa-earth"],
-    repoContributions: {
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
-    repoPrs: {},
-    repoIssues: {
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/183734288?v=4",
-    firstName: "dieghinho99",
-    lastName: "",
-    positions: ["Collaborator"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/dieghinho99",
-      },
-    ],
-    totalContributions: 1,
-    totalMergedPrs: 0,
-    totalIssuesCreated: 1,
-    topRepos: ["pypsa-earth"],
-    repoContributions: {
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
-    repoPrs: {},
-    repoIssues: {
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/184224089?v=4",
-    firstName: "mirjam-ji",
-    lastName: "",
-    positions: ["Collaborator"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/mirjam-ji",
-      },
-    ],
-    totalContributions: 1,
-    totalMergedPrs: 0,
-    totalIssuesCreated: 1,
-    topRepos: ["pypsa-earth"],
-    repoContributions: {
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
-    repoPrs: {},
-    repoIssues: {
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/147686630?v=4",
-    firstName: "Tracy",
-    lastName: "",
-    positions: ["Collaborator"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/CUIJING03",
-      },
-    ],
-    totalContributions: 1,
-    totalMergedPrs: 0,
-    totalIssuesCreated: 1,
-    topRepos: ["pypsa-earth"],
-    repoContributions: {
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
-    repoPrs: {},
-    repoIssues: {
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/117895150?v=4",
-    firstName: "Roger",
-    lastName: "",
-    positions: ["Collaborator"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/RogerKwak",
-      },
-    ],
-    totalContributions: 1,
-    totalMergedPrs: 0,
-    totalIssuesCreated: 1,
-    topRepos: ["pypsa-earth"],
-    repoContributions: {
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
-    repoPrs: {},
-    repoIssues: {
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/156371489?v=4",
-    firstName: "AnnaK-1997",
-    lastName: "",
-    positions: ["Collaborator"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/AnnaK-1997",
-      },
-    ],
-    totalContributions: 1,
-    totalMergedPrs: 0,
-    totalIssuesCreated: 1,
-    topRepos: ["pypsa-earth"],
-    repoContributions: {
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
-    repoPrs: {},
-    repoIssues: {
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/7928086?v=4",
-    firstName: "Matthias",
-    lastName: "Fripp",
-    positions: ["Collaborator"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/mfripp",
-      },
-    ],
-    totalContributions: 1,
-    totalMergedPrs: 0,
-    totalIssuesCreated: 1,
-    topRepos: ["pypsa-earth"],
-    repoContributions: {
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
-    repoPrs: {},
-    repoIssues: {
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/15640392?v=4",
-    firstName: "nikhil550",
-    lastName: "",
-    positions: ["Collaborator"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/nikhil550",
-      },
-    ],
-    totalContributions: 1,
-    totalMergedPrs: 0,
-    totalIssuesCreated: 1,
-    topRepos: ["pypsa-earth"],
-    repoContributions: {
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
-    repoPrs: {},
-    repoIssues: {
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/111440850?v=4",
-    firstName: "swae",
-    lastName: "",
-    positions: ["Collaborator"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/swaechchha",
-      },
-    ],
-    totalContributions: 1,
-    totalMergedPrs: 0,
-    totalIssuesCreated: 1,
-    topRepos: ["pypsa-earth"],
-    repoContributions: {
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
-    repoPrs: {},
-    repoIssues: {
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/122647639?v=4",
-    firstName: "dhoop-iidev",
-    lastName: "",
-    positions: ["Collaborator"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/dhoop-iidev",
-      },
-    ],
-    totalContributions: 1,
-    totalMergedPrs: 0,
-    totalIssuesCreated: 1,
-    topRepos: ["pypsa-earth"],
-    repoContributions: {
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
-    repoPrs: {},
-    repoIssues: {
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/64267107?v=4",
-    firstName: "Tommaso",
-    lastName: "Ferrucci",
-    positions: ["Collaborator"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/TomFer97",
-      },
-    ],
-    totalContributions: 1,
-    totalMergedPrs: 0,
-    totalIssuesCreated: 1,
-    topRepos: ["pypsa-earth"],
-    repoContributions: {
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
-    repoPrs: {},
-    repoIssues: {
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/104012009?v=4",
-    firstName: "vjha-gams",
-    lastName: "",
-    positions: ["Collaborator"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/vjha-gams",
-      },
-    ],
-    totalContributions: 1,
-    totalMergedPrs: 0,
-    totalIssuesCreated: 1,
-    topRepos: ["pypsa-earth"],
-    repoContributions: {
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
-    repoPrs: {},
-    repoIssues: {
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/u/36954873?v=4",
-    firstName: "Giacomo",
-    lastName: "Falchetta",
-    positions: ["Collaborator"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/giacfalk",
-      },
-    ],
-    totalContributions: 1,
-    totalMergedPrs: 0,
-    totalIssuesCreated: 1,
-    topRepos: ["pypsa-earth"],
-    repoContributions: {
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
-    repoPrs: {},
-    repoIssues: {
-      "pypsa-meets-earth/pypsa-earth": 1,
-    },
+    repoReviews: {},
   },
   {
     imageUrl: "https://avatars.githubusercontent.com/u/245695212?v=4",
@@ -12642,15 +14684,417 @@ export const contributorsData = [
     totalContributions: 1,
     totalMergedPrs: 0,
     totalIssuesCreated: 1,
-    topRepos: ["pypsa-earth-sec"],
+    totalReviews: 0,
+    topRepos: ["pypsa-earth"],
     repoContributions: {
-      "pypsa-meets-earth/pypsa-earth-sec": 1,
+      "pypsa-meets-earth/pypsa-earth": 1,
     },
     repoPrs: {},
     repoIssues: {
-      "pypsa-meets-earth/pypsa-earth-sec": 1,
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/111055103?v=4",
+    firstName: "Caterina",
+    lastName: "Car\u00e0",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/CaterinaCara",
+      },
+    ],
+    totalContributions: 1,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 1,
+    totalReviews: 0,
+    topRepos: ["pypsa-earth"],
+    repoContributions: {
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoPrs: {},
+    repoIssues: {
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/214392984?v=4",
+    firstName: "Gre-Dog",
+    lastName: "",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/Gre-Dog",
+      },
+    ],
+    totalContributions: 1,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 1,
+    totalReviews: 0,
+    topRepos: ["pypsa-earth"],
+    repoContributions: {
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoPrs: {},
+    repoIssues: {
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/187018943?v=4",
+    firstName: "Friederike22",
+    lastName: "",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/Friederike22",
+      },
+    ],
+    totalContributions: 1,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 1,
+    totalReviews: 0,
+    topRepos: ["pypsa-earth"],
+    repoContributions: {
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoPrs: {},
+    repoIssues: {
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/183734288?v=4",
+    firstName: "dieghinho99",
+    lastName: "",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/dieghinho99",
+      },
+    ],
+    totalContributions: 1,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 1,
+    totalReviews: 0,
+    topRepos: ["pypsa-earth"],
+    repoContributions: {
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoPrs: {},
+    repoIssues: {
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/184224089?v=4",
+    firstName: "mirjam-ji",
+    lastName: "",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/mirjam-ji",
+      },
+    ],
+    totalContributions: 1,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 1,
+    totalReviews: 0,
+    topRepos: ["pypsa-earth"],
+    repoContributions: {
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoPrs: {},
+    repoIssues: {
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/147686630?v=4",
+    firstName: "Tracy",
+    lastName: "",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/CUIJING03",
+      },
+    ],
+    totalContributions: 1,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 1,
+    totalReviews: 0,
+    topRepos: ["pypsa-earth"],
+    repoContributions: {
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoPrs: {},
+    repoIssues: {
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/117895150?v=4",
+    firstName: "Roger",
+    lastName: "",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/RogerKwak",
+      },
+    ],
+    totalContributions: 1,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 1,
+    totalReviews: 0,
+    topRepos: ["pypsa-earth"],
+    repoContributions: {
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoPrs: {},
+    repoIssues: {
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/156371489?v=4",
+    firstName: "AnnaK-1997",
+    lastName: "",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/AnnaK-1997",
+      },
+    ],
+    totalContributions: 1,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 1,
+    totalReviews: 0,
+    topRepos: ["pypsa-earth"],
+    repoContributions: {
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoPrs: {},
+    repoIssues: {
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/7928086?v=4",
+    firstName: "Matthias",
+    lastName: "Fripp",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/mfripp",
+      },
+    ],
+    totalContributions: 1,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 1,
+    totalReviews: 0,
+    topRepos: ["pypsa-earth"],
+    repoContributions: {
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoPrs: {},
+    repoIssues: {
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/15640392?v=4",
+    firstName: "nikhil550",
+    lastName: "",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/nikhil550",
+      },
+    ],
+    totalContributions: 1,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 1,
+    totalReviews: 0,
+    topRepos: ["pypsa-earth"],
+    repoContributions: {
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoPrs: {},
+    repoIssues: {
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/111440850?v=4",
+    firstName: "swae",
+    lastName: "",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/swaechchha",
+      },
+    ],
+    totalContributions: 1,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 1,
+    totalReviews: 0,
+    topRepos: ["pypsa-earth"],
+    repoContributions: {
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoPrs: {},
+    repoIssues: {
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/122647639?v=4",
+    firstName: "dhoop-iidev",
+    lastName: "",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/dhoop-iidev",
+      },
+    ],
+    totalContributions: 1,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 1,
+    totalReviews: 0,
+    topRepos: ["pypsa-earth"],
+    repoContributions: {
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoPrs: {},
+    repoIssues: {
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/64267107?v=4",
+    firstName: "Tommaso",
+    lastName: "Ferrucci",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/TomFer97",
+      },
+    ],
+    totalContributions: 1,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 1,
+    totalReviews: 0,
+    topRepos: ["pypsa-earth"],
+    repoContributions: {
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoPrs: {},
+    repoIssues: {
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/104012009?v=4",
+    firstName: "vjha-gams",
+    lastName: "",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/vjha-gams",
+      },
+    ],
+    totalContributions: 1,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 1,
+    totalReviews: 0,
+    topRepos: ["pypsa-earth"],
+    repoContributions: {
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoPrs: {},
+    repoIssues: {
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/36954873?v=4",
+    firstName: "Giacomo",
+    lastName: "Falchetta",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/giacfalk",
+      },
+    ],
+    totalContributions: 1,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 1,
+    totalReviews: 0,
+    topRepos: ["pypsa-earth"],
+    repoContributions: {
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoPrs: {},
+    repoIssues: {
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoReviews: {},
+  },
+  {
+    imageUrl: "https://avatars.githubusercontent.com/u/91701755?v=4",
+    firstName: "ykuvvetli",
+    lastName: "",
+    positions: ["Collaborator"],
+    socialNetworks: [
+      {
+        name: "GitHub",
+        url: "https://github.com/ykuvvetli",
+      },
+    ],
+    totalContributions: 1,
+    totalMergedPrs: 0,
+    totalIssuesCreated: 0,
+    totalReviews: 1,
+    topRepos: ["pypsa-earth"],
+    repoContributions: {
+      "pypsa-meets-earth/pypsa-earth": 1,
+    },
+    repoPrs: {},
+    repoIssues: {},
+    repoReviews: {
+      "pypsa-meets-earth/pypsa-earth": 1,
     },
   },
 ];
 
-export const dataTimestamp = "2025-11-24T09:37:32.752894";
+export const dataTimestamp = "2026-04-02T13:46:56.899807";

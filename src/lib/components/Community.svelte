@@ -40,10 +40,12 @@
     totalContributions?: number;
     totalMergedPrs?: number;
     totalIssuesCreated?: number;
+    totalReviews?: number;
     topRepos?: string[];
     repoContributions?: Record<string, number>;
     repoPrs?: Record<string, number>;
     repoIssues?: Record<string, number>;
+    repoReviews?: Record<string, number>;
     displayRepoOnly?: boolean;
   }
 
@@ -257,12 +259,14 @@
           const repoContribs = c.repoContributions[repoPath] || 0;
           const repoPrs = c.repoPrs?.[repoPath] || 0;
           const repoIssues = c.repoIssues?.[repoPath] || 0;
+          const repoRevs = c.repoReviews?.[repoPath] || 0;
           return {
             ...c,
             // Override stats with repo-specific data
             totalContributions: repoContribs,
             totalMergedPrs: repoPrs,
             totalIssuesCreated: repoIssues,
+            totalReviews: repoRevs,
             displayRepoOnly: true
           };
         })
@@ -463,7 +467,7 @@
     <!-- Contributors grid -->
     <div class="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-8 gap-3 md:gap-4 justify-center relative">
       {#key currentPage}
-        {#each currentContributors as { imageUrl, firstName, lastName, positions, socialNetworks, totalContributions, totalMergedPrs, totalIssuesCreated, topRepos }, index}
+        {#each currentContributors as { imageUrl, firstName, lastName, positions, socialNetworks, totalContributions, totalMergedPrs, totalIssuesCreated, totalReviews, topRepos }, index}
           {@const delay = index * 50}
         <div class="carousel-item relative group/card isolate hover:z-[60] {index === randomBadgeIndex && showTooltipHint ? 'z-[60]' : ''}" style="animation-delay: {delay}ms">
         <a
@@ -511,6 +515,12 @@
                               <span>merged PRs</span>
                             </div>
                           {/if}
+                          {#if totalReviews}
+                            <div class="flex items-center gap-2">
+                              <span class="font-semibold text-primary">{totalReviews}</span>
+                              <span>reviews</span>
+                            </div>
+                          {/if}
                           {#if totalIssuesCreated}
                             <div class="flex items-center gap-2">
                               <span class="font-semibold text-primary">{totalIssuesCreated}</span>
@@ -523,6 +533,12 @@
                             <div class="flex items-center gap-2">
                               <span class="font-semibold text-primary">{totalMergedPrs}</span>
                               <span>merged PRs</span>
+                            </div>
+                          {/if}
+                          {#if totalReviews}
+                            <div class="flex items-center gap-2">
+                              <span class="font-semibold text-primary">{totalReviews}</span>
+                              <span>reviews</span>
                             </div>
                           {/if}
                           {#if totalIssuesCreated}
