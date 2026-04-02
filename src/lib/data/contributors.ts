@@ -1,6 +1,6 @@
 // Auto-generated from contributors.csv
 // Do not edit manually - run scripts/generate_contributors.py to regenerate
-// Data retrieved at: 2026-04-02T13:46:56.899807
+// Data retrieved at: 2026-04-02T14:41:12.182378
 
 export const contributorsData = [
   {
@@ -1211,45 +1211,6 @@ export const contributorsData = [
     repoReviews: {
       "pypsa-meets-earth/pypsa-earth": 2,
       "pypsa-meets-earth/pypsa-earth-sec": 1,
-    },
-  },
-  {
-    imageUrl: "https://avatars.githubusercontent.com/in/946600?v=4",
-    firstName: "copilot-pull-request-reviewer",
-    lastName: "",
-    positions: ["Collaborator"],
-    socialNetworks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/copilot-pull-request-reviewer",
-      },
-    ],
-    totalContributions: 64,
-    totalMergedPrs: 0,
-    totalIssuesCreated: 0,
-    totalReviews: 64,
-    topRepos: ["pypsa-eur", "PyPSA"],
-    repoContributions: {
-      "PyPSA/PyPSA": 13,
-      "PyPSA/atlite": 1,
-      "PyPSA/powerplantmatching": 2,
-      "PyPSA/pypsa-de": 4,
-      "PyPSA/pypsa-eur": 33,
-      "PyPSA/pypsa-usa": 4,
-      "PyPSA/technology-data": 3,
-      "pypsa-meets-earth/pypsa-earth": 4,
-    },
-    repoPrs: {},
-    repoIssues: {},
-    repoReviews: {
-      "PyPSA/PyPSA": 13,
-      "PyPSA/atlite": 1,
-      "PyPSA/powerplantmatching": 2,
-      "PyPSA/pypsa-de": 4,
-      "PyPSA/pypsa-eur": 33,
-      "PyPSA/pypsa-usa": 4,
-      "PyPSA/technology-data": 3,
-      "pypsa-meets-earth/pypsa-earth": 4,
     },
   },
   {
@@ -15097,4 +15058,4 @@ export const contributorsData = [
   },
 ];
 
-export const dataTimestamp = "2026-04-02T13:46:56.899807";
+export const dataTimestamp = "2026-04-02T14:41:12.182378";
