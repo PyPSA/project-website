@@ -101,56 +101,6 @@
     }
   }
 
-  // Animation hint state
-  let showCursorHint = false;
-  let showTooltipHint = false;
-  let randomBadgeIndex = Math.floor(Math.random() * (embedMode ? 40 : 32)); // Random card from first page
-  let sectionElement: HTMLElement;
-  let hasAnimated = false;
-
-  function startAnimation() {
-    if (hasAnimated) return;
-    hasAnimated = true;
-
-    // Position the cursor - start from right, move to badge
-    setTimeout(() => {
-      const badge = document.getElementById(`badge-${randomBadgeIndex}`);
-      const grid = document.querySelector(".grid.relative");
-
-      if (badge && grid) {
-        const badgeRect = badge.getBoundingClientRect();
-        const gridRect = grid.getBoundingClientRect();
-
-        // Calculate position relative to grid - center cursor on badge
-        const relativeTop = badgeRect.top - gridRect.top + badgeRect.height / 2 - 12; // -12 to center cursor (24px/2)
-        const relativeLeft = badgeRect.left - gridRect.left + badgeRect.width / 2 - 12; // Center horizontally on badge
-
-        // Start cursor off-screen to the right and higher up
-        document.documentElement.style.setProperty("--cursor-top", `${relativeTop - 100}px`);
-        document.documentElement.style.setProperty("--cursor-left", `calc(100% + 300px)`);
-
-        // Show cursor after position is set
-        showCursorHint = true;
-
-        // Then move cursor to the badge
-        setTimeout(() => {
-          document.documentElement.style.setProperty("--cursor-top", `${relativeTop}px`);
-          document.documentElement.style.setProperty("--cursor-left", `${relativeLeft}px`);
-        }, 100);
-      }
-    }, 500);
-
-    // Wait for cursor to move, then show tooltip, then hide everything
-    setTimeout(() => {
-      showTooltipHint = true;
-    }, 2500); // Wait 500ms (initial) + 100ms (delay) + 2000ms (transition) = 2600ms
-
-    setTimeout(() => {
-      showCursorHint = false;
-      showTooltipHint = false;
-    }, 6500);
-  }
-
   // Initialize on mount
   onMount(() => {
     updateContributorsPerPage();
@@ -183,27 +133,8 @@
       }
     }
 
-    // Set up Intersection Observer
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            startAnimation();
-          }
-        });
-      },
-      { threshold: 0.2 } // Trigger when 20% of section is visible
-    );
-
-    if (sectionElement) {
-      observer.observe(sectionElement);
-    }
-
     return () => {
       window.removeEventListener("resize", updateContributorsPerPage);
-      if (sectionElement) {
-        observer.unobserve(sectionElement);
-      }
     };
   });
 
@@ -328,7 +259,6 @@
   <section
     id="contributors"
     class="container max-w-7xl mx-auto px-4 pt-16 pb-4 sm:pt-24 sm:pb-6 lg:pt-32 lg:pb-8"
-    bind:this={sectionElement}
   >
     <div class="text-center mb-12">
       {#if showHeader}
@@ -516,10 +446,7 @@
           {#each currentContributors as { imageUrl, firstName, lastName, positions, socialNetworks, totalContributions, totalMergedPrs, totalIssuesCreated, totalReviews, topRepos }, index (firstName + "-" + lastName)}
             {@const delay = index * 50}
             <div
-              class="carousel-item relative group/card isolate hover:z-[60] {index ===
-                randomBadgeIndex && showTooltipHint
-                ? 'z-[60]'
-                : ''}"
+              class="carousel-item relative group/card isolate hover:z-[60]"
               style="animation-delay: {delay}ms"
             >
               <a
@@ -552,10 +479,7 @@
                         <span class="text-primary">{lastName}</span>
                       </span>
                       {#if totalContributions}
-                        <Tooltip.Root
-                          open={index === randomBadgeIndex && showTooltipHint ? true : undefined}
-                          disableHoverableContent={index === randomBadgeIndex && showTooltipHint}
-                        >
+                        <Tooltip.Root>
                           <Tooltip.Trigger
                             class="ml-2 inline-flex items-center justify-center text-primary cursor-help transition-colors hover:text-primary focus-visible:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded-full p-1 info-badge-trigger"
                             id={`badge-${index}`}
@@ -721,19 +645,6 @@
               </a>
             </div>
           {/each}
-
-          <!-- Floating cursor hint - positioned relative to grid -->
-          {#if showCursorHint}
-            <svg
-              class="floating-cursor pointer-events-none"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-            >
-              <path
-                d="M6.3 2.84A1 1 0 0 0 5 3.5v13a1 1 0 0 0 1.74.68l3.14-3.48 1.65 4.62a1 1 0 0 0 1.88-.26l.01-.03 2.46-8.17 1.45-.52a1 1 0 0 0 .12-1.8l-.04-.02-11-5a1 1 0 0 0-.91.04z"
-              />
-            </svg>
-          {/if}
         {/key}
       </div>
 
@@ -899,34 +810,8 @@
     opacity: 0;
   }
 
-  .floating-cursor {
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    color: rgba(0, 0, 0, 0.6);
-    z-index: 9999;
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
-    transition:
-      top 2s ease-out,
-      left 2s ease-out,
-      opacity 0.3s ease-out;
-    will-change: top, left;
-    top: var(--cursor-top, 50%);
-    left: var(--cursor-left, 50%);
-  }
-
   :global(body) {
     overflow-x: clip;
-  }
-
-  :global(.dark) .floating-cursor {
-    color: rgba(255, 255, 255, 0.8);
-  }
-
-  @media (max-width: 1279px) {
-    .floating-cursor {
-      display: none;
-    }
   }
 
   .scrollbar-hide {
