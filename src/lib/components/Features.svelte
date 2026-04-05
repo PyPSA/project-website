@@ -429,7 +429,7 @@
 
   <!-- Tabs Navigation -->
   <div class="flex flex-wrap justify-center gap-2 mb-8">
-    {#each tabs as tab}
+    {#each tabs as tab (tab.id)}
       <button
         class="px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 {activeTab ===
         tab.id
@@ -445,7 +445,7 @@
   <!-- Features Grid -->
   <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 py-4">
     {#key activeTab + "-" + currentPage}
-      {#each displayedFeatures as { icon, title, description, docsUrl }, index}
+      {#each displayedFeatures as { icon, title, description, docsUrl }, index (title)}
         <div
           class="transition-transform duration-300 {docsUrl
             ? 'hover:-translate-y-1 focus-visible:-translate-y-1 cursor-pointer'

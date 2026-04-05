@@ -213,10 +213,6 @@
     }
   });
 
-  $: if (typeof window !== "undefined") {
-    updateWindowSize();
-  }
-
   function showNext() {
     if (projects.length <= visibleCount) return;
     carouselIndex++;
@@ -397,7 +393,7 @@
                         class="inline-flex items-center gap-1 px-2 py-0 bg-muted/50 border border-border/50 rounded-lg"
                       >
                         <span class="text-xs text-muted-foreground">Led by</span>
-                        {#each project.institutions as institution, idx}
+                        {#each project.institutions as institution, idx (idx)}
                           <a
                             href={institution.url}
                             target="_blank"
@@ -432,7 +428,7 @@
 
       <!-- Expanded view - keep iframes loaded but hidden -->
       {#if shouldLoadIframes}
-        {#each projects as project}
+        {#each projects as project (project.name)}
           {#if project.exploreUrl}
             <div
               class="w-full px-3"
@@ -474,7 +470,7 @@
     {#if projects.length > visibleCount && expandedProject === null}
       <!-- Indicator Dots -->
       <div class="flex justify-center gap-2 mt-2">
-        {#each projects as project, index}
+        {#each projects as project, index (project.name)}
           {@const normalizedIndex = carouselIndex % projects.length}
           {@const isInRange = index >= normalizedIndex && index < normalizedIndex + visibleCount}
           {@const isWrappedVisible =

@@ -513,7 +513,7 @@
         class="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-8 gap-3 md:gap-4 justify-center relative"
       >
         {#key currentPage}
-          {#each currentContributors as { imageUrl, firstName, lastName, positions, socialNetworks, totalContributions, totalMergedPrs, totalIssuesCreated, totalReviews, topRepos }, index}
+          {#each currentContributors as { imageUrl, firstName, lastName, positions, socialNetworks, totalContributions, totalMergedPrs, totalIssuesCreated, totalReviews, topRepos }, index (firstName + "-" + lastName)}
             {@const delay = index * 50}
             <div
               class="carousel-item relative group/card isolate hover:z-[60] {index ===
@@ -647,7 +647,7 @@
                                   <div
                                     class="flex flex-wrap gap-1 mt-1 pt-2 border-t border-border"
                                   >
-                                    {#each reposToShow as repo}
+                                    {#each reposToShow as repo (repo)}
                                       {@const displayName =
                                         repo === "pypsa"
                                           ? "PyPSA"

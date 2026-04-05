@@ -157,7 +157,7 @@
     <!-- Publications list -->
     <div class="space-y-3 max-w-5xl mx-auto">
       {#key currentPage}
-        {#each currentPublications as pub, index}
+        {#each currentPublications as pub, index (pub.title)}
           {@const delay = index * 100}
           <Card
             class="hover:shadow-lg transition-transform duration-300 hover:-translate-y-1 focus-visible:-translate-y-1 carousel-item"

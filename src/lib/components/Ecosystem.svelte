@@ -218,10 +218,6 @@
     }
   });
 
-  $: if (typeof window !== "undefined") {
-    updateWindowSize();
-  }
-
   function getVisibleProjects(): ProjectProps[] {
     if (projects.length <= visibleCount) {
       return projects.slice(0, visibleCount);
@@ -383,7 +379,7 @@
                       class="inline-flex items-center gap-1 px-2 py-0 bg-muted/50 border border-border/50 rounded-lg"
                     >
                       <span class="text-xs text-muted-foreground">Led by</span>
-                      {#each project.institutions as institution, idx}
+                      {#each project.institutions as institution, idx (idx)}
                         <a
                           href={institution.url}
                           target="_blank"
@@ -419,7 +415,7 @@
     {#if projects.length > visibleCount}
       <!-- Indicator Dots -->
       <div class="flex justify-center gap-2 mt-2">
-        {#each projects as project, index}
+        {#each projects as project, index (project.name)}
           {@const normalizedIndex = carouselIndex % projects.length}
           {@const isInRange = index >= normalizedIndex && index < normalizedIndex + visibleCount}
           {@const isWrappedVisible =

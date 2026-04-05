@@ -17,3 +17,13 @@ repos:
       - id: prettier
         types_or: [javascript, jsx, ts, tsx, svelte, css, json, yaml, markdown]
         exclude: ^(package-lock\.json|pnpm-lock\.yaml|yarn\.lock)$
+
+  - repo: local
+    hooks:
+      - id: eslint
+        name: eslint
+        entry: npx eslint
+        language: system
+        types_or: [javascript, ts, svelte]
+        exclude: ^(build|\.svelte-kit|src/lib/data|src/lib/components/ui)/
+        pass_filenames: true

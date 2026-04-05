@@ -101,7 +101,7 @@
           </SheetHeader>
 
           <div class="flex flex-col gap-2">
-            {#each routeList as { href, label }}
+            {#each routeList as { href, label } (href)}
               {@const sectionId = href.replace("#", "")}
               {@const isExternal = href.startsWith("http")}
               <a
@@ -137,7 +137,7 @@
   </div>
   <div class="hidden lg:flex items-center gap-1">
     <!-- Navigation Links -->
-    {#each routeList as { href, label }}
+    {#each routeList as { href, label } (href)}
       {@const sectionId = href.replace("#", "")}
       {@const isExternal = href.startsWith("http")}
       <a

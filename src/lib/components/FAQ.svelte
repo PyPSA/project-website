@@ -53,12 +53,13 @@
   </div>
 
   <Accordion type="single" class="w-full">
-    {#each FAQList as { question, answer, value }}
+    {#each FAQList as { question, answer, value } (value)}
       <AccordionItem {value}>
         <AccordionTrigger class="text-left">
           {question}
         </AccordionTrigger>
         <AccordionContent>
+          <!-- eslint-disable-next-line svelte/no-at-html-tags -->
           {@html answer}
         </AccordionContent>
       </AccordionItem>
