@@ -3,7 +3,14 @@
 </script>
 
 <div class="embed-container">
-  <Community showDiscord={false} showHeader={false} showFilters={false} showPyPSALink={true} colorfulImages={true} embedMode={true} />
+  <Community
+    showDiscord={false}
+    showHeader={false}
+    showFilters={false}
+    showPyPSALink={true}
+    colorfulImages={true}
+    embedMode={true}
+  />
 </div>
 
 <style>

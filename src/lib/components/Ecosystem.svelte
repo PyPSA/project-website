@@ -3,10 +3,10 @@
   import { Button } from "$lib/components/ui/button";
   import { BookOpen, ArrowRight, ArrowLeft, Globe } from "lucide-svelte";
   import GithubIcon from "$lib/icons/GithubIcon.svelte";
-  import { base } from '$app/paths';
-  import { onMount, onDestroy } from 'svelte';
-  import { fly } from 'svelte/transition';
-  import { quintOut } from 'svelte/easing';
+  import { base } from "$app/paths";
+  import { onMount, onDestroy } from "svelte";
+  import { fly } from "svelte/transition";
+  import { quintOut } from "svelte/easing";
 
   interface ProjectProps {
     name: string;
@@ -25,27 +25,33 @@
   const projects: ProjectProps[] = [
     {
       name: "Atlite",
-      description: "A Lightweight Python Package for Calculating Renewable Power Potentials and Time Series",
+      description:
+        "A Lightweight Python Package for Calculating Renewable Power Potentials and Time Series",
       image: `${base}/img/projects/atlite.webp`,
       githubUrl: "https://github.com/PyPSA/atlite",
       docsUrl: "https://atlite.readthedocs.io/",
-      institutions: [{
-        name: "TU Berlin",
-        logo: `${base}/img/institutions/tu-berlin.svg`,
-        url: "https://www.tu.berlin/en/ensys"
-      }]
+      institutions: [
+        {
+          name: "TU Berlin",
+          logo: `${base}/img/institutions/tu-berlin.svg`,
+          url: "https://www.tu.berlin/en/ensys",
+        },
+      ],
     },
     {
       name: "PyPSA",
-      description: "Python for Power System Analysis - the core framework for simulating and optimising modern power systems",
+      description:
+        "Python for Power System Analysis - the core framework for simulating and optimising modern power systems",
       image: `${base}/img/projects/pypsa-logo.svg`,
       githubUrl: "https://github.com/PyPSA/PyPSA",
       docsUrl: "https://pypsa.readthedocs.io/",
-      institutions: [{
-        name: "TU Berlin",
-        logo: `${base}/img/institutions/tu-berlin.svg`,
-        url: "https://www.tu.berlin/en/ensys"
-      }]
+      institutions: [
+        {
+          name: "TU Berlin",
+          logo: `${base}/img/institutions/tu-berlin.svg`,
+          url: "https://www.tu.berlin/en/ensys",
+        },
+      ],
     },
     {
       name: "Linopy",
@@ -57,18 +63,19 @@
         {
           name: "OET",
           logo: `${base}/img/institutions/oet.svg`,
-          url: "https://openenergytransition.org/"
+          url: "https://openenergytransition.org/",
         },
         {
           name: "TU Berlin",
           logo: `${base}/img/institutions/tu-berlin.svg`,
-          url: "https://www.tu.berlin/en/ensys"
-        }
-      ]
+          url: "https://www.tu.berlin/en/ensys",
+        },
+      ],
     },
     {
       name: "Map Your Grid",
-      description: "Community-driven initiative mapping the world's electrical grids to accelerate the energy transition worldwide",
+      description:
+        "Community-driven initiative mapping the world's electrical grids to accelerate the energy transition worldwide",
       image: `${base}/img/projects/mapyourgrid.webp`,
       githubUrl: "https://mapyourgrid.org/",
       websiteUrl: "https://mapyourgrid.org/",
@@ -76,21 +83,24 @@
         {
           name: "OET",
           logo: `${base}/img/institutions/oet.svg`,
-          url: "https://openenergytransition.org/"
-        }
-      ]
+          url: "https://openenergytransition.org/",
+        },
+      ],
     },
     {
       name: "Powerplantmatching",
-      description: "A toolset for cleaning, standardizing and combining multiple power plant databases",
+      description:
+        "A toolset for cleaning, standardizing and combining multiple power plant databases",
       image: `${base}/img/projects/powerplantmatching.webp`,
       githubUrl: "https://github.com/PyPSA/powerplantmatching",
       docsUrl: "https://powerplantmatching.readthedocs.io/",
-      institutions: [{
-        name: "TU Berlin",
-        logo: `${base}/img/institutions/tu-berlin.svg`,
-        url: "https://www.tu.berlin/en/ensys"
-      }]
+      institutions: [
+        {
+          name: "TU Berlin",
+          logo: `${base}/img/institutions/tu-berlin.svg`,
+          url: "https://www.tu.berlin/en/ensys",
+        },
+      ],
     },
     {
       name: "Technology Data",
@@ -102,15 +112,15 @@
         {
           name: "OET",
           logo: `${base}/img/institutions/oet.svg`,
-          url: "https://openenergytransition.org/"
+          url: "https://openenergytransition.org/",
         },
         {
           name: "TU Berlin",
           logo: `${base}/img/institutions/tu-berlin.svg`,
-          url: "https://www.tu.berlin/en/ensys"
-        }
-      ]
-    }
+          url: "https://www.tu.berlin/en/ensys",
+        },
+      ],
+    },
   ];
 
   const accentColor = "#098754";
@@ -121,11 +131,11 @@
   let isScrolling = false;
 
   // Track window width for responsive behavior
-  let windowWidth = typeof window !== 'undefined' ? window.innerWidth : 1024;
+  let windowWidth = typeof window !== "undefined" ? window.innerWidth : 1024;
   let visibleCount = 3;
 
   function updateWindowSize() {
-    if (typeof window === 'undefined') return;
+    if (typeof window === "undefined") return;
     windowWidth = window.innerWidth;
 
     // Match Features section breakpoints:
@@ -180,11 +190,11 @@
 
   onMount(() => {
     updateWindowSize();
-    window.addEventListener('resize', updateWindowSize);
+    window.addEventListener("resize", updateWindowSize);
 
     // Add wheel event listener for horizontal scrolling
     if (carouselElement) {
-      carouselElement.addEventListener('wheel', handleWheel, { passive: false });
+      carouselElement.addEventListener("wheel", handleWheel, { passive: false });
     }
 
     // Start auto-play carousel every 5 seconds
@@ -195,9 +205,9 @@
     }, 5000);
 
     return () => {
-      window.removeEventListener('resize', updateWindowSize);
+      window.removeEventListener("resize", updateWindowSize);
       if (carouselElement) {
-        carouselElement.removeEventListener('wheel', handleWheel);
+        carouselElement.removeEventListener("wheel", handleWheel);
       }
     };
   });
@@ -208,12 +218,11 @@
     }
   });
 
-  $: if (typeof window !== 'undefined') {
+  $: if (typeof window !== "undefined") {
     updateWindowSize();
   }
 
   function getVisibleProjects(): ProjectProps[] {
-
     if (projects.length <= visibleCount) {
       return projects.slice(0, visibleCount);
     }
@@ -274,127 +283,135 @@
       Ecosystem
     </h2>
 
-    <h2 class="text-3xl md:text-4xl text-center font-bold mb-4">
-      Framework and Tools
-    </h2>
+    <h2 class="text-3xl md:text-4xl text-center font-bold mb-4">Framework and Tools</h2>
 
     <h3 class="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
       PyPSA and its complementary tools and initiatives
     </h3>
 
     <div class="relative py-8 overflow-x-hidden overflow-y-visible" bind:this={carouselElement}>
-      <div class="carousel-container pt-4 pb-2" style="transform: translateX(-{carouselIndex * (100 / visibleCount)}%); transition: {isTransitioning ? 'transform 0.5s ease-in-out' : 'none'}">
-        {#each [...projects, ...projects] as project, idx (project.name + '-' + idx)}
-        <div class="carousel-item" style="width: {100 / visibleCount}%">
-          <Card
-            class="h-full bg-muted/50 dark:bg-card border border-border/50 shadow-lg shadow-black/10 dark:shadow-white/10 rounded-2xl relative overflow-hidden mx-3"
-          >
-          <CardHeader class="flex justify-center items-center pb-4">
-              <div class="w-full h-48 mb-4 rounded-lg overflow-hidden flex items-center justify-center relative">
-                <img
-                  src={project.image}
-                  alt={project.name}
-                  class="max-w-full max-h-full object-contain transition-all duration-300"
-                />
-              </div>
-              <CardTitle class="text-xl mb-2 text-center">{project.name}</CardTitle>
-            </CardHeader>
-
-            <CardContent class="text-muted-foreground text-center px-6 pb-6">
-              <p class="text-sm leading-relaxed mb-6">{project.description}</p>
-
-              {#if project.docsUrl}
-                <div class="flex justify-center gap-2 mb-4">
-                  <Button
-                    asChild
-                    variant="outline"
-                    size="sm"
-                    class="flex items-center gap-2 accent-hover-only"
-                    style={accentStyle(project.name)}
-                  >
-                    <a
-                      href={project.docsUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="flex items-center gap-2 w-full h-full"
-                    >
-                      <BookOpen class="size-4" />
-                      Docs
-                    </a>
-                  </Button>
-                  <Button
-                    asChild
-                    variant="outline"
-                    size="sm"
-                    class="flex items-center gap-2 accent-hover-only"
-                    style={accentStyle(project.name)}
-                  >
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="flex items-center gap-2 w-full h-full"
-                    >
-                      <GithubIcon class_="size-4" />
-                      GitHub
-                    </a>
-                  </Button>
+      <div
+        class="carousel-container pt-4 pb-2"
+        style="transform: translateX(-{carouselIndex *
+          (100 / visibleCount)}%); transition: {isTransitioning
+          ? 'transform 0.5s ease-in-out'
+          : 'none'}"
+      >
+        {#each [...projects, ...projects] as project, idx (project.name + "-" + idx)}
+          <div class="carousel-item" style="width: {100 / visibleCount}%">
+            <Card
+              class="h-full bg-muted/50 dark:bg-card border border-border/50 shadow-lg shadow-black/10 dark:shadow-white/10 rounded-2xl relative overflow-hidden mx-3"
+            >
+              <CardHeader class="flex justify-center items-center pb-4">
+                <div
+                  class="w-full h-48 mb-4 rounded-lg overflow-hidden flex items-center justify-center relative"
+                >
+                  <img
+                    src={project.image}
+                    alt={project.name}
+                    class="max-w-full max-h-full object-contain transition-all duration-300"
+                  />
                 </div>
-              {:else if project.websiteUrl}
-                <div class="flex justify-center mb-4">
-                  <Button
-                    asChild
-                    variant="outline"
-                    size="sm"
-                    class="flex items-center gap-2 accent-hover-only"
-                    style={accentStyle(project.name)}
-                  >
-                    <a
-                      href={project.websiteUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="flex items-center gap-2 w-full h-full"
-                    >
-                      <Globe class="size-4" />
-                      Website
-                    </a>
-                  </Button>
-                </div>
-              {/if}
+                <CardTitle class="text-xl mb-2 text-center">{project.name}</CardTitle>
+              </CardHeader>
 
-            {#if project.institutions && project.institutions.length > 0}
-              <div class="flex justify-center mt-2">
-                <div class="inline-flex items-center gap-1 px-2 py-0 bg-muted/50 border border-border/50 rounded-lg">
-                  <span class="text-xs text-muted-foreground">Led by</span>
-                  {#each project.institutions as institution, idx}
-                    <a
-                      href={institution.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="flex items-center gap-2 transition-opacity hover:opacity-70"
-                      title={institution.name}
+              <CardContent class="text-muted-foreground text-center px-6 pb-6">
+                <p class="text-sm leading-relaxed mb-6">{project.description}</p>
+
+                {#if project.docsUrl}
+                  <div class="flex justify-center gap-2 mb-4">
+                    <Button
+                      asChild
+                      variant="outline"
+                      size="sm"
+                      class="flex items-center gap-2 accent-hover-only"
+                      style={accentStyle(project.name)}
                     >
-                      <span class="text-xs text-muted-foreground">{institution.name}</span>
-                      <img
-                        src={institution.logo}
-                        alt={institution.name}
-                        class="w-8 h-8 object-contain"
-                        on:error={(e) => {
-                          console.error('Institution logo failed to load:', institution.logo);
-                          e.target.style.display = 'none';
-                        }}
-                      />
-                    </a>
-                    {#if idx < project.institutions.length - 1}
-                      <span class="text-xs text-muted-foreground">&</span>
-                    {/if}
-                  {/each}
-                </div>
-              </div>
-            {/if}
-          </CardContent>
-        </Card>
-        </div>
+                      <a
+                        href={project.docsUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="flex items-center gap-2 w-full h-full"
+                      >
+                        <BookOpen class="size-4" />
+                        Docs
+                      </a>
+                    </Button>
+                    <Button
+                      asChild
+                      variant="outline"
+                      size="sm"
+                      class="flex items-center gap-2 accent-hover-only"
+                      style={accentStyle(project.name)}
+                    >
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="flex items-center gap-2 w-full h-full"
+                      >
+                        <GithubIcon class_="size-4" />
+                        GitHub
+                      </a>
+                    </Button>
+                  </div>
+                {:else if project.websiteUrl}
+                  <div class="flex justify-center mb-4">
+                    <Button
+                      asChild
+                      variant="outline"
+                      size="sm"
+                      class="flex items-center gap-2 accent-hover-only"
+                      style={accentStyle(project.name)}
+                    >
+                      <a
+                        href={project.websiteUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="flex items-center gap-2 w-full h-full"
+                      >
+                        <Globe class="size-4" />
+                        Website
+                      </a>
+                    </Button>
+                  </div>
+                {/if}
+
+                {#if project.institutions && project.institutions.length > 0}
+                  <div class="flex justify-center mt-2">
+                    <div
+                      class="inline-flex items-center gap-1 px-2 py-0 bg-muted/50 border border-border/50 rounded-lg"
+                    >
+                      <span class="text-xs text-muted-foreground">Led by</span>
+                      {#each project.institutions as institution, idx}
+                        <a
+                          href={institution.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="flex items-center gap-2 transition-opacity hover:opacity-70"
+                          title={institution.name}
+                        >
+                          <span class="text-xs text-muted-foreground">{institution.name}</span>
+                          <img
+                            src={institution.logo}
+                            alt={institution.name}
+                            class="w-8 h-8 object-contain"
+                            on:error={(e) => {
+                              console.error("Institution logo failed to load:", institution.logo);
+                              e.target.style.display = "none";
+                            }}
+                          />
+                        </a>
+                        {#if idx < project.institutions.length - 1}
+                          <span class="text-xs text-muted-foreground">&</span>
+                        {/if}
+                      {/each}
+                    </div>
+                  </div>
+                {/if}
+              </CardContent>
+            </Card>
+          </div>
         {/each}
       </div>
     </div>
@@ -404,13 +421,10 @@
       <div class="flex justify-center gap-2 mt-2">
         {#each projects as project, index}
           {@const normalizedIndex = carouselIndex % projects.length}
-          {@const isInRange =
-            index >= normalizedIndex && index < normalizedIndex + visibleCount
-          }
+          {@const isInRange = index >= normalizedIndex && index < normalizedIndex + visibleCount}
           {@const isWrappedVisible =
             normalizedIndex + visibleCount > projects.length &&
-            index < (normalizedIndex + visibleCount) % projects.length
-          }
+            index < (normalizedIndex + visibleCount) % projects.length}
           {@const isVisible = isInRange || isWrappedVisible}
           <button
             type="button"
@@ -439,8 +453,8 @@
             e.target.style.borderColor = accentColor;
           }}
           on:mouseleave={(e) => {
-            e.target.style.backgroundColor = '';
-            e.target.style.borderColor = '';
+            e.target.style.backgroundColor = "";
+            e.target.style.borderColor = "";
           }}
         >
           <ArrowLeft class="size-4" />
@@ -459,8 +473,8 @@
             e.target.style.borderColor = accentColor;
           }}
           on:mouseleave={(e) => {
-            e.target.style.backgroundColor = '';
-            e.target.style.borderColor = '';
+            e.target.style.backgroundColor = "";
+            e.target.style.borderColor = "";
           }}
         >
           <ArrowRight class="size-4" />
@@ -472,7 +486,10 @@
 
 <style>
   :global(.accent-hover-only) {
-    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    transition:
+      background-color 0.3s ease,
+      border-color 0.3s ease,
+      color 0.3s ease;
   }
 
   :global(.accent-hover-only:hover) {

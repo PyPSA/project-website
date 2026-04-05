@@ -15,18 +15,18 @@ const GridHead = RangeCalendarPrimitive.GridHead;
 const GridBody = RangeCalendarPrimitive.GridBody;
 
 export {
-	Day,
-	Cell,
-	Grid,
-	Header,
-	Months,
-	GridRow,
-	Heading,
-	GridBody,
-	GridHead,
-	HeadCell,
-	NextButton,
-	PrevButton,
-	//
-	Root as RangeCalendar,
+  Day,
+  Cell,
+  Grid,
+  Header,
+  Months,
+  GridRow,
+  Heading,
+  GridBody,
+  GridHead,
+  HeadCell,
+  NextButton,
+  PrevButton,
+  //
+  Root as RangeCalendar,
 };

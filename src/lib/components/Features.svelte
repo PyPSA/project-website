@@ -1,9 +1,9 @@
 <script lang="ts">
   import { Card, CardContent, CardHeader, CardTitle } from "$lib/components/ui/card";
   import { Button } from "$lib/components/ui/button";
-  import { onMount } from 'svelte';
-  import { DOCS_BASE_URL } from '$lib/config';
-  import MdiIcon from '$lib/components/MdiIcon.svelte';
+  import { onMount } from "svelte";
+  import { DOCS_BASE_URL } from "$lib/config";
+  import MdiIcon from "$lib/components/MdiIcon.svelte";
   import {
     mdiPowerPlugBatteryOutline,
     mdiTransmissionTower,
@@ -24,8 +24,8 @@
     mdiDataMatrix,
     mdiRunFast,
     mdiNotebook,
-    mdiLockOpen
-  } from '@mdi/js';
+    mdiLockOpen,
+  } from "@mdi/js";
   import {
     Battery,
     PlugZap,
@@ -62,14 +62,67 @@
   } from "lucide-svelte";
 
   interface FeaturesProps {
-    icon: 'battery' | 'mdiPowerPlugBattery' | 'mdiTransmissionTower' | 'mdiSecurity' | 'mdiCrane' | 'mdiRoad' | 'mdiRollerblade' | 'mdiCrosshairsQuestion' | 'mdiDiversify' | 'mdiBuildingColumns' | 'mdiScrewdriver' | 'mdiDotsSquare' | 'mdiHeatPump' | 'mdiLightbulb' | 'mdiTransmissionTowerApp' | 'mdiViewModule' | 'mdiCarCruiseControl' | 'mdiGridLarge' | 'mdiDataMatrix' | 'mdiRunFast' | 'mdiNotebook' | 'mdiLockOpen' | 'simpleGraphql' | 'simpleShadow' | 'simpleGoogleSheets' | 'octiconsPaintbrush' | 'peopleGroup' | 'plugZap' | 'zap' | 'shield' | 'building' | 'route' | 'rotateCcw' | 'trendingUp' | 'trendingUpArrow' | 'search' | 'bookOpen' | 'settings' | 'wrench' | 'grid3X3' | 'thermometer' | 'lightbulb' | 'network' | 'activity' | 'layers' | 'settings2' | 'database' | 'gauge' | 'barChart3' | 'brush' | 'users' | 'lock' | 'dollarSign';
+    icon:
+      | "battery"
+      | "mdiPowerPlugBattery"
+      | "mdiTransmissionTower"
+      | "mdiSecurity"
+      | "mdiCrane"
+      | "mdiRoad"
+      | "mdiRollerblade"
+      | "mdiCrosshairsQuestion"
+      | "mdiDiversify"
+      | "mdiBuildingColumns"
+      | "mdiScrewdriver"
+      | "mdiDotsSquare"
+      | "mdiHeatPump"
+      | "mdiLightbulb"
+      | "mdiTransmissionTowerApp"
+      | "mdiViewModule"
+      | "mdiCarCruiseControl"
+      | "mdiGridLarge"
+      | "mdiDataMatrix"
+      | "mdiRunFast"
+      | "mdiNotebook"
+      | "mdiLockOpen"
+      | "simpleGraphql"
+      | "simpleShadow"
+      | "simpleGoogleSheets"
+      | "octiconsPaintbrush"
+      | "peopleGroup"
+      | "plugZap"
+      | "zap"
+      | "shield"
+      | "building"
+      | "route"
+      | "rotateCcw"
+      | "trendingUp"
+      | "trendingUpArrow"
+      | "search"
+      | "bookOpen"
+      | "settings"
+      | "wrench"
+      | "grid3X3"
+      | "thermometer"
+      | "lightbulb"
+      | "network"
+      | "activity"
+      | "layers"
+      | "settings2"
+      | "database"
+      | "gauge"
+      | "barChart3"
+      | "brush"
+      | "users"
+      | "lock"
+      | "dollarSign";
     title: string;
     description: string;
     link?: string;
     docsUrl?: string;
   }
 
-  let activeTab = 'optimization';
+  let activeTab = "optimization";
 
   const featureCategories = {
     optimization: [
@@ -266,21 +319,21 @@
   };
 
   const tabs = [
-    { id: 'optimization', label: 'Optimization', count: featureCategories.optimization.length },
-    { id: 'applications', label: 'Applications', count: featureCategories.applications.length },
-    { id: 'analysis', label: 'Analysis', count: featureCategories.analysis.length },
-    { id: 'performance', label: 'Performance', count: featureCategories.performance.length },
+    { id: "optimization", label: "Optimization", count: featureCategories.optimization.length },
+    { id: "applications", label: "Applications", count: featureCategories.applications.length },
+    { id: "analysis", label: "Analysis", count: featureCategories.analysis.length },
+    { id: "performance", label: "Performance", count: featureCategories.performance.length },
   ];
 
   $: currentFeatures = featureCategories[activeTab] || [];
 
   // Carousel logic with responsive items per page
-  let windowWidth = typeof window !== 'undefined' ? window.innerWidth : 1024;
+  let windowWidth = typeof window !== "undefined" ? window.innerWidth : 1024;
   let currentPage = 0;
   let featuresPerPage = 12;
 
   function updateWindowSize() {
-    if (typeof window === 'undefined') return;
+    if (typeof window === "undefined") return;
     windowWidth = window.innerWidth;
 
     // Determine features per page based on breakpoints
@@ -303,8 +356,8 @@
 
   onMount(() => {
     updateWindowSize();
-    window.addEventListener('resize', updateWindowSize);
-    return () => window.removeEventListener('resize', updateWindowSize);
+    window.addEventListener("resize", updateWindowSize);
+    return () => window.removeEventListener("resize", updateWindowSize);
   });
 
   $: totalPages = Math.ceil(currentFeatures.length / featuresPerPage);
@@ -364,26 +417,25 @@
 </script>
 
 <section id="features" class="container py-24 sm:py-32">
-  <h2 class="text-lg text-primary text-center mb-2 tracking-wider">
-    Features
-  </h2>
+  <h2 class="text-lg text-primary text-center mb-2 tracking-wider">Features</h2>
 
-  <h2 class="text-3xl md:text-4xl text-center font-bold mb-4">
-    PyPSA Framework
-  </h2>
+  <h2 class="text-3xl md:text-4xl text-center font-bold mb-4">PyPSA Framework</h2>
 
   <h3 class="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-    An open-source Python framework for optimising modern power systems with conventional generators, renewable energy, storage, and multi-sector coupling - designed for researchers and planners.
+    An open-source Python framework for optimising modern power systems with conventional
+    generators, renewable energy, storage, and multi-sector coupling - designed for researchers and
+    planners.
   </h3>
 
   <!-- Tabs Navigation -->
   <div class="flex flex-wrap justify-center gap-2 mb-8">
     {#each tabs as tab}
       <button
-        class="px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 {activeTab === tab.id
+        class="px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 {activeTab ===
+        tab.id
           ? 'bg-primary text-primary-foreground shadow-lg shadow-primary/25'
           : 'bg-muted hover:bg-muted/80 text-muted-foreground hover:text-foreground'}"
-        onclick={() => activeTab = tab.id}
+        onclick={() => (activeTab = tab.id)}
       >
         {tab.label}
       </button>
@@ -392,87 +444,92 @@
 
   <!-- Features Grid -->
   <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 py-4">
-    {#key activeTab + '-' + currentPage}
+    {#key activeTab + "-" + currentPage}
       {#each displayedFeatures as { icon, title, description, docsUrl }, index}
         <div
-          class="transition-transform duration-300 {docsUrl ? 'hover:-translate-y-1 focus-visible:-translate-y-1 cursor-pointer' : ''}"
+          class="transition-transform duration-300 {docsUrl
+            ? 'hover:-translate-y-1 focus-visible:-translate-y-1 cursor-pointer'
+            : ''}"
           style={`animation-delay: ${index * 50}ms`}
           onclick={() => {
             if (docsUrl) {
-              window.open(docsUrl, '_blank', 'noopener,noreferrer');
+              window.open(docsUrl, "_blank", "noopener,noreferrer");
             }
           }}
           onkeydown={(e) => {
-            if ((e.key === 'Enter' || e.key === ' ') && docsUrl) {
-              window.open(docsUrl, '_blank', 'noopener,noreferrer');
+            if ((e.key === "Enter" || e.key === " ") && docsUrl) {
+              window.open(docsUrl, "_blank", "noopener,noreferrer");
             }
           }}
-          role={docsUrl ? 'button' : undefined}
+          role={docsUrl ? "button" : undefined}
           tabindex={docsUrl ? 0 : undefined}
         >
-        <Card
-          class="h-full bg-muted/50 dark:bg-card border border-border/50 shadow-lg shadow-black/10 dark:shadow-white/10 transition-all duration-300 rounded-2xl relative overflow-hidden group carousel-item flex flex-col {docsUrl ? 'hover:shadow-xl hover:shadow-black/20 dark:hover:shadow-white/20' : ''}"
-        >
-          <CardHeader class="flex justify-center items-center">
-            <CardTitle class="text-xl mb-2 flex items-center gap-3">
-              <div class="bg-gradient-to-br from-primary/30 to-primary/10 p-3 rounded-full flex-shrink-0">
-                {#if icon === 'mdiPowerPlugBattery'}
-                  <MdiIcon path={mdiPowerPlugBatteryOutline} class="size-7 text-primary" />
-                {:else if icon === 'mdiTransmissionTower'}
-                  <MdiIcon path={mdiTransmissionTower} class="size-7 text-primary" />
-                {:else if icon === 'mdiSecurity'}
-                  <MdiIcon path={mdiSecurity} class="size-7 text-primary" />
-                {:else if icon === 'mdiCrane'}
-                  <MdiIcon path={mdiCrane} class="size-7 text-primary" />
-                {:else if icon === 'mdiRoad'}
-                  <MdiIcon path={mdiRoad} class="size-7 text-primary" />
-                {:else if icon === 'mdiRollerblade'}
-                  <MdiIcon path={mdiRollerblade} class="size-7 text-primary" />
-                {:else if icon === 'mdiCrosshairsQuestion'}
-                  <MdiIcon path={mdiCrosshairsQuestion} class="size-7 text-primary" />
-                {:else if icon === 'mdiDiversify'}
-                  <MdiIcon path={mdiDiversify} class="size-7 text-primary" />
-                {:else if icon === 'mdiBuildingColumns'}
-                  <MdiIcon path={mdiBankOutline} class="size-7 text-primary" />
-                {:else if icon === 'mdiScrewdriver'}
-                  <MdiIcon path={mdiScrewdriver} class="size-7 text-primary" />
-                {:else if icon === 'mdiDotsSquare'}
-                  <MdiIcon path={mdiDotsSquare} class="size-7 text-primary" />
-                {:else if icon === 'mdiHeatPump'}
-                  <MdiIcon path={mdiHeatPump} class="size-7 text-primary" />
-                {:else if icon === 'mdiLightbulb'}
-                  <MdiIcon path={mdiLightbulb} class="size-7 text-primary" />
-                {:else if icon === 'mdiTransmissionTowerApp'}
-                  <MdiIcon path={mdiTransmissionTower} class="size-7 text-primary" />
-                {:else if icon === 'mdiViewModule'}
-                  <MdiIcon path={mdiViewModule} class="size-7 text-primary" />
-                {:else if icon === 'mdiCarCruiseControl'}
-                  <MdiIcon path={mdiCarCruiseControl} class="size-7 text-primary" />
-                {:else if icon === 'mdiGridLarge'}
-                  <MdiIcon path={mdiGridLarge} class="size-7 text-primary" />
-                {:else if icon === 'mdiDataMatrix'}
-                  <MdiIcon path={mdiDataMatrix} class="size-7 text-primary" />
-                {:else if icon === 'mdiRunFast'}
-                  <MdiIcon path={mdiRunFast} class="size-7 text-primary" />
-                {:else if icon === 'mdiNotebook'}
-                  <MdiIcon path={mdiNotebook} class="size-7 text-primary" />
-                {:else if icon === 'mdiLockOpen'}
-                  <MdiIcon path={mdiLockOpen} class="size-7 text-primary" />
-                {:else}
-                  <svelte:component
-                    this={iconMap[icon]}
-                    class="size-7 text-primary"
-                  />
-                {/if}
-              </div>
-              {title}
-            </CardTitle>
-          </CardHeader>
+          <Card
+            class="h-full bg-muted/50 dark:bg-card border border-border/50 shadow-lg shadow-black/10 dark:shadow-white/10 transition-all duration-300 rounded-2xl relative overflow-hidden group carousel-item flex flex-col {docsUrl
+              ? 'hover:shadow-xl hover:shadow-black/20 dark:hover:shadow-white/20'
+              : ''}"
+          >
+            <CardHeader class="flex justify-center items-center">
+              <CardTitle class="text-xl mb-2 flex items-center gap-3">
+                <div
+                  class="bg-gradient-to-br from-primary/30 to-primary/10 p-3 rounded-full flex-shrink-0"
+                >
+                  {#if icon === "mdiPowerPlugBattery"}
+                    <MdiIcon path={mdiPowerPlugBatteryOutline} class="size-7 text-primary" />
+                  {:else if icon === "mdiTransmissionTower"}
+                    <MdiIcon path={mdiTransmissionTower} class="size-7 text-primary" />
+                  {:else if icon === "mdiSecurity"}
+                    <MdiIcon path={mdiSecurity} class="size-7 text-primary" />
+                  {:else if icon === "mdiCrane"}
+                    <MdiIcon path={mdiCrane} class="size-7 text-primary" />
+                  {:else if icon === "mdiRoad"}
+                    <MdiIcon path={mdiRoad} class="size-7 text-primary" />
+                  {:else if icon === "mdiRollerblade"}
+                    <MdiIcon path={mdiRollerblade} class="size-7 text-primary" />
+                  {:else if icon === "mdiCrosshairsQuestion"}
+                    <MdiIcon path={mdiCrosshairsQuestion} class="size-7 text-primary" />
+                  {:else if icon === "mdiDiversify"}
+                    <MdiIcon path={mdiDiversify} class="size-7 text-primary" />
+                  {:else if icon === "mdiBuildingColumns"}
+                    <MdiIcon path={mdiBankOutline} class="size-7 text-primary" />
+                  {:else if icon === "mdiScrewdriver"}
+                    <MdiIcon path={mdiScrewdriver} class="size-7 text-primary" />
+                  {:else if icon === "mdiDotsSquare"}
+                    <MdiIcon path={mdiDotsSquare} class="size-7 text-primary" />
+                  {:else if icon === "mdiHeatPump"}
+                    <MdiIcon path={mdiHeatPump} class="size-7 text-primary" />
+                  {:else if icon === "mdiLightbulb"}
+                    <MdiIcon path={mdiLightbulb} class="size-7 text-primary" />
+                  {:else if icon === "mdiTransmissionTowerApp"}
+                    <MdiIcon path={mdiTransmissionTower} class="size-7 text-primary" />
+                  {:else if icon === "mdiViewModule"}
+                    <MdiIcon path={mdiViewModule} class="size-7 text-primary" />
+                  {:else if icon === "mdiCarCruiseControl"}
+                    <MdiIcon path={mdiCarCruiseControl} class="size-7 text-primary" />
+                  {:else if icon === "mdiGridLarge"}
+                    <MdiIcon path={mdiGridLarge} class="size-7 text-primary" />
+                  {:else if icon === "mdiDataMatrix"}
+                    <MdiIcon path={mdiDataMatrix} class="size-7 text-primary" />
+                  {:else if icon === "mdiRunFast"}
+                    <MdiIcon path={mdiRunFast} class="size-7 text-primary" />
+                  {:else if icon === "mdiNotebook"}
+                    <MdiIcon path={mdiNotebook} class="size-7 text-primary" />
+                  {:else if icon === "mdiLockOpen"}
+                    <MdiIcon path={mdiLockOpen} class="size-7 text-primary" />
+                  {:else}
+                    <svelte:component this={iconMap[icon]} class="size-7 text-primary" />
+                  {/if}
+                </div>
+                {title}
+              </CardTitle>
+            </CardHeader>
 
-          <CardContent class="text-muted-foreground text-center px-6 flex-grow flex flex-col justify-between">
-            <p class="text-sm leading-relaxed">{description}</p>
-          </CardContent>
-        </Card>
+            <CardContent
+              class="text-muted-foreground text-center px-6 flex-grow flex flex-col justify-between"
+            >
+              <p class="text-sm leading-relaxed">{description}</p>
+            </CardContent>
+          </Card>
         </div>
       {/each}
     {/key}
@@ -505,9 +562,17 @@
 
   <!-- Documentation CTA -->
   <div class="mt-8 flex justify-center">
-    <Button href={DOCS_BASE_URL} target="_blank" rel="noopener noreferrer" class="h-12 px-8 bg-primary hover:bg-primary/90 text-white font-medium rounded-full group/arrow transition-colors duration-300">
+    <Button
+      href={DOCS_BASE_URL}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="h-12 px-8 bg-primary hover:bg-primary/90 text-white font-medium rounded-full group/arrow transition-colors duration-300"
+    >
       Explore Documentation
-      <ArrowRight class="ml-2 group-hover/arrow:translate-x-1 transition-transform duration-300" style="width: 1rem; height: 1rem;" />
+      <ArrowRight
+        class="ml-2 group-hover/arrow:translate-x-1 transition-transform duration-300"
+        style="width: 1rem; height: 1rem;"
+      />
     </Button>
   </div>
 </section>

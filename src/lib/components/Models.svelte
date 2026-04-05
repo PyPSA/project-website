@@ -4,13 +4,13 @@
   import { BookOpen, ArrowRight, ArrowLeft, Map } from "lucide-svelte";
   import GithubIcon from "$lib/icons/GithubIcon.svelte";
   import { onMount, onDestroy } from "svelte";
-  import { base } from '$app/paths';
-  import { DOCS_BASE_URL } from '$lib/config';
+  import { base } from "$app/paths";
+  import { DOCS_BASE_URL } from "$lib/config";
 
   let isDark = false;
   let darkModeObserver: MutationObserver | null = null;
 
-  interface ProjectProps{
+  interface ProjectProps {
     name: string;
     description: string;
     image: string;
@@ -27,55 +27,64 @@
   }
 
   const projects: ProjectProps[] = [
+    {
+      name: "PyPSA-Earth",
+      description:
+        "A flexible Python-based open optimisation model to study energy system futures around the world",
+      image: `${base}/img/projects/pypsa-earth.webp`,
+      githubUrl: "https://github.com/pypsa-meets-earth/pypsa-earth",
+      docsUrl: "https://pypsa-earth.readthedocs.io/en/latest/",
+      institutions: [
         {
-          name: "PyPSA-Earth",
-          description: "A flexible Python-based open optimisation model to study energy system futures around the world",
-          image: `${base}/img/projects/pypsa-earth.webp`,
-          githubUrl: "https://github.com/pypsa-meets-earth/pypsa-earth",
-          docsUrl: "https://pypsa-earth.readthedocs.io/en/latest/",
-          institutions: [{
-            name: "PyPSA meets Earth",
-            logo: `${base}/img/institutions/pypsa-meets-earth.webp`,
-            url: "https://pypsa-meets-earth.github.io/"
-          }]
+          name: "PyPSA meets Earth",
+          logo: `${base}/img/institutions/pypsa-meets-earth.webp`,
+          url: "https://pypsa-meets-earth.github.io/",
         },
+      ],
+    },
+    {
+      name: "PyPSA-Eur",
+      description: "A Sector-Coupled Open Optimisation Model of the European Energy System",
+      image: `${base}/img/projects/pypsa-eur.webp`,
+      githubUrl: "https://github.com/PyPSA/pypsa-eur",
+      docsUrl: "https://pypsa-eur.readthedocs.io/",
+      exploreUrl: `${base}/explore/europe-light.html`,
+      exploreUrlDark: `${base}/explore/europe-dark.html`,
+      institutions: [
         {
-          name: "PyPSA-Eur",
-          description: "A Sector-Coupled Open Optimisation Model of the European Energy System",
-          image: `${base}/img/projects/pypsa-eur.webp`,
-          githubUrl: "https://github.com/PyPSA/pypsa-eur",
-          docsUrl: "https://pypsa-eur.readthedocs.io/",
-          exploreUrl: `${base}/explore/europe-light.html`,
-          exploreUrlDark: `${base}/explore/europe-dark.html`,
-          institutions: [{
-            name: "TU Berlin",
-            logo: `${base}/img/institutions/tu-berlin.svg`,
-            url: "https://www.tu.berlin/en/ensys"
-          }]
+          name: "TU Berlin",
+          logo: `${base}/img/institutions/tu-berlin.svg`,
+          url: "https://www.tu.berlin/en/ensys",
         },
+      ],
+    },
+    {
+      name: "PyPSA-USA",
+      description: "An Open-Source Energy System Optimization Model for the United States",
+      image: `${base}/img/projects/pypsa-usa.webp`,
+      githubUrl: "https://github.com/PyPSA/pypsa-usa",
+      docsUrl: "https://pypsa-usa.readthedocs.io/en/latest/",
+      institutions: [
         {
-          name: "PyPSA-USA",
-          description: "An Open-Source Energy System Optimization Model for the United States",
-          image: `${base}/img/projects/pypsa-usa.webp`,
-          githubUrl: "https://github.com/PyPSA/pypsa-usa",
-          docsUrl: "https://pypsa-usa.readthedocs.io/en/latest/",
-          institutions: [{
-            name: "Stanford University",
-            logo: `${base}/img/institutions/stanford-university-seeklogo.svg`,
-            url: "https://ines.stanford.edu/"
-          }]
+          name: "Stanford University",
+          logo: `${base}/img/institutions/stanford-university-seeklogo.svg`,
+          url: "https://ines.stanford.edu/",
         },
+      ],
+    },
+    {
+      name: "PyPSA-DE",
+      description: "High resolution, sector-coupled model of the German Energy System",
+      image: `${base}/img/projects/pypsa-de.webp`,
+      githubUrl: "https://github.com/PyPSA/pypsa-de",
+      institutions: [
         {
-          name: "PyPSA-DE",
-          description: "High resolution, sector-coupled model of the German Energy System",
-          image: `${base}/img/projects/pypsa-de.webp`,
-          githubUrl: "https://github.com/PyPSA/pypsa-de",
-          institutions: [{
-            name: "TU Berlin",
-            logo: `${base}/img/institutions/tu-berlin.svg`,
-            url: "https://www.tu.berlin/en/ensys"
-          }]
-        }
+          name: "TU Berlin",
+          logo: `${base}/img/institutions/tu-berlin.svg`,
+          url: "https://www.tu.berlin/en/ensys",
+        },
+      ],
+    },
   ];
 
   const accentColor = "#2993B5";
@@ -93,10 +102,10 @@
   let isScrolling = false;
 
   // Track window width for responsive behavior
-  let windowWidth = typeof window !== 'undefined' ? window.innerWidth : 1024;
+  let windowWidth = typeof window !== "undefined" ? window.innerWidth : 1024;
 
   function updateWindowSize() {
-    if (typeof window === 'undefined') return;
+    if (typeof window === "undefined") return;
     windowWidth = window.innerWidth;
 
     if (windowWidth < 640) {
@@ -146,16 +155,16 @@
 
   onMount(() => {
     updateWindowSize();
-    window.addEventListener('resize', updateWindowSize);
+    window.addEventListener("resize", updateWindowSize);
 
     // Track dark mode by watching the <html> class (set by mode-watcher)
-    isDark = document.documentElement.classList.contains('dark');
+    isDark = document.documentElement.classList.contains("dark");
     darkModeObserver = new MutationObserver(() => {
-      isDark = document.documentElement.classList.contains('dark');
+      isDark = document.documentElement.classList.contains("dark");
     });
     darkModeObserver.observe(document.documentElement, {
       attributes: true,
-      attributeFilter: ['class'],
+      attributeFilter: ["class"],
     });
 
     // Setup intersection observer for lazy loading iframes
@@ -167,7 +176,7 @@
           }
         });
       },
-      { rootMargin: '100px' } // Start loading 100px before section is visible
+      { rootMargin: "100px" } // Start loading 100px before section is visible
     );
 
     if (sectionElement) {
@@ -176,7 +185,7 @@
 
     // Add wheel event listener for horizontal scrolling
     if (carouselElement) {
-      carouselElement.addEventListener('wheel', handleWheel, { passive: false });
+      carouselElement.addEventListener("wheel", handleWheel, { passive: false });
     }
 
     // Start auto-play carousel every 5 seconds
@@ -187,12 +196,12 @@
     }, 5000);
 
     return () => {
-      window.removeEventListener('resize', updateWindowSize);
+      window.removeEventListener("resize", updateWindowSize);
       if (sectionElement) {
         observer.unobserve(sectionElement);
       }
       if (carouselElement) {
-        carouselElement.removeEventListener('wheel', handleWheel);
+        carouselElement.removeEventListener("wheel", handleWheel);
       }
       darkModeObserver?.disconnect();
     };
@@ -204,7 +213,7 @@
     }
   });
 
-  $: if (typeof window !== 'undefined') {
+  $: if (typeof window !== "undefined") {
     updateWindowSize();
   }
 
@@ -251,7 +260,6 @@
       stopAutoPlay();
     }
   }
-
 </script>
 
 <section id="implementations" class="container py-24 sm:py-32" bind:this={sectionElement}>
@@ -261,9 +269,7 @@
       Implementations
     </h2>
 
-    <h2 class="text-3xl md:text-4xl text-center font-bold mb-4">
-      PyPSA Models
-    </h2>
+    <h2 class="text-3xl md:text-4xl text-center font-bold mb-4">PyPSA Models</h2>
 
     <h3 class="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
       Open Energy System Models built with PyPSA
@@ -271,154 +277,167 @@
 
     <div class="relative py-8 overflow-x-hidden overflow-y-visible" bind:this={carouselElement}>
       {#if expandedProject === null}
-      <div class="carousel-container pt-4 pb-2" style="transform: translateX(-{carouselIndex * (100 / visibleCount)}%); transition: {isTransitioning ? 'transform 0.5s ease-in-out' : 'none'}">
-        {#each [...projects, ...projects] as project, idx (project.name + '-' + idx)}
-        <div class="carousel-item" style="width: {100 / visibleCount}%">
-          <Card
-            class="h-full bg-muted/50 dark:bg-card border border-border/50 shadow-lg shadow-black/10 dark:shadow-white/10 rounded-2xl relative overflow-hidden mx-3"
-          >
-            {#if project.exploreUrl}
-              <button
-                type="button"
-                class="absolute bottom-3 right-3 p-2 rounded-full transition-all duration-300 opacity-60 hover:opacity-100 z-10 explore-button"
-                on:mouseenter={(e) => {
-                  const mapIcons = e.currentTarget.querySelectorAll('.map-icon');
-                  mapIcons.forEach(icon => icon.style.color = accentColor);
-                }}
-                on:mouseleave={(e) => {
-                  const mapIcons = e.currentTarget.querySelectorAll('.map-icon');
-                  mapIcons.forEach(icon => icon.style.color = '');
-                }}
-                on:click={(e) => {
-                  e.preventDefault();
-                  e.stopPropagation();
-                  toggleExpand(project.name);
-                }}
-                title="Explore {project.name}"
+        <div
+          class="carousel-container pt-4 pb-2"
+          style="transform: translateX(-{carouselIndex *
+            (100 / visibleCount)}%); transition: {isTransitioning
+            ? 'transform 0.5s ease-in-out'
+            : 'none'}"
+        >
+          {#each [...projects, ...projects] as project, idx (project.name + "-" + idx)}
+            <div class="carousel-item" style="width: {100 / visibleCount}%">
+              <Card
+                class="h-full bg-muted/50 dark:bg-card border border-border/50 shadow-lg shadow-black/10 dark:shadow-white/10 rounded-2xl relative overflow-hidden mx-3"
               >
-                <span class="relative inline-flex">
-                  <span class="absolute inline-flex h-full w-full hover-ping">
-                    <Map class="size-6 map-icon" />
-                  </span>
-                  <Map class="size-6 relative map-icon transition-colors duration-300" />
-                </span>
-              </button>
-            {/if}
-            <CardHeader class="flex justify-center items-center pb-4">
-                <div class="w-full h-48 mb-4 rounded-lg overflow-hidden flex items-center justify-center relative">
-                  <img
-                    src={project.image}
-                    alt={project.name}
-                    class="max-w-full max-h-full object-contain transition-all duration-300"
-                  />
-                </div>
-                <CardTitle class="text-xl mb-2 text-center">{project.name}</CardTitle>
-              </CardHeader>
-
-              <CardContent class="text-muted-foreground text-center px-6 pb-6">
-                <p class="text-sm leading-relaxed mb-6">{project.description}</p>
-
-                {#if project.docsUrl}
-                  <div class="flex justify-center gap-2 mb-4">
-                    <Button
-                      asChild
-                      variant="outline"
-                      size="sm"
-                      class="flex items-center gap-2 accent-hover-only"
-                      style={accentStyle(project.name)}
-                    >
-                      <a
-                        href={project.docsUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="flex items-center gap-2 w-full h-full"
-                      >
-                        <BookOpen class="size-4" />
-                        Docs
-                      </a>
-                    </Button>
-                    <Button
-                      asChild
-                      variant="outline"
-                      size="sm"
-                      class="flex items-center gap-2 accent-hover-only"
-                      style={accentStyle(project.name)}
-                    >
-                      <a
-                        href={project.githubUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="flex items-center gap-2 w-full h-full"
-                      >
-                        <GithubIcon class_="size-4" />
-                        GitHub
-                      </a>
-                    </Button>
-                  </div>
-                {:else}
-                  <div class="flex justify-center mb-4">
-                    <Button
-                      asChild
-                      variant="outline"
-                      size="sm"
-                      class="flex items-center gap-2 accent-hover-only"
-                      style={accentStyle(project.name)}
-                    >
-                      <a
-                        href={project.githubUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="flex items-center gap-2 w-full h-full"
-                      >
-                        <GithubIcon class_="size-4" />
-                        GitHub
-                      </a>
-                    </Button>
-                  </div>
+                {#if project.exploreUrl}
+                  <button
+                    type="button"
+                    class="absolute bottom-3 right-3 p-2 rounded-full transition-all duration-300 opacity-60 hover:opacity-100 z-10 explore-button"
+                    on:mouseenter={(e) => {
+                      const mapIcons = e.currentTarget.querySelectorAll(".map-icon");
+                      mapIcons.forEach((icon) => (icon.style.color = accentColor));
+                    }}
+                    on:mouseleave={(e) => {
+                      const mapIcons = e.currentTarget.querySelectorAll(".map-icon");
+                      mapIcons.forEach((icon) => (icon.style.color = ""));
+                    }}
+                    on:click={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      toggleExpand(project.name);
+                    }}
+                    title="Explore {project.name}"
+                  >
+                    <span class="relative inline-flex">
+                      <span class="absolute inline-flex h-full w-full hover-ping">
+                        <Map class="size-6 map-icon" />
+                      </span>
+                      <Map class="size-6 relative map-icon transition-colors duration-300" />
+                    </span>
+                  </button>
                 {/if}
+                <CardHeader class="flex justify-center items-center pb-4">
+                  <div
+                    class="w-full h-48 mb-4 rounded-lg overflow-hidden flex items-center justify-center relative"
+                  >
+                    <img
+                      src={project.image}
+                      alt={project.name}
+                      class="max-w-full max-h-full object-contain transition-all duration-300"
+                    />
+                  </div>
+                  <CardTitle class="text-xl mb-2 text-center">{project.name}</CardTitle>
+                </CardHeader>
 
-                {#if project.institutions && project.institutions.length > 0}
-                  <div class="flex justify-center mt-2">
-                    <div class="inline-flex items-center gap-1 px-2 py-0 bg-muted/50 border border-border/50 rounded-lg">
-                      <span class="text-xs text-muted-foreground">Led by</span>
-                      {#each project.institutions as institution, idx}
+                <CardContent class="text-muted-foreground text-center px-6 pb-6">
+                  <p class="text-sm leading-relaxed mb-6">{project.description}</p>
+
+                  {#if project.docsUrl}
+                    <div class="flex justify-center gap-2 mb-4">
+                      <Button
+                        asChild
+                        variant="outline"
+                        size="sm"
+                        class="flex items-center gap-2 accent-hover-only"
+                        style={accentStyle(project.name)}
+                      >
                         <a
-                          href={institution.url}
+                          href={project.docsUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          class="flex items-center gap-2 transition-opacity hover:opacity-70"
-                          title={institution.name}
+                          class="flex items-center gap-2 w-full h-full"
                         >
-                          <span class="text-xs text-muted-foreground">{institution.name}</span>
-                          <img
-                            src={institution.logo}
-                            alt={institution.name}
-                            class="w-8 h-8 object-contain"
-                            on:error={(e) => {
-                              console.error('Institution logo failed to load:', institution.logo);
-                              e.target.style.display = 'none';
-                            }}
-                          />
+                          <BookOpen class="size-4" />
+                          Docs
                         </a>
-                        {#if idx < project.institutions.length - 1}
-                          <span class="text-xs text-muted-foreground">&</span>
-                        {/if}
-                      {/each}
+                      </Button>
+                      <Button
+                        asChild
+                        variant="outline"
+                        size="sm"
+                        class="flex items-center gap-2 accent-hover-only"
+                        style={accentStyle(project.name)}
+                      >
+                        <a
+                          href={project.githubUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="flex items-center gap-2 w-full h-full"
+                        >
+                          <GithubIcon class_="size-4" />
+                          GitHub
+                        </a>
+                      </Button>
                     </div>
-                  </div>
-                {/if}
-              </CardContent>
-            </Card>
+                  {:else}
+                    <div class="flex justify-center mb-4">
+                      <Button
+                        asChild
+                        variant="outline"
+                        size="sm"
+                        class="flex items-center gap-2 accent-hover-only"
+                        style={accentStyle(project.name)}
+                      >
+                        <a
+                          href={project.githubUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="flex items-center gap-2 w-full h-full"
+                        >
+                          <GithubIcon class_="size-4" />
+                          GitHub
+                        </a>
+                      </Button>
+                    </div>
+                  {/if}
+
+                  {#if project.institutions && project.institutions.length > 0}
+                    <div class="flex justify-center mt-2">
+                      <div
+                        class="inline-flex items-center gap-1 px-2 py-0 bg-muted/50 border border-border/50 rounded-lg"
+                      >
+                        <span class="text-xs text-muted-foreground">Led by</span>
+                        {#each project.institutions as institution, idx}
+                          <a
+                            href={institution.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="flex items-center gap-2 transition-opacity hover:opacity-70"
+                            title={institution.name}
+                          >
+                            <span class="text-xs text-muted-foreground">{institution.name}</span>
+                            <img
+                              src={institution.logo}
+                              alt={institution.name}
+                              class="w-8 h-8 object-contain"
+                              on:error={(e) => {
+                                console.error("Institution logo failed to load:", institution.logo);
+                                e.target.style.display = "none";
+                              }}
+                            />
+                          </a>
+                          {#if idx < project.institutions.length - 1}
+                            <span class="text-xs text-muted-foreground">&</span>
+                          {/if}
+                        {/each}
+                      </div>
+                    </div>
+                  {/if}
+                </CardContent>
+              </Card>
+            </div>
+          {/each}
         </div>
-        {/each}
-      </div>
       {/if}
 
       <!-- Expanded view - keep iframes loaded but hidden -->
       {#if shouldLoadIframes}
         {#each projects as project}
           {#if project.exploreUrl}
-            <div class="w-full px-3" style="display: {expandedProject === project.name ? 'block' : 'none'};">
+            <div
+              class="w-full px-3"
+              style="display: {expandedProject === project.name ? 'block' : 'none'};"
+            >
               <Card
                 class="w-full bg-muted/50 dark:bg-card border border-border/50 shadow-lg shadow-black/10 dark:shadow-white/10 rounded-2xl relative overflow-hidden"
               >
@@ -439,7 +458,9 @@
                 </div>
 
                 <iframe
-                  src={isDark && project.exploreUrlDark ? project.exploreUrlDark : project.exploreUrl}
+                  src={isDark && project.exploreUrlDark
+                    ? project.exploreUrlDark
+                    : project.exploreUrl}
                   title="{project.name} Explorer"
                   class="w-full h-[800px] border-0 rounded-2xl"
                 ></iframe>
@@ -455,13 +476,10 @@
       <div class="flex justify-center gap-2 mt-2">
         {#each projects as project, index}
           {@const normalizedIndex = carouselIndex % projects.length}
-          {@const isInRange =
-            index >= normalizedIndex && index < normalizedIndex + visibleCount
-          }
+          {@const isInRange = index >= normalizedIndex && index < normalizedIndex + visibleCount}
           {@const isWrappedVisible =
             normalizedIndex + visibleCount > projects.length &&
-            index < (normalizedIndex + visibleCount) % projects.length
-          }
+            index < (normalizedIndex + visibleCount) % projects.length}
           {@const isVisible = isInRange || isWrappedVisible}
           <button
             type="button"
@@ -489,8 +507,8 @@
             e.target.style.borderColor = accentColor;
           }}
           on:mouseleave={(e) => {
-            e.target.style.backgroundColor = '';
-            e.target.style.borderColor = '';
+            e.target.style.backgroundColor = "";
+            e.target.style.borderColor = "";
           }}
         >
           <ArrowLeft class="size-4" />
@@ -509,8 +527,8 @@
             e.target.style.borderColor = accentColor;
           }}
           on:mouseleave={(e) => {
-            e.target.style.backgroundColor = '';
-            e.target.style.borderColor = '';
+            e.target.style.backgroundColor = "";
+            e.target.style.borderColor = "";
           }}
         >
           <ArrowRight class="size-4" />
@@ -527,7 +545,10 @@
           class="h-12 px-8 bg-[#2993B5] hover:bg-[#237a92] text-white font-medium rounded-full group/arrow transition-colors duration-300"
         >
           Find More Models
-          <ArrowRight class="ml-2 group-hover/arrow:translate-x-1 transition-transform duration-300" style="width: 1rem; height: 1rem;" />
+          <ArrowRight
+            class="ml-2 group-hover/arrow:translate-x-1 transition-transform duration-300"
+            style="width: 1rem; height: 1rem;"
+          />
         </Button>
       </div>
     {/if}
@@ -536,7 +557,10 @@
 
 <style>
   :global(.accent-hover-only) {
-    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    transition:
+      background-color 0.3s ease,
+      border-color 0.3s ease,
+      color 0.3s ease;
   }
 
   :global(.accent-hover-only:hover) {
@@ -573,10 +597,10 @@
       transform: scale(1);
       opacity: 0.75;
     }
-    75%, 100% {
+    75%,
+    100% {
       transform: scale(1.5);
       opacity: 0;
     }
   }
-
 </style>

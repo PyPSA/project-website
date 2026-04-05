@@ -13,13 +13,12 @@
   import GithubIcon from "$lib/icons/GithubIcon.svelte";
   import DiscordIcon from "$lib/icons/DiscordIcon.svelte";
   import ToggleTheme from "$lib/components/ToggleTheme.svelte";
-  import { DOCS_BASE_URL } from '$lib/config';
+  import { DOCS_BASE_URL } from "$lib/config";
 
   interface RouteProps {
     href: string;
     label: string;
   }
-
 
   const routeList: RouteProps[] = [
     { href: "#features", label: "Features" },
@@ -27,7 +26,6 @@
     { href: "#implementations", label: "Models" },
     { href: DOCS_BASE_URL, label: "Documentation" },
   ];
-
 
   let isOpen = false;
   let activeSection = "";
@@ -56,12 +54,12 @@
   }
 
   // Add scroll listener when component mounts
-  import { onMount } from 'svelte';
+  import { onMount } from "svelte";
 
   onMount(() => {
     updateActiveSection();
-    window.addEventListener('scroll', updateActiveSection);
-    return () => window.removeEventListener('scroll', updateActiveSection);
+    window.addEventListener("scroll", updateActiveSection);
+    return () => window.removeEventListener("scroll", updateActiveSection);
   });
 </script>
 
@@ -69,7 +67,11 @@
   class="w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky z-40 rounded-2xl flex justify-between items-center p-2 glass-morphism"
 >
   <a href="/" class="font-bold text-lg flex items-center">
-    <img src="https://raw.githubusercontent.com/PyPSA/PyPSA/master/docs/assets/logo/logo.svg" alt="PyPSA Logo" class="w-9 h-9 mr-2" />
+    <img
+      src="https://raw.githubusercontent.com/PyPSA/PyPSA/master/docs/assets/logo/logo.svg"
+      alt="PyPSA Logo"
+      class="w-9 h-9 mr-2"
+    />
     PyPSA
   </a>
 
@@ -80,12 +82,19 @@
         <Menu on:click={() => (isOpen = true)} class="cursor-pointer" />
       </SheetTrigger>
 
-      <SheetContent side="left" class="flex flex-col justify-between rounded-tr-2xl rounded-br-2xl bg-card">
+      <SheetContent
+        side="left"
+        class="flex flex-col justify-between rounded-tr-2xl rounded-br-2xl bg-card"
+      >
         <div>
           <SheetHeader class="mb-4 ml-4">
             <SheetTitle class="flex items-center">
               <a href="/" class="flex items-center">
-                <img src="https://raw.githubusercontent.com/PyPSA/PyPSA/master/docs/assets/logo/logo.svg" alt="PyPSA Logo" class="size-9 mr-2" />
+                <img
+                  src="https://raw.githubusercontent.com/PyPSA/PyPSA/master/docs/assets/logo/logo.svg"
+                  alt="PyPSA Logo"
+                  class="size-9 mr-2"
+                />
                 PyPSA
               </a>
             </SheetTitle>
@@ -93,10 +102,22 @@
 
           <div class="flex flex-col gap-2">
             {#each routeList as { href, label }}
-              {@const sectionId = href.replace('#', '')}
-              {@const isExternal = href.startsWith('http')}
-              <a on:click={() => (isOpen = false)} {href} target={isExternal ? '_blank' : undefined} rel={isExternal ? 'noopener noreferrer' : undefined}>
-                <Button variant="ghost" class="justify-start text-base w-full transition-all duration-300 {isExternal ? 'hover:bg-[#098754] hover:text-white' : 'hover:bg-primary hover:text-primary-foreground'} {activeSection === sectionId ? 'bg-primary/10 text-primary border border-primary/20' : ''}">
+              {@const sectionId = href.replace("#", "")}
+              {@const isExternal = href.startsWith("http")}
+              <a
+                on:click={() => (isOpen = false)}
+                {href}
+                target={isExternal ? "_blank" : undefined}
+                rel={isExternal ? "noopener noreferrer" : undefined}
+              >
+                <Button
+                  variant="ghost"
+                  class="justify-start text-base w-full transition-all duration-300 {isExternal
+                    ? 'hover:bg-[#098754] hover:text-white'
+                    : 'hover:bg-primary hover:text-primary-foreground'} {activeSection === sectionId
+                    ? 'bg-primary/10 text-primary border border-primary/20'
+                    : ''}"
+                >
                   {label}
                   {#if isExternal}
                     <ExternalLink class="ml-1 size-3" />
@@ -117,9 +138,27 @@
   <div class="hidden lg:flex items-center gap-1">
     <!-- Navigation Links -->
     {#each routeList as { href, label }}
-      {@const sectionId = href.replace('#', '')}
-      {@const isExternal = href.startsWith('http')}
-      <a {href} target={isExternal ? '_blank' : undefined} rel={isExternal ? 'noopener noreferrer' : undefined} class="{buttonVariants({ variant: "ghost", size: "default" })} transition-all duration-300 {activeSection === sectionId && !isExternal ? 'bg-primary/10 text-primary border border-primary/20' : ''}" style={isExternal ? 'transition: all 0.3s;' : ''} on:mouseenter={(e) => isExternal && (e.currentTarget.style.backgroundColor = '#098754', e.currentTarget.style.color = 'white')} on:mouseleave={(e) => isExternal && (e.currentTarget.style.backgroundColor = '', e.currentTarget.style.color = '')}>
+      {@const sectionId = href.replace("#", "")}
+      {@const isExternal = href.startsWith("http")}
+      <a
+        {href}
+        target={isExternal ? "_blank" : undefined}
+        rel={isExternal ? "noopener noreferrer" : undefined}
+        class="{buttonVariants({
+          variant: 'ghost',
+          size: 'default',
+        })} transition-all duration-300 {activeSection === sectionId && !isExternal
+          ? 'bg-primary/10 text-primary border border-primary/20'
+          : ''}"
+        style={isExternal ? "transition: all 0.3s;" : ""}
+        on:mouseenter={(e) =>
+          isExternal &&
+          ((e.currentTarget.style.backgroundColor = "#098754"),
+          (e.currentTarget.style.color = "white"))}
+        on:mouseleave={(e) =>
+          isExternal &&
+          ((e.currentTarget.style.backgroundColor = ""), (e.currentTarget.style.color = ""))}
+      >
         {label}
         {#if isExternal}
           <ExternalLink class="ml-1 size-3" />
@@ -134,7 +173,10 @@
       aria-label="Join Discord"
       href="https://discord.gg/AnuJBk23FU"
       target="_blank"
-      class="{buttonVariants({ variant: 'ghost', size: 'sm' })} hover:bg-primary hover:text-primary-foreground"
+      class="{buttonVariants({
+        variant: 'ghost',
+        size: 'sm',
+      })} hover:bg-primary hover:text-primary-foreground"
     >
       <DiscordIcon class="size-5" />
     </a>
@@ -142,7 +184,10 @@
       aria-label="View on GitHub"
       href="https://github.com/pypsa"
       target="_blank"
-      class="{buttonVariants({ variant: 'ghost', size: 'sm' })} hover:bg-primary hover:text-primary-foreground"
+      class="{buttonVariants({
+        variant: 'ghost',
+        size: 'sm',
+      })} hover:bg-primary hover:text-primary-foreground"
     >
       <GithubIcon class_="size-5" />
     </a>
