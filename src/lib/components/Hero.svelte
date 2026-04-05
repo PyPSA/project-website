@@ -1,18 +1,9 @@
 <script lang="ts">
     import { Badge } from "$lib/components/ui/badge";
     import { Button } from "$lib/components/ui/button";
-    import { ArrowRight, Github } from "lucide-svelte";
-    import { mode } from "mode-watcher";
-    import { onMount } from 'svelte';
+    import { ArrowRight } from "lucide-svelte";
+    import GithubIcon from "$lib/icons/GithubIcon.svelte";
     import { DOCS_BASE_URL } from '$lib/config';
-
-    let imageSrc = 'hero-image-light.jpg';
-
-    onMount(() => {
-        mode.subscribe(currentMode => {
-            imageSrc = currentMode === 'dark' ? 'hero-image-dark.jpg' : 'hero-image-light.jpg';
-        });
-    });
 
 </script>
 
@@ -62,7 +53,7 @@
                     variant="secondary"
                     class="w-full md:w-auto font-bold transition-colors hover:bg-[#098754] hover:text-white !flex items-center justify-center gap-2"
                 >
-                    <Github class="size-5" />
+                    <GithubIcon class_="size-5" />
                     GitHub Repository
                 </Button>
             </div>

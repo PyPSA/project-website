@@ -1,13 +1,14 @@
 <script lang="ts">
   import { Card, CardContent, CardHeader, CardTitle } from "$lib/components/ui/card";
   import { Button } from "$lib/components/ui/button";
-  import { BookOpen, ArrowRight, ArrowLeft, Map, Github } from "lucide-svelte";
+  import { BookOpen, ArrowRight, ArrowLeft, Map } from "lucide-svelte";
+  import GithubIcon from "$lib/icons/GithubIcon.svelte";
   import { onMount, onDestroy } from "svelte";
-  import { mode } from "mode-watcher";
   import { base } from '$app/paths';
   import { DOCS_BASE_URL } from '$lib/config';
 
-  $: isDark = $mode === 'dark';
+  let isDark = false;
+  let darkModeObserver: MutationObserver | null = null;
 
   interface ProjectProps{
     name: string;
@@ -147,6 +148,16 @@
     updateWindowSize();
     window.addEventListener('resize', updateWindowSize);
 
+    // Track dark mode by watching the <html> class (set by mode-watcher)
+    isDark = document.documentElement.classList.contains('dark');
+    darkModeObserver = new MutationObserver(() => {
+      isDark = document.documentElement.classList.contains('dark');
+    });
+    darkModeObserver.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['class'],
+    });
+
     // Setup intersection observer for lazy loading iframes
     const observer = new IntersectionObserver(
       (entries) => {
@@ -183,6 +194,7 @@
       if (carouselElement) {
         carouselElement.removeEventListener('wheel', handleWheel);
       }
+      darkModeObserver?.disconnect();
     };
   });
 
@@ -338,7 +350,7 @@
                         rel="noopener noreferrer"
                         class="flex items-center gap-2 w-full h-full"
                       >
-                        <Github class="size-4" />
+                        <GithubIcon class_="size-4" />
                         GitHub
                       </a>
                     </Button>
@@ -358,7 +370,7 @@
                         rel="noopener noreferrer"
                         class="flex items-center gap-2 w-full h-full"
                       >
-                        <Github class="size-4" />
+                        <GithubIcon class_="size-4" />
                         GitHub
                       </a>
                     </Button>

@@ -1,7 +1,8 @@
 <script lang="ts">
   import { Card, CardContent, CardHeader, CardTitle } from "$lib/components/ui/card";
   import { Button } from "$lib/components/ui/button";
-  import { BookOpen, ArrowRight, ArrowLeft, Globe, Github } from "lucide-svelte";
+  import { BookOpen, ArrowRight, ArrowLeft, Globe } from "lucide-svelte";
+  import GithubIcon from "$lib/icons/GithubIcon.svelte";
   import { base } from '$app/paths';
   import { onMount, onDestroy } from 'svelte';
   import { fly } from 'svelte/transition';
@@ -334,7 +335,7 @@
                       rel="noopener noreferrer"
                       class="flex items-center gap-2 w-full h-full"
                     >
-                      <Github class="size-4" />
+                      <GithubIcon class_="size-4" />
                       GitHub
                     </a>
                   </Button>

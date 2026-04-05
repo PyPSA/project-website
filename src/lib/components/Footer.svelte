@@ -1,6 +1,8 @@
 <script lang="ts">
   import { Separator } from "$lib/components/ui/separator";
-  import { Github, Youtube } from "lucide-svelte";
+  import GithubIcon from "$lib/icons/GithubIcon.svelte";
+  import MdiIcon from "$lib/components/MdiIcon.svelte";
+  import { mdiYoutube } from "@mdi/js";
 </script>
 
 <footer id="footer" class="container py-24 pb-16 sm:py-32 sm:pb-24">
@@ -23,7 +25,7 @@
           <a href="https://github.com/pypsa" target="_blank" rel="noreferrer"
              class="opacity-60 hover:opacity-100 transition-opacity"
              aria-label="GitHub">
-            <Github class="size-5" />
+            <GithubIcon class_="size-5" />
           </a>
           <a href="https://discord.gg/AnuJBk23FU" target="_blank" rel="noreferrer"
              class="opacity-60 hover:opacity-100 transition-opacity"
@@ -35,7 +37,7 @@
           <a href="https://www.youtube.com/@pypsa-official" target="_blank" rel="noreferrer"
              class="opacity-60 hover:opacity-100 transition-opacity"
              aria-label="YouTube">
-            <Youtube class="size-5" />
+            <MdiIcon path={mdiYoutube} class="size-5" />
           </a>
         </div>
       </div>
