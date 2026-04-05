@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /embed/
+
+Sitemap: https://pypsa.org/sitemap.xml

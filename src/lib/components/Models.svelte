@@ -29,19 +29,19 @@
         {
           name: "PyPSA-Earth",
           description: "A flexible Python-based open optimisation model to study energy system futures around the world",
-          image: `${base}/img/projects/pypsa-earth.png`,
+          image: `${base}/img/projects/pypsa-earth.webp`,
           githubUrl: "https://github.com/pypsa-meets-earth/pypsa-earth",
           docsUrl: "https://pypsa-earth.readthedocs.io/en/latest/",
           institutions: [{
             name: "PyPSA meets Earth",
-            logo: `${base}/img/institutions/pypsa-meets-earth.png`,
+            logo: `${base}/img/institutions/pypsa-meets-earth.webp`,
             url: "https://pypsa-meets-earth.github.io/"
           }]
         },
         {
           name: "PyPSA-Eur",
           description: "A Sector-Coupled Open Optimisation Model of the European Energy System",
-          image: `${base}/img/projects/pypsa-eur.png`,
+          image: `${base}/img/projects/pypsa-eur.webp`,
           githubUrl: "https://github.com/PyPSA/pypsa-eur",
           docsUrl: "https://pypsa-eur.readthedocs.io/",
           exploreUrl: `${base}/explore/europe-light.html`,
@@ -55,7 +55,7 @@
         {
           name: "PyPSA-USA",
           description: "An Open-Source Energy System Optimization Model for the United States",
-          image: `${base}/img/projects/pypsa-usa.png`,
+          image: `${base}/img/projects/pypsa-usa.webp`,
           githubUrl: "https://github.com/PyPSA/pypsa-usa",
           docsUrl: "https://pypsa-usa.readthedocs.io/en/latest/",
           institutions: [{
@@ -67,7 +67,7 @@
         {
           name: "PyPSA-DE",
           description: "High resolution, sector-coupled model of the German Energy System",
-          image: `${base}/img/projects/pypsa-de.png`,
+          image: `${base}/img/projects/pypsa-de.webp`,
           githubUrl: "https://github.com/PyPSA/pypsa-de",
           institutions: [{
             name: "TU Berlin",

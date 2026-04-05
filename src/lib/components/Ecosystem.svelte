@@ -25,7 +25,7 @@
     {
       name: "Atlite",
       description: "A Lightweight Python Package for Calculating Renewable Power Potentials and Time Series",
-      image: `${base}/img/projects/atlite.png`,
+      image: `${base}/img/projects/atlite.webp`,
       githubUrl: "https://github.com/PyPSA/atlite",
       docsUrl: "https://atlite.readthedocs.io/",
       institutions: [{
@@ -49,7 +49,7 @@
     {
       name: "Linopy",
       description: "Linear optimization interface for N-D labeled variables",
-      image: `${base}/img/projects/linopy.png`,
+      image: `${base}/img/projects/linopy.webp`,
       githubUrl: "https://github.com/PyPSA/linopy",
       docsUrl: "https://linopy.readthedocs.io/",
       institutions: [
@@ -82,7 +82,7 @@
     {
       name: "Powerplantmatching",
       description: "A toolset for cleaning, standardizing and combining multiple power plant databases",
-      image: `${base}/img/projects/powerplantmatching.png`,
+      image: `${base}/img/projects/powerplantmatching.webp`,
       githubUrl: "https://github.com/PyPSA/powerplantmatching",
       docsUrl: "https://powerplantmatching.readthedocs.io/",
       institutions: [{
@@ -94,7 +94,7 @@
     {
       name: "Technology Data",
       description: "Compile assumptions on energy system technologies for various years",
-      image: `${base}/img/projects/technology-data.png`,
+      image: `${base}/img/projects/technology-data.webp`,
       githubUrl: "https://github.com/PyPSA/technology-data",
       docsUrl: "https://technology-data.readthedocs.io/en/latest/",
       institutions: [
