@@ -1,8 +1,10 @@
 <script lang="ts">
   import { Separator } from "$lib/components/ui/separator";
   import GithubIcon from "$lib/icons/GithubIcon.svelte";
+  import LinkedInIcon from "$lib/icons/LinkedInIcon.svelte";
+  import BlueskyIcon from "$lib/icons/BlueskyIcon.svelte";
   import MdiIcon from "$lib/components/MdiIcon.svelte";
-  import { mdiYoutube } from "@mdi/js";
+  import { mdiYoutube, mdiMastodon } from "@mdi/js";
 </script>
 
 <footer id="footer" class="container py-24 pb-16 sm:py-32 sm:pb-24">
@@ -58,6 +60,33 @@
           >
             <MdiIcon path={mdiYoutube} class="size-5" />
           </a>
+          <a
+            href="https://www.linkedin.com/company/pypsa"
+            target="_blank"
+            rel="noreferrer"
+            class="opacity-60 hover:opacity-100 transition-opacity"
+            aria-label="LinkedIn"
+          >
+            <LinkedInIcon />
+          </a>
+          <a
+            href="https://mastodon.social/@pypsa"
+            target="_blank"
+            rel="noreferrer"
+            class="opacity-60 hover:opacity-100 transition-opacity"
+            aria-label="Mastodon"
+          >
+            <MdiIcon path={mdiMastodon} class="size-5" />
+          </a>
+          <a
+            href="https://bsky.app/profile/pypsa-org.bsky.social"
+            target="_blank"
+            rel="noreferrer"
+            class="opacity-60 hover:opacity-100 transition-opacity"
+            aria-label="Bluesky"
+          >
+            <BlueskyIcon class_="size-5" />
+          </a>
         </div>
       </div>
     </div>
@@ -76,7 +105,7 @@
           >
         </p>
       </div>
-      <p>&copy; 2015-2025 PyPSA Contributors</p>
+      <p>&copy; 2015-2026 PyPSA Contributors</p>
     </div>
   </div>
 </footer>
