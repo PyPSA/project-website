@@ -30,7 +30,6 @@
   const autoplayPlugin = Autoplay({ delay: 4000, stopOnInteraction: true });
 
   const eventDate = new Date(event.date + "T00:00:00");
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const formattedDate = new Intl.DateTimeFormat("en-GB", {
     weekday: "long",
     year: "numeric",
@@ -152,10 +151,12 @@
 
 <svelte:head>
   <title>{event.title} — PyPSA</title>
-  <meta
-    name="description"
-    content="{event.title} on {event.date}, {event.time}. Join the PyPSA community."
-  />
+  <meta name="description" content="{event.title} on {formattedDate}, {formattedTime}." />
+  <meta property="og:title" content="{event.title} — PyPSA" />
+  <meta property="og:description" content="{event.title} on {formattedDate}, {formattedTime}." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://pypsa.org/img/4th-user-meeting-card.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
 <Navbar />
