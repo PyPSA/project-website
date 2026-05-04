@@ -21,9 +21,9 @@
   }
 
   const routeList: RouteProps[] = [
-    { href: "#features", label: "Features" },
-    { href: "#frameworks", label: "Ecosystem" },
-    { href: "#implementations", label: "Models" },
+    { href: "/#features", label: "Features" },
+    { href: "/#frameworks", label: "Ecosystem" },
+    { href: "/#implementations", label: "Models" },
     { href: DOCS_BASE_URL, label: "Documentation" },
   ];
 
@@ -102,7 +102,7 @@
 
           <div class="flex flex-col gap-2">
             {#each routeList as { href, label } (href)}
-              {@const sectionId = href.replace("#", "")}
+              {@const sectionId = href.includes("#") ? href.split("#")[1] : ""}
               {@const isExternal = href.startsWith("http")}
               <a
                 on:click={() => (isOpen = false)}
@@ -138,7 +138,7 @@
   <div class="hidden lg:flex items-center gap-1">
     <!-- Navigation Links -->
     {#each routeList as { href, label } (href)}
-      {@const sectionId = href.replace("#", "")}
+      {@const sectionId = href.includes("#") ? href.split("#")[1] : ""}
       {@const isExternal = href.startsWith("http")}
       <a
         {href}

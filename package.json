@@ -41,6 +41,7 @@
     "vite": "^6.0.0"
   },
   "dependencies": {
-    "@mdi/js": "^7.4.47"
+    "@mdi/js": "^7.4.47",
+    "embla-carousel-autoplay": "^8.6.0"
   }
 }
