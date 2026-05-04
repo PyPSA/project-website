@@ -162,6 +162,9 @@
 <Navbar />
 
 <main class="container max-w-5xl mx-auto py-20 md:py-32 space-y-10">
+  <!-- Banner -->
+  <img src="{base}/img/4th-user-meeting-banner.jpg" alt={event.title} class="w-full rounded-lg" />
+
   <!-- Hero -->
   <section class="space-y-6">
     <div class="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-8 items-start">
@@ -182,32 +185,32 @@
         <!-- eslint-disable-next-line svelte/no-at-html-tags -->
         <p class="text-muted-foreground leading-relaxed">{@html event.introHtml}</p>
 
-        <div class="flex items-center gap-2 text-muted-foreground">
-          <span class="text-sm">Organized by</span>
+        <p class="text-sm text-muted-foreground">
+          Organized by
           <a
             href="https://www.tu.berlin/en/ensys"
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-flex items-center gap-1 hover:opacity-80"
+            class="inline-flex items-center gap-1 align-middle hover:opacity-80"
           >
             <img src="{base}/img/institutions/tu-berlin.svg" alt="TU Berlin" class="h-4" />
-            <span class="text-sm">TU Berlin</span>
+            <span>TU Berlin</span>
           </a>
-          <span class="text-xs">&</span>
+          &
           <a
             href="https://pypsa-meets-earth.github.io/"
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-flex items-center gap-1 hover:opacity-80"
+            class="inline-flex items-center gap-1 align-middle hover:opacity-80"
           >
             <img
               src="{base}/img/institutions/pypsa-meets-earth.webp"
               alt="PyPSA meets Earth"
               class="h-4"
             />
-            <span class="text-sm">PyPSA meets Earth Initiative</span>
+            <span>PyPSA meets Earth Initiative</span>
           </a>
-        </div>
+        </p>
       </div>
 
       <!-- Right column: calendar card + CTAs -->
