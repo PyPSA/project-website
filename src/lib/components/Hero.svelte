@@ -17,7 +17,7 @@
           <span class="mr-2">
             <Badge class="pointer-events-none bg-[#c30944] text-white">Event</Badge>
           </span>
-          <span>PyPSA User Meeting on June 29, 2026</span>
+          <span>PyPSA User Meeting on 29 June 2026</span>
           <ArrowRight class="size-4 ml-2" />
         </Badge>
       </a>

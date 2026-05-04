@@ -41,7 +41,7 @@ export const eventsData: EventData[] = [
     status: "upcoming",
     registrationUrl: "https://tu-berlin.zoom-x.de/meeting/register/n0OZHUmUSe2krwInnPOJ-Q",
     talkProposalUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdpE_niRgc3Kb_hJYgaLqxNgaNcMQ_pE0Z52LXHaKeNmVUy9Q/viewform?usp=publish-editor",
-    talkProposalDeadline: "June 7, 2026",
+    talkProposalDeadline: "Sunday, 7 June 2026",
     contactName: "Lukas Trippe",
     contactEmail: "l.trippe@tu-berlin.de",
     contactHandle: "@lkstrp",

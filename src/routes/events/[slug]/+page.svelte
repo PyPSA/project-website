@@ -31,7 +31,7 @@
 
   const eventDate = new Date(event.date + "T00:00:00");
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const formattedDate = new Intl.DateTimeFormat(undefined, {
+  const formattedDate = new Intl.DateTimeFormat("en-GB", {
     weekday: "long",
     year: "numeric",
     month: "long",
@@ -41,7 +41,7 @@
   const timeMatch = event.time.match(
     /(\d{1,2}):(\d{2})\s*(am|pm)\s*[–-]\s*(\d{1,2}):(\d{2})\s*(am|pm)\s*\((\w+)\)/i
   );
-  const timeFmt = new Intl.DateTimeFormat(undefined, { hour: "numeric", minute: "2-digit" });
+  const timeFmt = new Intl.DateTimeFormat("en-GB", { hour: "numeric", minute: "2-digit" });
   const formattedTime = timeMatch
     ? (() => {
         let sh = parseInt(timeMatch[1]);
@@ -283,7 +283,7 @@
       </ul>
       {#if event.talkProposalDeadline}
         <div>
-          <p class="text-sm font-medium">Submissions close {event.talkProposalDeadline}</p>
+          <p class="text-sm font-medium">Submissions close on {event.talkProposalDeadline}</p>
           {#if daysUntilDeadline !== null && daysUntilDeadline > 0}
             <p class="text-xs text-muted-foreground">{daysUntilDeadline} days left</p>
           {/if}
@@ -437,8 +437,8 @@
         also facilitate their dissemination and reuse.
       </p>
       <p>
-        Open licensing is <strong>optional</strong>. We will not publish anything without the
-        consent of those being recorded. You may withdraw your consent afterwards as well.
+        Open licensing is optional. We will not publish anything without the consent of those being
+        recorded. You may withdraw your consent afterwards as well.
       </p>
     </div>
   </section>
