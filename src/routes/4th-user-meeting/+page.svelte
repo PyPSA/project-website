@@ -24,4 +24,4 @@
   <meta http-equiv="refresh" content="0;url=/events/{target}" />
 </svelte:head>
 
-<p>Redirecting to <a href="/events/{target}">/events/{target}</a>…</p>
+<p class="hidden">Redirecting to <a href="/events/{target}">/events/{target}</a>…</p>
