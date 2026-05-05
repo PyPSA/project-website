@@ -1,7 +1,10 @@
-import { redirect } from "@sveltejs/kit";
+import { eventsData } from "$lib/data/events";
 
 export const prerender = true;
 
+const target = "4th-user-meeting";
+
 export function load() {
-  redirect(301, "/events/4th-user-meeting");
+  const event = eventsData.find((e) => e.slug === target);
+  return { event, target };
 }
