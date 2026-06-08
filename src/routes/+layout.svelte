@@ -1,8 +1,7 @@
 <script lang="ts">
   import { ModeWatcher } from "mode-watcher";
-  import { siteConfig } from "$lib/config/meta";
   import "../app.css";
-  let { children } = $props();
+  const { children } = $props();
 </script>
 
 <svelte:head>

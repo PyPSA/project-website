@@ -5,8 +5,6 @@
   import GithubIcon from "$lib/icons/GithubIcon.svelte";
   import { base } from "$app/paths";
   import { onMount, onDestroy } from "svelte";
-  import { fly } from "svelte/transition";
-  import { quintOut } from "svelte/easing";
 
   interface ProjectProps {
     name: string;
@@ -218,22 +216,6 @@
     }
   });
 
-  function getVisibleProjects(): ProjectProps[] {
-    if (projects.length <= visibleCount) {
-      return projects.slice(0, visibleCount);
-    }
-
-    const total = projects.length;
-    const visible: ProjectProps[] = [];
-
-    for (let i = 0; i < visibleCount; i++) {
-      const project = projects[(carouselIndex + i) % total];
-      visible.push(project);
-    }
-
-    return visible;
-  }
-
   let isTransitioning = true;
 
   function showNext() {
@@ -267,7 +249,7 @@
     }
   }
 
-  function accentStyle(name: string) {
+  function accentStyle(_name: string) {
     return `--accent-color: ${accentColor}; --accent-hover-color: ${accentHoverColor};`;
   }
 </script>

@@ -4,9 +4,6 @@
   import * as Tooltip from "$lib/components/ui/tooltip";
   import { onMount } from "svelte";
 
-  import LinkedInIcon from "$lib/icons/LinkedInIcon.svelte";
-  import GithubIcon from "$lib/icons/GithubIcon.svelte";
-  import XIcon from "$lib/icons/XIcon.svelte";
   import DiscordIcon from "$lib/icons/DiscordIcon.svelte";
   import { BarChart3 } from "lucide-svelte";
 
@@ -23,7 +20,7 @@
     embedMode?: boolean;
   }
 
-  let {
+  const {
     showDiscord = true,
     showHeader = true,
     showFilters = true,
@@ -31,29 +28,6 @@
     colorfulImages = false,
     embedMode = false,
   }: Props = $props();
-
-  interface TeamProps {
-    imageUrl: string;
-    firstName: string;
-    lastName: string;
-    positions: string[];
-    socialNetworks: SocialNetworkProps[];
-    totalContributions?: number;
-    totalMergedPrs?: number;
-    totalIssuesCreated?: number;
-    totalReviews?: number;
-    topRepos?: string[];
-    repoContributions?: Record<string, number>;
-    repoPrs?: Record<string, number>;
-    repoIssues?: Record<string, number>;
-    repoReviews?: Record<string, number>;
-    displayRepoOnly?: boolean;
-  }
-
-  interface SocialNetworkProps {
-    name: "LinkedIn" | "Github" | "X";
-    url: string;
-  }
 
   // Sort contributors by total contributions (descending), but always put Tom Brown first
   const sortedByContributions = [...contributorsData].sort((a, b) => {
@@ -169,11 +143,6 @@
     frameworkExpanded = false;
   }
 
-  function closeExpanded() {
-    frameworkExpanded = false;
-    modelsExpanded = false;
-  }
-
   function selectRepo(repoName) {
     selectedRepo = repoName;
     currentPage = 0; // Reset to first page when filtering
@@ -246,12 +215,6 @@
       isTransitioning = false;
     }, 50);
   }
-
-  const socialIconMap = {
-    LinkedIn: LinkedInIcon,
-    Github: GithubIcon,
-    X: XIcon,
-  };
 </script>
 
 <!-- Contributors Section -->
@@ -440,10 +403,10 @@
     <div class="relative py-4" style="position: relative;">
       <!-- Contributors grid -->
       <div
-        class="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-8 gap-3 md:gap-4 justify-center relative"
+        class="grid grid-cols-3 sm:grid-cols-6 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-8 gap-3 md:gap-4 justify-center relative"
       >
         {#key currentPage}
-          {#each currentContributors as { imageUrl, firstName, lastName, positions, socialNetworks, totalContributions, totalMergedPrs, totalIssuesCreated, totalReviews, topRepos }, index (firstName + "-" + lastName)}
+          {#each currentContributors as { imageUrl, firstName, lastName, socialNetworks, totalContributions, totalMergedPrs, totalIssuesCreated, totalReviews, topRepos }, index (firstName + "-" + lastName)}
             {@const delay = index * 50}
             <div
               class="carousel-item relative group/card isolate hover:z-[60]"

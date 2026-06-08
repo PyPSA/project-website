@@ -19,7 +19,7 @@ const config = {
       base: process.env.BASE_PATH || "",
     },
     prerender: {
-      handleHttpError: ({ path, referrer, message }) => {
+      handleHttpError: ({ path, message }) => {
         // Ignore paths that don't start with base path during prerender
         if (path === "/" && process.env.BASE_PATH) {
           return;

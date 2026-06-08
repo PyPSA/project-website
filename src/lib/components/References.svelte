@@ -3,15 +3,6 @@
   import { onMount } from "svelte";
   import { referencesData, dataTimestamp } from "$lib/data/references";
 
-  interface Publication {
-    title: string;
-    authors: string;
-    year: number;
-    citations: number;
-    link: string;
-    snippet: string;
-  }
-
   type SortMode = "citations" | "latest";
   let sortMode: SortMode = "citations";
 
@@ -24,8 +15,6 @@
       return b.year - a.year;
     }
   });
-
-  const publications: Publication[] = referencesData;
 
   // Responsive publications per page
   let windowWidth = typeof window !== "undefined" ? window.innerWidth : 1024;

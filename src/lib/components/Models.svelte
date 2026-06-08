@@ -244,7 +244,7 @@
     }
   }
 
-  function accentStyle(name: string) {
+  function accentStyle(_name: string) {
     return `--accent-color: ${accentColor}; --accent-hover-color: ${accentHoverColor};`;
   }
 
@@ -458,7 +458,7 @@
                     ? project.exploreUrlDark
                     : project.exploreUrl}
                   title="{project.name} Explorer"
-                  class="w-full h-[800px] border-0 rounded-2xl"
+                  class="w-full h-[500px] md:h-[800px] border-0 rounded-2xl"
                 ></iframe>
               </Card>
             </div>

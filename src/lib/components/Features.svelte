@@ -61,67 +61,6 @@
     CircleDollarSign,
   } from "lucide-svelte";
 
-  interface FeaturesProps {
-    icon:
-      | "battery"
-      | "mdiPowerPlugBattery"
-      | "mdiTransmissionTower"
-      | "mdiSecurity"
-      | "mdiCrane"
-      | "mdiRoad"
-      | "mdiRollerblade"
-      | "mdiCrosshairsQuestion"
-      | "mdiDiversify"
-      | "mdiBuildingColumns"
-      | "mdiScrewdriver"
-      | "mdiDotsSquare"
-      | "mdiHeatPump"
-      | "mdiLightbulb"
-      | "mdiTransmissionTowerApp"
-      | "mdiViewModule"
-      | "mdiCarCruiseControl"
-      | "mdiGridLarge"
-      | "mdiDataMatrix"
-      | "mdiRunFast"
-      | "mdiNotebook"
-      | "mdiLockOpen"
-      | "simpleGraphql"
-      | "simpleShadow"
-      | "simpleGoogleSheets"
-      | "octiconsPaintbrush"
-      | "peopleGroup"
-      | "plugZap"
-      | "zap"
-      | "shield"
-      | "building"
-      | "route"
-      | "rotateCcw"
-      | "trendingUp"
-      | "trendingUpArrow"
-      | "search"
-      | "bookOpen"
-      | "settings"
-      | "wrench"
-      | "grid3X3"
-      | "thermometer"
-      | "lightbulb"
-      | "network"
-      | "activity"
-      | "layers"
-      | "settings2"
-      | "database"
-      | "gauge"
-      | "barChart3"
-      | "brush"
-      | "users"
-      | "lock"
-      | "dollarSign";
-    title: string;
-    description: string;
-    link?: string;
-    docsUrl?: string;
-  }
-
   let activeTab = "optimization";
 
   const featureCategories = {
