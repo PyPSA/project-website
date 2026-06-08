@@ -560,8 +560,8 @@
     </div>
   {/if}
 
-  <!-- Documentation CTA -->
-  <div class="mt-8 flex justify-center">
+  <!-- CTAs -->
+  <div class="mt-8 flex flex-wrap justify-center gap-4">
     <Button
       href={DOCS_BASE_URL}
       target="_blank"
@@ -571,6 +571,17 @@
       Explore Documentation
       <ArrowRight
         class="ml-2 group-hover/arrow:translate-x-1 transition-transform duration-300"
+        style="width: 1rem; height: 1rem;"
+      />
+    </Button>
+    <Button
+      href="/roadmap"
+      variant="outline"
+      class="h-12 px-8 font-medium rounded-full group/roadmap transition-colors duration-300"
+    >
+      View Roadmap
+      <ArrowRight
+        class="ml-2 group-hover/roadmap:translate-x-1 transition-transform duration-300"
         style="width: 1rem; height: 1rem;"
       />
     </Button>

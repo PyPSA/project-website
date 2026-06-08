@@ -9,23 +9,48 @@
   } from "$lib/components/ui/sheet";
   import { Button, buttonVariants } from "$lib/components/ui/button";
   import { Separator } from "$lib/components/ui/separator";
-  import { Menu, ExternalLink } from "lucide-svelte";
+  import {
+    DropdownMenu,
+    DropdownMenuTrigger,
+    DropdownMenuContent,
+    DropdownMenuItem,
+  } from "$lib/components/ui/dropdown-menu";
+  import { Menu, ExternalLink, ChevronDown } from "lucide-svelte";
   import GithubIcon from "$lib/icons/GithubIcon.svelte";
   import DiscordIcon from "$lib/icons/DiscordIcon.svelte";
   import ToggleTheme from "$lib/components/ToggleTheme.svelte";
   import { DOCS_BASE_URL } from "$lib/config";
+  import { eventsData } from "$lib/data/events";
+  import { page } from "$app/stores";
+
+  // Active page (for non-anchor subpages)
+  $: pathname = $page.url.pathname;
+  $: onRoadmap = pathname === "/roadmap";
+  $: onEvent = pathname.startsWith("/events/");
 
   interface RouteProps {
     href: string;
     label: string;
   }
 
-  const routeList: RouteProps[] = [
+  // Anchor jumps within the landing page (scroll-spy highlighted)
+  const sectionLinks: RouteProps[] = [
     { href: "/#features", label: "Features" },
     { href: "/#frameworks", label: "Ecosystem" },
     { href: "/#implementations", label: "Models" },
-    { href: DOCS_BASE_URL, label: "Documentation" },
   ];
+
+  // Standalone internal subpage
+  const roadmapLink: RouteProps = { href: "/roadmap", label: "Roadmap" };
+
+  // Meetings — grows as new events are added; collapsed under "Events"
+  const eventLinks: RouteProps[] = eventsData.map((e) => ({
+    href: `/events/${e.slug}`,
+    label: e.title,
+  }));
+
+  // External documentation link
+  const docsLink: RouteProps = { href: DOCS_BASE_URL, label: "Docs" };
 
   let isOpen = false;
   let activeSection = "";
@@ -101,30 +126,51 @@
           </SheetHeader>
 
           <div class="flex flex-col gap-2">
-            {#each routeList as { href, label } (href)}
-              {@const sectionId = href.includes("#") ? href.split("#")[1] : ""}
-              {@const isExternal = href.startsWith("http")}
-              <a
-                on:click={() => (isOpen = false)}
-                {href}
-                target={isExternal ? "_blank" : undefined}
-                rel={isExternal ? "noopener noreferrer" : undefined}
-              >
+            {#each sectionLinks as { href, label } (href)}
+              {@const sectionId = href.split("#")[1]}
+              <a on:click={() => (isOpen = false)} {href}>
                 <Button
                   variant="ghost"
-                  class="justify-start text-base w-full transition-all duration-300 {isExternal
-                    ? 'hover:bg-[#098754] hover:text-white'
-                    : 'hover:bg-primary hover:text-primary-foreground'} {activeSection === sectionId
+                  class="justify-start text-base w-full transition-all duration-300 hover:bg-primary hover:text-primary-foreground {activeSection ===
+                  sectionId
                     ? 'bg-primary/10 text-primary border border-primary/20'
                     : ''}"
                 >
                   {label}
-                  {#if isExternal}
-                    <ExternalLink class="ml-1 size-3" />
-                  {/if}
                 </Button>
               </a>
             {/each}
+
+            <Separator class="my-1" />
+
+            {#each [roadmapLink, ...eventLinks] as { href, label } (href)}
+              <a on:click={() => (isOpen = false)} {href}>
+                <Button
+                  variant="ghost"
+                  class="justify-start text-base w-full transition-all duration-300 hover:bg-primary hover:text-primary-foreground {pathname ===
+                  href
+                    ? 'bg-primary/10 text-primary border border-primary/20'
+                    : ''}"
+                >
+                  {label}
+                </Button>
+              </a>
+            {/each}
+
+            <a
+              on:click={() => (isOpen = false)}
+              href={docsLink.href}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                variant="ghost"
+                class="justify-start text-base w-full transition-all duration-300 hover:bg-[#098754] hover:text-white"
+              >
+                {docsLink.label}
+                <ExternalLink class="ml-1 size-3" />
+              </Button>
+            </a>
           </div>
         </div>
 
@@ -136,35 +182,78 @@
     </Sheet>
   </div>
   <div class="hidden lg:flex items-center gap-1">
-    <!-- Navigation Links -->
-    {#each routeList as { href, label } (href)}
-      {@const sectionId = href.includes("#") ? href.split("#")[1] : ""}
-      {@const isExternal = href.startsWith("http")}
+    <!-- Section jumps (scroll-spy highlighted) -->
+    {#each sectionLinks as { href, label } (href)}
+      {@const sectionId = href.split("#")[1]}
       <a
         {href}
-        target={isExternal ? "_blank" : undefined}
-        rel={isExternal ? "noopener noreferrer" : undefined}
         class="{buttonVariants({
           variant: 'ghost',
           size: 'default',
-        })} transition-all duration-300 {activeSection === sectionId && !isExternal
+        })} transition-all duration-300 {activeSection === sectionId
           ? 'bg-primary/10 text-primary border border-primary/20'
           : ''}"
-        style={isExternal ? "transition: all 0.3s;" : ""}
-        on:mouseenter={(e) =>
-          isExternal &&
-          ((e.currentTarget.style.backgroundColor = "#098754"),
-          (e.currentTarget.style.color = "white"))}
-        on:mouseleave={(e) =>
-          isExternal &&
-          ((e.currentTarget.style.backgroundColor = ""), (e.currentTarget.style.color = ""))}
       >
         {label}
-        {#if isExternal}
-          <ExternalLink class="ml-1 size-3" />
-        {/if}
       </a>
     {/each}
+
+    <!-- Divider: section jumps | page navigation -->
+    <Separator orientation="vertical" class="mx-2 h-6" />
+
+    <!-- Standalone subpage -->
+    <a
+      href={roadmapLink.href}
+      class="{buttonVariants({
+        variant: 'ghost',
+        size: 'default',
+      })} transition-all duration-300 {onRoadmap
+        ? 'bg-primary/10 text-primary border border-primary/20'
+        : ''}"
+    >
+      {roadmapLink.label}
+    </a>
+
+    <!-- Meetings dropdown (grows with each event) -->
+    <DropdownMenu>
+      <DropdownMenuTrigger
+        class="{buttonVariants({ variant: 'ghost' })} {onEvent
+          ? 'bg-primary/10 text-primary border border-primary/20'
+          : ''}"
+      >
+        Events <ChevronDown class="ml-1 size-3" />
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="start">
+        {#each eventLinks as { href, label } (href)}
+          <DropdownMenuItem>
+            <a {href} class="w-full">{label}</a>
+          </DropdownMenuItem>
+        {/each}
+      </DropdownMenuContent>
+    </DropdownMenu>
+
+    <!-- External documentation -->
+    <a
+      href={docsLink.href}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="{buttonVariants({
+        variant: 'ghost',
+        size: 'default',
+      })} transition-all duration-300"
+      style="transition: all 0.3s;"
+      on:mouseenter={(e) => (
+        (e.currentTarget.style.backgroundColor = "#098754"),
+        (e.currentTarget.style.color = "white")
+      )}
+      on:mouseleave={(e) => (
+        (e.currentTarget.style.backgroundColor = ""),
+        (e.currentTarget.style.color = "")
+      )}
+    >
+      {docsLink.label}
+      <ExternalLink class="ml-1 size-3" />
+    </a>
   </div>
 
   <div class="hidden lg:flex">
