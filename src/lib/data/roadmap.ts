@@ -62,18 +62,25 @@ export const roadmapData: RoadmapItem[] = [
     icon: "mdiContentSaveCheckOutline",
   },
   {
-    id: "endogenous-learning",
-    title: "Endogenous learning curves",
-    description:
-      "Technological learning modelled endogenously via piecewise-linear constraints, so costs fall with deployment.",
-    icon: "mdiTrendingDown",
-  },
-  {
     id: "maintenance-scheduling",
     title: "Maintenance scheduling",
     description:
       "Schedule optimal maintenance windows for components (e.g. generators, links) with contiguous downtime blocks, partial outages, and multiple events in a year.",
     icon: "mdiWrenchClock",
+  },
+  {
+    id: "recourse-investments",
+    title: "Recourse investments",
+    description:
+      "Allow certain investment variables to adjust per scenario as better information about uncertain conditions becomes available, extending recourse beyond dispatch decisions.",
+    icon: "mdiSourceFork",
+  },
+  {
+    id: "endogenous-learning",
+    title: "Endogenous learning curves",
+    description:
+      "Technological learning modelled endogenously via piecewise-linear constraints, so costs fall with deployment.",
+    icon: "mdiTrendingDown",
   },
   {
     id: "properties",
