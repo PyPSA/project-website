@@ -21,11 +21,18 @@
     CarouselPrevious,
     CarouselNext,
   } from "$lib/components/ui/carousel";
-  import { ExternalLink, ChevronsUpDown, Check } from "lucide-svelte";
+  import { ExternalLink, ChevronsUpDown, Check, User, Mail, Globe } from "lucide-svelte";
+  import LinkedInIcon from "$lib/icons/LinkedInIcon.svelte";
   import Autoplay from "embla-carousel-autoplay";
 
   const { data } = $props();
   const event = data.event;
+
+  const linkLabel = (url: string) =>
+    url
+      .replace(/^https?:\/\//, "")
+      .replace(/^www\./, "")
+      .replace(/\/$/, "");
 
   const autoplayPlugin = Autoplay({ delay: 4000, stopOnInteraction: true });
 
@@ -114,6 +121,8 @@
 
   let selectedCity = $state("Berlin");
   let comboboxOpen = $state(false);
+  // ponytail: toggle always shown; no overflow detection. Add a clientHeight check if short abstracts get a pointless "Show more".
+  const expandedAbstracts = $state<Record<number, boolean>>({});
 
   function formatOffsetDiff(tz: { timezone: string }): string {
     const diff = parseUtcOffset(tz.timezone) - berlinOffset;
@@ -297,9 +306,128 @@
   {/if}
 
   <!-- Agenda -->
-  <section class="space-y-4">
+  <section class="space-y-6">
     <h2 class="text-2xl font-bold">Agenda</h2>
-    <p class="text-muted-foreground">Agenda will be announced soon.</p>
+    {#if event.agenda?.length}
+      <table class="w-full border-collapse text-sm">
+        <tbody>
+          {#each event.agenda as item, i (i)}
+            <tr class="border-t border-border/60">
+              <td class="w-16 align-top whitespace-nowrap tabular-nums text-muted-foreground py-3">
+                {item.time ?? ""}
+              </td>
+              <td class="align-top py-3">
+                {#if item.type === "special"}
+                  <span class="font-semibold">{item.title}</span>
+                {:else}
+                  <div class="flex gap-4">
+                    <!-- Talk content -->
+                    <div class="min-w-0 flex-1">
+                      <div class="text-base font-medium">{item.title}</div>
+                      {#if item.abstract}
+                        <p
+                          class="mt-1 whitespace-pre-line leading-relaxed text-muted-foreground {expandedAbstracts[
+                            i
+                          ]
+                            ? ''
+                            : 'line-clamp-2'}"
+                        >
+                          {item.abstract}
+                        </p>
+                        <button
+                          type="button"
+                          class="mt-1 text-xs text-muted-foreground hover:underline"
+                          onclick={() => (expandedAbstracts[i] = !expandedAbstracts[i])}
+                        >
+                          {expandedAbstracts[i] ? "Show less" : "Show more"}
+                        </button>
+                      {/if}
+                      {#if item.links?.length}
+                        <div class="mt-3 flex flex-wrap gap-x-4 gap-y-1">
+                          {#each item.links as link (link)}
+                            <a
+                              href={link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              class="inline-flex items-center gap-1 text-xs text-primary hover:underline"
+                            >
+                              <ExternalLink class="size-3" />
+                              {linkLabel(link)}
+                            </a>
+                          {/each}
+                        </div>
+                      {/if}
+                    </div>
+                    <!-- Speaker -->
+                    {#if item.speaker}
+                      <div class="w-28 shrink-0">
+                        {#if item.image}
+                          <img
+                            src="{base}{item.image}"
+                            alt={item.speaker}
+                            loading="lazy"
+                            class="size-16 rounded-full object-cover"
+                          />
+                        {:else}
+                          <div
+                            class="flex size-16 items-center justify-center rounded-full bg-muted text-muted-foreground"
+                          >
+                            <User class="size-7" />
+                          </div>
+                        {/if}
+                        <p class="mt-2 font-medium leading-tight">{item.speaker}</p>
+                        {#if item.affiliation}
+                          <p class="mt-0.5 text-xs leading-tight text-muted-foreground">
+                            {item.affiliation}
+                          </p>
+                        {/if}
+                        {#if item.linkedin || item.email || item.website}
+                          <div class="mt-1.5 flex items-center gap-2 text-muted-foreground">
+                            {#if item.linkedin}
+                              <a
+                                href={item.linkedin}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="LinkedIn"
+                                class="hover:text-foreground [&>svg]:size-4"
+                              >
+                                <LinkedInIcon />
+                              </a>
+                            {/if}
+                            {#if item.website}
+                              <a
+                                href={item.website}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Website"
+                                class="hover:text-foreground"
+                              >
+                                <Globe class="size-4" />
+                              </a>
+                            {/if}
+                            {#if item.email}
+                              <a
+                                href="mailto:{item.email}"
+                                aria-label="Email"
+                                class="hover:text-foreground"
+                              >
+                                <Mail class="size-4" />
+                              </a>
+                            {/if}
+                          </div>
+                        {/if}
+                      </div>
+                    {/if}
+                  </div>
+                {/if}
+              </td>
+            </tr>
+          {/each}
+        </tbody>
+      </table>
+    {:else}
+      <p class="text-muted-foreground">Agenda will be announced soon.</p>
+    {/if}
   </section>
 
   <Separator />
