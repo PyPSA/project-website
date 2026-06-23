@@ -9,24 +9,17 @@
   } from "$lib/components/ui/sheet";
   import { Button, buttonVariants } from "$lib/components/ui/button";
   import { Separator } from "$lib/components/ui/separator";
-  import {
-    DropdownMenu,
-    DropdownMenuTrigger,
-    DropdownMenuContent,
-    DropdownMenuItem,
-  } from "$lib/components/ui/dropdown-menu";
-  import { Menu, ExternalLink, ChevronDown } from "lucide-svelte";
+  import { Menu, ExternalLink } from "lucide-svelte";
   import GithubIcon from "$lib/icons/GithubIcon.svelte";
   import DiscordIcon from "$lib/icons/DiscordIcon.svelte";
   import ToggleTheme from "$lib/components/ToggleTheme.svelte";
   import { DOCS_BASE_URL } from "$lib/config";
-  import { eventsData } from "$lib/data/events";
   import { page } from "$app/stores";
 
   // Active page (for non-anchor subpages)
   $: pathname = $page.url.pathname;
   $: onRoadmap = pathname === "/roadmap";
-  $: onEvent = pathname.startsWith("/events/");
+  $: onEvent = pathname === "/events" || pathname.startsWith("/events/");
 
   interface RouteProps {
     href: string;
@@ -40,14 +33,9 @@
     { href: "/#implementations", label: "Models" },
   ];
 
-  // Standalone internal subpage
+  // Standalone internal subpages
   const roadmapLink: RouteProps = { href: "/roadmap", label: "Roadmap" };
-
-  // Meetings — grows as new events are added; collapsed under "Events"
-  const eventLinks: RouteProps[] = eventsData.map((e) => ({
-    href: `/events/${e.slug}`,
-    label: e.title,
-  }));
+  const eventsLink: RouteProps = { href: "/events", label: "Events" };
 
   // External documentation link
   const docsLink: RouteProps = { href: DOCS_BASE_URL, label: "Docs" };
@@ -143,7 +131,7 @@
 
             <Separator class="my-1" />
 
-            {#each [roadmapLink, ...eventLinks] as { href, label } (href)}
+            {#each [roadmapLink, eventsLink] as { href, label } (href)}
               <a on:click={() => (isOpen = false)} {href}>
                 <Button
                   variant="ghost"
@@ -214,23 +202,18 @@
       {roadmapLink.label}
     </a>
 
-    <!-- Meetings dropdown (grows with each event) -->
-    <DropdownMenu>
-      <DropdownMenuTrigger
-        class="{buttonVariants({ variant: 'ghost' })} {onEvent
-          ? 'bg-primary/10 text-primary border border-primary/20'
-          : ''}"
-      >
-        Events <ChevronDown class="ml-1 size-3" />
-      </DropdownMenuTrigger>
-      <DropdownMenuContent align="start">
-        {#each eventLinks as { href, label } (href)}
-          <DropdownMenuItem>
-            <a {href} class="w-full">{label}</a>
-          </DropdownMenuItem>
-        {/each}
-      </DropdownMenuContent>
-    </DropdownMenu>
+    <!-- Events index -->
+    <a
+      href={eventsLink.href}
+      class="{buttonVariants({
+        variant: 'ghost',
+        size: 'default',
+      })} transition-all duration-300 {onEvent
+        ? 'bg-primary/10 text-primary border border-primary/20'
+        : ''}"
+    >
+      {eventsLink.label}
+    </a>
 
     <!-- External documentation -->
     <a

@@ -2,6 +2,7 @@
   import Navbar from "$lib/components/Navbar.svelte";
   import Footer from "$lib/components/Footer.svelte";
   import { base } from "$app/paths";
+  import { siteConfig } from "$lib/config/meta";
   import { Button } from "$lib/components/ui/button";
   import { Badge } from "$lib/components/ui/badge";
   import { Card, CardContent } from "$lib/components/ui/card";
@@ -21,7 +22,16 @@
     CarouselPrevious,
     CarouselNext,
   } from "$lib/components/ui/carousel";
-  import { ExternalLink, ChevronsUpDown, Check, User, Mail, Globe } from "lucide-svelte";
+  import {
+    ExternalLink,
+    ChevronsUpDown,
+    Check,
+    User,
+    Mail,
+    Globe,
+    ArrowLeft,
+    MapPin,
+  } from "lucide-svelte";
   import LinkedInIcon from "$lib/icons/LinkedInIcon.svelte";
   import Autoplay from "embla-carousel-autoplay";
 
@@ -37,12 +47,19 @@
   const autoplayPlugin = Autoplay({ delay: 4000, stopOnInteraction: true });
 
   const eventDate = new Date(event.date + "T00:00:00");
-  const formattedDate = new Intl.DateTimeFormat("en-GB", {
-    weekday: "long",
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  }).format(eventDate);
+  const endDateObj = event.endDate ? new Date(event.endDate + "T00:00:00") : null;
+  const formattedDate = endDateObj
+    ? // e.g. "6–8 July 2026" (assumes same month/year)
+      `${eventDate.getDate()}–${endDateObj.getDate()} ${new Intl.DateTimeFormat("en-GB", {
+        month: "long",
+        year: "numeric",
+      }).format(endDateObj)}`
+    : new Intl.DateTimeFormat("en-GB", {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      }).format(eventDate);
 
   const timeMatch = event.time.match(
     /(\d{1,2}):(\d{2})\s*(am|pm)\s*[–-]\s*(\d{1,2}):(\d{2})\s*(am|pm)\s*\((\w+)\)/i
@@ -164,15 +181,27 @@
   <meta property="og:title" content="{event.title} — PyPSA" />
   <meta property="og:description" content="{event.title} on {formattedDate}, {formattedTime}." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://pypsa.org/img/4th-user-meeting-card.jpg" />
+  <meta
+    property="og:image"
+    content={event.bannerImage ? siteConfig.url + event.bannerImage : siteConfig.ogImage}
+  />
   <meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
 <Navbar />
 
 <main class="container max-w-5xl mx-auto py-20 md:py-32 space-y-10">
+  <a
+    href="/events"
+    class="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors"
+  >
+    <ArrowLeft class="size-4" /> Back to events
+  </a>
+
   <!-- Banner -->
-  <img src="{base}/img/4th-user-meeting-banner.jpg" alt={event.title} class="w-full rounded-lg" />
+  {#if event.bannerImage}
+    <img src="{base}{event.bannerImage}" alt={event.title} class="w-full rounded-lg" />
+  {/if}
 
   <!-- Hero -->
   <section class="space-y-6">
@@ -186,7 +215,7 @@
           {:else}
             <Badge variant="secondary">Past Event</Badge>
           {/if}
-          <Badge variant="outline">Online</Badge>
+          <Badge variant="outline">{event.isOnline ? "Online" : "In person"}</Badge>
         </div>
 
         <h1 class="text-4xl md:text-5xl font-bold">{event.title}</h1>
@@ -194,32 +223,54 @@
         <!-- eslint-disable-next-line svelte/no-at-html-tags -->
         <p class="text-muted-foreground leading-relaxed">{@html event.introHtml}</p>
 
-        <p class="text-sm text-muted-foreground">
-          Organized by
-          <a
-            href="https://www.tu.berlin/en/ensys"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="inline-flex items-center gap-1 align-middle hover:opacity-80"
-          >
-            <img src="{base}/img/institutions/tu-berlin.svg" alt="TU Berlin" class="h-4" />
-            <span>TU Berlin</span>
-          </a>
-          &
-          <a
-            href="https://pypsa-meets-earth.github.io/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="inline-flex items-center gap-1 align-middle hover:opacity-80"
-          >
-            <img
-              src="{base}/img/institutions/pypsa-meets-earth.webp"
-              alt="PyPSA meets Earth"
-              class="h-4"
-            />
-            <span>PyPSA meets Earth Initiative</span>
-          </a>
-        </p>
+        {#if event.organizers}
+          {#if event.organizers.length}
+            <p class="text-sm text-muted-foreground">
+              Organized by
+              {#each event.organizers as org, i (org.name)}
+                {#if i > 0}&{/if}
+                <a
+                  href={org.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-1 align-middle hover:opacity-80"
+                >
+                  {#if org.logo}
+                    <img src="{base}{org.logo}" alt={org.name} class="h-4" />
+                  {/if}
+                  <span>{org.name}</span>
+                </a>
+              {/each}
+            </p>
+          {/if}
+        {:else}
+          <p class="text-sm text-muted-foreground">
+            Organized by
+            <a
+              href="https://www.tu.berlin/en/ensys"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-1 align-middle hover:opacity-80"
+            >
+              <img src="{base}/img/institutions/tu-berlin.svg" alt="TU Berlin" class="h-4" />
+              <span>TU Berlin</span>
+            </a>
+            &
+            <a
+              href="https://pypsa-meets-earth.github.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-1 align-middle hover:opacity-80"
+            >
+              <img
+                src="{base}/img/institutions/pypsa-meets-earth.webp"
+                alt="PyPSA meets Earth"
+                class="h-4"
+              />
+              <span>PyPSA meets Earth Initiative</span>
+            </a>
+          </p>
+        {/if}
       </div>
 
       <!-- Right column: calendar card + CTAs -->
@@ -230,11 +281,18 @@
           <span class="text-sm font-medium uppercase tracking-wider text-[#c30944]">
             {new Intl.DateTimeFormat("en", { month: "short" }).format(eventDate)}
           </span>
-          <span class="text-4xl font-bold leading-tight">{eventDate.getDate()}</span>
-          <span class="text-sm text-muted-foreground">
-            {new Intl.DateTimeFormat("en", { weekday: "long" }).format(eventDate)}
-          </span>
-          <span class="text-sm text-muted-foreground">{eventDate.getFullYear()}</span>
+          {#if endDateObj}
+            <span class="text-4xl font-bold leading-tight">
+              {eventDate.getDate()}–{endDateObj.getDate()}
+            </span>
+            <span class="text-sm text-muted-foreground">{eventDate.getFullYear()}</span>
+          {:else}
+            <span class="text-4xl font-bold leading-tight">{eventDate.getDate()}</span>
+            <span class="text-sm text-muted-foreground">
+              {new Intl.DateTimeFormat("en", { weekday: "long" }).format(eventDate)}
+            </span>
+            <span class="text-sm text-muted-foreground">{eventDate.getFullYear()}</span>
+          {/if}
           <div class="mt-3 border-t pt-3 text-center">
             <span class="text-sm font-medium">{formattedTime}</span>
             {#if heroTimezones.length > 0}
@@ -242,6 +300,14 @@
                 {#each heroTimezones as ht (ht.label)}
                   <div class="text-xs text-muted-foreground">{ht.time} ({ht.label})</div>
                 {/each}
+              </div>
+            {/if}
+            {#if !event.isOnline}
+              <div
+                class="mt-1 flex items-center justify-center gap-1 text-xs text-muted-foreground"
+              >
+                <MapPin class="size-3" />
+                {event.location}
               </div>
             {/if}
           </div>
@@ -309,126 +375,173 @@
   <section class="space-y-6">
     <h2 class="text-2xl font-bold">Agenda</h2>
     {#if event.agenda?.length}
-      <table class="w-full border-collapse text-sm">
-        <tbody>
-          {#each event.agenda as item, i (i)}
-            <tr class="border-t border-border/60">
-              <td class="w-16 align-top whitespace-nowrap tabular-nums text-muted-foreground py-3">
-                {item.time ?? ""}
-              </td>
-              <td class="align-top py-3">
-                {#if item.type === "special"}
-                  <span class="font-semibold">{item.title}</span>
-                {:else}
-                  <div class="flex gap-4">
-                    <!-- Talk content -->
-                    <div class="min-w-0 flex-1">
-                      <div class="text-base font-medium">{item.title}</div>
-                      {#if item.abstract}
-                        <p
-                          class="mt-1 whitespace-pre-line leading-relaxed text-muted-foreground {expandedAbstracts[
-                            i
-                          ]
-                            ? ''
-                            : 'line-clamp-2'}"
-                        >
-                          {item.abstract}
-                        </p>
-                        <button
-                          type="button"
-                          class="mt-1 text-xs text-muted-foreground hover:underline"
-                          onclick={() => (expandedAbstracts[i] = !expandedAbstracts[i])}
-                        >
-                          {expandedAbstracts[i] ? "Show less" : "Show more"}
-                        </button>
-                      {/if}
-                      {#if item.links?.length}
-                        <div class="mt-3 flex flex-wrap gap-x-4 gap-y-1">
-                          {#each item.links as link (link)}
-                            <a
-                              href={link}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              class="inline-flex items-center gap-1 text-xs text-primary hover:underline"
-                            >
-                              <ExternalLink class="size-3" />
-                              {linkLabel(link)}
-                            </a>
-                          {/each}
-                        </div>
-                      {/if}
-                    </div>
-                    <!-- Speaker -->
-                    {#if item.speaker}
-                      <div class="w-28 shrink-0">
-                        {#if item.image}
-                          <img
-                            src="{base}{item.image}"
-                            alt={item.speaker}
-                            loading="lazy"
-                            class="size-16 rounded-full object-cover"
-                          />
-                        {:else}
-                          <div
-                            class="flex size-16 items-center justify-center rounded-full bg-muted text-muted-foreground"
+      {#if event.agenda.every((item) => !item.speaker && !item.time)}
+        <!-- Simple agenda: bullet list (title may carry inline HTML) + optional sub-bullets -->
+        <ul class="list-disc list-inside space-y-1.5 text-muted-foreground">
+          {#each event.agenda as item (item.title)}
+            <li>
+              <!-- eslint-disable-next-line svelte/no-at-html-tags -->
+              {@html item.title}
+              {#if item.points?.length}
+                <ul class="mt-1 ml-5 list-disc list-inside space-y-1">
+                  {#each item.points as point (point)}
+                    <li>{point}</li>
+                  {/each}
+                </ul>
+              {/if}
+            </li>
+          {/each}
+        </ul>
+      {:else}
+        <table class="w-full border-collapse text-sm">
+          <tbody>
+            {#each event.agenda as item, i (i)}
+              <tr class="border-t border-border/60">
+                <td
+                  class="w-16 align-top whitespace-nowrap tabular-nums text-muted-foreground py-3"
+                >
+                  {item.time ?? ""}
+                </td>
+                <td class="align-top py-3">
+                  {#if item.type === "special"}
+                    <span class="font-semibold">{item.title}</span>
+                  {:else}
+                    <div class="flex gap-4">
+                      <!-- Talk content -->
+                      <div class="min-w-0 flex-1">
+                        <div class="text-base font-medium">{item.title}</div>
+                        {#if item.abstract}
+                          <p
+                            class="mt-1 whitespace-pre-line leading-relaxed text-muted-foreground {expandedAbstracts[
+                              i
+                            ]
+                              ? ''
+                              : 'line-clamp-2'}"
                           >
-                            <User class="size-7" />
-                          </div>
-                        {/if}
-                        <p class="mt-2 font-medium leading-tight">{item.speaker}</p>
-                        {#if item.affiliation}
-                          <p class="mt-0.5 text-xs leading-tight text-muted-foreground">
-                            {item.affiliation}
+                            {item.abstract}
                           </p>
+                          <button
+                            type="button"
+                            class="mt-1 text-xs text-muted-foreground hover:underline"
+                            onclick={() => (expandedAbstracts[i] = !expandedAbstracts[i])}
+                          >
+                            {expandedAbstracts[i] ? "Show less" : "Show more"}
+                          </button>
                         {/if}
-                        {#if item.linkedin || item.email || item.website}
-                          <div class="mt-1.5 flex items-center gap-2 text-muted-foreground">
-                            {#if item.linkedin}
+                        {#if item.links?.length}
+                          <div class="mt-3 flex flex-wrap gap-x-4 gap-y-1">
+                            {#each item.links as link (link)}
                               <a
-                                href={item.linkedin}
+                                href={link}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                aria-label="LinkedIn"
-                                class="hover:text-foreground [&>svg]:size-4"
+                                class="inline-flex items-center gap-1 text-xs text-primary hover:underline"
                               >
-                                <LinkedInIcon />
+                                <ExternalLink class="size-3" />
+                                {linkLabel(link)}
                               </a>
-                            {/if}
-                            {#if item.website}
-                              <a
-                                href={item.website}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                aria-label="Website"
-                                class="hover:text-foreground"
-                              >
-                                <Globe class="size-4" />
-                              </a>
-                            {/if}
-                            {#if item.email}
-                              <a
-                                href="mailto:{item.email}"
-                                aria-label="Email"
-                                class="hover:text-foreground"
-                              >
-                                <Mail class="size-4" />
-                              </a>
-                            {/if}
+                            {/each}
                           </div>
                         {/if}
                       </div>
-                    {/if}
-                  </div>
-                {/if}
-              </td>
-            </tr>
-          {/each}
-        </tbody>
-      </table>
+                      <!-- Speaker -->
+                      {#if item.speaker}
+                        <div class="w-28 shrink-0">
+                          {#if item.image}
+                            <img
+                              src="{base}{item.image}"
+                              alt={item.speaker}
+                              loading="lazy"
+                              class="size-16 rounded-full object-cover"
+                            />
+                          {:else}
+                            <div
+                              class="flex size-16 items-center justify-center rounded-full bg-muted text-muted-foreground"
+                            >
+                              <User class="size-7" />
+                            </div>
+                          {/if}
+                          <p class="mt-2 font-medium leading-tight">{item.speaker}</p>
+                          {#if item.affiliation}
+                            <p class="mt-0.5 text-xs leading-tight text-muted-foreground">
+                              {item.affiliation}
+                            </p>
+                          {/if}
+                          {#if item.linkedin || item.email || item.website}
+                            <div class="mt-1.5 flex items-center gap-2 text-muted-foreground">
+                              {#if item.linkedin}
+                                <a
+                                  href={item.linkedin}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  aria-label="LinkedIn"
+                                  class="hover:text-foreground [&>svg]:size-4"
+                                >
+                                  <LinkedInIcon />
+                                </a>
+                              {/if}
+                              {#if item.website}
+                                <a
+                                  href={item.website}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  aria-label="Website"
+                                  class="hover:text-foreground"
+                                >
+                                  <Globe class="size-4" />
+                                </a>
+                              {/if}
+                              {#if item.email}
+                                <a
+                                  href="mailto:{item.email}"
+                                  aria-label="Email"
+                                  class="hover:text-foreground"
+                                >
+                                  <Mail class="size-4" />
+                                </a>
+                              {/if}
+                            </div>
+                          {/if}
+                        </div>
+                      {/if}
+                    </div>
+                  {/if}
+                </td>
+              </tr>
+            {/each}
+          </tbody>
+        </table>
+      {/if}
     {:else}
       <p class="text-muted-foreground">Agenda will be announced soon.</p>
     {/if}
   </section>
+
+  {#if event.people?.length}
+    <section class="space-y-3">
+      <h2 class="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+        Participants
+      </h2>
+      <div class="flex flex-wrap gap-x-4 gap-y-2">
+        {#each event.people as person (person.url)}
+          <a
+            href={person.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-1.5 text-muted-foreground hover:text-foreground transition-colors"
+          >
+            <img
+              src={person.imageUrl}
+              alt={person.name}
+              loading="lazy"
+              class="size-6 rounded-full object-cover"
+            />
+            <span class="text-sm">{person.name}</span>
+          </a>
+        {/each}
+      </div>
+    </section>
+  {/if}
 
   <Separator />
 
@@ -551,51 +664,58 @@
   {/if}
 
   <!-- Recording permissions -->
-  <section class="space-y-4">
-    <h2 class="text-2xl font-bold">Recording Permissions</h2>
-    <div class="space-y-3 text-muted-foreground leading-relaxed">
-      <p>
-        We'd like to record the entire session and, for people who give their consent, make the
-        recordings available after the session under a Creative Commons Attribution ({event.license})
-        license to those who were not able to make the meeting.
-      </p>
-      <p>
-        Participants can license their contribution under a {event.license} license at the time of registration.
-        This will permit the associated video recording to be shared with a wider audience in the open
-        modelling community.
-      </p>
-      <p>
-        Presenters can optionally license their presentations under a {event.license} license. This will
-        also facilitate their dissemination and reuse.
-      </p>
-      <p>
-        Open licensing is optional. We will not publish anything without the consent of those being
-        recorded. You may withdraw your consent afterwards as well.
-      </p>
-    </div>
-  </section>
+  {#if event.isOnline}
+    <section class="space-y-4">
+      <h2 class="text-2xl font-bold">Recording Permissions</h2>
+      <div class="space-y-3 text-muted-foreground leading-relaxed">
+        <p>
+          We'd like to record the entire session and, for people who give their consent, make the
+          recordings available after the session under a Creative Commons Attribution ({event.license})
+          license to those who were not able to make the meeting.
+        </p>
+        <p>
+          Participants can license their contribution under a {event.license} license at the time of registration.
+          This will permit the associated video recording to be shared with a wider audience in the open
+          modelling community.
+        </p>
+        <p>
+          Presenters can optionally license their presentations under a {event.license} license. This
+          will also facilitate their dissemination and reuse.
+        </p>
+        <p>
+          Open licensing is optional. We will not publish anything without the consent of those
+          being recorded. You may withdraw your consent afterwards as well.
+        </p>
+      </div>
+    </section>
+  {/if}
 
   <!-- Contact -->
   <section class="space-y-4">
     <h2 class="text-2xl font-bold">Contact</h2>
-    <p class="text-muted-foreground">
-      For any inquiries, please contact
-      <a href="mailto:contact@pypsa.org" class="hover:underline" style="color: #c30944;">
-        contact@pypsa.org</a
-      >
-      or {event.contactName}
-      (<a href="mailto:{event.contactEmail}" class="hover:underline" style="color: #c30944;"
-        >{event.contactEmail}</a
-      >
-      /
-      <a
-        href="https://github.com/{event.contactHandle.replace('@', '')}"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hover:underline"
-        style="color: #c30944;">{event.contactHandle}</a
-      >).
-    </p>
+    {#if event.contactHtml}
+      <!-- eslint-disable-next-line svelte/no-at-html-tags -->
+      <p class="text-muted-foreground">{@html event.contactHtml}</p>
+    {:else}
+      <p class="text-muted-foreground">
+        For any inquiries, please contact
+        <a href="mailto:contact@pypsa.org" class="hover:underline" style="color: #c30944;">
+          contact@pypsa.org</a
+        >
+        or {event.contactName}
+        (<a href="mailto:{event.contactEmail}" class="hover:underline" style="color: #c30944;"
+          >{event.contactEmail}</a
+        >
+        /
+        <a
+          href="https://github.com/{event.contactHandle.replace('@', '')}"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:underline"
+          style="color: #c30944;">{event.contactHandle}</a
+        >).
+      </p>
+    {/if}
   </section>
 
   <Separator />
