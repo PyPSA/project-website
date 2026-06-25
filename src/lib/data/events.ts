@@ -22,15 +22,20 @@ export interface AgendaItem {
   website?: string; // speaker personal website URL
   abstract?: string; // verbatim; \n\n preserved for multi-paragraph
   links?: string[]; // 0..n project URLs
+  points?: string[]; // sub-bullets (used by the simple bullet-list agenda); title may contain inline HTML
 }
 
 export interface EventData {
   slug: string;
   title: string;
   date: string;
+  endDate?: string; // "YYYY-MM-DD" — multi-day end; start stays in `date`
   time: string;
   location: string;
   isOnline: boolean;
+  bannerImage?: string; // per-event banner path; banner renders only if set
+  organizers?: { name: string; url?: string; logo?: string }[]; // overrides the default TU Berlin & PyPSA meets Earth line
+  people?: { name: string; imageUrl: string; url: string }[]; // participants (avatars/links from contributors data)
   status: "upcoming" | "past";
   registrationUrl?: string;
   talkProposalUrl?: string;
@@ -38,6 +43,7 @@ export interface EventData {
   contactName: string;
   contactEmail: string;
   contactHandle: string;
+  contactHtml?: string; // overrides the default Contact paragraph (e.g. invite-only events)
   introHtml: string;
   agenda?: AgendaItem[];
   videos: EventVideo[];
@@ -53,6 +59,7 @@ export const eventsData: EventData[] = [
     time: "4:00 pm – 6:30 pm (CEST)",
     location: "Online",
     isOnline: true,
+    bannerImage: "/img/4th-user-meeting-banner.jpg",
     status: "upcoming",
     registrationUrl: "https://tu-berlin.zoom-x.de/meeting/register/n0OZHUmUSe2krwInnPOJ-Q",
     contactName: "Lukas Trippe",
@@ -349,6 +356,108 @@ export const eventsData: EventData[] = [
       { city: "Tonga", timezone: "UTC+13", localTime: "03:00", date: "30 Jun 2026" },
       { city: "Samoa", timezone: "UTC+13", localTime: "03:00", date: "30 Jun 2026" },
     ],
+    license: "CC BY 4.0",
+  },
+  {
+    slug: "developer-meeting-2026", // <<CONFIRM>>
+    title: "PyPSA Developer Meeting", // <<PROVIDE>>
+    date: "2026-07-06",
+    endDate: "2026-07-08",
+    time: "All day", // free-form; <<PROVIDE if specific>>
+    location: "Muncaster, UK",
+    isOnline: false,
+    organizers: [],
+    status: "upcoming",
+    contactName: "<<PROVIDE>>",
+    contactEmail: "<<PROVIDE>>",
+    contactHandle: "<<PROVIDE>>", // e.g. "@lkstrp"
+    contactHtml:
+      'The PyPSA Developer Meeting is currently invite only. If you would like to get involved, contact us at <a href="mailto:contact@pypsa.org" class="hover:underline" style="color: #c30944;">contact@pypsa.org</a> or reach out to the participants. And you can always engage in the <a href="https://github.com/PyPSA" target="_blank" rel="noopener noreferrer" class="hover:underline" style="color: #c30944;">open-source repositories</a>.',
+    introHtml:
+      'The PyPSA Developer Meeting is an in-person gathering of the project\'s core developers and maintainers. With contributors from several institutions in the same room, we can align on direction and implementation across upcoming features, breaking changes, and governance. Participants join from TU Berlin, Open Energy Transition (see task force <a href="https://www.openenergytransition.org/projects/pypsa-taskforce" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">initiative</a>), and the University of Pisa.',
+    // Ordered by total contributions (desc), matching the Community page default.
+    people: [
+      {
+        name: "Fabian Neumann",
+        imageUrl: "https://avatars.githubusercontent.com/u/29101152?v=4",
+        url: "https://github.com/fneum",
+      },
+      {
+        name: "Fabian Hofmann",
+        imageUrl: "https://avatars.githubusercontent.com/u/19226431?v=4",
+        url: "https://github.com/FabianHofmann",
+      },
+      {
+        name: "Lukas Trippe",
+        imageUrl: "https://avatars.githubusercontent.com/u/62255395?v=4",
+        url: "https://github.com/lkstrp",
+      },
+      {
+        name: "Davide Fioriti",
+        imageUrl: "https://avatars.githubusercontent.com/u/67809479?v=4",
+        url: "https://github.com/davide-f",
+      },
+      {
+        name: "Max Parzen",
+        imageUrl: "https://avatars.githubusercontent.com/u/61968949?v=4",
+        url: "https://github.com/pz-max",
+      },
+      {
+        name: "Johannes Hampp",
+        imageUrl: "https://avatars.githubusercontent.com/u/42553970?v=4",
+        url: "https://github.com/euronion",
+      },
+      {
+        name: "Jonas Hörsch",
+        imageUrl: "https://avatars.githubusercontent.com/u/2552981?v=4",
+        url: "https://github.com/coroa",
+      },
+      {
+        name: "Iegor Riepin",
+        imageUrl: "https://avatars.githubusercontent.com/u/40967402?v=4",
+        url: "https://github.com/Irieo",
+      },
+      {
+        name: "Bryn Pickering",
+        imageUrl: "https://avatars.githubusercontent.com/u/17178478?v=4",
+        url: "https://github.com/brynpickering",
+      },
+    ],
+    agenda: [
+      {
+        title:
+          'New features from the recently announced <a href="/roadmap" class="text-primary hover:underline">Roadmap</a>',
+        points: [
+          "Improved model scaling",
+          "Custom constraint interface",
+          "Problem decomposition with third-party solvers",
+          "Non-uniform time resolution",
+          "Dashboard",
+          "and more …",
+        ],
+      },
+      {
+        title: "Prototyping &amp; general exploration",
+        points: ["Component library", "Declarative, text-based model definitions", "and more …"],
+      },
+      {
+        title: "Ecosystem health",
+        points: [
+          "PyPSA 2.0 and potential breaking changes",
+          "Enhancing modularity",
+          "Issue backlog and bug hunting",
+        ],
+      },
+      {
+        title: "Maintenance &amp; governance",
+        points: [
+          "Guaranteeing long-term stability",
+          "Cross-institutional collaboration and project governance",
+        ],
+      },
+    ],
+    videos: [],
+    timezones: [],
     license: "CC BY 4.0",
   },
 ];
