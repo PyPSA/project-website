@@ -409,7 +409,7 @@
                               i
                             ]
                               ? ''
-                              : 'line-clamp-2'}"
+                              : 'line-clamp-4'}"
                           >
                             {item.abstract}
                           </p>
