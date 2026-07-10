@@ -7,14 +7,6 @@
   import { Badge } from "$lib/components/ui/badge";
   import { Card, CardContent } from "$lib/components/ui/card";
   import { Separator } from "$lib/components/ui/separator";
-  import { Popover, PopoverContent, PopoverTrigger } from "$lib/components/ui/popover";
-  import {
-    Command,
-    CommandEmpty,
-    CommandInput,
-    CommandItem,
-    CommandList,
-  } from "$lib/components/ui/command";
   import {
     Carousel,
     CarouselContent,
@@ -22,18 +14,10 @@
     CarouselPrevious,
     CarouselNext,
   } from "$lib/components/ui/carousel";
-  import {
-    ExternalLink,
-    ChevronsUpDown,
-    Check,
-    User,
-    Mail,
-    Globe,
-    ArrowLeft,
-    MapPin,
-  } from "lucide-svelte";
+  import { ExternalLink, Play, User, Mail, Globe, ArrowLeft, MapPin, X } from "lucide-svelte";
   import LinkedInIcon from "$lib/icons/LinkedInIcon.svelte";
   import Autoplay from "embla-carousel-autoplay";
+  import { slide } from "svelte/transition";
 
   const { data } = $props();
   const event = data.event;
@@ -95,19 +79,9 @@
     return { hours: h, minutes: m };
   }
 
-  function formatTime(hours: number, minutes: number): string {
-    const h = ((hours % 24) + 24) % 24;
-    return `${String(h).padStart(2, "0")}:${String(minutes).padStart(2, "0")}`;
-  }
-
   const berlinTz = event.timezones.find((tz) => tz.city === "Berlin");
   const berlinOffset = berlinTz ? parseUtcOffset(berlinTz.timezone) : 2;
   const eventStart = berlinTz ? parseTime(berlinTz.localTime) : { hours: 16, minutes: 0 };
-  const eventEndMinutes = eventStart.hours * 60 + eventStart.minutes + 150;
-  const eventEnd = {
-    hours: Math.floor(eventEndMinutes / 60),
-    minutes: eventEndMinutes % 60,
-  };
 
   function formatLocalizedTime(hours: number, minutes: number): string {
     // eslint-disable-next-line svelte/prefer-svelte-reactivity
@@ -136,43 +110,12 @@
       )
     : null;
 
-  let selectedCity = $state("Berlin");
-  let comboboxOpen = $state(false);
   // ponytail: toggle always shown; no overflow detection. Add a clientHeight check if short abstracts get a pointless "Show more".
   const expandedAbstracts = $state<Record<number, boolean>>({});
+  const expandedVideos = $state<Record<number, boolean>>({});
 
-  function formatOffsetDiff(tz: { timezone: string }): string {
-    const diff = parseUtcOffset(tz.timezone) - berlinOffset;
-    if (diff === 0) return "±0h";
-    const sign = diff > 0 ? "+" : "";
-    return Number.isInteger(diff) ? `${sign}${diff}h` : `${sign}${diff}h`;
-  }
-
-  const convertedStart = $derived.by(() => {
-    const tz = event.timezones.find((t) => t.city === selectedCity);
-    if (!tz) return berlinTz?.localTime ?? "16:00";
-    const offset = parseUtcOffset(tz.timezone) - berlinOffset;
-    const mins = eventStart.hours * 60 + eventStart.minutes + offset * 60;
-    return formatTime(Math.floor(mins / 60), mins % 60);
-  });
-
-  const convertedEnd = $derived.by(() => {
-    const tz = event.timezones.find((t) => t.city === selectedCity);
-    if (!tz) return formatTime(eventEnd.hours, eventEnd.minutes);
-    const offset = parseUtcOffset(tz.timezone) - berlinOffset;
-    const mins = eventEnd.hours * 60 + eventEnd.minutes + offset * 60;
-    return formatTime(Math.floor(mins / 60), mins % 60);
-  });
-
-  const convertedTimezone = $derived.by(() => {
-    const tz = event.timezones.find((t) => t.city === selectedCity);
-    return tz?.timezone ?? "UTC+2";
-  });
-
-  const convertedDate = $derived.by(() => {
-    const tz = event.timezones.find((t) => t.city === selectedCity);
-    return tz?.date ?? berlinTz?.date ?? "";
-  });
+  const reduceMotion =
+    typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 </script>
 
 <svelte:head>
@@ -398,7 +341,7 @@
             {#each event.agenda as item, i (i)}
               <tr class="border-t border-border/60">
                 <td
-                  class="w-16 align-top whitespace-nowrap tabular-nums text-muted-foreground py-3"
+                  class="w-12 sm:w-16 align-top whitespace-nowrap tabular-nums text-muted-foreground py-3"
                 >
                   {item.time ?? ""}
                 </td>
@@ -406,9 +349,59 @@
                   {#if item.type === "special"}
                     <span class="font-semibold">{item.title}</span>
                   {:else}
-                    <div class="flex gap-4">
+                    <div class="flex flex-col gap-3 sm:flex-row sm:gap-4">
                       <!-- Talk content -->
                       <div class="min-w-0 flex-1">
+                        <!-- Recording: thumbnail swaps in place for the player -->
+                        {#if item.videoId}
+                          {#if expandedVideos[i]}
+                            <div
+                              transition:slide={{ duration: reduceMotion ? 0 : 250 }}
+                              class="mb-3"
+                            >
+                              <div
+                                class="aspect-video w-full overflow-hidden rounded-lg border border-border/60 bg-muted"
+                              >
+                                <iframe
+                                  src="https://www.youtube-nocookie.com/embed/{item.videoId}?rel=0"
+                                  title={item.title}
+                                  loading="lazy"
+                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                  allowfullscreen
+                                  class="h-full w-full border-0"
+                                ></iframe>
+                              </div>
+                              <button
+                                type="button"
+                                class="mt-1 inline-flex items-center gap-1 text-xs text-muted-foreground hover:underline"
+                                onclick={() => (expandedVideos[i] = false)}
+                              >
+                                <X class="size-3" /> Hide video
+                              </button>
+                            </div>
+                          {:else}
+                            <button
+                              type="button"
+                              onclick={() => (expandedVideos[i] = true)}
+                              aria-label="Watch recording"
+                              class="group relative mb-3 block aspect-video w-full overflow-hidden rounded-lg border border-border/60 bg-muted ring-primary ring-offset-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 sm:w-56"
+                            >
+                              <img
+                                src="https://img.youtube.com/vi/{item.videoId}/mqdefault.jpg"
+                                alt=""
+                                loading="lazy"
+                                class="h-full w-full object-cover transition group-hover:opacity-80"
+                              />
+                              <span class="absolute inset-0 flex items-center justify-center">
+                                <span
+                                  class="flex size-12 items-center justify-center rounded-full bg-black/60 text-white transition group-hover:scale-105 group-hover:bg-black/75"
+                                >
+                                  <Play class="size-5" />
+                                </span>
+                              </span>
+                            </button>
+                          {/if}
+                        {/if}
                         <div class="text-base font-medium">{item.title}</div>
                         {#if item.abstract}
                           <p
@@ -422,6 +415,7 @@
                           </p>
                           <button
                             type="button"
+                            aria-expanded={!!expandedAbstracts[i]}
                             class="mt-1 text-xs text-muted-foreground hover:underline"
                             onclick={() => (expandedAbstracts[i] = !expandedAbstracts[i])}
                           >
@@ -446,62 +440,64 @@
                       </div>
                       <!-- Speaker -->
                       {#if item.speaker}
-                        <div class="w-28 shrink-0">
+                        <div class="flex w-full shrink-0 items-center gap-3 sm:block sm:w-28">
                           {#if item.image}
                             <img
                               src="{base}{item.image}"
                               alt={item.speaker}
                               loading="lazy"
-                              class="size-16 rounded-full object-cover"
+                              class="size-10 sm:size-16 rounded-full object-cover"
                             />
                           {:else}
                             <div
-                              class="flex size-16 items-center justify-center rounded-full bg-muted text-muted-foreground"
+                              class="flex size-10 sm:size-16 items-center justify-center rounded-full bg-muted text-muted-foreground"
                             >
                               <User class="size-7" />
                             </div>
                           {/if}
-                          <p class="mt-2 font-medium leading-tight">{item.speaker}</p>
-                          {#if item.affiliation}
-                            <p class="mt-0.5 text-xs leading-tight text-muted-foreground">
-                              {item.affiliation}
-                            </p>
-                          {/if}
-                          {#if item.linkedin || item.email || item.website}
-                            <div class="mt-1.5 flex items-center gap-2 text-muted-foreground">
-                              {#if item.linkedin}
-                                <a
-                                  href={item.linkedin}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  aria-label="LinkedIn"
-                                  class="hover:text-foreground [&>svg]:size-4"
-                                >
-                                  <LinkedInIcon />
-                                </a>
-                              {/if}
-                              {#if item.website}
-                                <a
-                                  href={item.website}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  aria-label="Website"
-                                  class="hover:text-foreground"
-                                >
-                                  <Globe class="size-4" />
-                                </a>
-                              {/if}
-                              {#if item.email}
-                                <a
-                                  href="mailto:{item.email}"
-                                  aria-label="Email"
-                                  class="hover:text-foreground"
-                                >
-                                  <Mail class="size-4" />
-                                </a>
-                              {/if}
-                            </div>
-                          {/if}
+                          <div class="min-w-0">
+                            <p class="sm:mt-2 font-medium leading-tight">{item.speaker}</p>
+                            {#if item.affiliation}
+                              <p class="mt-0.5 text-xs leading-tight text-muted-foreground">
+                                {item.affiliation}
+                              </p>
+                            {/if}
+                            {#if item.linkedin || item.email || item.website}
+                              <div class="mt-1.5 flex items-center gap-2 text-muted-foreground">
+                                {#if item.linkedin}
+                                  <a
+                                    href={item.linkedin}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="LinkedIn"
+                                    class="hover:text-foreground [&>svg]:size-4"
+                                  >
+                                    <LinkedInIcon />
+                                  </a>
+                                {/if}
+                                {#if item.website}
+                                  <a
+                                    href={item.website}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Website"
+                                    class="hover:text-foreground"
+                                  >
+                                    <Globe class="size-4" />
+                                  </a>
+                                {/if}
+                                {#if item.email}
+                                  <a
+                                    href="mailto:{item.email}"
+                                    aria-label="Email"
+                                    class="hover:text-foreground"
+                                  >
+                                    <Mail class="size-4" />
+                                  </a>
+                                {/if}
+                              </div>
+                            {/if}
+                          </div>
                         </div>
                       {/if}
                     </div>
@@ -581,90 +577,16 @@
             </CarouselItem>
           {/each}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious class="max-sm:hidden" />
+        <CarouselNext class="max-sm:hidden" />
       </Carousel>
     </section>
 
     <Separator />
   {/if}
 
-  <!-- Time converter -->
-  {#if event.timezones.length > 0}
-    <section class="space-y-4">
-      <h2 class="text-2xl font-bold">Around the Globe</h2>
-      <p class="text-muted-foreground">Find the meeting time in your local timezone.</p>
-      <Card class="overflow-hidden">
-        <CardContent class="p-0">
-          <div class="grid grid-cols-1 sm:grid-cols-2">
-            <div class="p-5 space-y-1">
-              <p class="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-                Event Time
-              </p>
-              <p class="text-2xl font-bold font-mono">
-                {berlinTz?.localTime ?? "16:00"} – {formatTime(eventEnd.hours, eventEnd.minutes)}
-                <span class="text-base font-sans font-normal text-muted-foreground">CEST</span>
-              </p>
-              <p class="text-sm text-muted-foreground">{berlinTz?.date ?? ""}</p>
-              <p class="text-sm text-muted-foreground">Berlin</p>
-            </div>
-            <div class="p-5 space-y-1 border-t sm:border-t-0 sm:border-l bg-muted/30">
-              <p class="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-                Your Time
-              </p>
-              <p class="text-2xl font-bold font-mono">
-                {convertedStart} – {convertedEnd}
-                <span class="text-base font-sans font-normal text-muted-foreground">
-                  {convertedTimezone}
-                </span>
-              </p>
-              <p class="text-sm text-muted-foreground">{convertedDate}</p>
-              <Popover bind:open={comboboxOpen}>
-                <PopoverTrigger
-                  class="inline-flex items-center justify-between whitespace-nowrap rounded-md border border-input bg-background px-3 py-2 text-sm shadow-sm hover:bg-accent hover:text-accent-foreground w-56 mt-1"
-                >
-                  {selectedCity}
-                  <ChevronsUpDown class="ml-2 size-4 shrink-0 opacity-50" />
-                </PopoverTrigger>
-                <PopoverContent class="w-56 p-0" align="start">
-                  <Command>
-                    <CommandInput placeholder="Search city..." />
-                    <CommandEmpty>No city found.</CommandEmpty>
-                    <CommandList>
-                      {#each event.timezones as tz (tz.city)}
-                        <CommandItem
-                          value={tz.city}
-                          onSelect={() => {
-                            selectedCity = tz.city;
-                            comboboxOpen = false;
-                          }}
-                        >
-                          <Check
-                            class="mr-2 size-4 {selectedCity === tz.city
-                              ? 'opacity-100'
-                              : 'opacity-0'}"
-                          />
-                          <span class="flex-1">{tz.city}</span>
-                          <span class="text-xs text-muted-foreground ml-2">
-                            {formatOffsetDiff(tz)}
-                          </span>
-                        </CommandItem>
-                      {/each}
-                    </CommandList>
-                  </Command>
-                </PopoverContent>
-              </Popover>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
-    </section>
-
-    <Separator />
-  {/if}
-
   <!-- Recording permissions -->
-  {#if event.isOnline}
+  {#if event.isOnline && event.status === "upcoming"}
     <section class="space-y-4">
       <h2 class="text-2xl font-bold">Recording Permissions</h2>
       <div class="space-y-3 text-muted-foreground leading-relaxed">
@@ -718,13 +640,15 @@
     {/if}
   </section>
 
-  <Separator />
+  {#if event.outroText !== null}
+    <Separator />
 
-  <section class="text-center py-8">
-    <p class="text-lg text-muted-foreground">
-      We look forward to a fruitful exchange with many of you!
-    </p>
-  </section>
+    <section class="text-center py-8">
+      <p class="text-lg text-muted-foreground">
+        {event.outroText ?? "We look forward to a fruitful exchange with many of you!"}
+      </p>
+    </section>
+  {/if}
 </main>
 
 <Footer />

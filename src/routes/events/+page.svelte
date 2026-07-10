@@ -85,7 +85,7 @@
             <TableCell class="text-muted-foreground">{e.location}</TableCell>
             <TableCell class="whitespace-nowrap">
               <!-- ponytail: "Invite only" derived from "no registration link"; add an explicit flag if a public event ever lacks a link -->
-              {#if e.registrationUrl}
+              {#if e.registrationUrl && e.status === "upcoming"}
                 <a
                   href={e.registrationUrl}
                   target="_blank"

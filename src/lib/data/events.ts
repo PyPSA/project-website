@@ -22,6 +22,7 @@ export interface AgendaItem {
   website?: string; // speaker personal website URL
   abstract?: string; // verbatim; \n\n preserved for multi-paragraph
   links?: string[]; // 0..n project URLs
+  videoId?: string; // YouTube ID of this talk's recording (past events)
   points?: string[]; // sub-bullets (used by the simple bullet-list agenda); title may contain inline HTML
 }
 
@@ -44,6 +45,7 @@ export interface EventData {
   contactEmail: string;
   contactHandle: string;
   contactHtml?: string; // overrides the default Contact paragraph (e.g. invite-only events)
+  outroText?: string | null; // closing line; null hides it, unset keeps the default
   introHtml: string;
   agenda?: AgendaItem[];
   videos: EventVideo[];
@@ -60,7 +62,7 @@ export const eventsData: EventData[] = [
     location: "Online",
     isOnline: true,
     bannerImage: "/img/4th-user-meeting-banner.jpg",
-    status: "upcoming",
+    status: "past",
     registrationUrl: "https://tu-berlin.zoom-x.de/meeting/register/n0OZHUmUSe2krwInnPOJ-Q",
     contactName: "Lukas Trippe",
     contactEmail: "l.trippe@tu-berlin.de",
@@ -77,6 +79,7 @@ export const eventsData: EventData[] = [
         image: "/img/speakers/priyesh-gosai.jpg",
         linkedin: "https://www.linkedin.com/in/gosaip",
         email: "priyesh@innovateimpact.com",
+        videoId: "E2NixCMtsZo",
         abstract:
           "Hydropower is a critical yet often underrepresented component of energy system models. This presentation addresses practical approaches to realistically modelling hydropower integration in energy system planning tools, with an emphasis on cascaded hydro systems that require careful consideration to adequately depict real-world operation.\n\nRecent features added to PyPSA have enabled modellers to capture the complexities of hydropower operations. Case studies from Africa and Asia will demonstrate how PyPSA can be used to represent reservoir dynamics, intra-seasonal variability, and water-energy nexus constraints.",
       },
@@ -87,6 +90,7 @@ export const eventsData: EventData[] = [
         affiliation: "Delft University of Technology",
         image: "/img/speakers/christian-doh-dinga.jpg",
         email: "c.dohdinga@tudelft.nl",
+        videoId: "1BbBX0P23rM",
         abstract:
           "In this presentation, we will show how we implement a modeling to generate alternative algorithm (SPORES) from Calliope into PyPSA, and how we used it to investigate diverse near-optimal pathways for decarbonizing a large district heating network in the Netherlands, while simultaneously quantifying the impacts of each pathway on the local electricity network.",
         links: ["https://doi.org/10.48550/arXiv.2603.12202"],
@@ -97,6 +101,7 @@ export const eventsData: EventData[] = [
         affiliation: "Open Energy Transition (OET)",
         image: "/img/speakers/measrainsey-meng.jpg",
         linkedin: "https://www.linkedin.com/in/measrainsey",
+        videoId: "rgQaqrvkDQo",
         abstract:
           "The Ten-Year Network Development Plan (TYNDP) is the pan-European infrastructure planning process of ENTSO-E, the association of European transmission system operators, producing scenarios and cost-benefit assessments for transmission investment decisions across Europe. Open-TYNDP is an open-source energy system model that implements the TYNDP 2024 methodology and data, using an approach consistent with that of the proprietary and open-source tools developed within the ENTSO-E TYNDP process. Built as a soft-fork of PyPSA-Eur, it covers both the Scenario Building (SB) and Cost-Benefit Analysis (CBA) workflow. Developed by Open Energy Transition (OET) in coordination with ENTSO-E, the model is fully auditable and reproducible. It enables TSOs, authorities, industry associations, researchers, and other stakeholders to understand how outcomes can be produced, verify them independently, and build trust in the results. The input data encompasses reference grids, final energy demand, capacity factors, and installed capacities, all aligned to TYNDP 2024 inputs and assumptions. The model then produces optimised supply and transmission, and marginal prices for both electricity and hydrogen. Open-TYNDP follows a structured approach to comparing its outcomes with the TYNDP 2024 results. Outputs are benchmarked systematically against TYNDP 2024 reference data for the NT scenario, to measure discrepancies, trace their causes to specific modelling choices or input differences, and demonstrate that its outcomes are directionally consistent with the established TYNDP methodology. At the CBA level, computed project indicators are compared directly against TYNDP 2024 project assessments. The model closely matches TYNDP 2024 power generation outputs, while hydrogen supply outcomes are broadly comparable; residual deviations are traceable to specific modelling choices or data availability constraints.",
         links: ["https://open-tyndp.openenergytransition.org/"],
@@ -108,6 +113,7 @@ export const eventsData: EventData[] = [
         affiliation: "Technical University of Denmark",
         image: "/img/speakers/aleksander-grochowicz.jpg",
         linkedin: "https://www.linkedin.com/in/aleksander-grochowicz",
+        videoId: "wde_t3o2wv4",
         abstract:
           "Security of supply is a common and important concern when integrating renewables in net-zero power systems. Extreme weather affects both demand and supply leading to power system stress; in Europe this stress spreads continentally beyond the meteorological root cause. We use an approach based on shadow prices to identify periods of elevated stress called system-defining events and analyse their impact on the power system. By classifying different types of system-defining events, we identify challenges to power system operation and planning. Crucially, we find the need for sufficient resilience back-up (power) capacities whose financial viability is precarious due to weather variability and weather-induced risk. Furthermore, we disentangle short- and long-term resilience challenges (from multi-day to annual scale) with distinct metrics and stress tests to incorporate both into future energy modelling assessments. Our methodology and implementation in an open energy system model (PyPSA-Eur) can be re-applied to other systems and help researchers and policymakers in building more resilient and adequate energy systems.",
         links: ["https://arxiv.org/abs/2508.05163"],
@@ -119,6 +125,7 @@ export const eventsData: EventData[] = [
         affiliation: "Imdea Energy",
         image: "/img/speakers/alicia-mortera-canga.jpg",
         linkedin: "https://www.linkedin.com/in/alicia-mortera-canga-1ab004199",
+        videoId: "0blDGqNbTXQ",
         abstract:
           "National decarbonisation plans are increasingly assessed using open energy system models, yet the connection between policy targets and real deployment trajectories remains limited. In particular, renewable energy projects that are already progressing through administrative authorisation procedures are rarely incorporated into capacity expansion modelling workflows. This work presents a PyPSA-Eur-based methodology to bridge national energy plans and real-world electricity system pathways by combining policy-driven targets, authorised project-level deployment data and spatial network constraints within a myopic modelling framework.\n\nThe methodology is applied to the Spanish electricity system from 2025 to 2050. The standard PyPSA-Eur workflow is adapted by replacing the default power plant dataset with a georeferenced database built from the Spanish official administrative register and complementary national sources. A second dataset is developed from authorised power plant projects, including technology, capacity, location and expected commissioning windows, and is integrated into the model as exogenous near-term capacity additions. The workflow also incorporates a representation of concentrated solar power with thermal storage, a technology that is particularly relevant for Spain due to its existing installed capacity and the presence of plants equipped with thermal storage.\n\nThree modelling perspectives are compared: a fully cost-optimised pathway, a pathway aligned with Spain’s National Energy and Climate Plan, and a deployment-informed pathway based on authorised projects. This approach allows policy targets to be tested against spatially explicit deployment data and network constraints. The results illustrate how different assumptions on near-term capacity additions affect battery deployment, curtailment and nodal self-sufficiency, while all scenarios converge towards a highly renewable system dominated by photovoltaic generation.\n\nOverall, this work shows how PyPSA-Eur can be extended to connect long-term national planning scenarios with administratively authorised project pipelines. The proposed workflow provides a methodological basis to assess whether policy pathways are aligned with the infrastructure that is already under development.",
       },
@@ -130,6 +137,7 @@ export const eventsData: EventData[] = [
         affiliation: "Simon Fraser University",
         image: "/img/speakers/trevor-barnes.jpg",
         linkedin: "https://www.linkedin.com/in/trevor-barnes",
+        videoId: "CwVqn4PUSTI",
         abstract:
           "Given recent changes in federal climate policy and timeframe limitations, the United States is unlikely to meet its original 2030 Paris Agreement emission target of a 50-52% reduction from 2005 levels. However, rapid near-term abatement remains achievable through targeted multi-sector energy transitions. Extending the open-source energy system model, PyPSA-USA, to perform multi-sector analysis, we evaluate the primary drivers of USA energy costs and emissions though applying global sensitivity analysis (GSA).\n\nOur results suggest that fossil fuel price volatility is the dominant driver of marginal electricity and energy costs across most of the nation, however, uncoordinated state-level renewable mandates can induce localized cost spikes due to regional bottlenecks. We find that system climate impact (CO2e) is overwhelming sensitive to fugitive methane leakage rates and global warming potential assumptions. Addressing upstream methane leaks will play a crucial role in abating climate-related damages. Finally, demand-side electrification, specifically light-duty electric vehicles and service sector heating, can act as immediate levers for carbon abatement. The results of this work suggest that many of the Inflation Reduction Act's clean energy initiatives, that have since been repealed, are effective near-term solutions to reduce exposure to fossil fuel price and mitigate future financial penalties associated with the rising social cost of carbon.",
         links: [
@@ -144,6 +152,7 @@ export const eventsData: EventData[] = [
         affiliation: "Natural Resources Canada",
         image: "/img/speakers/nathan-de-matos.jpg",
         linkedin: "https://www.linkedin.com/in/nathan-de-matos",
+        videoId: "Z4Tz3ZAL1oo",
         abstract:
           "PyPSA-Canada is an open-source framework which builds on the PyPSA package to provide an automated workflow for modelling Canadian electricity systems at the national and regional levels. This includes a coupled capacity expansion and dispatch model, canada-specific policy constraints and post-processing functions for results analysis.",
         links: ["https://github.com/NRCan/pypsa-canada"],
@@ -155,6 +164,7 @@ export const eventsData: EventData[] = [
         image: "/img/speakers/edward-terpilowski-gill.jpg",
         linkedin: "https://www.linkedin.com/in/edward-xavier-terpilowski-gill-8a378055",
         email: "edward.tg@transitionzero.org",
+        videoId: "spOr6Sg-J_Y",
         abstract:
           "PyPSA is a powerful framework, but it remains out of reach for many of the people whose decisions shape the energy transition — analysts in ministries, utility planners, and researchers without a dedicated modelling team. At TransitionZero we've spent the last few years closing that gap with Scenario Builder, a web product that compiles user-defined energy-system scenarios into PyPSA Network objects and runs them as a managed service.\n\nIn this lightning talk I'll show Scenario Builder in a live demo and share what we've learned about deploying PyPSA in a productionised environment.",
         links: ["https://www.transitionzero.org/products/scenario-builder"],
@@ -166,6 +176,7 @@ export const eventsData: EventData[] = [
         image: "/img/speakers/koen-van-greevenbroek.jpg",
         linkedin: "https://www.linkedin.com/in/koenvangreevenbroek",
         website: "https://koenvg.com",
+        videoId: "kdVxpjqDbhY",
         abstract:
           "We introduce GLADE, a global food systems optimisation model built using PyPSA. Encompassing spatially resolved crop and animal production, trade, emissions accounting and health impacts, the model can be used to explore counterfactual food system configurations. In an initial study on the interactions between dietary health burden and greenhouse gas emissions reduction, we show vast potential for improvement on both counts at relatively low cost. GLADE is open source and built on open data: anyone is welcome to use the model for their own research, whether it be food sovereignty, impacts of climate change, biomass potential or other food- and land-use-related questions.",
         links: ["https://github.com/Sustainable-Solutions-Lab/GLADE"],
@@ -367,7 +378,8 @@ export const eventsData: EventData[] = [
     location: "Muncaster, UK",
     isOnline: false,
     organizers: [],
-    status: "upcoming",
+    status: "past",
+    outroText: null,
     contactName: "<<PROVIDE>>",
     contactEmail: "<<PROVIDE>>",
     contactHandle: "<<PROVIDE>>", // e.g. "@lkstrp"
