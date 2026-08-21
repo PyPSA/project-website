@@ -23,12 +23,6 @@ export const roadmapData: RoadmapItem[] = [
   // --- PLANNED ITEMS (no date) — shown first. ---
 
   {
-    id: "piecewise",
-    title: "Piecewise-linear relationships",
-    description: "Piecewise-linear investment costs, marginal costs and efficiencies.",
-    icon: "mdiVectorPolyline",
-  },
-  {
     id: "strict-validation",
     title: "Stricter network validation",
     description: "Catch inconsistent inputs for better and earlier user feedback.",
@@ -60,13 +54,6 @@ export const roadmapData: RoadmapItem[] = [
     description:
       "Any network object can be saved and loaded back identically, with no state lost, including custom constraints, solver metadata and geospatial data.",
     icon: "mdiContentSaveCheckOutline",
-  },
-  {
-    id: "maintenance-scheduling",
-    title: "Maintenance scheduling",
-    description:
-      "Schedule optimal maintenance windows for components (e.g. generators, links) with contiguous downtime blocks, partial outages, and multiple events in a year.",
-    icon: "mdiWrenchClock",
   },
   {
     id: "recourse-investments",
@@ -817,5 +804,26 @@ export const roadmapData: RoadmapItem[] = [
     date: "2026-04-21",
     version: "v1.2.0",
     link: "https://docs.pypsa.org/latest/release-notes/#v1.2.0",
+  },
+
+  // v1.3.0
+  {
+    id: "piecewise",
+    title: "Piecewise-linear relationships",
+    description: "Piecewise-linear investment costs, marginal costs and efficiencies.",
+    icon: "mdiVectorPolyline",
+    date: "2026-08-19",
+    version: "v1.3.0",
+    link: "https://docs.pypsa.org/latest/release-notes/#v1.3.0",
+  },
+  {
+    id: "maintenance-scheduling",
+    title: "Maintenance scheduling",
+    description:
+      "Schedule optimal maintenance windows for components (e.g. generators, links) with contiguous downtime blocks, partial outages, and multiple events in a year.",
+    icon: "mdiWrenchClock",
+    date: "2026-08-19",
+    version: "v1.3.0",
+    link: "https://docs.pypsa.org/latest/release-notes/#v1.3.0",
   },
 ];
